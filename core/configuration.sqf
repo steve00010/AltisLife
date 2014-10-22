@@ -223,8 +223,10 @@ life_illegal_items =
 	["kidney",10000],
 	["surgeryknife",8000],
 	["zipties",100],
-	["boltcutter",500]
+	["boltcutter",500],
+	["lockpicks",200]
 ];
+
 
 /*
 	Sell / buy arrays
