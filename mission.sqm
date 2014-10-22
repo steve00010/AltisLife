@@ -2309,7 +2309,7 @@ class Mission
 				{
 					position[]={25573.992,19.70113,21312.02};
 					azimut=-306.07999;
-					offsetY=0.40000001;
+					offsetY=0.2;
 					special="NONE";
 					id=112;
 					side="CIV";
@@ -2483,8 +2483,8 @@ class Mission
 				};
 				class Item42
 				{
-					position[]={3630.1504,10.1585,13102.724};
-					azimut=-310.897;
+					position[]={3531.7378,8.5881834,12995.574};
+					azimut=-454.02505;
 					special="NONE";
 					id=127;
 					side="CIV";
@@ -2495,15 +2495,15 @@ class Mission
 				};
 				class Item43
 				{
-					position[]={3633.5222,10.000422,13138.698};
-					azimut=184.61174;
+					position[]={3633.9409,10.00526,13138.314};
+					azimut=184.612;
 					special="NONE";
 					id=128;
 					side="CIV";
 					vehicle="C_man_p_beggar_F_afro";
 					skill=0.60000002;
 					text="carshop1";
-					init="this enableSimulation false; this allowDamage false; this addAction[""Car Shop"",life_fnc_vehicleShopMenu,[""civ_car"",civilian,[""civ_car_1"",""civ_car_1_1""],""civ"",""Bruce's New & Used Auto's""]]; this setVariable[""realname"", ""Car Shop""];";
+					init="this enableSimulation false; this allowDamage false; this addAction[""Car Shop"",life_fnc_vehicleShopMenu,[""civ_car"",civilian,[""civ_car_1"",""civ_car_1_1"",""civ_car_1_2""],""civ"",""Bruce's New & Used Auto's""]]; this setVariable[""realname"", ""Car Shop""];";
 				};
 				class Item44
 				{
@@ -2530,8 +2530,9 @@ class Mission
 				};
 				class Item46
 				{
-					position[]={3167.0527,1.9665465,12890.028};
-					azimut=-154.688;
+					position[]={3360.1282,2,12951.086};
+					azimut=-127.414;
+					offsetY=0.2;
 					special="NONE";
 					id=131;
 					side="WEST";
@@ -2541,8 +2542,8 @@ class Mission
 				};
 				class Item47
 				{
-					position[]={3168.3384,2.1043293,12904.829};
-					azimut=452.84027;
+					position[]={3166.5845,2.1519363,12907.409};
+					azimut=448.9603;
 					special="NONE";
 					id=132;
 					side="WEST";
@@ -2552,8 +2553,8 @@ class Mission
 				};
 				class Item48
 				{
-					position[]={3165.9048,2,12897.55};
-					azimut=90.854904;
+					position[]={3211.4092,2.3031609,12935.512};
+					azimut=127.413;
 					special="NONE";
 					id=133;
 					side="WEST";
@@ -2565,7 +2566,7 @@ class Mission
 				{
 					position[]={3273.8093,2.197041,12973.647};
 					azimut=175.86501;
-					offsetY=0.5;
+					offsetY=0.40000001;
 					special="NONE";
 					id=134;
 					side="WEST";
@@ -2946,9 +2947,9 @@ class Mission
 				};
 				class Item82
 				{
-					position[]={25852.02,20.255274,21447.139};
+					position[]={25851.355,20.327637,21452.465};
 					azimut=232.793;
-					offsetY=0.60000002;
+					offsetY=0.80000001;
 					special="NONE";
 					id=167;
 					side="WEST";
@@ -2960,7 +2961,8 @@ class Mission
 				class Item83
 				{
 					position[]={25824.924,20.718607,21421.027};
-					azimut=-47.248775;
+					azimut=-47.248798;
+					offsetY=0.30000001;
 					special="NONE";
 					id=168;
 					side="WEST";
@@ -3139,8 +3141,8 @@ class Mission
 				};
 				class Item99
 				{
-					position[]={22134.951,3.8645751,14457.274};
-					azimut=90.008545;
+					position[]={22130.398,3.8885694,14462.979};
+					azimut=114.47034;
 					special="NONE";
 					id=184;
 					side="WEST";
@@ -4065,7 +4067,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=6776;
+		items=6782;
 		class Item0
 		{
 			position[]={8065.1616,35.674362,24985.314};
@@ -4653,8 +4655,8 @@ class Mission
 		};
 		class Item57
 		{
-			position[]={3630.9688,10.151909,13103.553};
-			azimut=-134.34599;
+			position[]={3530.5872,8.5979652,12995.398};
+			azimut=-277.47433;
 			id=287;
 			side="EMPTY";
 			vehicle="Land_CashDesk_F";
@@ -4808,8 +4810,8 @@ class Mission
 		};
 		class Item72
 		{
-			position[]={16014.4,14.4064,16959.6};
-			azimut=-36.139599;
+			position[]={16095.397,13.473667,17083.824};
+			azimut=87.926018;
 			offsetY=0.69999999;
 			id=302;
 			side="EMPTY";
@@ -4953,8 +4955,8 @@ class Mission
 		};
 		class Item86
 		{
-			position[]={3656.5212,10.66901,13069.774};
-			azimut=142.34869;
+			position[]={3608.4648,10.034455,13111.551};
+			azimut=-83.703423;
 			id=316;
 			side="EMPTY";
 			vehicle="Land_Atm_02_F";
@@ -15684,12 +15686,12 @@ class Mission
 		class Item1012
 		{
 			position[]={22142.83,3.2585022,14482.661};
-			azimut=-92.873322;
+			azimut=-92.873299;
 			id=1242;
 			side="EMPTY";
 			vehicle="Land_LampHalogen_F";
 			skill=0.60000002;
-			init=" this allowDamage false; this allowDamage false; this setVectorUp [0,0,1];";
+			init=" this allowDamage false; this setVectorUp [0,0,1];";
 		};
 		class Item1013
 		{
@@ -19033,7 +19035,7 @@ class Mission
 		};
 		class Item1338
 		{
-			position[]={3164.9863,2.0376313,12901.565};
+			position[]={3164.323,2.0201521,12900.764};
 			azimut=270.879;
 			offsetY=0.0054037599;
 			id=1568;
@@ -19153,7 +19155,7 @@ class Mission
 		};
 		class Item1349
 		{
-			position[]={3181.1299,2.3376679,12926.4};
+			position[]={3181.1523,2.3375306,12926.409};
 			azimut=347.772;
 			offsetY=-0.00084924698;
 			id=1579;
@@ -22179,7 +22181,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Billboard_F";
 			skill=0.60000002;
-			init="this allowDamage false; this enableSimulation false; this setObjectTexture [0, ""images\APD.jpg""]";
+			init="this allowDamage false; this enableSimulation false; this setObjectTexture [0, ""images\prologo.jpg""]";
 		};
 		class Item1672
 		{
@@ -58982,7 +58984,7 @@ class Mission
 		};
 		class Item5446
 		{
-			position[]={3186.8879,2.1076345,12910.393};
+			position[]={3186.9575,2.0983572,12910.148};
 			azimut=167.08269;
 			id=5676;
 			side="EMPTY";
@@ -59703,7 +59705,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Billboard_F";
 			skill=0.60000002;
-			init="this allowDamage false; this enableSimulation false; this setObjectTexture [0, ""images\APD.jpg""]";
+			init="this allowDamage false; this enableSimulation false; this setObjectTexture [0, ""images\prologo.jpg""]";
 		};
 		class Item5513
 		{
@@ -59717,13 +59719,13 @@ class Mission
 		};
 		class Item5514
 		{
-			position[]={3346.3408,2.5126996,12975.852};
+			position[]={3346.5154,2.5113881,12975.887};
 			azimut=216.8;
 			id=5744;
 			side="EMPTY";
 			vehicle="Land_Billboard_F";
 			skill=0.60000002;
-			init="this allowDamage false; this enableSimulation false; this setObjectTexture [0, ""images\APD.jpg""]";
+			init="this allowDamage false; this enableSimulation false; this setObjectTexture [0, ""images\prologo.jpg""]";
 		};
 		class Item5515
 		{
@@ -62164,7 +62166,7 @@ class Mission
 			vehicle="Land_Billboard_F";
 			leader=1;
 			skill=0.60000002;
-			init="this enableSimulation false; this allowDamage false;";
+			init="this allowDamage false; this enableSimulation false; this setObjectTexture [0, ""images\prologo.jpg""]";
 		};
 		class Item5751
 		{
@@ -64454,10 +64456,10 @@ class Mission
 		class Item5963
 		{
 			position[]={3617.2646,10.388013,13079.019};
-			azimut=168.38646;
+			azimut=168.386;
 			id=6193;
 			side="EMPTY";
-			vehicle="Flag_UNO_F";
+			vehicle="Flag_US_F";
 			skill=0.60000002;
 			init="this allowDamage false;";
 		};
@@ -64506,10 +64508,10 @@ class Mission
 		class Item5968
 		{
 			position[]={3613.1577,10.419453,13079.097};
-			azimut=347.95648;
+			azimut=347.95599;
 			id=6198;
 			side="EMPTY";
-			vehicle="Flag_UNO_F";
+			vehicle="Flag_UK_F";
 			skill=0.60000002;
 			init="this allowDamage false;";
 		};
@@ -65214,7 +65216,7 @@ class Mission
 		};
 		class Item6035
 		{
-			position[]={22142.971,3.6309912,14460.278};
+			position[]={22143.855,3.4878075,14467.202};
 			azimut=-218.026;
 			id=6265;
 			side="EMPTY";
@@ -71173,20 +71175,22 @@ class Mission
 		class Item6642
 		{
 			position[]={22135.846,3.6954284,14469.599};
-			azimut=232.12869;
+			azimut=232.129;
 			id=6872;
 			side="EMPTY";
 			vehicle="Land_LampHalogen_F";
 			skill=0.78593522;
+			init="this allowDamage false;";
 		};
 		class Item6643
 		{
 			position[]={22137.664,3.9256618,14445.22};
-			azimut=134.96286;
+			azimut=134.963;
 			id=6873;
 			side="EMPTY";
 			vehicle="Land_LampHalogen_F";
 			skill=0.78593522;
+			init="this allowDamage false;";
 		};
 		class Item6644
 		{
@@ -71362,16 +71366,17 @@ class Mission
 		class Item6663
 		{
 			position[]={22151.115,3.1758814,14470.479};
-			azimut=303.0336;
+			azimut=303.034;
 			id=6893;
 			side="EMPTY";
 			vehicle="Land_LampHalogen_F";
 			skill=0.78593522;
+			init="this allowDamage false;";
 		};
 		class Item6664
 		{
 			position[]={22153.445,3.5306177,14446.407};
-			azimut=42.032719;
+			azimut=42.0327;
 			id=6894;
 			side="EMPTY";
 			vehicle="Land_LampHalogen_F";
@@ -72309,15 +72314,15 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Billboard_F";
 			skill=0.60000002;
-			init="this allowDamage false; this enableSimulation false; this setObjectTexture [0, ""images\APD.jpg""]";
+			init="this allowDamage false; this enableSimulation false; this setObjectTexture [0, ""images\prologo.jpg""]";
 		};
 		class Item6763
 		{
 			position[]={3641.9937,10.301479,13239.725};
-			azimut=4.9263444;
+			azimut=4.9263401;
 			id=6993;
 			side="EMPTY";
-			vehicle="Flag_UNO_F";
+			vehicle="Flag_US_F";
 			skill=0.60000002;
 			init="this allowDamage false;";
 		};
@@ -72356,10 +72361,10 @@ class Mission
 		class Item6767
 		{
 			position[]={3645.8992,10.349165,13238.488};
-			azimut=184.49635;
+			azimut=184.496;
 			id=6997;
 			side="EMPTY";
-			vehicle="Flag_UNO_F";
+			vehicle="Flag_UK_F";
 			skill=0.60000002;
 			init="this allowDamage false;";
 		};
@@ -72399,22 +72404,22 @@ class Mission
 		class Item6771
 		{
 			position[]={25817.98,21.4877,21448.654};
-			azimut=84.378021;
+			azimut=84.377998;
 			id=7001;
 			side="EMPTY";
 			vehicle="Land_Billboard_F";
 			skill=0.60000002;
-			init="this allowDamage false; this enableSimulation false; this setObjectTexture [0, ""images\APD.jpg""]";
+			init="this allowDamage false; this enableSimulation false; this setObjectTexture [0, ""images\prologo.jpg""]";
 		};
 		class Item6772
 		{
 			position[]={13821.708,19.92664,18936.342};
-			azimut=-42.423328;
+			azimut=-42.423302;
 			id=7002;
 			side="EMPTY";
 			vehicle="Land_Billboard_F";
 			skill=0.60000002;
-			init="this allowDamage false; this enableSimulation false; this setObjectTexture [0, ""images\APD.jpg""]";
+			init="this allowDamage false; this enableSimulation false; this setObjectTexture [0, ""images\prologo.jpg""]";
 		};
 		class Item6773
 		{
@@ -72429,12 +72434,12 @@ class Mission
 		class Item6774
 		{
 			position[]={17425.092,12.001211,13302.756};
-			azimut=127.13888;
+			azimut=127.139;
 			id=7004;
 			side="EMPTY";
 			vehicle="Land_Billboard_F";
 			skill=0.60000002;
-			init="this allowDamage false; this enableSimulation false; this setObjectTexture [0, ""images\APD.jpg""]";
+			init="this allowDamage false; this enableSimulation false; this setObjectTexture [0, ""images\prologo.jpg""]";
 		};
 		class Item6775
 		{
@@ -72446,10 +72451,71 @@ class Mission
 			skill=0.60000002;
 			init="this allowDamage false; this enableSimulation false; this setObjectTexture [0, ""images\APD.jpg""]";
 		};
+		class Item6776
+		{
+			position[]={16376.149,2.4290917,12857.688};
+			azimut=240.22046;
+			id=7006;
+			side="EMPTY";
+			vehicle="Land_Billboard_F";
+			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false; this setObjectTexture [0, ""images\prologo.jpg""]";
+		};
+		class Item6777
+		{
+			position[]={14508.005,17.129353,16888.582};
+			azimut=130.86894;
+			id=7007;
+			side="EMPTY";
+			vehicle="Land_Billboard_F";
+			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false; this setObjectTexture [0, ""images\prologo.jpg""]";
+		};
+		class Item6778
+		{
+			position[]={22143.359,3.6793969,14457.079};
+			azimut=127.413;
+			special="NONE";
+			id=7008;
+			side="EMPTY";
+			vehicle="Land_RedWhitePole_F";
+			skill=0.60000002;
+			init="this allowDamage false;";
+		};
+		class Item6779
+		{
+			position[]={3633.9507,10.012444,13136.979};
+			azimut=2.2603433;
+			id=7009;
+			side="EMPTY";
+			vehicle="Land_CashDesk_F";
+			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";
+		};
+		class Item6780
+		{
+			position[]={3497.386,8.1863546,13002.96};
+			azimut=-83.703423;
+			id=7010;
+			side="EMPTY";
+			vehicle="Land_Atm_02_F";
+			skill=0.60000002;
+			init="this enableSimulation false; this allowDamage false; this addAction[""<t color='#ADFF2F'>ATM</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 '];";
+		};
+		class Item6781
+		{
+			position[]={3270.4768,13.672793,13079.964};
+			azimut=301.87299;
+			id=7011;
+			side="EMPTY";
+			vehicle="Land_Billboard_F";
+			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false; this setObjectTexture [0, ""images\prologo.jpg""]";
+		};
 	};
 	class Markers
 	{
-		items=266;
+		items=268;
 		class Item0
 		{
 			position[]={8459.6777,104.56568,25131.203};
@@ -72486,7 +72552,7 @@ class Mission
 		};
 		class Item5
 		{
-			position[]={3529.9373,7.3869972,13055.158};
+			position[]={3509.8801,8.4578705,13004.906};
 			name="civ_spawn_1";
 			type="Empty";
 		};
@@ -72699,7 +72765,7 @@ class Mission
 		};
 		class Item33
 		{
-			position[]={3634.634,10.018458,13136.706};
+			position[]={3634.7737,10.013065,13137.892};
 			name="car1";
 			type="c_car";
 			colorName="ColorWhite";
@@ -72747,14 +72813,14 @@ class Mission
 		};
 		class Item39
 		{
-			position[]={3638.9727,10.11291,13126.261};
+			position[]={3648.5029,10.161972,13137.255};
 			name="civ_car_1";
 			type="Empty";
-			angle=358.75351;
+			angle=534.53662;
 		};
 		class Item40
 		{
-			position[]={3634.2537,10.06779,13126.169};
+			position[]={3633.9045,10.064998,13126.169};
 			name="civ_car_1_1";
 			type="Empty";
 			angle=365.76453;
@@ -72874,7 +72940,7 @@ class Mission
 		};
 		class Item55
 		{
-			position[]={3634.6152,10.018435,13136.687};
+			position[]={3634.7549,10.012843,13137.91};
 			name="car1_1";
 			text="Car Shop";
 			type="c_car";
@@ -72900,12 +72966,12 @@ class Mission
 		};
 		class Item58
 		{
-			position[]={3630.9111,10.151769,13103.646};
+			position[]={3530.5688,8.5991859,12995.307};
 			name="license_shop";
 			text="DMV";
 			type="c_unknown";
 			colorName="ColorBlue";
-			angle=43.82745;
+			angle=-99.300804;
 		};
 		class Item59
 		{
@@ -73219,10 +73285,10 @@ class Mission
 		};
 		class Item97
 		{
-			position[]={25819.07,21.653685,21482.996};
+			position[]={25821.041,21.581602,21479.527};
 			name="civ_car_4";
 			type="Empty";
-			angle=-232.5564;
+			angle=-174.81401;
 		};
 		class Item98
 		{
@@ -73233,10 +73299,10 @@ class Mission
 		};
 		class Item99
 		{
-			position[]={3177.2473,2,12895.431};
+			position[]={3221.3503,2.127748,12939.17};
 			name="cop_car_1";
 			type="Empty";
-			angle=-322.98657;
+			angle=-265.70224;
 		};
 		class Item100
 		{
@@ -73261,10 +73327,10 @@ class Mission
 		};
 		class Item103
 		{
-			position[]={3200.0603,2.0699439,12910.168};
+			position[]={3186.7832,2.0862949,12909.74};
 			name="cop_air_1";
 			type="Empty";
-			angle=-112.56078;
+			angle=-191.94275;
 		};
 		class Item104
 		{
@@ -73329,7 +73395,7 @@ class Mission
 		};
 		class Item112
 		{
-			position[]={3155.468,-0.08066503,12870.368};
+			position[]={3350.9097,-0.0022229315,12943.581};
 			name="cop_ship_1";
 			type="Empty";
 			angle=240.40022;
@@ -73674,7 +73740,7 @@ class Mission
 		};
 		class Item155
 		{
-			position[]={16018.33,13.650147,16953.154};
+			position[]={16083.949,15.819829,16999.502};
 			name="fed_reserve";
 			text="Federal Reserve";
 			type="mil_box";
@@ -73923,11 +73989,11 @@ class Mission
 		};
 		class Item186
 		{
-			position[]={3656.4431,10.668716,13069.743};
+			position[]={3608.4312,10.034996,13111.497};
 			name="atm_marker_2_7";
 			type="loc_Tourism";
 			colorName="ColorGreen";
-			angle=-36.871471;
+			angle=-262.92358;
 		};
 		class Item187
 		{
@@ -74279,7 +74345,7 @@ class Mission
 		};
 		class Item229
 		{
-			position[]={3159.9246,-0.0025726196,12877.783};
+			position[]={3353.9392,-0.00061181502,12943.636};
 			name="bl;ablhllg";
 			text="Boat";
 			type="n_naval";
@@ -74287,7 +74353,7 @@ class Mission
 		};
 		class Item230
 		{
-			position[]={3165.4036,2.0003736,12900.015};
+			position[]={3209.1631,2.3425145,12935.534};
 			name="g\fjgh";
 			text="Vehicle Shop";
 			type="b_motor_inf";
@@ -74296,12 +74362,12 @@ class Mission
 		};
 		class Item231
 		{
-			position[]={3167.9575,2.1152277,12905.474};
+			position[]={3166.5635,2.1520042,12907.365};
 			name="123123";
 			text="Police Heli";
 			type="o_air";
 			colorName="ColorBlue";
-			angle=611.5965;
+			angle=607.71576;
 		};
 		class Item232
 		{
@@ -74558,7 +74624,7 @@ class Mission
 		};
 		class Item264
 		{
-			position[]={3773.8147,13.057896,13245.385};
+			position[]={4076.884,20.675785,13763.764};
 			name="jail_release_1";
 			type="Empty";
 			angle=-231.89786;
@@ -74570,10 +74636,25 @@ class Mission
 			type="loc_Fuelstation";
 			colorName="ColorGreen";
 		};
+		class Item266
+		{
+			position[]={3643.6152,10.178713,13125.529};
+			name="civ_car_1_2";
+			type="Empty";
+			angle=358.75351;
+		};
+		class Item267
+		{
+			position[]={3497.3523,8.1852779,13002.906};
+			name="atm_marker_2_7_1";
+			type="loc_Tourism";
+			colorName="ColorGreen";
+			angle=-262.92358;
+		};
 	};
 	class Sensors
 	{
-		items=26;
+		items=25;
 		class Item0
 		{
 			position[]={13812.692,19.930712,18930.568};
@@ -74626,7 +74707,7 @@ class Mission
 			class Effects
 			{
 				titleType="TEXT";
-				title="WARNING!! ""The is a Safe Zone, Obey the Rules of a Safe Zone or we will force it on you."" ";
+				title="WARNING!! ""Thia is a Safe Zone, please obey the Rules of a Safe Zone"". ";
 			};
 		};
 		class Item3
@@ -74645,7 +74726,7 @@ class Mission
 			class Effects
 			{
 				titleType="TEXT";
-				title="WARNING!! ""Kavala Market is a Safe Zone, Obey the Rules of a Safe Zone or we will force it on you."" ";
+				title="WARNING!! ""Kavala Market is a Safe Zone, please obey the rules"" ";
 			};
 		};
 		class Item4
@@ -74664,7 +74745,7 @@ class Mission
 			class Effects
 			{
 				titleType="TEXT";
-				title="WARNING!! ""Police H.Q. is a Safe Zone. Only Police are allowed here, You have 20 seconds to leave or you will be arrested on site.!!""";
+				title="WARNING!! ""Police H.Q. is a Safe Zone. Only Police are allowed here, You have 20 seconds to leave or you will be arrested on site""";
 			};
 		};
 		class Item5
@@ -74683,7 +74764,7 @@ class Mission
 			class Effects
 			{
 				titleType="TEXT";
-				title="WARNING!! ""Police H.Q. is a Safe Zone. Only Police are allowed here, You have 20 seconds to leave or you will be arrested on site.!!""";
+				title="WARNING!! ""Police H.Q. is a Safe Zone. Only Police are allowed here, You have 20 seconds to leave or you will be arrested on site!""";
 			};
 		};
 		class Item6
@@ -74702,7 +74783,7 @@ class Mission
 			class Effects
 			{
 				titleType="TEXT";
-				title="WARNING!! ""Police H.Q. is a Safe Zone. Only Police are allowed here, You have 20 seconds to leave or you will be arrested on site.!!""";
+				title="WARNING!! ""Police H.Q. is a Safe Zone. Only Police are allowed here, You have 20 seconds to leave or you will be arrested on site""";
 			};
 		};
 		class Item7
@@ -74721,7 +74802,7 @@ class Mission
 			class Effects
 			{
 				titleType="TEXT";
-				title="WARNING!! ""Police H.Q. is a Safe Zone. Only Police are allowed here, You have 20 seconds to leave or you will be arrested on site.!!""";
+				title="WARNING!! ""Police H.Q. is a Safe Zone. Only Police are allowed here, You have 20 seconds to leave or you will be arrested on site""";
 			};
 		};
 		class Item8
@@ -74740,7 +74821,7 @@ class Mission
 			class Effects
 			{
 				titleType="TEXT";
-				title="WARNING!! ""Hospital's are Safe Zone's. Please obey the rules of Safe Zones. Do not enter if you are in active RP.""";
+				title="WARNING!! ""Hospital's are Safe Zone's. Please obey the rules. Do not enter if you are in active RP.""";
 			};
 		};
 		class Item9
@@ -74759,7 +74840,7 @@ class Mission
 			class Effects
 			{
 				titleType="TEXT";
-				title="WARNING!! ""Hospital's are Safe Zone's. Please obey the rules of Safe Zones. Do not enter if you are in active RP.""";
+				title="WARNING!! ""Hospital's are Safe Zone's. Please obey the rules. Do not enter if you are in active RP""";
 			};
 		};
 		class Item10
@@ -74767,7 +74848,7 @@ class Mission
 			position[]={14595.631,17.91,16646.279};
 			a=30;
 			b=30;
-			angle=-135.47583;
+			angle=-135.476;
 			rectangular=1;
 			activationBy="CIV";
 			repeating=1;
@@ -74778,7 +74859,7 @@ class Mission
 			class Effects
 			{
 				titleType="TEXT";
-				title="WARNING!! ""Hospital's are Safe Zone's. Please obey the rules of Safe Zones. Do not enter if you are in active RP.""";
+				title="WARNING!! ""Hospital's are Safe Zone's. Please obey the rules. Do not enter if you are in active RP""";
 			};
 		};
 		class Item11
@@ -75005,22 +75086,18 @@ class Mission
 		};
 		class Item24
 		{
-			position[]={0,0.11106784,0};
-			type="ERROR";
+			position[]={3145.1216,48.151005,13172.364};
+			a=105;
+			b=100;
+			rectangular=1;
+			activationBy="ANY";
+			repeating=1;
+			interruptable=1;
 			age="UNKNOWN";
-			expCond="if ((cba_events_keypressed + 10) < time) then { call cba_events_fnc_attach_handler }";
 			class Effects
 			{
-			};
-		};
-		class Item25
-		{
-			position[]={0,0.11106784,0};
-			type="ERROR";
-			age="UNKNOWN";
-			expCond="call cba_common_fnc_monitorFrameRender";
-			class Effects
-			{
+				titleType="TEXT";
+				title="Kavala Castle is a National Heritage site. This is private property. No trespassing permitted. Trespassers will be prosecuted.";
 			};
 		};
 	};
