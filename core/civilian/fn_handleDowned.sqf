@@ -43,8 +43,8 @@ if(_shooter isKindOf "Man" && alive player) then
 		};
 		_cP = 1;
 
-		while(true) do {
-			if((_cP >= 60) OR ((player getVariable "restrained")==true)) exitWith{};
+		while {true} do {
+			if ((_cP >= 60) OR ((player getVariable "restrained")==true)) exitWith{};
 			hint format["P: %1",_cP];
 			sleep 1;
 			_cP = _cP + 1;
