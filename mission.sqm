@@ -19737,7 +19737,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Billboard_F";
 			skill=0.60000002;
-			init="his allowDamage false; this enableSimulation false; this setObjectTexture [0, """"]";
+			init="this allowDamage false; this enableSimulation false; this setObjectTexture [0, ""images\lottery.jpg""]";
 		};
 		class Item1397
 		{
@@ -22262,7 +22262,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Billboard_F";
 			skill=0.60000002;
-			init="his allowDamage false; this enableSimulation false; his allowDamage false; this enableSimulation false; this setObjectTexture [0, ""images\checkpoint.jpg""]";
+			init="this allowDamage false; this enableSimulation false; this setObjectTexture [0, ""images\checkpoint.jpg""]";
 		};
 		class Item1674
 		{
@@ -22272,7 +22272,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Billboard_F";
 			skill=0.60000002;
-			init="his allowDamage false; this enableSimulation false; this setObjectTexture [0, """"]";
+			init="this allowDamage false; this enableSimulation false; this setObjectTexture [0, ""images\lottery.jpg""]";
 		};
 		class Item1675
 		{
@@ -22282,7 +22282,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Billboard_F";
 			skill=0.60000002;
-			init="his allowDamage false; this enableSimulation false; this setObjectTexture [0, """"]";
+			init="this allowDamage false; this enableSimulation false; this setObjectTexture [0, ""images\lottery.jpg""]";
 		};
 		class Item1676
 		{
@@ -59736,7 +59736,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Billboard_F";
 			skill=0.60000002;
-			init="his allowDamage false; this enableSimulation false; this setObjectTexture [0, ""images\checkpoint.jpg""]";
+			init="this allowDamage false; this enableSimulation false; this setObjectTexture [0, ""images\checkpoint.jpg""]";
 		};
 		class Item5510
 		{
@@ -59746,7 +59746,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Billboard_F";
 			skill=0.60000002;
-			init="his allowDamage false; this enableSimulation false; this setObjectTexture [0, ""images\checkpoint.jpg""]";
+			init="this allowDamage false; this enableSimulation false; this setObjectTexture [0, ""images\checkpoint.jpg""]";
 		};
 		class Item5511
 		{
@@ -59756,7 +59756,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Billboard_F";
 			skill=0.60000002;
-			init="his allowDamage false; this enableSimulation false; this setObjectTexture [0, ""images\checkpoint.jpg""]";
+			init="this allowDamage false; this enableSimulation false; this setObjectTexture [0, ""images\checkpoint.jpg""]";
 		};
 		class Item5512
 		{
@@ -59776,7 +59776,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Billboard_F";
 			skill=0.60000002;
-			init="his allowDamage false; this enableSimulation false; this setObjectTexture [0, ""images\APD.jpg""]";
+			init="this allowDamage false; this enableSimulation false; this setObjectTexture [0, ""images\prologo.jpg""]";
 		};
 		class Item5514
 		{
@@ -72490,7 +72490,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Billboard_F";
 			skill=0.60000002;
-			init="this allowDamage false; this enableSimulation false; this setObjectTexture [0, ""images\APD.jpg""]";
+			init="this allowDamage false; this enableSimulation false; this setObjectTexture [0, ""images\prologo.jpg""]";
 		};
 		class Item6774
 		{
@@ -72510,7 +72510,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Billboard_F";
 			skill=0.60000002;
-			init="this allowDamage false; this enableSimulation false; this setObjectTexture [0, ""images\APD.jpg""]";
+			init="this allowDamage false; this enableSimulation false; this setObjectTexture [0, ""images\prologo.jpg""]";
 		};
 		class Item6776
 		{
