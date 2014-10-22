@@ -220,10 +220,10 @@ life_illegal_items =
 	["kidney",5000],
 	["goldbar",10000],
 	["goldbarp",8000],
-	["kidney",10000],
 	["surgeryknife",8000],
 	["zipties",100],
 	["boltcutter",500],
+	["underwatercharge",8000],
 	["lockpicks",200]
 ];
 
