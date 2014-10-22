@@ -45,11 +45,11 @@ if(_shooter isKindOf "Man" && alive player) then
 
 		while {true} do {
 			if ((_cP >= 60) OR (player getVariable "restrained")) exitWith {};
-			hint format["P: %1",_cP]; 
+	
 			sleep 1;
 			_cP = _cP + 1;
 		};
-		hint format["RELEASE: %1",_cP];
+
 		disableUserInput false;
 		detach player;
 		life_isdowned = false;
