@@ -4,7 +4,7 @@
 	
 	Description: Downed state for rubber bullets
 */
-private["_unit","_shooter","_curWep","_curMags","_attach","_cP","_checkDowned"];
+private["_unit","_shooter","_curWep","_curMags","_attach","_cP"];
 _unit = [_this,0,Objnull,[Objnull]] call BIS_fnc_param;
 _shooter = [_this,1,Objnull,[Objnull]] call BIS_fnc_param;
 if(isNull _unit OR isNull _shooter) exitWith {player allowDamage true; life_isdowned = false;};
@@ -42,21 +42,17 @@ if(_shooter isKindOf "Man" && alive player) then
 			[[player,"AinjPpneMstpSnonWrflDnon"],"life_fnc_animSync",true,false] spawn life_fnc_MP;
 		};
 		_cP = 1;
-		_checkDowned = true;
-		while(_checkDowned) do {
+
+		while(!(_cP> 60) OR !(player getVariable "restrained")) do {
 			hint format["P: %1",_cP];
-			if(_cP >= 60 OR ((player getVariable "restrained") == true)) exitWith {
-				hint format["RELEASE: %1",_cP];
-				disableUserInput false;
-				detach player;
-				life_isdowned = false;
-				player allowDamage true;
-				_checkDowned = false;
-			} else {
-				sleep 1;
-				_cP = _cP + 1;
-			};
+			sleep 1;
+			_cP = _cP + 1;
 		};
+		hint format["RELEASE: %1",_cP];
+		disableUserInput false;
+		detach player;
+		life_isdowned = false;
+		player allowDamage true;
 		if (!(player getVariable "restrained")) then {
 			[[player,"amovppnemstpsraswrfldnon"],"life_fnc_animSync",true,false] spawn life_fnc_MP;
 		};
