@@ -46,6 +46,7 @@ life_is_arrested = true;
 
 removeAllWeapons player;
 {player removeMagazine _x} foreach (magazines player);
-
+diag_log "CALLING CLIENT fn_jailSys!";
 [[player,_bad],"life_fnc_jailSys",false,false] spawn life_fnc_MP;
 [5] call SOCK_fnc_updatePartial;
+diag_log "CALLING AFTER CLIENT fn_jailSys!";
