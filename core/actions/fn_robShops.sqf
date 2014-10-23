@@ -36,8 +36,6 @@ _rip = true;
 _kassa = 10000 + round(random 10000);
 _shop removeAction _action;
 _shop switchMove "AmovPercMstpSsurWnonDnon";
-_chance = random(100);
-if(_chance >= 50) then { hint "The cashier hit the silent alarm, police have been alerted!"; [[1,format["ALARM! - Store: %1 is being robbed!", _shop]],"life_fnc_broadcast",west,false] spawn life_fnc_MP; };
 disableSerialization;
 5 cutRsc ["life_progress","PLAIN"];
 _ui = uiNameSpace getVariable "life_progress";

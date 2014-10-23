@@ -384,6 +384,7 @@ class Life_Client_Core
 		class weed {};
 		class underwaterCharge {};
 		class CarAlarmSound {};
+		class scratchcard {};
 	};
 	
 	class Dialog_Controls

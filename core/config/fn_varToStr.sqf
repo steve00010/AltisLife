@@ -66,7 +66,7 @@ switch (_var) do
 	case "life_inv_kidney": {"Black Market Kidney"};
 	case "life_inv_surgeryknife": {"Surgery Knife"};
 	case "life_inv_zipties": {"Zipties"};
-	
+	case "life_inv_scratchcard": {"Scratch Card"};
 	
 	//License Block
 	case "license_civ_driver": {(localize "STR_License_Driver")};

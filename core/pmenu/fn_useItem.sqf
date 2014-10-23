@@ -127,6 +127,13 @@ switch (true) do
 			player setFatigue .5;
 		};
 	};
+	case (_item == "scratchcard"): 
+	{
+		if(([false,_item,1] call life_fnc_handleInv)) then
+		{
+			[] spawn life_fnc_scratchcard;
+		};
+	};
 	
 	default
 	{

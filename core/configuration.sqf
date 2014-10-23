@@ -170,7 +170,8 @@ life_inv_items =
 	"life_inv_underwatercharge",
 	"life_inv_kidney",
 	"life_inv_surgeryknife",
-	"life_inv_zipties"
+	"life_inv_zipties",
+	"life_inv_scratchcard"
 ];
 
 //Setup variable inv vars.
@@ -270,7 +271,8 @@ sell_array =
 	["goldbarp",95000],
 	["kidney",50000],
 	["surgeryknife",25000],
-	["zipties",2]
+	["zipties",200],
+	["scratchcard",2500]
 ];
 __CONST__(sell_array,sell_array);
 
@@ -304,7 +306,8 @@ buy_array =
 	["underwatercharge",40000],
 	["kidney",75000],
 	["surgeryknife",35000],
-	["zipties",100]
+	["zipties",100],
+	["scratchcard",5000]
 	
 ];
 __CONST__(buy_array,buy_array);

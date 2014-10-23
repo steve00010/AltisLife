@@ -70,6 +70,7 @@ switch (_mode) do
 			case "kidney": {"life_inv_kidney"};
 			case "surgeryknife": {"life_inv_surgeryknife"};
 			case "zipties": {"life_inv_zipties"};
+			case "scratchcard": { "life_inv_scratchcard"};
 		};
 	};
 	
@@ -129,8 +130,9 @@ switch (_mode) do
 			case "life_inv_goldbarp": {"goldbarp"};
 			case "life_inv_underwatercharge": {"underwatercharge"};
 			case "life_inv_kidney": {"kidney"};
-			case "surgeryknife": {"life_inv_surgeryknife"};
-			case "zipties": {"life_inv_zipties"};			
+			case "life_inv_surgeryknife": {"surgeryknife"};
+			case "life_inv_zipties": {"zipties"};		
+			case "life_inv_scratchcard": {"scratchcard"};				
 		};
 	};
 };

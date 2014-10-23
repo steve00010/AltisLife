@@ -60,5 +60,6 @@ switch (_item) do
 	case "goldbarp": {12};
 	case "kidney": {15};
 	case "surgeryknife": {5};
+	case "scratchcard": {1};
 	default {1};
 };
