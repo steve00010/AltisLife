@@ -24,7 +24,7 @@ if(count _ret > 0) then {
 	};
 	
 } else { 
-	life_bail_amount = 5001; 
+	life_bail_amount = 5000; 
 	_time = time + (15 * 60);
 };
 _esc = false;
