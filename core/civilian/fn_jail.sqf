@@ -47,7 +47,5 @@ life_is_arrested = true;
 removeAllWeapons player;
 {player removeMagazine _x} foreach (magazines player);
 
-_id = owner player;
-_ret = [player] call life_fnc_wantedPerson;
-[[_ret,_bad],"life_fnc_jailMe",_id,false] spawn life_fnc_MP;
+[[player,_bad],"life_fnc_jailSys",false,false] spawn life_fnc_MP;
 [5] call SOCK_fnc_updatePartial;

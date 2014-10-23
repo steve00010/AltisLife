@@ -78,7 +78,7 @@ if !(_hacklock) then
 
 while {true} do
 {
-waituntil{((_bannedwepsdetect) && ((currentWeapon player) in _bannedweps)) or ((_bannedvclsdetect) && ((TypeOf (vehicle player)) in _bannedvcls)) or (broadcast == 1) or ((_speedhackdetect) && !((vehicle player) in vehicles) && (round speed (vehicle player) > 30) && (alive player)) or ((_speedhackdetect) && ((vehicle player) in vehicles) && (round speed (vehicle player) > _maxspeed))};
+waitUntil{((_bannedwepsdetect) && ((currentWeapon player) in _bannedweps)) or ((_bannedvclsdetect) && ((TypeOf (vehicle player)) in _bannedvcls)) or (broadcast == 1) or ((_speedhackdetect) && !((vehicle player) in vehicles) && (round speed (vehicle player) > 30) && (alive player)) or ((_speedhackdetect) && ((vehicle player) in vehicles) && (round speed (vehicle player) > _maxspeed))};
 if ((_speedhackdetect) && !((vehicle player) in vehicles) && (round speed (vehicle player) > 30) && (alive player)) then
 	{
 	sleep 2;
