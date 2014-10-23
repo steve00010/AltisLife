@@ -27,4 +27,3 @@ if(life_is_arrested) then
 };
 player addRating 9999999;
 player enableFatigue false;
-[] execVM "core\welcome.sqf";
