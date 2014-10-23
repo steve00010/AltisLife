@@ -5,7 +5,7 @@
 	Description:
 	Starts the initial process of jailing.
 */
-private["_bad","_unit"]; //<-- Replace Old Line With This
+private["_bad","_unit","_id","_ret"]; //<-- Replace Old Line With This
 _unit = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param;
 hint format["%1", _unit];
 if(isNull _unit) exitWith {}; //Dafuq?
@@ -46,7 +46,8 @@ life_is_arrested = true;
 
 removeAllWeapons player;
 {player removeMagazine _x} foreach (magazines player);
-diag_log "CALLING CLIENT fn_jailSys!";
-[[player,_bad],"life_fnc_jailSys",false,false] spawn life_fnc_MP;
+
+_id = owner player;
+_ret = [player] call life_fnc_wantedPerson;
+[[_ret,_bad],"life_fnc_jailMe",_id,false] spawn life_fnc_MP;
 [5] call SOCK_fnc_updatePartial;
-diag_log "CALLING AFTER CLIENT fn_jailSys!";
