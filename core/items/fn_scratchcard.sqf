@@ -11,15 +11,15 @@ closeDialog 0;
 
 titleText["You scratch your card and...","PLAIN"];
 sleep 3;
-_winner = floor(random(10));
-if(_winner < 5) exitWith {
+_winner = floor(random(20));
+if(_winner < 16) exitWith {
 	titleText["Win nothing :( May as well go again!","PLAIN"];	
 };
-if(_winner == 5 OR _winner == 6) exitWith {
+if(_winner == 17) exitWith {
 	titleText["You win 5k! Well done on breaking even! Try again!","PLAIN"];
 	pbh_life_cash = pbh_life_cash + 5000;
 };
-if(_winner == 7 OR _winner == 8) exitWith {
+if(_winner == 18) exitWith {
 	titleText["You win 10k! Well done! Now buy two more tickets!","PLAIN"];
 	pbh_life_cash = pbh_life_cash + 10000;
 };
