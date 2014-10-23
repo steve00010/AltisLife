@@ -35,11 +35,11 @@ _bail = false;
 	life_canpay_bail = false;
 	if(_this select 0) then
 	{
-		sleep (10 * 60);
+		sleep (_time / 2);
 	}
 		else
 	{
-		sleep (5 * 60);
+		sleep (7.5 * 60);
 	};
 	life_canpay_bail = nil;
 };
