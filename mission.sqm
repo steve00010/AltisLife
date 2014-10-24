@@ -61297,7 +61297,7 @@ class Mission
 			vehicle="Land_Billboard_F";
 			leader=1;
 			skill=0.60000002;
-			init="this enableSimulation false; this allowDamage false;";
+			init="this allowDamage false; this enableSimulation false; this setObjectTexture [0, ""images\lottery.jpg""]";
 		};
 		class Item5664
 		{
@@ -62565,7 +62565,7 @@ class Mission
 			vehicle="Land_Billboard_F";
 			leader=1;
 			skill=0.60000002;
-			init="this enableSimulation false; this allowDamage false;";
+			init="this allowDamage false; this enableSimulation false; this setObjectTexture [0, ""images\lottery.jpg""]";
 		};
 		class Item5782
 		{
