@@ -337,6 +337,7 @@ switch(_shop) do
 						]
 					];
 				};
+				
 				if (!license_civ_rebel) then
 				{
 					
