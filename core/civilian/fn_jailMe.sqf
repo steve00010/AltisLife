@@ -16,7 +16,7 @@ if(count _ret > 0) then {
 		_time = time + (20*60);
 	} else {
 		if(life_bail_amount > 24999 && life_bail_amount < 50000) then  {
-			_time = time + (25*60);
+			_time = time + (26*60);
 		}
 		else {
 		_time = time +(30*60);
@@ -39,7 +39,7 @@ _bail = false;
 	}
 		else
 	{
-		sleep (7.5 * 60);
+		sleep (7 * 60);
 	};
 	life_canpay_bail = nil;
 };

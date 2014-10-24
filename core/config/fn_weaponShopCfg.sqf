@@ -307,32 +307,33 @@ switch(_shop) do
 			{
 				if (license_civ_rebel) then
 				{
-					
 					["Hideout Armament",
 						[
-							["hgun_Rook40_F",nil,10000],
-							["16Rnd_9x21_Mag",nil,75],
-							["hgun_Pistol_heavy_01_F",nil,10000],
-							["11Rnd_45ACP_Mag",nil,75],
-							["SMG_02_F",nil,25000],
-							["30Rnd_9x21_Mag",nil,200],
+							["hgun_Rook40_F",nil,0],
+							["hgun_PDW2000_Holo_F",nil,15000],
 							["SMG_01_F",nil,25000],
-							["30Rnd_45ACP_Mag_SMG_01",nil,200],
-							["arifle_MXC_ACO_F",nil,30000],
+							["16Rnd_9x21_Mag",nil,50],
+							["30Rnd_45ACP_Mag_SMG_01",nil,200],	
+							["hgun_Pistol_heavy_01_F",nil,1000],
+							["11Rnd_45ACP_Mag",nil,75],					
 							["30Rnd_65x39_caseless_mag",nil,300],
 							["arifle_TRG20_F",nil,25000],
+							["arifle_Mk20_F",nil,15000],
+							["arifle_TRG21_ACO_pointer_F",nil,25000],
 							["arifle_Katiba_F",nil,30000],
-							["srifle_DMR_01_F",nil,50000],
-							["optic_MRCO",nil,3000],
-							["optic_LRPS",nil,5000],
-							["optic_ACO_grn",nil,3500],
-							["optic_Holosight",nil,3600],
-							["acc_flashlight",nil,1000],
-							["optic_Hamr",nil,7500],
-							["optic_NVS",nil,7500],
 							["30Rnd_556x45_Stanag",nil,300],
-							["10Rnd_762x51_Mag",nil,500],
-							["30Rnd_65x39_caseless_green",nil,275]
+							["30Rnd_65x39_caseless_green",nil,275],
+							["7Rnd_408_Mag",nil,1000],
+							["20Rnd_762x51_Mag",nil,1000],
+							["NVGoggles",nil,2500],
+							["NVGoggles_INDEP",nil,2500],
+							["optic_MRCO",nil,3500],
+							["optic_Hamr",nil,3500],
+							["optic_Yorris",nil,3500],
+							["optic_ACO_grn",nil,3500],
+							["optic_Aco_smg",nil,3500],
+							["optic_NVS",nil,3500],
+							["acc_flashlight",nil,1000]	
 						]
 					];
 				};
