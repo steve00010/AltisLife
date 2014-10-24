@@ -35,7 +35,7 @@ life_god = false;
 life_frozen = false; 
 life_markers = false;
 life_fatigue = 0.5; //Set the max fatigue limit (50%)
-
+life_request_timer = false;
 
 //Persistent Saving
 __CONST__(life_save_civ,TRUE); //Save weapons for civs?
