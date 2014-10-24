@@ -74,6 +74,8 @@ switch (true) do
 		hint localize "STR_Jail_Paid";
 		serv_wanted_remove = [player];
 		player setPos (getMarkerPos "jail_release");
+		removeUniform player; //Add this line
+		player addUniform "U_C_Poor_1"; //Add this line
 		[[getPlayerUID player],"life_fnc_wantedRemove",false,false] spawn life_fnc_MP;
 		[5] call SOCK_fnc_updatePartial;
 	};
