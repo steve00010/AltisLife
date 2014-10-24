@@ -238,7 +238,7 @@ switch(_shop) do
 				
 				["Mohammed's Jihadi Shop",
 					[
-						["hgun_Rook40_F",nil,0],
+						["hgun_Rook40_F",nil,500],
 						["hgun_PDW2000_Holo_F",nil,15000],
 						["SMG_01_F",nil,25000],
 						["16Rnd_9x21_Mag",nil,50],
@@ -309,7 +309,7 @@ switch(_shop) do
 				{
 					["Hideout Armament",
 						[
-							["hgun_Rook40_F",nil,0],
+							["hgun_Rook40_F",nil,500],
 							["hgun_PDW2000_Holo_F",nil,15000],
 							["SMG_01_F",nil,25000],
 							["16Rnd_9x21_Mag",nil,50],
