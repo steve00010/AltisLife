@@ -46,6 +46,11 @@ life_is_arrested = true;
 
 removeAllWeapons player;
 {player removeMagazine _x} foreach (magazines player);
+//Lets add jail outfits
+removeUniform player; //Add line
+removeVest player;//Add line
+removeBackpack player;//Add line
+player addUniform "U_Rangemaster";//Add line
 
 [[player,_bad],"life_fnc_jailSys",false,false] spawn life_fnc_MP;
 [5] call SOCK_fnc_updatePartial;
