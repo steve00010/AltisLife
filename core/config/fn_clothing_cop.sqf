@@ -22,21 +22,21 @@ switch (_filter) do
 		if(__GETC__(life_coplevel) > 0) then
 		{
 			_ret pushBack ["U_B_Wetsuit",nil,0];
-			_ret pushBack ["U_Rangemaster","Marshall Uniform",0];
+			_ret pushBack ["U_Rangemaster","Marshall Uniform",5000];
 		};
 		
 		if(__GETC__(life_coplevel) > 2) then //corp only
 		{
-			_ret pushBack ["U_B_HeliPilotCoveralls","Pilot Uniform",nil,0];
+			_ret pushBack ["U_B_HeliPilotCoveralls","Pilot Uniform",nil,10000];
 		};
 		
 		if(__GETC__(life_coplevel) > 3) then //sergeant
 		{
-			_ret pushBack ["U_B_CombatUniform_mcam_worn","Senior Uniform",nil,0];
+			_ret pushBack ["U_B_CombatUniform_mcam_worn","Senior Uniform",nil,10000];
 		};
 		if(__GETC__(life_coplevel) > 4) then //Lieutenant
 		{
-			_ret pushBack ["U_B_GhillieSuit","Ghillie Suit",nil,0];
+			_ret pushBack ["U_B_GhillieSuit","Ghillie Suit",nil,15000];
 		};
 		
 	};
@@ -57,7 +57,7 @@ switch (_filter) do
 		};
 		if(__GETC__(life_coplevel) > 3) then //Sergeant
 		{
-			_ret pushBack ["H_CrewHelmetHeli_B","Gas Mask",0];
+			_ret pushBack ["H_CrewHelmetHeli_B","Gas Mask",15000];
 			_ret pushBack ["H_Beret_blk_POLICE","Police beret",0];
 			
 		};
@@ -89,11 +89,11 @@ switch (_filter) do
 	case 3:
 	{
 		_ret pushBack ["V_RebreatherB","Re-breather",0];
-		_ret pushBack ["V_TacVest_blk_POLICE","Tac Police Vest",0];
+		_ret pushBack ["V_TacVest_blk_POLICE","Tac Police Vest",10000];
 
 		if(__GETC__(life_coplevel) > 2) then //Corporal
 		{
-			_ret pushBack ["V_PlateCarrier1_blk","PlateCarrier",0];
+			_ret pushBack ["V_PlateCarrier1_blk","PlateCarrier",10000];
 
 		};
 	};
@@ -103,7 +103,7 @@ switch (_filter) do
 	{
 		_ret =
 		[
-			["B_Bergen_sgg","Bergen",0],
+			["B_Bergen_sgg","Bergen",5000],
 			["B_Carryall_cbr","Carryall",0]
 		];
 	};
