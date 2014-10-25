@@ -44,6 +44,6 @@ if ( (playerSide == independent) or (playerSide == west) ) then
 };
 if (playerSide == civilian) then {
 	if (uniform player == "U_C_WorkerCoveralls") then {
-		player setObjectTextureGlobal [0,"textures\uniforms\prisoner_uniform.paa"];
+		player setObjectTextureGlobal [0,"textures\uniforms\prisoner_uniform.jpg"];
 	};
 };
