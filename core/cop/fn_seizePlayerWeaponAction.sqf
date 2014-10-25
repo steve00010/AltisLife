@@ -7,6 +7,6 @@
 */
 removeAllWeapons player;
 [] call life_fnc_civFetchGear;
-[] call life_fnc_sessionUpdate; //Should make weapon remove persistent
+[] call SOCK_fnc_updateRequest; //Should make weapon remove persistent
 [] call life_fnc_civLoadGear;
 titleText["Your weapons were removed/confiscated.","PLAIN"];

@@ -128,3 +128,4 @@ switch (__GETC__(life_donator)) do
 };
 
 [] spawn life_fnc_fatigueReset;
+[] spawn life_fnc_autoSave;

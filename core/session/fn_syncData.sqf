@@ -31,7 +31,7 @@ if(playerside == west) then {  //THIS IS WHAT I ADDED
 	[] call life_fnc_saveGear;
 	};
 	
-[] call life_fnc_sessionUpdate;
+[] call SOCK_fnc_updateRequest;
 hint "Syncing player information to the server.\n\nPlease wait up to 20 seconds before leaving.";
 [] spawn
 {
