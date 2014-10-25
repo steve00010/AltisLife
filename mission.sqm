@@ -2548,7 +2548,7 @@ class Mission
 					side="WEST";
 					vehicle="B_RangeMaster_F";
 					skill=0.60000002;
-					init="this enableSimulation false;  this allowDamage false;  this addAction[""Helicopter Shop"",life_fnc_vehicleShopMenu,[""cop_air"",west,""cop_air_1"",""cop_air_1_1"",""cop"",""APD - Kavala District""]];  this addAction[""Vehicle Garage"",  {   [[getPlayerUID player,playerSide,""Air"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""cop_air_1"",""cop_air_1_1""; life_garage_type = ""Air"";  },"""",0,false,false,"""",'playerSide == west'];  this addAction[""Store vehicle in Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store']; this setObjectTexture [0,""textures\uniforms\Marshall_uniform.jpg""];";
+					init="this enableSimulation false;  this allowDamage false;  this addAction[""Helicopter Shop"",life_fnc_vehicleShopMenu,[""cop_air"",west,""cop_air_1"",""cop"",""APD - Kavala District""]];  this addAction[""Vehicle Garage"",  {   [[getPlayerUID player,playerSide,""Air"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""cop_air_1""; life_garage_type = ""Air"";  },"""",0,false,false,"""",'playerSide == west'];  this addAction[""Store vehicle in Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store']; this setObjectTexture [0,""textures\uniforms\Marshall_uniform.jpg""];";
 				};
 				class Item48
 				{
@@ -72600,7 +72600,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=273;
+		items=272;
 		class Item0
 		{
 			position[]={8459.6777,104.56568,25131.203};
@@ -73384,7 +73384,7 @@ class Mission
 		};
 		class Item99
 		{
-			position[]={3329.3494,2.299422,12968.327};
+			position[]={3329.4192,2.240397,12967.002};
 			name="cop_car_1";
 			type="Empty";
 			angle=-180.11734;
@@ -74770,13 +74770,6 @@ class Mission
 			type="c_ship";
 			colorName="ColorWhite";
 			angle=-51.482201;
-		};
-		class Item272
-		{
-			position[]={3186.1553,2,12892.425};
-			name="cop_air_1_1";
-			type="Empty";
-			angle=-264.47305;
 		};
 	};
 	class Sensors
