@@ -89,9 +89,9 @@ if(!isNull _killer && {_killer != _unit} && {side _killer != west} && {alive _ki
 if(side _killer == west && playerSide != west) then {
 	life_copRecieve = _killer;
 	//Did I rob the federal reserve?
-	if(!life_use_atm && {life_cash > 0}) then {
-		[format[localize "STR_Cop_RobberDead",[life_cash] call life_fnc_numberText],"life_fnc_broadcast",true,false] spawn life_fnc_MP;
-		life_cash = 0;
+	if(!life_use_atm && {pbh_life_cash > 0}) then {
+		[format[localize "STR_Cop_RobberDead",[pbh_life_cash] call life_fnc_numberText],"life_fnc_broadcast",true,false] spawn life_fnc_MP;
+		pbh_life_cash = 0;
 	};
 };
 
