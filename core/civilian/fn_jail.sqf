@@ -52,7 +52,7 @@ removeVest player;//Add line
 removeBackpack player;//Add line
 player addUniform "U_C_WorkerCoveralls";//Add line
 [[player,0,"textures\uniforms\prisoner_uniform.paa"],"life_fnc_setTexture",true,false] spawn life_fnc_MP;
-[] call SOCK_fnc_syncData;
+player setObjectTextureGlobal [0,"textures\uniforms\prisoner_uniform.paa"];
 
 [[player,_bad],"life_fnc_jailSys",false,false] spawn life_fnc_MP;
 [5] call SOCK_fnc_updatePartial;
