@@ -38,14 +38,14 @@ switch(playerSide) do
 };
 
 //Cleanup of weapon containers near the body & hide it.
-if(!isNull life_corpse) then {
+/*if(!isNull life_corpse) then {
 	private["_containers"];
 	life_corpse setVariable["Revive",TRUE,TRUE];
 	_containers = nearestObjects[life_corpse,["WeaponHolderSimulated"],5];
 	{deleteVehicle _x;} foreach _containers; //Delete the containers.
 	hideBody life_corpse;
 };
-
+*/
 //Destroy our camera...
 life_deathCamera cameraEffect ["TERMINATE","BACK"];
 camDestroy life_deathCamera;
