@@ -27,7 +27,7 @@ if(count _ret > 0) then {
 	life_bail_amount = 5000; 
 	_time = time + (15 * 60);
 };
-_esc = false;
+_esc = false; 
 _bail = false;
 
 [_bad] spawn
@@ -35,7 +35,17 @@ _bail = false;
 	life_canpay_bail = false;
 	if(_this select 0) then
 	{
-		sleep (_time * 0.5);
+		if(life_bail_amount < 25000) then {
+			_time = time + (20*30);
+		} else {
+			if(life_bail_amount > 24999 && life_bail_amount < 50000) then  {
+				_time = time + (26*30);
+			}
+			else {
+			_time = time +(30*30);
+			};
+		};
+		sleep _time;
 	}
 		else
 	{
