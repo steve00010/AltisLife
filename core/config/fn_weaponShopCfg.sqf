@@ -30,8 +30,8 @@ switch(_shop) do
 				
 				["Altis Cop Shop",
 					[
-						["arifle_sdar_F","Taser Rifle",0],
-						["20Rnd_556x45_UW_mag","Taser Rifle Magazine",0],
+						["arifle_TRG20_F","Taser Rifle",0],
+						["30Rnd_556x45_Stanag_Tracer_Red","Taser Rifle Magazine",0],
 						["hgun_P07_snds_F","Stun Pistol",0],
 						["16Rnd_9x21_Mag",nil,0],
 						["ItemGPS",nil,0],
