@@ -112,7 +112,7 @@ switch(_shop) do
 						["optic_Arco",nil,1000],
 						["optic_NVS",nil,1000],
 						["acc_pointer_IR",nil,0],
-						["B_IR_Grenade"],nil,1000],
+						["B_IR_Grenade",nil,1000],
 						["acc_flashlight",nil,0],
 						["SmokeShellBlue","Tear Gas Grenade",10000]
 					]
@@ -146,7 +146,7 @@ switch(_shop) do
 						["optic_SOS",nil,1000],
 						["acc_pointer_IR",nil,0],
 						["acc_flashlight",nil,0],
-						["B_IR_Grenade"],nil,1000],
+						["B_IR_Grenade",nil,1000],
 						["SmokeShellBlue","Tear Gas Grenade",10000],
 						["HandGrenade_Stone","Flashbang",10000]
 					]
@@ -186,7 +186,7 @@ switch(_shop) do
 						["optic_NVS",nil,1000],
 						["acc_pointer_IR",nil,0],
 						["acc_flashlight",nil,0],
-						["B_IR_Grenade"],nil,1000],
+						["B_IR_Grenade",nil,1000],
 						["SmokeShellBlue","Tear Gas Grenade",10000],
 						["HandGrenade_Stone","Flashbang",10000]
 					]
@@ -225,7 +225,7 @@ switch(_shop) do
 						["optic_DMS",nil,1000],
 						["acc_pointer_IR",nil,0],
 						["acc_flashlight",nil,0],
-						["B_IR_Grenade"],nil,1000],
+						["B_IR_Grenade",nil,1000],
 						["muzzle_snds_H",nil,25000],
 						["Rangefinder",nil,2000],
 						["SmokeShellBlue","Tear Gas Grenade",10000],
