@@ -63,13 +63,13 @@ _units = _units - [player];
 				//Cops
 				case(_x getVariable["rank", 0] > 0) : {
 					switch (_x getVariable["rank", 0]) do {
-						case (1) : {_name = format["Cadet %1", name _x];_icon = "images\ranks\PVT.png";};
-						case (2) : {_name = format["Officer %1", name _x];_icon = "images\ranks\PFC.png";};
-						case (3) : {_name = format["Corporal %1", name _x];_icon = "images\ranks\CPL.png";};					
-						case (4) : {_name = format["Sergeant %1", name _x];_icon = "images\ranks\SGT.png";};
-						case (5) : {_name = format["Lieutenant %1", name _x];_icon =  "images\ranks\1LT.png";};
-						case (6) : {_name = format["Captain %1", name _x];_icon =  "images\ranks\CPT.png";};
-						case (7) : {_name = format["Chief %1", name _x];_icon =  "images\ranks\GA.png";};
+						case (1) : {_name = format["Cadet %1", name _x];_icon = "images\ranks\PVT.jpg";};
+						case (2) : {_name = format["Officer %1", name _x];_icon = "images\ranks\PFC.jpg";};
+						case (3) : {_name = format["Corporal %1", name _x];_icon = "images\ranks\CPL.jpg";};					
+						case (4) : {_name = format["Sergeant %1", name _x];_icon = "images\ranks\SGT.jpg";};
+						case (5) : {_name = format["Lieutenant %1", name _x];_icon =  "images\ranks\1LT.jpg";};
+						case (6) : {_name = format["Captain %1", name _x];_icon =  "images\ranks\CPT.jpg";};
+						case (7) : {_name = format["Chief %1", name _x];_icon =  "images\ranks\GA.jpg";};
 						default {_name = name _x; _icon = ""; _width = 0; _height = 0;}
 					};
 					
