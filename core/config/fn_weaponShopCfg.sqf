@@ -84,7 +84,7 @@ switch(_shop) do
 						["optic_MRCO",nil,1000],
 						["optic_Arco",nil,1000],
 						["optic_NVS",nil,1000],
-						["B_IR_Grenade"],nil,1000],
+						["B_IR_Grenade",nil,1000],
 						["acc_flashlight",nil,0],
 						["acc_pointer_IR",nil,0]
 					]
