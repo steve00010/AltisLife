@@ -12,7 +12,7 @@ waitUntil {scriptDone _handle};
 player addbackpack "B_FieldPack_blk";
 player addUniform "U_Rangemaster";
 player addItem "ToolKit";
-player addItem "MedKit";
+player addItem "Medikit";
 player addItem "ItemMap";
 player assignItem "ItemMap";
 player addItem "ItemCompass";
