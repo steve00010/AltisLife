@@ -115,5 +115,5 @@ if(!isNull _source) then
 
 [] call life_fnc_hudUpdate;
 
-_damage
+_damage;
 

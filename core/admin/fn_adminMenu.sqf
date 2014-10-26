@@ -16,10 +16,10 @@ if(__GETC__(life_adminlevel) < 1) exitWith {closeDialog 0;};
 
 switch(__GETC__(life_adminlevel)) do
 {
-	case 1: {ctrlShow [2904,false];ctrlShow [2905,false];ctrlShow [2906,false];ctrlShow [2907,false];ctrlShow [2908,false];ctrlShow [2909,false];ctrlShow [2910,false];ctrlShow [2911,false];};
+	case 1: {ctrlShow [2904,false];ctrlShow [2906,false];ctrlShow [2907,false];ctrlShow [2908,false];ctrlShow [2909,false];ctrlShow [2911,false];};
 	case 2: {ctrlShow [2905,false];ctrlShow [2906,false];ctrlShow [2907,false];ctrlShow [2908,false];ctrlShow [2909,false];ctrlShow [2910,false];ctrlShow [2911,false];};
-	case 3: {ctrlShow [2907,false];ctrlShow [2908,false];ctrlShow [2909,false];ctrlShow [2910,false];ctrlShow [2911,false];};
-	case 4: {[2911,false];};
+	case 3: {ctrlShow [2908,false];ctrlShow [2911,false];ctrlShow [2906,false]};
+
 };
 
 //Purge List
