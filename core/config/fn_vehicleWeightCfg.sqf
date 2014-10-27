@@ -21,7 +21,7 @@ switch (_className) do
 	case "C_SUV_01_F": {90};
 	case "C_Van_01_transport_F": {180};
 	case "I_G_Van_01_transport_F": {180};
-	case "C_Van_01_box_F": {250};
+	case "C_Van_01_box_F": {200};
 	case "C_Boat_Civil_01_F": {200};
 	case "C_Boat_Civil_01_police_F": {100};
 	case "C_Boat_Civil_01_rescue_F": {200};
@@ -31,9 +31,9 @@ switch (_className) do
 	case "B_MRAP_01_F": {100};
 	case "O_MRAP_02_F": {150};
 	case "I_MRAP_03_F": {60};
-	case "B_Heli_Light_01_F": {50};
-	case "O_Heli_Light_02_unarmed_F": {150};
-	case "I_Heli_Transport_02_F": {250};
+	case "B_Heli_Light_01_F": {40};
+	case "O_Heli_Light_02_unarmed_F": {100};
+	case "I_Heli_Transport_02_F": {150};
 	case "C_Rubberboat": {85};
 	case "O_Boat_Armed_01_hmg_F": {175};
 	case "B_Boat_Armed_01_minigun_F": {175};
@@ -41,8 +41,12 @@ switch (_className) do
 	case "B_G_Boat_Transport_01_F": {45};
 	case "B_Boat_Transport_01_F": {45};
 	//New Below
-	case "O_Truck_03_transport_F": {500};
-	case "O_Truck_03_covered_F": {600};
+	case "O_Truck_02_covered_F", {375};
+	case "O_Truck_02_transport_F", {300};
+	case "O_Truck_03_transport_F": {425};
+	case "O_Truck_03_covered_F": {525};
+	case "B_Truck_01_transport_F": {600};
+	case "B_Truck_01_covered_F": {900};
 	case "O_Truck_03_device_F": {550};
 	case "B_Heli_Transport_01_F": {200}; // Ghosthawk
 	case "Land_CargoBox_V1_F": {5000};

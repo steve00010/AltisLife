@@ -71525,6 +71525,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_BarGate_F";
 			skill=0.60000002;
+			text="bargate8";
 		};
 		class Item6673
 		{
@@ -76508,7 +76509,7 @@ class Mission
 		};
 		class Item12
 		{
-			position[]={19856.078,62.778057,17895.051};
+			position[]={16133.079,58.60247,18323.998};
 			name="iron_1";
 			text="Iron Mine";
 			type="loc_Bunker";
@@ -78659,11 +78660,11 @@ class Mission
 	};
 	class Sensors
 	{
-		items=27;
+		items=28;
 		class Item0
 		{
 			position[]={13812.692,19.930712,18930.568};
-			a=15;
+			a=25;
 			b=5;
 			angle=46.695301;
 			rectangular=1;
@@ -78869,10 +78870,10 @@ class Mission
 		};
 		class Item11
 		{
-			position[]={3351.1282,2.1259408,12965.381};
-			a=15;
-			b=5;
-			angle=-47.124298;
+			position[]={3350.3191,2.1451049,12966.234};
+			a=30;
+			b=7;
+			angle=-34.958923;
 			rectangular=1;
 			activationBy="WEST";
 			repeating=1;
@@ -78887,7 +78888,7 @@ class Mission
 		class Item12
 		{
 			position[]={17492.838,13.318157,13198.359};
-			a=15;
+			a=25;
 			b=5;
 			angle=136.095;
 			rectangular=1;
@@ -79128,7 +79129,7 @@ class Mission
 		class Item26
 		{
 			position[]={17500.041,13.363752,13190.801};
-			a=15;
+			a=25;
 			b=5;
 			angle=136.095;
 			rectangular=1;
@@ -79139,6 +79140,24 @@ class Mission
 			name="Athira_1_1";
 			expActiv="bargate6 animate [""Door_1_rot"", 1];";
 			expDesactiv="bargate6 animate [""Door_1_rot"", 0];";
+			class Effects
+			{
+			};
+		};
+		class Item27
+		{
+			position[]={25806.65,21.636202,21440.26};
+			a=25;
+			b=5;
+			angle=228.021;
+			rectangular=1;
+			activationBy="WEST";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			name="Athira_1_2";
+			expActiv="bargate8 animate [""Door_1_rot"", 1];";
+			expDesactiv="bargate8 animate [""Door_1_rot"", 0];";
 			class Effects
 			{
 			};
