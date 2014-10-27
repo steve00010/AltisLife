@@ -64,7 +64,7 @@ _units = _units - [player];
 				case(_x getVariable["rank", 0] > 0) : {
 					switch (_x getVariable["rank", 0]) do {
 						case (1) : {_name = format["Cadet %1", name _x];_icon = "images\ranks\PVT.paa";};
-						case (2) : {_name = format["Officer %1", name _x];_icon = "images\ranks\PFC.paa";};
+						case (2) : {_name = format["Marshall %1", name _x];_icon = "images\ranks\PFC.paa";};
 						case (3) : {_name = format["Corporal %1", name _x];_icon = "images\ranks\CPL.paa";};					
 						case (4) : {_name = format["Sergeant %1", name _x];_icon = "images\ranks\SGT.paa";};
 						case (5) : {_name = format["Lieutenant %1", name _x];_icon =  "images\ranks\1LT.paa";};
