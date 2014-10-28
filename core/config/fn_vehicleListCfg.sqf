@@ -101,12 +101,12 @@ switch (_shop) do
 		
 		if(__GETC__(life_donator) > 3) then
 		{
-			_return set[count _return,["B_Truck_01_covered_F",900000]];	
+			_return set[count _return,["B_Truck_01_covered_F",800000]];	
 		};
 		
 		if(__GETC__(life_donator) > 4) then
 		{
-			_return set[count _return,["O_Truck_03_device_F",1500000]];
+			_return set[count _return,["O_Truck_03_device_F",1200000]];
 		};
 	};
 	
