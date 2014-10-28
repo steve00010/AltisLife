@@ -104,40 +104,6 @@ class CfgSounds
 		sound[] = {"\sounds\bag.ogg", 1.0, 1};
 		titles[] = {};
 	};
-  
-	class slot_spin
-	{
-		name = "slot_spin";
-		sound[] = {"\sounds\slot_spin.ogg", 1, 1};
-		titles[] = {1, ""};
-	};
-	
-	class slot_payoff
-	{
-		name = "slot_payoff";
-		sound[] = {"\sounds\slot_payoff.ogg", 1, 1};
-		titles[] = {1, ""};
-	};
-	
-	class Caching {
-		name = "caching";
-		sound[] = {"\sounds\caching.ogg", 1, 1};
-		titles[] = {};
-	};
-	
-	class slotspinsound
-	{
-		name = "slotspinSound";
-		sound[] = {"\sounds\slot_spin.ogg", 1.0, 1};
-		titles[] = {};
-	};
-	
-	class jackpotsound
-	{
-		name = "jackpotSound";
-		sound[] = {"\sounds\slot_payoff.ogg", 1.0, 1};
-		titles[] = {};
-	};
 	
 	class Patdown 
 	{
@@ -150,20 +116,6 @@ class CfgSounds
 	{
 		name = "flashbang";
 		sound[] = {"\sounds\flashbang.ogg", 1.0, 1};
-		titles[] = {};
-	};
-	
-	class empwarn
-	{
-		name = "empwarn";
-		sound[] = {"\sounds\empwarn.ogg", 1.0, 1};
-		titles[] = {};
-	};
-	
-	class empacsound
-	{
-		name = "empacsound";
-		sound[] = {"sounds\empac.ogg", db-5, 1};
 		titles[] = {};
 	};
 	

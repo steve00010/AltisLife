@@ -21,6 +21,6 @@ if(count (crew (_vehicle)) == 0) then {_vehicle setVariable["siren",false,true]}
 if(!alive _vehicle) exitWith {};
 if(isNull _vehicle) exitWith {};
 _vehicle say3D "EMS_Siren";
-sleep 4.7;
+sleep 11;
 if(!(_vehicle getVariable "siren")) exitWith {};
 };

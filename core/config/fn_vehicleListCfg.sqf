@@ -37,8 +37,8 @@ switch (_shop) do
 		if(__GETC__(life_mediclevel) > 2) then
 		{
 			_return = [
-				["B_Heli_Light_01_F",185000],
-				["O_Heli_Light_02_unarmed_F",350000]
+				["B_Heli_Light_01_F",125000],
+				["O_Heli_Light_02_unarmed_F",200000]
 			];
 		};
 	};
@@ -124,13 +124,13 @@ switch (_shop) do
 	{
 		_return =
 		[
-			["B_Heli_Light_01_F",300000],
-			["B_Heli_Light_01_armed_F",400000]
+			["B_Heli_Light_01_F",180000],
+			["B_Heli_Light_01_armed_F",300000]
 		];
 		
 		if(__GETC__(life_donator) > 1) then
 		{
-			_return set[count _return,["O_Heli_Light_02_F",750000]];
+			_return set[count _return,["O_Heli_Light_02_F",350000]];
 		};
 		
 		if(__GETC__(life_donator) > 4) then
@@ -179,12 +179,12 @@ switch (_shop) do
 	{
 		_return =
 		[
-			["B_Heli_Light_01_F",300000]
+			["B_Heli_Light_01_F",125000]
 		];
 		
 		if(__GETC__(life_donator) > 1) then
 		{
-			_return set[count _return,["O_Heli_Light_02_unarmed_F",750000]];
+			_return set[count _return,["O_Heli_Light_02_unarmed_F",350000]];
 		};
 		
 		if(__GETC__(life_donator) > 4) then
@@ -201,12 +201,12 @@ switch (_shop) do
 		};
 		if(__GETC__(life_donator) > 1) then
 		{
-			_return set[count _return,["O_Heli_Light_02_unarmed_F",360000]];
+			_return set[count _return,["O_Heli_Light_02_unarmed_F",300000]];
 		};
 		
 		if(__GETC__(life_donator) > 4) then
 		{
-			_return set[count _return,["B_Heli_Transport_01_F",750000]];
+			_return set[count _return,["B_Heli_Transport_01_F",2000000]];
 		};
 	};
 	
@@ -219,12 +219,12 @@ switch (_shop) do
 		
 		if(__GETC__(life_donator) > 1) then
 		{
-			_return set[count _return,["O_Heli_Light_02_unarmed_F",360000]];
+			_return set[count _return,["O_Heli_Light_02_unarmed_F",300000]];
 		};
 		
 		if(__GETC__(life_donator) > 4) then
 		{
-			_return set[count _return,["B_Heli_Transport_01_F",750000]];
+			_return set[count _return,["B_Heli_Transport_01_F",2000000]];
 		};
 	}; 
 	
