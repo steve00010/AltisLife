@@ -12,7 +12,6 @@ life_versionInfo = "Altis Life RPG v3.1.4.8";
 [] execVM "briefing.sqf"; //Load Briefing
 [] execVM "KRON_Strings.sqf";
 [] execVM "teargas.sqf";
-[] execVM "INSLimitedAdmin\initAH.sqf";
 [] execVM "scripts\fn_statusBar.sqf";
 [] execVM "nosidechat.sqf";
 
