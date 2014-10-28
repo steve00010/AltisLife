@@ -1009,8 +1009,8 @@
 			<Portuguese>Esse veículo é alugado e não pode ser armazenado na garagem.</Portuguese>
 		</Key>
 		<Key ID="STR_Garage_Store_NoOwnership">
-			<Original>That vehicle doesn't belong to you therefor you cannot store it in your garage.</Original>
-			<English>That vehicle doesn't belong to you therefor you cannot store it in your garage.</English>
+			<Original>That vehicle doesn't belong to you therefore you cannot store it in your garage.</Original>
+			<English>That vehicle doesn't belong to you therefore you cannot store it in your garage.</English>
 			<German>Das Fahrzeug gehört nicht dir und kann deshalb nicht in der Garage geparkt werden.</German>
 			<French>Ce véhicule ne vous appartient pas, vous ne pouvez pas le stocker dans votre garage.</French>
 			<Italian>Il veicolo non ti appartiene e quindi non puoi depositarlo nel tuo garage.</Italian>
