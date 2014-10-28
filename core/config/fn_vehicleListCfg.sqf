@@ -144,7 +144,7 @@ switch (_shop) do
 	{
 		_return =
 		[
-			["I_SDV_01_F",35000]
+			["I_SDV_01_F",30000]
 		];
 	};
 	
@@ -165,12 +165,12 @@ switch (_shop) do
 		if(__GETC__(life_coplevel) > 3) then
 		{
 			_return set[count _return,
-			["B_MRAP_01_F",250000]];
+			["B_MRAP_01_F",175000]];
 		};
 		if(__GETC__(life_coplevel) > 5) then
 		{
 			_return set[count _return,
-			["I_MRAP_03_F",400000]];
+			["I_MRAP_03_F",275000]];
 		};
 		
 	};
