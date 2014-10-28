@@ -101,6 +101,7 @@ switch (true) do
 	
 	case (alive player && !_esc && !_bail) :
 	{
+		serv_wanted_remove = [player];
 		life_is_arrested = false;
 		hint localize "STR_Jail_Released";
 		[[getPlayerUID player],"life_fnc_wantedRemove",false,false] spawn life_fnc_MP;
