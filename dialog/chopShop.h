@@ -80,7 +80,7 @@ class Life_Chop_Shop_v2
 			h = (1 / 25);
 		};
 		
-		class ClaimCar : life_RscButtonMenu 
+		class ClaimCar : Life_RscButtonMenu 
 		{
 			idc = 5809;
 			text = "$STR_Global_ChangeLocks";

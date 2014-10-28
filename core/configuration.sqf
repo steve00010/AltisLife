@@ -488,4 +488,4 @@ life_garage_chop =
 	["O_Truck_03_covered_F",450000],
 	["O_Truck_03_device_F",500000]
 ];
-__CONST__(life_garage_sell,life_garage_sell);
+__CONST__(life_garage_chop,life_garage_chop);
