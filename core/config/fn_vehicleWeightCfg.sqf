@@ -32,8 +32,8 @@ switch (_className) do
 	case "O_MRAP_02_F": {150};
 	case "I_MRAP_03_F": {60};
 	case "B_Heli_Light_01_F": {40};
-	case "O_Heli_Light_02_unarmed_F": {100};
-	case "I_Heli_Transport_02_F": {150};
+	case "O_Heli_Light_02_unarmed_F": {90};
+	case "I_Heli_Transport_02_F": {120};
 	case "C_Rubberboat": {85};
 	case "O_Boat_Armed_01_hmg_F": {175};
 	case "B_Boat_Armed_01_minigun_F": {175};
@@ -46,12 +46,14 @@ switch (_className) do
 	case "O_Truck_03_transport_F": {425};
 	case "O_Truck_03_covered_F": {525};
 	case "B_Truck_01_transport_F": {600};
-	case "B_Truck_01_covered_F": {900};
 	case "O_Truck_03_device_F": {550};
-	case "B_Heli_Transport_01_F": {200}; // Ghosthawk
+	case "O_Heli_Light_02_unarmed_F": {80}
+	case "B_Heli_Transport_01_F": {100};
+	case "B_Heli_Transport_01_camo_F": {100} // Ghosthawk
 	case "Land_CargoBox_V1_F": {3000};
 	case "B_SDV_01_F": {150};
 	case "I_SDV_01_F": {150};
+	case "B_Heli_Light_01_armed_F": {20}
 	case "B_G_Offroad_01_armed_F": {75};
 	case "I_Heli_light_03_unarmed_F": {200}; // Hellcat
 	case "Box_IND_Grenades_F": {350}; // Small Supply Crate
