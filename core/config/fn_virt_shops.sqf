@@ -25,6 +25,5 @@ switch (_shop) do
 	case "cop": {["Cop Item Shop",["donuts","coffee","spikeStrip","water","rabbit","apple","redgull","fuelF","defusekit"]]};
 	case "cement": {["Cement Dealer",["cement"]]};
 	case "gold": {["Gold Buyer",["goldbar","goldbarp"]]};
-	case "market": {["Altis Market",["water","rabbit","apple","redgull","tbacon","lockpick","pickaxe","fuelF","peach","boltcutter","underwatercharge","storagesmall","storagebig"]]};
 	case "organ": {["Organ Dealer",["kidney","surgeryknife"]]}; 
 };

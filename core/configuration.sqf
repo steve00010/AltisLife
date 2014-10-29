@@ -218,14 +218,14 @@ life_illegal_items =
 	["cocainep",3500],
 	["marijuana",2000],
 	["turtle",3000],
-	["blastingcharge",10000],
+	["blastingcharge",6000],
 	["kidney",5000],
-	["goldbar",10000],
+	["goldbar",8000],
 	["goldbarp",8000],
 	["surgeryknife",8000],
 	["zipties",100],
 	["boltcutter",500],
-	["underwatercharge",8000],
+	["underwatercharge",6000],
 	["lockpick",200]
 ];
 
