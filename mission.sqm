@@ -2900,7 +2900,7 @@ class Mission
 				{
 					position[]={19991.641,59.337658,11642.153};
 					azimut=-633.44812;
-					offsetY=0.5;
+					offsetY=0.1;
 					special="NONE";
 					id=162;
 					side="CIV";
