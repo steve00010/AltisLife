@@ -41,8 +41,8 @@ switch (_className) do
 	case "B_G_Boat_Transport_01_F": {45};
 	case "B_Boat_Transport_01_F": {45};
 	//New Below
-	case "O_Truck_02_covered_F", {375};
-	case "O_Truck_02_transport_F", {300};
+	case "O_Truck_02_covered_F": {375};
+	case "O_Truck_02_transport_F":{300};
 	case "O_Truck_03_transport_F": {425};
 	case "O_Truck_03_covered_F": {525};
 	case "B_Truck_01_transport_F": {600};
