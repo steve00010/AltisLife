@@ -14,7 +14,7 @@ switch (_className) do
 	case "B_G_Offroad_01_F": {100};
 	case "B_Quadbike_01_F": {60};
 	case "I_Truck_02_covered_F": {375}; // Zamak Covered
-	case "I_Truck_02_transport_F": {350}; // Zamak
+	case "I_Truck_02_transport_F": {325}; // Zamak
 	case "I_Truck_02_Box_F": {450}; // Zamak Box
 	case "C_Hatchback_01_F": {80};
 	case "C_Hatchback_01_sport_F": {85};
@@ -48,6 +48,7 @@ switch (_className) do
 	case "B_Truck_01_transport_F": {600};
 	case "O_Truck_03_device_F": {550};
 	case "O_Heli_Light_02_unarmed_F": {80};
+	case "O_Heli_Light_02_F": {80};
 	case "B_Heli_Transport_01_F": {100};
 	case "B_Heli_Transport_01_camo_F": {100}; // Ghosthawk
 	case "Land_CargoBox_V1_F": {3000};
