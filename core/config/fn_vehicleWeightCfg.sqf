@@ -13,7 +13,7 @@ switch (_className) do
 	case "C_Offroad_01_F": {100};
 	case "B_G_Offroad_01_F": {100};
 	case "B_Quadbike_01_F": {60};
-	case "I_Truck_02_covered_F": {400}; // Zamak Covered
+	case "I_Truck_02_covered_F": {375}; // Zamak Covered
 	case "I_Truck_02_transport_F": {350}; // Zamak
 	case "I_Truck_02_Box_F": {450}; // Zamak Box
 	case "C_Hatchback_01_F": {80};
@@ -42,7 +42,7 @@ switch (_className) do
 	case "B_Boat_Transport_01_F": {45};
 	//New Below
 	case "O_Truck_02_covered_F": {375};
-	case "O_Truck_02_transport_F":{300};
+	case "O_Truck_02_transport_F": {300};
 	case "O_Truck_03_transport_F": {425};
 	case "O_Truck_03_covered_F": {525};
 	case "B_Truck_01_transport_F": {600};
@@ -53,7 +53,7 @@ switch (_className) do
 	case "Land_CargoBox_V1_F": {3000};
 	case "B_SDV_01_F": {150};
 	case "I_SDV_01_F": {150};
-	case "B_Heli_Light_01_armed_F": {20}
+	case "B_Heli_Light_01_armed_F": {20};
 	case "B_G_Offroad_01_armed_F": {75};
 	case "I_Heli_light_03_unarmed_F": {200}; // Hellcat
 	case "Box_IND_Grenades_F": {350}; // Small Supply Crate
