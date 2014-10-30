@@ -27,16 +27,16 @@ switch (_filter) do
 		
 		if(__GETC__(life_coplevel) > 2) then //corp only
 		{
-			_ret pushBack ["U_B_HeliPilotCoveralls","Pilot Uniform",nil,10000];
+			_ret pushBack ["U_B_HeliPilotCoveralls","Pilot Uniform",10000];
 		};
 		
 		if(__GETC__(life_coplevel) > 3) then //sergeant
 		{
-			_ret pushBack ["U_B_CombatUniform_mcam_worn","Senior Uniform",nil,10000];
+			_ret pushBack ["U_B_CombatUniform_mcam_worn","Senior Uniform",10000];
 		};
 		if(__GETC__(life_coplevel) > 4) then //Lieutenant
 		{
-			_ret pushBack ["U_B_GhillieSuit","Ghillie Suit",nil,15000];
+			_ret pushBack ["U_B_GhillieSuit","Ghillie Suit",15000];
 		};
 		
 	};
