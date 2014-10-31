@@ -14,7 +14,7 @@ class Header
 {
 	gameType = RPG;
 	minPlayers = 1;
-	maxPlayers = 86;
+	maxPlayers = 85;
 };
 
 wreckLimit = 3;
