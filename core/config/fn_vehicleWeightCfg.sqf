@@ -47,8 +47,8 @@ switch (_className) do
 	case "O_Truck_03_covered_F": {525};
 	case "B_Truck_01_transport_F": {600};
 	case "O_Truck_03_device_F": {550};
-	case "O_Heli_Light_02_unarmed_F": {80};
-	case "O_Heli_Light_02_F": {80};
+	case "O_Heli_Light_02_unarmed_F": {60};
+	case "O_Heli_Light_02_F": {60};
 	case "B_Heli_Transport_01_F": {100};
 	case "B_Heli_Transport_01_camo_F": {100}; // Ghosthawk
 	case "Land_CargoBox_V1_F": {3000};
