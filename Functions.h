@@ -191,6 +191,7 @@ class Life_Client_Core
 		class smartphone {};
 		class newMsg {};
 		class showMsg {};
+		class cellphone2 {};
 	};
 	
 	class Functions
@@ -322,6 +323,7 @@ class Life_Client_Core
 		class seizeObjects {};                  
 		class seizePlayerWeapon {};           
 		class seizePlayerWeaponAction {};
+		class copOpener {};
 	};
 	
 	class Gangs

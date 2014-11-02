@@ -145,21 +145,20 @@ switch (_code) do
 	//Knock out, this is experimental and yeah...
 	case 34:
 	{
-		diag_log "fn_keyhandler - Key G pressed";
 		if(_shift) then {_handled = true;};
-		diag_log "fn_keyhandler - about to do something?";
 		if(_shift && playerSide == civilian && !isNull cursorTarget && cursorTarget isKindOf "Man" && isPlayer cursorTarget && alive cursorTarget && cursorTarget distance player < 4 && speed cursorTarget < 1) then
 		{
-			diag_log "fn_keyhandler - Got through stage one";
-			if((animationState cursorTarget) != "Incapacitated" && (currentWeapon player == primaryWeapon player OR currentWeapon player == handgunWeapon player) && currentWeapon player != "" && !life_knockout && !(player getVariable["restrained",false]) && !life_istazed) then
-			{
-				diag_log "fn_keyhandler - KNOCKOUT";
-				[cursorTarget] spawn life_fnc_knockoutAction;
+		if((animationState cursorTarget) != "Incapacitated" && (currentWeapon player == primaryWeapon player OR currentWeapon player == handgunWeapon player) && currentWeapon player != "" && !life_knockout && !(player getVariable["restrained",false]) && !life_istazed) then
+		{
+		[cursorTarget] spawn life_fnc_knockoutAction;
+		if("ItemRadio" in assignedItems cursorTarget) then {
+			cursorTarget removeweapon "ItemRadio";
+			hint "The cellphone of the person was placed on the ground.";
+			_defenceplace1 = "Item_ItemRadio" createVehicle (player modelToWorld[0,0,0]);}
+			else { hint "The person that you knock out have no cellphone!"};
 			};
 		};
-		
 	};
-
 	//T Key (Trunk)
 	case 20:
 	{

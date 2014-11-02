@@ -38,7 +38,8 @@ switch(_shop) do
 						["Binocular",nil,0],
 						["NVGoggles_OPFOR",nil,2500],
 						["ToolKit",nil,0],
-						["Medikit",nil,0]
+						["Medikit",nil,0],
+						["ItemRadio","SmartPhone",500]
 					]
 				];
 			};
@@ -59,7 +60,8 @@ switch(_shop) do
 						["ToolKit",nil,0],
 						["FirstAidKit",nil,0],
 						["Medikit",nil,0],
-						["NVGoggles",nil,2500]
+						["NVGoggles",nil,2500],
+						["ItemRadio","SmartPhone",500]
 					]
 				];
 			};
@@ -86,7 +88,8 @@ switch(_shop) do
 						["optic_NVS",nil,1000],
 						["B_IR_Grenade",nil,1000],
 						["acc_flashlight",nil,0],
-						["acc_pointer_IR",nil,0]
+						["acc_pointer_IR",nil,0],
+						["ItemRadio","SmartPhone",500]
 					]
 				];
 			};
@@ -271,7 +274,8 @@ switch(_shop) do
 						["optic_ACO_grn",nil,3500],
 						["optic_Aco_smg",nil,3500],
 						["optic_NVS",nil,3500],
-						["acc_flashlight",nil,1000]						
+						["acc_flashlight",nil,1000],
+						["ItemRadio","SmartPhone",500]						
 					]
 				];
 			};
@@ -300,7 +304,8 @@ switch(_shop) do
 						["20Rnd_556x45_UW_mag",nil,125],
 						["9Rnd_45ACP_Mag",nil,45],
 						["11Rnd_45ACP_Mag",nil,50],
-						["30Rnd_9x21_Mag",nil,75]
+						["30Rnd_9x21_Mag",nil,75],
+						["ItemRadio","SmartPhone",500]
 					]
 				];
 			};
@@ -340,7 +345,8 @@ switch(_shop) do
 						["optic_ACO_grn",nil,3500],
 						["optic_Aco_smg",nil,3500],
 						["optic_NVS",nil,3500],
-						["acc_flashlight",nil,1000]	
+						["acc_flashlight",nil,1000],
+						["ItemRadio","SmartPhone",500]
 					]
 				];
 			};
@@ -361,7 +367,8 @@ switch(_shop) do
 						["20Rnd_556x45_UW_mag",nil,125],
 						["9Rnd_45ACP_Mag",nil,45],
 						["11Rnd_45ACP_Mag",nil,50],
-						["30Rnd_9x21_Mag",nil,75]
+						["30Rnd_9x21_Mag",nil,75],
+						["ItemRadio","SmartPhone",500]
 					]
 				];
 			};
@@ -377,7 +384,8 @@ switch(_shop) do
 				["ItemGPS",nil,100],
 				["ToolKit",nil,250],
 				["FirstAidKit",nil,150],
-				["NVGoggles",nil,2500]
+				["NVGoggles",nil,2500],
+				["ItemRadio","SmartPhone",500]
 			]
 		];
 	};

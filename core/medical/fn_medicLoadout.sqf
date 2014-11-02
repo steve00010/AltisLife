@@ -21,6 +21,8 @@ player addItem "ItemWatch";
 player assignItem "ItemWatch";
 player addItem "ItemGPS";
 player assignItem "ItemGPS";
+player addItem "ItemRadio";
+player assignItem "ItemRadio";
 
 [[player,0,"textures\uniforms\medic_uniform.jpg"],"life_fnc_setTexture",true,false] spawn life_fnc_MP;
 
