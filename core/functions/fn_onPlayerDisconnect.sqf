@@ -18,7 +18,7 @@ if(alive player) then {
     _unit = objNull;
     while {_clientId == -1} do {
         {
-			if (getPlayerUID _x == _uid) exitWith {
+			if (getPlayerUID _x == _puid) exitWith {
                 _clientId = owner _x;
                 _unit = _x;
                 deleteVehicle _unit;
@@ -54,7 +54,7 @@ cleanNearItems = {
 			_player removeWeapon (handGunWeapon _player);
 
 			{
-				deleteVehicle _x
+				deleteVehicle _x;
 			} forEach nearestObjects [_player, ["GroundWeaponHolder"], 5];
 		};
 	};
