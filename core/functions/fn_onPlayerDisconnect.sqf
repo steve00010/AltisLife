@@ -11,24 +11,7 @@ _id = _this select 0;
 _pname = _this select 1; 
 _puid  = _this select 2;
 
-if(alive player) then {
-	deleteVehicle player;
-} else {
-	_clientId = -1;
-    _unit = objNull;
-    while {_clientId == -1} do {
-        {
-			if (getPlayerUID _x == _puid) exitWith {
-                _clientId = owner _x;
-                _unit = _x;
-                deleteVehicle _unit;
-            };
-        } forEach playableUnits;
-        sleep .02;
-    };
-    deleteVehicle _unit;
-	diag_log format["Player %1 has combat logged while dead.",_pname];
-};
+
 
 
 
@@ -56,6 +39,13 @@ cleanNearItems = {
 			{
 				deleteVehicle _x;
 			} forEach nearestObjects [_player, ["GroundWeaponHolder"], 5];
+			if(!(isNull player)) then {
+				deleteVehicle player;
+			} else {
+				deleteVehicle _player;
+				diag_log format["Player %1 has combat logged while dead.",_pname];
+			};
 		};
+		
 	};
 };
