@@ -6,11 +6,35 @@
 	Description:
 	Deletes Weapon Holders within 5m of the disconnecting player.
 */
+private ["_clientId","_unit"]; 
 _id = _this select 0; 
 _pname = _this select 1; 
 _puid  = _this select 2;
-deleteVehicle player;
+
+if(alive player) then {
+	deleteVehicle player;
+} else {
+	_clientId = -1;
+    _unit = objNull;
+    while {_clientId == -1} do {
+        {
+			if (getPlayerUID _x == _uid) exitWith {
+                _clientId = owner _x;
+                _unit = _x;
+                deleteVehicle _unit;
+            };
+        } forEach playableUnits;
+        sleep .02;
+    };
+    deleteVehicle _unit;
+	diag_log format["Player %1 has combat logged while dead.",_pname];
+};
+
+
+
 call cleanNearItems;
+
+
 
 cleanNearItems = {	
 	if (_pname != "__SERVER__") then {
