@@ -126,7 +126,7 @@ switch (_shop) do
 		[
 			["B_Heli_Light_01_F",180000],
 			["B_Heli_Light_01_armed_F",300000],
-			["O_Heli_Transport_04_bench_F"],3500000]
+			["O_Heli_Transport_04_bench_F",3500000]
 		];
 		
 		if(__GETC__(life_donator) > 1) then
