@@ -171,7 +171,6 @@ life_inv_items =
 	"life_inv_kidney",
 	"life_inv_surgeryknife",
 	"life_inv_zipties",
-	"life_inv_lockpick",
 	"life_inv_scratchcard"
 ];
 
