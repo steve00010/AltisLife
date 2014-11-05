@@ -324,6 +324,7 @@ class Life_Client_Core
 		class seizePlayerWeapon {};           
 		class seizePlayerWeaponAction {};
 		class copOpener {};
+		class breathalyzer {};
 	};
 	
 	class Gangs
@@ -388,6 +389,9 @@ class Life_Client_Core
 		class underwaterCharge {};
 		class CarAlarmSound {};
 		class scratchcard {};
+		class drinkbeer {};
+		class drinkmoonshine {};
+		class drinkwhiskey {};
 	};
 	
 	class Dialog_Controls

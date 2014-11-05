@@ -25,9 +25,13 @@ _itemInfo = switch (_type) do
 	case "marijuana": {["cannabis","marijuana",500,"Drying and Bagging Marijuana"]};
 	case "heroin": {["heroinu","heroinp",1720,"Processing Heroin"]};
 	case "cement": {["rock","cement",350,"Mixing Cement"]};
-	case "meth": {["methu","methp",550,"Cooking Meth"]};
-	case "krok": {["kroku","krokp",1500,"Mixing Krokodil"]};
-	case "cement": {["rock","cement",1350,"Mixing Cement"]};
+	case "mash": {["water","mash",100,"Mixing Grain Mash",true,"cornmeal"]};//new
+	case "whiskey": {["yeast","whiskey",300,"Fermenting Whiskey",true,"rye"]};//new
+	case "beer": {["yeast","beerp",250,"Brewing Beer",true,"hops"]};//new
+	case "moonshine": {["yeast","moonshine",250,"Moonshining",true,"mash"]};//new
+	case "bottledshine": {["moonshine","bottledshine",500,"Bootle Moonshine",true,"bottles"]};//new
+	case "bottledbeer": {["beerp","bottledbeer",500,"Bottle Beer",true,"bottles"]};//new
+	case "bottledwhiskey": {["whiskey","bottledwhiskey",500,"Bottle Whiskey",true,"bottles"]};//new
 	default {[]};
 };
 

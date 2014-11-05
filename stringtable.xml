@@ -5198,4 +5198,55 @@
 			<Original>Gold Scrap</Original>
 		</Key>
 	</Package>
+	    <Key ID="STR_Item_Cannabis">
+			<Original>Pot Plants</Original>
+			<English>Pot Plants</English>
+			<German>Marihuana-Pflanzen</German>
+			<French>Plants de marihuana</French>
+		</Key>
+		<Key ID="STR_Item_Rye">
+			<Original>Rye Plants</Original>
+		</Key>
+		<Key ID="STR_Item_Hops">
+			<Original>Hops</Original>
+		</Key>
+		<Key ID="STR_Item_Yeast">
+			<Original>Yeast</Original>
+		</Key>
+               <Key ID="STR_Gather_Rye">
+			<Original>Gather Rye</Original>
+			<English>Gather Rye</English>
+		</Key>
+		<Key ID="STR_Gather_Hops">
+			<Original>Pick Hops</Original>
+			<English>Pick Hops</English>
+		</Key>
+		<Key ID="STR_Gather_Yeast">
+			<Original>Gather Yeast</Original>
+			<English>Gather Yeast</English>
+		</Key>
+		<Key ID="STR_MISC_StPubIntox">
+			<Original>%1 has passed out drunk in public!</Original>
+			<English>%1 has passed out drunk in public!</English>
+			<German>%1 hat sich betrunken im öffentlichen bestanden!</German>
+		</Key>
+		<Key ID="STR_MISC_AlreadyDrinking">
+			<Original>You are already drinking some booze</Original>
+			<English>You are already drinking some booze</English>
+			<German>Du bist schon etwas trinken Alkohol</German>
+		</Key>
+		<Key ID="STR_MISC_WestIndNoNo">
+			<Original>No drinking on duty</Original>
+			<English>No drinking on duty</English>
+			<German>Kein Trinkwasser im Dienst</German>
+			<French>Pas boire pendant le travail</French>
+		</Key>
+		<Key ID="STR_MISC_DrunkBlackOut">
+			<Original>You have passed out</Original>
+			<English>You have passed out</English>
+		</Key>
+		<Key ID="STR_MISC_DrunkBlackOut1">
+			<Original>What the hell happened to me??</Original>
+			<English>What the hell happened to me??</English>
+		</Key>
 </Project>

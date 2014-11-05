@@ -190,6 +190,7 @@ switch(_shop) do
 						["acc_pointer_IR",nil,0],
 						["acc_flashlight",nil,0],
 						["B_IR_Grenade",nil,1000],
+						["Rangefinder",nil,2000],
 						["SmokeShellBlue","Tear Gas Grenade",10000],
 						["HandGrenade_Stone","Flashbang",10000]
 					]
@@ -333,6 +334,8 @@ switch(_shop) do
 						["arifle_Mk20_F",nil,15000],
 						["arifle_TRG21_ACO_pointer_F",nil,25000],
 						["arifle_Katiba_F",nil,30000],
+						["arifle_MXC_F",nil,30000],
+						["30Rnd_65x39_caseless_mag_Tracer",nil,300],
 						["30Rnd_556x45_Stanag",nil,300],
 						["30Rnd_65x39_caseless_green",nil,275],
 						["7Rnd_408_Mag",nil,1000],
@@ -343,9 +346,13 @@ switch(_shop) do
 						["optic_Hamr",nil,3500],
 						["optic_Yorris",nil,3500],
 						["optic_ACO_grn",nil,3500],
+						["optic_LRPS",nil,3500],
 						["optic_Aco_smg",nil,3500],
 						["optic_NVS",nil,3500],
+						["Rangefinder",nil,5000],
 						["acc_flashlight",nil,1000],
+						["B_IR_Grenade",nil,1500],
+						["FirstAidKit",nil,250],
 						["ItemRadio","SmartPhone",500]
 					]
 				];

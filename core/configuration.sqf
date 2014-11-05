@@ -36,6 +36,7 @@ life_frozen = false;
 life_markers = false;
 life_fatigue = 0.5; //Set the max fatigue limit (50%)
 life_request_timer = false;
+life_drink = 0;
 
 //Persistent Saving
 __CONST__(life_save_civ,TRUE); //Save weapons for civs?
@@ -171,7 +172,19 @@ life_inv_items =
 	"life_inv_kidney",
 	"life_inv_surgeryknife",
 	"life_inv_zipties",
-	"life_inv_scratchcard"
+	"life_inv_scratchcard",
+	"life_inv_cornmeal",
+	"life_inv_beerp",
+	"life_inv_whiskey",
+	"life_inv_rye",
+	"life_inv_hops",
+	"life_inv_yeast",
+	"life_inv_bottles",
+	"life_inv_bottledshine",
+	"life_inv_bottledbeer",
+	"life_inv_bottledwhiskey",
+	"life_inv_moonshine",
+	"life_inv_mash"
 ];
 
 //Setup variable inv vars.
@@ -201,7 +214,11 @@ life_licenses =
 	["license_civ_salt","civ"],
 	["license_civ_cement","civ"],
 	["license_med_air","med"],
-	["license_civ_home","civ"]
+	["license_civ_home","civ"],
+	["license_civ_stiller","civ"],
+	["license_civ_liquor","civ"],
+	["license_civ_bottler","civ"]
+
 ];
 
 //Setup License Variables
@@ -225,7 +242,11 @@ life_illegal_items =
 	["zipties",100],
 	["boltcutter",500],
 	["underwatercharge",6000],
-	["lockpick",200]
+	["lockpick",200],
+	["moonshine",9000],
+	["bottledshine",11000],
+	["mash",5000]
+
 ];
 
 
@@ -272,7 +293,19 @@ sell_array =
 	["kidney",50000],
 	["surgeryknife",25000],
 	["zipties",200],
-	["scratchcard",2500]
+	["scratchcard",2500],
+	["bottledshine",15000], 
+	["bottledwhiskey",11000], 
+	["bottledbeer",10000], 
+	["moonshine",7000], 
+	["whiskey",5000], 
+	["beerp",4500], 
+	["mash",2500], 
+	["rye",2000], 
+	["hops",1800], 
+	["yeast",2000], 
+	["cornmeal",200], 
+	["bottles",75]
 ];
 __CONST__(sell_array,sell_array);
 
@@ -307,7 +340,16 @@ buy_array =
 	["kidney",75000],
 	["surgeryknife",35000],
 	["zipties",100],
-	["scratchcard",5000]
+	["scratchcard",5000],
+	["bottledshine",12500], 
+	["bottledwhiskey",8000], 
+	["bottledbeer",8000], 
+	["moonshine",7500], 
+	["whiskey",5500], 
+	["beerp",5000], 
+	["cornmeal",500], 
+	["mash",2500], 
+	["bottles",100]
 	
 ];
 __CONST__(buy_array,buy_array);
