@@ -5,7 +5,7 @@
 	Description:
 	Master handling for processing an item.
 */
-private["_vendor","_type","_itemInfo","_oldItem","_newItem","_cost","_upp","_hasLicense","_itemName","_oldVal","_ui","_progress","_pgText","_cP"];
+private["_vendor","_type","_itemInfo","_oldItem","_newItem","_cost","_upp","_hasLicense","_itemName","_oldVal","_ui","_progress","_pgText","_cP","_oldVal2"];
 _vendor = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param;
 _type = [_this,3,"",[""]] call BIS_fnc_param;
 //Error check
@@ -43,14 +43,29 @@ _oldItem = _itemInfo select 0;
 _newItem = _itemInfo select 1;
 _cost = _itemInfo select 2;
 _upp = _itemInfo select 3;
+_2var = _itemInfo select 4;
+if(_2var) then { _oldItem2 = _itemInfo select 5;};  
 
-if(_vendor in [mari_processor,coke_processor,heroin_processor,krok_processor,meth_processor]) then {
+
+if(_vendor in [mari_processor,coke_processor,heroin_processor,meth_processor]) then {
 	_hasLicense = true;
 } else {
 	_hasLicense = missionNamespace getVariable (([_type,0] call life_fnc_licenseType) select 0);
 };
 _itemName = [([_newItem,0] call life_fnc_varHandle)] call life_fnc_varToStr;
 _oldVal = missionNamespace getVariable ([_oldItem,0] call life_fnc_varHandle);
+
+//2vars
+if(_2var) then { _oldVal2 = missionNamespace getVariable ([_oldItem2,0] call life_fnc_varHandle); }; 
+
+if(_2var) then { 
+       if(_oldVal !=_oldVal2) then {
+			if(_oldVal > _oldVal2) then {_error1 = true;};
+			if(_oldVal2 > _oldVal) then {_error2 = true;};
+       };   
+};
+if(_error1) exitWith{hint format["You have too much %1, you need equal amounts",_oldItem];};
+if(_error2) exitWith{hint format["You have too much %1, you need equal amounts",_oldItem2];};
 
 _cost = _cost * _oldVal;
 //Some more checks
@@ -81,11 +96,36 @@ if(_hasLicense) then
 		if(player distance _vendor > 10) exitWith {_ui = "osefStatusBar" call BIS_fnc_rscLayer;_ui cutRsc["osefStatusBar","PLAIN"];};
 	};
 	
-	if(player distance _vendor > 10) exitWith {hint "You need to stay within 10m to process."; 5 cutText ["","PLAIN"]; life_is_processing = false;_ui = "osefStatusBar" call BIS_fnc_rscLayer;_ui cutRsc["osefStatusBar","PLAIN"];};
-	if(!([false,_oldItem,_oldVal] call life_fnc_handleInv)) exitWith {5 cutText ["","PLAIN"]; life_is_processing = false;_ui = "osefStatusBar" call BIS_fnc_rscLayer;_ui cutRsc["osefStatusBar","PLAIN"];};
-	if(!([true,_newItem,_oldVal] call life_fnc_handleInv)) exitWith {5 cutText ["","PLAIN"]; [true,_oldItem,_oldVal] call life_fnc_handleInv; life_is_processing = false;_ui = "osefStatusBar" call BIS_fnc_rscLayer;_ui cutRsc["osefStatusBar","PLAIN"];};
-	5 cutText ["","PLAIN"];
-	titleText[format["You have processed %1 into %2",_oldVal,_itemName],"PLAIN"];
+	if(player distance _vendor > 10) exitWith {hint "You need to stay within 10m to process.";
+		5 cutText ["","PLAIN"];
+		life_is_processing = false;
+		_ui = "osefStatusBar" call BIS_fnc_rscLayer;
+		_ui cutRsc["osefStatusBar","PLAIN"];
+	};
+	if(!([false,_oldItem,_oldVal] call life_fnc_handleInv)) exitWith {
+		5 cutText ["","PLAIN"]; life_is_processing = false;
+		_ui = "osefStatusBar" call BIS_fnc_rscLayer;
+		_ui cutRsc["osefStatusBar","PLAIN"];
+	};
+	if(!([true,_newItem,_oldVal] call life_fnc_handleInv)) exitWith {
+		5 cutText ["","PLAIN"];
+		[true,_oldItem,_oldVal] call life_fnc_handleInv;
+		life_is_processing = false;
+		_ui = "osefStatusBar" call BIS_fnc_rscLayer;
+		_ui cutRsc["osefStatusBar","PLAIN"];
+	};
+	if(_2var) then 
+			{
+				
+				([false,_oldItem2,_oldVal2] call life_fnc_handleInv);
+				5 cutText ["","PLAIN"];
+				titleText[format["You have processed %1 and %2 into %3.",_oldItem,_oldItem2,_itemName],"PLAIN"];
+			} else
+			{
+				
+				5 cutText ["","PLAIN"];
+				titleText[format["You have processed %1 into %2.",_oldItem,_itemName],"PLAIN"];
+			};
 	life_is_processing = false;
 	_ui = "osefStatusBar" call BIS_fnc_rscLayer;_ui cutRsc["osefStatusBar","PLAIN"];
 }
@@ -105,10 +145,29 @@ if(_hasLicense) then
 	
 	if(player distance _vendor > 10) exitWith {hint "You need to stay within 10m to process."; 5 cutText ["","PLAIN"]; life_is_processing = false;_ui = "osefStatusBar" call BIS_fnc_rscLayer;_ui cutRsc["osefStatusBar","PLAIN"];};
 	if(pbh_life_cash < _cost) exitWith {hint format["You need $%1 to process  without a license!",[_cost] call life_fnc_numberText]; 5 cutText ["","PLAIN"]; life_is_processing = false;_ui = "osefStatusBar" call BIS_fnc_rscLayer;_ui cutRsc["osefStatusBar","PLAIN"];};
-	if(!([false,_oldItem,_oldVal] call life_fnc_handleInv)) exitWith {5 cutText ["","PLAIN"]; life_is_processing = false;_ui = "osefStatusBar" call BIS_fnc_rscLayer;_ui cutRsc["osefStatusBar","PLAIN"];};
-	if(!([true,_newItem,_oldVal] call life_fnc_handleInv)) exitWith {5 cutText ["","PLAIN"]; [true,_oldItem,_oldVal] call life_fnc_handleInv; life_is_processing = false;_ui = "osefStatusBar" call BIS_fnc_rscLayer;_ui cutRsc["osefStatusBar","PLAIN"];};
-	5 cutText ["","PLAIN"];
-	titleText[format["You have processed %1 into %2 for $%3",_oldVal,_itemName,[_cost] call life_fnc_numberText],"PLAIN"];
+	if(!([false,_oldItem,_oldVal] call life_fnc_handleInv)) exitWith {
+		5 cutText ["","PLAIN"]; life_is_processing = false;
+		_ui = "osefStatusBar" call BIS_fnc_rscLayer;
+		_ui cutRsc["osefStatusBar","PLAIN"];
+	};
+	if(!([true,_newItem,_oldVal] call life_fnc_handleInv)) exitWith {
+		5 cutText ["","PLAIN"]; [true,_oldItem,_oldVal] call life_fnc_handleInv;
+		life_is_processing = false;
+		_ui = "osefStatusBar" call BIS_fnc_rscLayer;
+		_ui cutRsc["osefStatusBar","PLAIN"];
+	};
+	if(_2var) then 
+			{
+				
+				([false,_oldItem2,_oldVal2] call life_fnc_handleInv);
+				5 cutText ["","PLAIN"];
+				titleText[format["You have processed %1 and %2 into %3 for %4.",_oldItem,_oldItem2,_itemName,[_cost] call life_fnc_numberText],"PLAIN"];
+			} else
+			{
+				
+				5 cutText ["","PLAIN"];
+				titleText[format["You have processed %1 into %2 for %3.",_oldVal,_itemName,[_cost] call life_fnc_numberText],"PLAIN"];
+			};
 	pbh_life_cash = pbh_life_cash - _cost;
 	life_is_processing = false;
 	_ui = "osefStatusBar" call BIS_fnc_rscLayer;_ui cutRsc["osefStatusBar","PLAIN"];
