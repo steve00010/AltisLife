@@ -16,7 +16,7 @@
 #define Btn9 37458
 #define Title 37401
 
-private["_display","_curTarget","_Btn1","_Btn2","_Btn3","_Btn4","_Btn5","_Btn6","_Btn7","Btn9"];
+private["_display","_curTarget","_Btn1","_Btn2","_Btn3","_Btn4","_Btn5","_Btn6","_Btn7","_Btn9"];
 if(!dialog) then {
 	createDialog "pInteraction_Menu";
 };
