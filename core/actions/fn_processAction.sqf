@@ -5,7 +5,7 @@
 	Description:
 	Master handling for processing an item.
 */
-private["_vendor","_type","_itemInfo","_oldItem","_newItem","_cost","_upp","_hasLicense","_itemName","_oldVal","_ui","_progress","_pgText","_cP","_oldVal2"];
+private["_vendor","_type","_error1","_error2","_itemInfo","_oldItem","_oldItem2","_newItem","_cost","_upp","_hasLicense","_itemName","_oldVal","_ui","_progress","_pgText","_cP","_oldVal2"];
 _vendor = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param;
 _type = [_this,3,"",[""]] call BIS_fnc_param;
 //Error check
@@ -47,7 +47,7 @@ _2var = _itemInfo select 4;
 if(_2var) then { _oldItem2 = _itemInfo select 5;};  
 
 
-if(_vendor in [mari_processor,coke_processor,heroin_processor,meth_processor]) then {
+if(_vendor in [mari_processor,coke_processor,heroin_processor]) then {
 	_hasLicense = true;
 } else {
 	_hasLicense = missionNamespace getVariable (([_type,0] call life_fnc_licenseType) select 0);
@@ -57,7 +57,8 @@ _oldVal = missionNamespace getVariable ([_oldItem,0] call life_fnc_varHandle);
 
 //2vars
 if(_2var) then { _oldVal2 = missionNamespace getVariable ([_oldItem2,0] call life_fnc_varHandle); }; 
-
+_error1 = false;
+_error2 = false;
 if(_2var) then { 
        if(_oldVal !=_oldVal2) then {
 			if(_oldVal > _oldVal2) then {_error1 = true;};
