@@ -4366,6 +4366,14 @@
 			<Italian>Menu d'interazione Giocatore</Italian>
 			<Portuguese>Menu de Interação do Jogador</Portuguese>
 		</Key>
+		<Key ID="STR_pInAct_Breathalyzer">
+			<Original>Breathalyser</Original>
+			<English>Breathalyser</English>
+			<German>Alkoholtest</German>
+			<French>Alkoholtest</French>
+			<Italian>Alkoholtest</Italian>
+			<Portuguese>Alkoholtest</Portuguese>
+		</Key>
 		<Key ID="STR_pInAct_PutInCar">
 			<Original>Put in vehicle</Original>
 			<English>Put in vehicle</English>
