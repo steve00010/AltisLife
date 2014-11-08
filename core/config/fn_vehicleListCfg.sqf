@@ -37,8 +37,8 @@ switch (_shop) do
 		if(__GETC__(life_mediclevel) > 2) then
 		{
 			_return = [
-				["B_Heli_Light_01_F",125000],
-				["O_Heli_Light_02_unarmed_F",200000]
+				["B_Heli_Light_01_F",200000],
+				["O_Heli_Light_02_unarmed_F",400000]
 			];
 		};
 	};
@@ -124,14 +124,14 @@ switch (_shop) do
 	{
 		_return =
 		[
-			["B_Heli_Light_01_F",180000],
-			["B_Heli_Light_01_armed_F",300000],
+			["B_Heli_Light_01_F",400000],
+			["B_Heli_Light_01_armed_F",500000],
 			["O_Heli_Transport_04_bench_F",3500000]
 		];
 		
 		if(__GETC__(life_donator) > 1) then
 		{
-			_return set[count _return,["O_Heli_Light_02_F",350000]];
+			_return set[count _return,["O_Heli_Light_02_F",600000]];
 		};
 		
 		if(__GETC__(life_donator) > 4) then
@@ -180,12 +180,12 @@ switch (_shop) do
 	{
 		_return =
 		[
-			["C_Heli_Light_01_civil_F",125000]
+			["C_Heli_Light_01_civil_F",300000]
 		];
 		
 		if(__GETC__(life_donator) > 1) then
 		{
-			_return set[count _return,["O_Heli_Light_02_unarmed_F",350000]];
+			_return set[count _return,["O_Heli_Light_02_unarmed_F",600000]];
 		};
 		
 		if(__GETC__(life_donator) > 4) then
@@ -198,12 +198,12 @@ switch (_shop) do
 	{
 		if(__GETC__(life_coplevel) > 2) then
 		{
-			_return set[count _return, ["B_Heli_Light_01_F",185000]];
+			_return set[count _return, ["B_Heli_Light_01_F",400000]];
 			_return set[count _return, ["B_Heli_Transport_03_unarmed_F",3500000]];
 		};
 		if(__GETC__(life_donator) > 1) then
 		{
-			_return set[count _return,["O_Heli_Light_02_unarmed_F",300000]];
+			_return set[count _return,["O_Heli_Light_02_unarmed_F",600000]];
 		};
 		
 		if(__GETC__(life_donator) > 4) then
@@ -216,13 +216,13 @@ switch (_shop) do
 	{
 		if(__GETC__(life_coplevel) > 2) then
 		{
-			_return set[count _return,["B_Heli_Light_01_F",185000]];
+			_return set[count _return,["B_Heli_Light_01_F",400000]];
 			_return set[count _return, ["B_Heli_Transport_03_unarmed_F",3500000]];
 		};
 		
 		if(__GETC__(life_donator) > 1) then
 		{
-			_return set[count _return,["O_Heli_Light_02_unarmed_F",300000]];
+			_return set[count _return,["O_Heli_Light_02_unarmed_F",600000]];
 		};
 		
 		if(__GETC__(life_donator) > 4) then
