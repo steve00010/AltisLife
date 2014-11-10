@@ -244,8 +244,7 @@ life_illegal_items =
 	["underwatercharge",6000],
 	["lockpick",200],
 	["moonshine",9000],
-	["bottledshine",11000],
-	["mash",5000]
+	["bottledshine",11000]
 
 ];
 
