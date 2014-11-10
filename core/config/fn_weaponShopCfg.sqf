@@ -73,7 +73,7 @@ switch(_shop) do
 		switch(true) do
 		{
 			case (playerSide != west): {"You are not a cop!"};
-			case (__GETC__(life_coplevel) < 2): {"You are not at the required rank of Marshall!"};
+			case (__GETC__(life_coplevel) < 2): {"You are not a Marshall!"};
 			default
 			{
 				
@@ -100,7 +100,7 @@ switch(_shop) do
 		switch(true) do
 		{
 			case (playerSide != west): {"You are not a cop!"};
-			case (__GETC__(life_coplevel) < 3): {"You are not at the required rank of Corporal!"};
+			case (__GETC__(life_coplevel) < 3): {"You are not a Corporal!"};
 			default
 			{
 				
@@ -129,7 +129,7 @@ switch(_shop) do
 		switch(true) do
 		{
 			case (playerSide != west): {"You are not a cop!"};
-			case (__GETC__(life_coplevel) < 4): {"You are not at the required rank of Sergeant!"};
+			case (__GETC__(life_coplevel) < 4): {"You are not a Sergeant!"};
 			default
 			{
 				
@@ -162,7 +162,7 @@ switch(_shop) do
 		switch(true) do
 		{
 			case (playerSide != west): {"You are not a cop!"};
-			case (__GETC__(life_coplevel) < 5): {"You are not at the required rank of Lieutenant!"};
+			case (__GETC__(life_coplevel) < 5): {"You are not a Lieutenant!"};
 			default
 			{
 				
@@ -176,6 +176,37 @@ switch(_shop) do
 						["30Rnd_65x39_caseless_mag",nil,0],
 						["30Rnd_65x39_caseless_mag_Tracer",nil,0],
 						["30Rnd_65x39_caseless_green",nil,0],
+						["optic_ACO_grn",nil,1000],
+						["optic_Holosight",nil,1000],
+						["optic_MRCO",nil,1000],
+						["optic_Holosight_smg",nil,1000],
+						["optic_SOS",nil,1000],
+						["optic_Arco",nil,1000],
+						["optic_NVS",nil,1000],
+						["acc_pointer_IR",nil,0],
+						["acc_flashlight",nil,0],
+						["B_IR_Grenade",nil,1000],
+						["Rangefinder",nil,2000],
+						["SmokeShellBlue","Tear Gas Grenade",10000]
+					]
+				];
+			};
+		};
+	};
+	
+	case "cop_swat":
+	{
+		switch(true) do
+		{
+			case (playerSide != west): {"You are not a cop!"};
+			case (__GETC__(life_swatlevel) < 1): {"You are not a member of the Swat team!"};
+			default
+			{
+				
+				["Altis Swat Shop",
+					[
+						["SMG_02_F",nil,10000],
+						["30Rnd_9x21_Mag",nil,20],
 						["srifle_LRR_SOS_F",nil,40000],
 						["7Rnd_408_Mag",nil,0],
 						["srifle_EBR_ARCO_pointer_F",nil,20000],
@@ -204,7 +235,7 @@ switch(_shop) do
 		switch(true) do
 		{
 			case (playerSide != west): {"You are not a cop!"};
-			case (__GETC__(life_coplevel) < 6): {"You are not at the required rank of Captain!"};
+			case (__GETC__(life_coplevel) < 6): {"You are not a Captain!"};
 			default
 			{
 				
@@ -245,7 +276,7 @@ switch(_shop) do
 		switch(true) do
 		{
 			case (playerSide != civilian): {"You are not a Rebel!"};
-			case (!license_civ_rebel): {"You don't have a Rebel training license!"};
+			case (!license_civ_rebel): {"You don't have a Rebel license!"};
 			default
 			{
 				
@@ -288,7 +319,7 @@ switch(_shop) do
 		switch(true) do
 		{
 			case (playerSide != civilian): {"You are not a civilian!"};
-			case (!license_civ_gun): {"You don't have a Firearms license!"};
+			case (!license_civ_gun): {"HAHA, get a license if you want to fire a Gun!"};
 			default
 			{
 				

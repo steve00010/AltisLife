@@ -24,7 +24,9 @@ switch (_filter) do
 			["U_O_OfficerUniform_ocamo","Officer",10000],
 			["U_O_GhillieSuit","Ghillie",40000],
 			["U_O_Wetsuit","Wetsuit",10000],
-			["U_IG_Guerilla1_1","Guerilla",0]
+			["U_IG_Guerilla1_1","Guerilla Smocks",2000],
+			["U_OG_Guerilla1_1","Guerilla Smocks 1",2000],
+			["U_BG_Guerilla1_1","Guerilla Smocks 2",2000]
 		];
 	};
 	
@@ -38,7 +40,8 @@ switch (_filter) do
 			["H_HelmetLeaderO_ocamo","Helmet Officer",2500],
 			["H_MilCap_oucamo","Military Cap",800],
 			["H_Bandanna_camo","Bandanna",650],
-			["H_CrewHelmetHeli_O","Crew Helmet",2500]
+			["H_CrewHelmetHeli_O","Crew Helmet",2500],
+			["H_PilotHelmetHeli_O","Pilot Helmet",2500]
 			
 		];
 	};
