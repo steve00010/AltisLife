@@ -34,6 +34,14 @@ switch (_filter) do
 		["U_C_Journalist","Journalist",7500],
 		["U_NikosBody","Jeans and Shirt",7500]
 		];
+		
+		if(__GETC__(life_donator) > 2) then
+		{
+		_return set[count _return,["U_I_Protagonist_VR","Tracksuit Green",30000],
+		["U_O_Protagonist_VR","Tracksuit Red",30000],
+		["U_B_Protagonist_VR","Tracksuit Blue",30000]
+
+		];
 	};
 	
 	//Hats
