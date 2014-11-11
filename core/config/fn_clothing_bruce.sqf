@@ -17,32 +17,28 @@ switch (_filter) do
 	//Uniforms
 	case 0:
 	{
-		[
-		["U_C_Poloshirt_blue","Poloshirt Blue",250],
-		["U_C_Poloshirt_burgundy","Poloshirt Burgundy",275],
-		["U_C_Poloshirt_redwhite","Poloshirt Red/White",150],
-		["U_C_Poloshirt_salmon","Poloshirt Salmon",175],
-		["U_C_Poloshirt_stripped","Poloshirt stripped",125],
-		["U_C_Poloshirt_tricolour","Poloshirt Tricolor",350],
-		["U_C_Poor_2","Rag tagged clothes",250],
-		["U_IG_Guerilla2_2","Green stripped shirt & Pants",650],
-		["U_IG_Guerilla3_1","Brown Jacket & Pants",735],
-		["U_IG_Guerilla2_3","The Outback Rangler",1200],
-		["U_C_HunterBody_grn","The Hunters Look",1500],
-		["U_OrestesBody","Surfing On Land",1100],
-		["U_NikosAgedBody","Casual Wears",5000],
-		["U_C_Journalist","Journalist",7500],
-		["U_NikosBody","Jeans and Shirt",7500]
-		];
+			["U_C_Poloshirt_blue","Poloshirt Blue",250];
+			["U_C_Poloshirt_burgundy","Poloshirt Burgundy",275];
+			["U_C_Poloshirt_redwhite","Poloshirt Red/White",150];
+			["U_C_Poloshirt_salmon","Poloshirt Salmon",175];
+			["U_C_Poloshirt_stripped","Poloshirt stripped",125];
+			["U_C_Poloshirt_tricolour","Poloshirt Tricolor",350];
+			["U_C_Poor_2","Rag tagged clothes",250];
+			["U_IG_Guerilla2_2","Green stripped shirt & Pants",650];
+			["U_IG_Guerilla3_1","Brown Jacket & Pants",735];
+			["U_IG_Guerilla2_3","The Outback Rangler",1200];
+			["U_C_HunterBody_grn","The Hunters Look",1500];
+			["U_OrestesBody","Surfing On Land",1100];
+			["U_NikosAgedBody","Casual Wears",5000];
+			["U_C_Journalist","Journalist",7500];
+			["U_NikosBody","Jeans and Shirt",7500];
 		
 		if(__GETC__(life_donator) > 2) then
 		{
-		[
-		["U_I_Protagonist_VR","Tracksuit Green",30000],
-		["U_O_Protagonist_VR","Tracksuit Red",30000],
-		["U_B_Protagonist_VR","Tracksuit Blue",30000]
-
-		];
+			["U_I_Protagonist_VR","Tracksuit Green",30000];
+			["U_O_Protagonist_VR","Tracksuit Red",30000];
+			["U_B_Protagonist_VR","Tracksuit Blue",30000]
+		};
 	};
 	
 	//Hats
