@@ -25,8 +25,8 @@ switch (_filter) do
 			["U_O_GhillieSuit","Ghillie",40000],
 			["U_O_Wetsuit","Wetsuit",10000],
 			["U_IG_Guerilla1_1","Guerilla Smocks",2000],
-			["U_OG_Guerilla1_1","Guerilla Smocks 1",2000],
-			["U_BG_Guerilla1_1","Guerilla Smocks 2",2000]
+			["U_OG_Guerilla2_2","Guerilla Smocks 1",2000],
+			["U_OG_Guerilla2_3","Guerilla Smocks 2",2000]
 		];
 	};
 	
