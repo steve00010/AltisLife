@@ -17,8 +17,8 @@ switch (_filter) do
 	//Uniforms
 	case 0:
 	{
-		if(__GETC__(life_donator) > 2) then
-		{
+		if(__GETC__(life_donator) > 2) then {
+		[
 			["U_C_Poloshirt_blue","Poloshirt Blue",250],
 			["U_C_Poloshirt_burgundy","Poloshirt Burgundy",275],
 			["U_C_Poloshirt_redwhite","Poloshirt Red/White",150],
@@ -37,8 +37,10 @@ switch (_filter) do
 			["U_I_Protagonist_VR","Tracksuit Green",30000],
 			["U_O_Protagonist_VR","Tracksuit Red",30000],
 			["U_B_Protagonist_VR","Tracksuit Blue",30000]
+		];
 		}
 		else {
+		[
 			["U_C_Poloshirt_blue","Poloshirt Blue",250],
 			["U_C_Poloshirt_burgundy","Poloshirt Burgundy",275],
 			["U_C_Poloshirt_redwhite","Poloshirt Red/White",150],
@@ -54,6 +56,7 @@ switch (_filter) do
 			["U_NikosAgedBody","Casual Wears",5000],
 			["U_C_Journalist","Journalist",7500],
 			["U_NikosBody","Jeans and Shirt",7500]
+		];
 		};
 	};
 	
