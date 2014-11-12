@@ -139,6 +139,12 @@ class CfgSounds
 		sound[] = {"\sounds\drink.ogg", 1.0, 1};
 		titles[] = {};
 	};
+	class introsong
+	{
+		name = introsong";
+		sound[] = {"\sounds\introsong.ogg", 1.0, 1};
+		titles[] = {};
+	};
 };
 
 class CfgDebriefing
