@@ -422,7 +422,11 @@ class Life_Client_Core
 		class safeGold {};
 		class goldTake {};
 	};
+	class IntroCam {
+		file="core";
+		class IntroCam {};
 	
+	}
 	class economy
 	{
 		file = "core\economy";
