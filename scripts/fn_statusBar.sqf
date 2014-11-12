@@ -13,12 +13,12 @@ systemChat format["[GL v3.1.4] Loading game server info...", _rscLayer];
 
 [] spawn {
 	sleep 5;
-	_counter = 180;
+	_counter = 360;
 	_timeSinceLastUpdate = 0;
 	while {true} do
 	{
 		sleep 1;
-		_counter = _counter - 1;
-		((uiNamespace getVariable "osefStatusBar")displayCtrl 1000)ctrlSetText format["Cops: %2 | Civs: %3 | Medics: %4 | BANK: %6 | GRIDREF: %7", round diag_fps, west countSide playableUnits, civilian countSide playableUnits, independent countSide playableUnits,[pbh_life_cash] call life_fnc_numberText,[pbh_life_atmcash] call life_fnc_numberText,mapGridPosition player, _counter];
+		_counter = (360-(round(serverTime/60)));
+		((uiNamespace getVariable "osefStatusBar")displayCtrl 1000)ctrlSetText format["Minutes left: %8 | Cops: %2 | Civs: %3 | Medics: %4 | BANK: %6 | GRIDREF: %7", round diag_fps, west countSide playableUnits, civilian countSide playableUnits, independent countSide playableUnits,[pbh_life_cash] call life_fnc_numberText,[pbh_life_atmcash] call life_fnc_numberText,mapGridPosition player, _counter];
 	}; 
 };
