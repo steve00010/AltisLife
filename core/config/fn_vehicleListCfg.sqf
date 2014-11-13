@@ -34,7 +34,7 @@ switch (_shop) do
 	{
 		_return = [];
 	
-		if(__GETC__(life_mediclevel) > 2) then
+		if(__GETC__(life_mediclevel) > 1) then
 		{
 			_return = [
 				["B_Heli_Light_01_F",200000],

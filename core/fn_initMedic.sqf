@@ -17,7 +17,7 @@ if((__GETC__(life_medicLevel)) < 1) exitWith {
 switch (__GETC__(life_medicLevel)) do 
 {
 	             case 1: {life_paycheck = life_paycheck + 200;}; // Rank 1
-	             case 3: {life_paycheck = life_paycheck + 400;}; // Rank 3
+	             case 2: {life_paycheck = life_paycheck + 400;}; // Rank 2
 	             case 5: {life_paycheck = life_paycheck + 600;}; // Rank 5 
 	           
 };
