@@ -59,7 +59,7 @@ switch (_className) do
 	case "O_Heli_Transport_04_bench_F": {140};//new chopper
 	case "C_Heli_Light_01_civil_F": {20}; // new chopper
 	case "B_G_Offroad_01_armed_F": {75};
-	case "I_Heli_light_03_unarmed_F": {200}; // Hellcat
+	case "I_Heli_light_03_F": {20}; // Hellcat
 	case "Box_IND_Grenades_F": {350}; // Small Supply Crate
 	case "B_supplyCrate_F": {700}; // Large Supply Crate
 	default {-1};

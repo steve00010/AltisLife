@@ -41,6 +41,14 @@ switch (_vehicle) do
 		];
 	};
 	
+	case "I_Heli_light_03_F":
+		{
+		_ret = 
+		[
+			["textures\vehicles\cop_hellcat.jpg","cop"]
+		];
+	};
+	
 	// GhostHawk
 	case "B_Heli_Transport_01_F":
 	{

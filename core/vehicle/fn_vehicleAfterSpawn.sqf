@@ -79,13 +79,6 @@ switch (_classname) do
          systemChat "Weapons removed.";
     };
 	
-	case "I_Heli_light_03_F":
-    {
-        //Remove ammo
-        _veh setVehicleAmmo 0;
-        
-         systemChat "Weapons removed.";
-    };
 	
 	case "B_Heli_Attack_01_F":
     {

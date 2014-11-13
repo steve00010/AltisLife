@@ -50,6 +50,15 @@ switch (_vehicle) do
 		};
 	};
 	
+	case "I_Heli_light_03_F":
+		{
+		switch (_index) do
+		{
+			case 0: {_color = "Cop"};
+
+		};
+	};
+	
 	case "B_Heli_Transport_01_F":
 	{
 		switch (_index) do
