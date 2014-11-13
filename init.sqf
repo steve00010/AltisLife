@@ -22,6 +22,12 @@ StartProgress = true;
 "BIS_fnc_MP_packet" addPublicVariableEventHandler {_this call life_fnc_MPexec};
 onPlayerDisconnected { [_id, _name, _uid] call compile preProcessFileLineNumbers "core\functions\fn_onPlayerDisconnect.sqf" };
 
+//For Rain and Fog Gone Below <----------- Here 
+while {true} do
+{
+	0 setFog 0;
+};
+
 MAC_fnc_switchMove = {
     private["_object","_anim"];
     _object = _this select 0;
