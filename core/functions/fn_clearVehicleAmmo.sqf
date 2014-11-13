@@ -16,7 +16,7 @@ if(_veh == "B_Boat_Armed_01_minigun_F") then
 };
 if(_veh == "I_Heli_light_03_F") then 
 {
-	_vehicle removeMagazinesTurret ["24Rnd_missiles",[0]];
+	_vehicle removeMagazinesTurret ["24Rnd_missiles",[-1]];
 };
 
 if(_veh == "O_Heli_Attack_02_black_F") then 
