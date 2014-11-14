@@ -23,10 +23,7 @@ StartProgress = true;
 onPlayerDisconnected { [_id, _name, _uid] call compile preProcessFileLineNumbers "core\functions\fn_onPlayerDisconnect.sqf" };
 
 //For Rain and Fog Gone Below <----------- Here 
-while {true} do
-{
-	0 setFog 0;
-};
+
 
 MAC_fnc_switchMove = {
     private["_object","_anim"];
@@ -35,4 +32,9 @@ MAC_fnc_switchMove = {
 
     _object switchMove _anim;
     
+};
+while {true} do
+{
+	sleep 100;
+	0 setFog 0;
 };
