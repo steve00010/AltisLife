@@ -518,7 +518,6 @@ life_garage_chop =
 	["B_MRAP_01_F",175000],
 	["O_MRAP_02_F",225000],
 	["I_MRAP_03_F",200000],
-	["I_Heli_light_03_F",200000],
 	["B_Heli_Light_01_F",90000],
 	["C_Heli_Light_01_civil_F",90000],
 	["B_Heli_Light_01_armed_F",200000],

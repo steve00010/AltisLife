@@ -76,7 +76,7 @@ switch (_vehicle) do
 			case 1: {_color = "Cop"};
 			case 2: {_color = "WRC"};
 			case 3: {_color = "RedBull"};
-			case 4: {_color = "Ghost"};
+			case 4: {_color = "Dayz"};
 		};
 	};
 	
