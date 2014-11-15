@@ -69,9 +69,9 @@ switch (_item) do
 	case "whiskey": {4};
 	case "beerp": {4};
 	case "moonshine": {5};
-	case "bottledwhiskey": {5};
-	case "bottledbeer": {5};
-	case "bottledshine": {5};
+	case "bottledwhiskey": {10};
+	case "bottledbeer": {10};
+	case "bottledshine": {10};
 	case "bottles": {1};
 	default {1};
 };

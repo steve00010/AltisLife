@@ -106,8 +106,8 @@ switch (playerSide) do
 	};
 	
 	case independent: {
-		pbh_life_atmcash = 12500;
-		life_paycheck = 400;
+		pbh_life_atmcash = 25000;
+		life_paycheck = 500;
 	};
 };
 
