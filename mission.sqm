@@ -84008,7 +84008,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=304;
+		items=305;
 		class Item0
 		{
 			position[]={8459.6777,104.56568,25131.203};
@@ -86446,6 +86446,18 @@ class Mission
 			text="Federal Reserve";
 			type="mil_box";
 			colorName="Color4_FD_F";
+		};
+		class Item304
+		{
+			position[]={15207.854,0.13460901,15183.85};
+			name="mrkGreen";
+			markerType="RECTANGLE";
+			type="Empty";
+			colorName="ColorGreen";
+			fillName="Border";
+			a=16000;
+			b=16000;
+			drawBorder=1;
 		};
 	};
 	class Sensors
