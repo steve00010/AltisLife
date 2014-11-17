@@ -60,7 +60,7 @@
 			<Italian>Annulla</Italian>
 			<Portuguese>Cancelar</Portuguese>
 		</Key> 
-		<Key ID="STR_Global_Deletes">
+		<Key ID="STR_Global_Delete">
 			<Original>Delete selected message</Original>
 			<English>Delete selected message</English>
 		</Key>
