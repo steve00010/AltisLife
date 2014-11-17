@@ -59,6 +59,10 @@
 			<French>Annulée</French>
 			<Italian>Annulla</Italian>
 			<Portuguese>Cancelar</Portuguese>
+		</Key> 
+		<Key ID="STR_Global_Deletes">
+			<Original>Delete selected message</Original>
+			<English>Delete selected message</English>
 		</Key>
 	</Package>
 	<Package name="Admin_Menu">

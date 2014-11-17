@@ -160,7 +160,7 @@ class Life_my_smartphone {
 		class DeleteButton : Life_RscButtonMenu {
 			idc = -1;
 			text = "$STR_Global_Delete";
-			onButtonClick = "[3] call life_fnc_smartphone;";
+			onButtonClick = "[(lbCurSel 88882)] call life_fnc_deleteMsg;";
 			x = -0.06 + (12.65 / 40) + (1 / 250 / (safezoneW / safezoneH));
 			y = 0.9 - (1 / 25);
 			w = (9.8 / 40);

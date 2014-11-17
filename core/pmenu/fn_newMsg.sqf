@@ -22,7 +22,7 @@ switch(_type) do
 	case 0:
 	{
 		life_smartphoneTarget = call compile format["%1",_playerData];
-		ctrlSetText[88886, format["Nachricht an: %1",name life_smartphoneTarget]];
+		ctrlSetText[88886, format["Message from: %1",name life_smartphoneTarget]];
 		if((__GETC__(life_adminlevel) < 1)) then
 		{
 			ctrlShow[888897,false];
