@@ -145,6 +145,12 @@ class CfgSounds
 		sound[] = {"\sounds\introsong.ogg", 1.0, 1};
 		titles[] = {};
 	};
+	class sms
+	{
+		name = "sms";
+		sound[] = {"\sounds\sms.ogg", 1.0, 1};
+		titles[] = {};
+	};
 };
 
 class CfgDebriefing
