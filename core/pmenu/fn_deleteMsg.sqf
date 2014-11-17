@@ -15,6 +15,6 @@ _cMessageList = _display displayCtrl 88882;
 _cMessageShow = _display displayCtrl 88887;
 _cMessageHeader = _display displayCtrl 88890;
 _data = call compile (_cMessageList lnbData[_index,0]);
-_msg = _data select 
-[[player,_msg],"GHB_fnc_cleanupMessages",false] spawn life_fnc_MP;
-lbDelete _index;
+_msg = _data select 2;
+[[player,_msg],"TON_fnc_removeMsg",false,false] spawn life_fnc_MP;
+_cMessageList lnbDeleteRow _index;
