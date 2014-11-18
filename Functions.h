@@ -193,6 +193,7 @@ class Life_Client_Core
 		class showMsg {};
 		class cellphone2 {};
 		class deleteMsg {};
+		class p_prisonbreak {};
 	};
 	
 	class Functions
@@ -241,6 +242,8 @@ class Life_Client_Core
 		class customUniforms{};
 		class stripDownPlayer {};
 		class fatigueReset {};
+		class prisonbreak {};
+		class progressBar {};
 	};
 	
 	class Network
