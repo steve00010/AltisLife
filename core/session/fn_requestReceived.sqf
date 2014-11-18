@@ -70,8 +70,9 @@ switch(playerSide) do {
 		__CONST__(life_coplevel, 0);
 		__CONST__(life_medicLevel, 0);
 		life_drug_level = _this select 10;
+		diag_log format["1 %1",_this select 11];
 		life_addiction = _this select 11;
-		
+		diag_log format["2 %1",life_addiction];
 		life_houses = _this select 12;
 		{
 			_house = nearestBuilding (call compile format["%1", _x select 0]);
@@ -91,7 +92,7 @@ switch(playerSide) do {
 	};
 };
 
-if(count (_this select 12) > 0) then {
+if(count (_this select 14) > 0) then {
 	{life_vehicles pushBack _x;} foreach (_this select 12);
 };
 
