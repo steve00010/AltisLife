@@ -150,7 +150,7 @@
 			_new = life_addiction select _i;
 			if (_new > 0) then
 			{
-				_new = _new - 0.02;
+				_new = _new - 0.04;
 				if (_new < 0) then { _new = 0; };
 				life_addiction set [_i, _new];
 				if (_new > 0 && (time - (life_used_drug select _i)) > 600) then
@@ -213,7 +213,7 @@
 									while {life_drug_withdrawl} do { 
 										if((time -  (life_used_drug select _dt)) < 600) exitWith {systemChat "Uggghhh that's the stuff!!"; };
 										resetCamShake; 
-										addCamShake [10, 16, 10];
+										addCamShake [6, 16, 6];
 										"DynamicBlur" ppEffectEnable true;    
 										"DynamicBlur" ppEffectAdjust [random 4];   
 										"DynamicBlur" ppEffectCommit 1;
