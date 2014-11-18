@@ -14,7 +14,7 @@ closeDialog 0;
 //Little hint then wait a litle before starting drugs effects
 hint "420 Blaze it!";
 sleep 3;
-
+[0] call life_fnc_drugManage;
 //Activate ppEffects we need
 "chromAberration" ppEffectEnable true;
 "radialBlur" ppEffectEnable true;
@@ -44,4 +44,3 @@ sleep 6;
 resetCamShake;
 
 [] call life_fnc_hudUpdate;
-[0] call life_fnc_drugManage;

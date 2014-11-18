@@ -164,7 +164,9 @@
 								addCamShake [2, 220, 1];
 								for "_i" from 0 to 55 do
 								{
-									if((time - (life_used_drug select _i)) < 600) exitWith {};
+									if((time - (life_used_drug select _i)) < 600) exitWith {
+										systemChat "Ooh much better!"; 
+									};
 									"DynamicBlur" ppEffectEnable true;    
 									"DynamicBlur" ppEffectAdjust [random 2];   
 									"DynamicBlur" ppEffectCommit 1;
@@ -181,7 +183,9 @@
 								addCamShake [3, 220, 3];
 								for "_i" from 0 to 55 do
 								{
-									if((time - (life_used_drug select _i)) < 600) exitWith {};
+									if((time - (life_used_drug select _i)) < 600) exitWith {
+										systemChat "You feel all warm inside!"; 
+									};
 									"DynamicBlur" ppEffectEnable true;    
 									"DynamicBlur" ppEffectAdjust [random 3];   
 									"DynamicBlur" ppEffectCommit 1;
@@ -197,12 +201,18 @@
 							if (!life_drug_withdrawl) then { 
 								[] spawn { 
 									while {life_drug_withdrawl} do { 
-										if((time - (life_used_drug select _i)) < 600) exitWith {};
+										if((time - (life_used_drug select _i)) < 600) exitWith {
+											systemChat "Uggghhh that's the stuff!!"; 
+										};
 										resetCamShake; 
 										addCamShake [10, 16, 10];
+										"DynamicBlur" ppEffectEnable true;    
+										"DynamicBlur" ppEffectAdjust [random 4];   
+										"DynamicBlur" ppEffectCommit 1;
 										sleep 3;
 									}; 
 								resetCamShake;
+								"DynamicBlur" ppEffectEnable false;
 								};
 							};
 							life_drug_withdrawl = true;
