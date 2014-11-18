@@ -160,13 +160,35 @@
 						case (_new > 0.4 && _new <= 0.6): { 
 							systemChat "Damn man you need to get high, you're starting to get the shakes."; 
 							resetCamShake;
-							addCamShake [3, 40, 5];
+							[] spawn { 
+								addCamShake [2, 220, 1];
+								for "_i" from 0 to 55 do
+								{
+									if((time - (life_used_drug select _i)) < 600) exitWith {};
+									"DynamicBlur" ppEffectEnable true;    
+									"DynamicBlur" ppEffectAdjust [random 2];   
+									"DynamicBlur" ppEffectCommit 1;
+									sleep 4;
+								};
+								"DynamicBlur" ppEffectEnable false;
+							};
 							life_drug_withdrawl = false; 
 						};
 						case (_new > 0.6 && _new <= 0.9): { 
 							systemChat "Aghh, you're reaaaallly needing a fix!"; 
 							resetCamShake;
-							addCamShake [4, 40, 7];
+							[] spawn { 
+								addCamShake [3, 220, 3];
+								for "_i" from 0 to 55 do
+								{
+									if((time - (life_used_drug select _i)) < 600) exitWith {};
+									"DynamicBlur" ppEffectEnable true;    
+									"DynamicBlur" ppEffectAdjust [random 3];   
+									"DynamicBlur" ppEffectCommit 1;
+									sleep 4;
+								};
+								"DynamicBlur" ppEffectEnable false;
+							};
 							life_drug_withdrawl = false; 
 						};
 						case (_new > 0.9):
@@ -175,9 +197,10 @@
 							if (!life_drug_withdrawl) then { 
 								[] spawn { 
 									while {life_drug_withdrawl} do { 
+										if((time - (life_used_drug select _i)) < 600) exitWith {};
 										resetCamShake; 
 										addCamShake [10, 16, 10];
-										sleep 15;
+										sleep 3;
 									}; 
 								resetCamShake;
 								};
