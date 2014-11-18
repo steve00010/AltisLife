@@ -77347,7 +77347,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Laptop_unfolded_F";
 			skill=0.60000002;
-			init="this enableSimulation false; this allowDamage false; this addAction[""Break out prisoner"",life_fnc_p_prisionbreak,""computer""];";
+			init="this enableSimulation false; this allowDamage false; this addAction[""Break out prisoner"",life_fnc_p_prisonbreak,""computer""];";
 		};
 		class Item7480
 		{
