@@ -8,7 +8,7 @@ _shop = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param;
 disableSerialization;
 if(player distance _shop > 2) exitWith {hint format ["You need to stay closer!"];};
 
-createDialog "life_prision_list";
+createDialog "life_prison_list";
 _display = findDisplay 8100;
 _list = _display displayCtrl 8101;
 lbClear _list;
