@@ -106,7 +106,11 @@ switch (playerSide) do
 	};
 	case civilian: 
 	{
+<<<<<<< HEAD
 		pbh_life_atmcash = 12500; //Starting Bank Money
+=======
+		pbh_life_atmcash = 50000; //Starting Bank Money
+>>>>>>> origin/master
 		life_paycheck = 400; //Paycheck Amount
 	};
 	
