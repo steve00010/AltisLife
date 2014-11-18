@@ -164,9 +164,9 @@ switch (_vehicle) do
 		switch (_index) do
 		{
 			case 0: {_color = "Black"};
-			case 1: {_color = "Civ Blue"};
-			case 2: {_color = "Civ Red"};
-			case 3: {_color = "Digi Green"};
+			case 1: {_color = "Digi Green"};
+			case 2: {_color = "Blue"};
+			case 3: {_color = "Red"};
 			case 4: {_color = "Blueline"};
 			case 5: {_color = "Elliptical"};
 			case 6: {_color = "Furious"};
@@ -214,13 +214,6 @@ switch (_vehicle) do
 		};
 	};
 	
-	case "I_MRAP_03_F":
-	{
-		switch (_index) do
-		{
-			case 0: {_color = "Cop"};
-		};
-	};
 	
 	case "C_Boat_Civil_01_police_F":
 	{	

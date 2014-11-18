@@ -166,10 +166,10 @@ switch (_vehicle) do
 	{
 		_ret = 
 		[
-			["\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_ion_co.paa","fed"],
-			["\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_blue_co.paa","civ"],
-			["\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_co.paa","civ"],
-			["\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_indp_co.paa","civ"],
+			["\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_ion_co.paa","Black","fed"],
+			["\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_indp_co.paa","Digi Green","civ"],
+			["\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_blue_co.paa","Blue","civ"],
+			["\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_co.paa","Red","civ"],
 			["\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_blueline_co.paa","civ"],
 			["\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_elliptical_co.paa","civ"],
 			["\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_furious_co.paa","civ"],
@@ -217,13 +217,6 @@ switch (_vehicle) do
 		];
 	};
 	
-	case "I_MRAP_03_F":
-	{
-		_ret = 
-		[
-			["Textures\vehicles\police_strider.jpg","cop"]
-		];
-	};
 	
 	case "C_Boat_Civil_01_police_F":
 	{
