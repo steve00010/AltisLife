@@ -152,7 +152,7 @@
 			_new = _new - 0.02;
 			if (_new < 0) then { _new = 0; };
 			life_addiction set [_i, _new];
-			if (_new > 0 && (time - (life_used_drug select _i)) > 10) then
+			if (_new > 0 && (time - (life_used_drug select _i)) > 600) then
 			{
 				switch (true) do
 				{
@@ -187,7 +187,7 @@
 			};
 		};
 	};
-	sleep 20;
+	sleep 240;
 	life_drug_level = life_drug_level - 0.5;
 	if (life_drug_level < 0) then { life_drug_level = 0; };
 };
