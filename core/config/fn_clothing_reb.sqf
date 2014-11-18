@@ -18,15 +18,15 @@ switch (_filter) do
 	case 0:
 	{
 		[
-			["U_O_SpecopsUniform_ocamo","SpecOP",10000],
+			["U_O_SpecopsUniform_ocamo","SpecOPCamo",10000],
 			["U_O_CombatUniform_oucamo","Combat",10000],
 			["U_O_PilotCoveralls","Pilot",10000],
 			["U_O_OfficerUniform_ocamo","Officer",10000],
 			["U_O_GhillieSuit","Ghillie",40000],
 			["U_O_Wetsuit","Wetsuit",10000],
 			["U_IG_Guerilla1_1","Guerilla Smocks",2000],
-			["U_OG_Guerilla2_2","Guerilla Smocks 1",2000],
-			["U_OG_Guerilla2_3","Guerilla Smocks 2",2000]
+			["U_I_G_Story_Protagonist_F","Guerilla Smocks 1",2000],
+			["U_IG_leader","Guerilla Smocks 2",2000]
 		];
 	};
 	
@@ -36,11 +36,15 @@ switch (_filter) do
 		[
 			["H_Shemag_olive","Shemag Olive",850],
 			["H_Shemag_khk","Shemag Kahki",800],
+			["H_Shemag_tan","Shemag Tan",800],
+			["H_ShemagOpen_tan"],"Shemag Open Tan",800],
 			["H_HelmetO_ocamo","Combat Helmet",2500],
 			["H_HelmetLeaderO_ocamo","Helmet Officer",2500],
 			["H_MilCap_oucamo","Military Cap",800],
-			["H_Bandanna_camo","Bandanna",650],
+			["H_Bandanna_camo","Bandanna Camo",650],
+			["H_BandMask_demon"],"Bandanna Demon",650],
 			["H_CrewHelmetHeli_O","Crew Helmet",2500],
+			["H_HelmetSpecO_blk","Spec Op Black",2500],
 			["H_PilotHelmetHeli_O","Pilot Helmet",2500]
 			
 		];
