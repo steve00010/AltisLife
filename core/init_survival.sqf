@@ -144,52 +144,54 @@
 [] spawn
 {
 	waitUntil { life_session_completed };
-	for "_i" from 0 to (count life_addiction)-1 do
-	{
-		_new = life_addiction select _i;
-		if (_new > 0) then
+	while{true} do {
+		for "_i" from 0 to (count life_addiction)-1 do
 		{
-			_new = _new - 0.02;
-			if (_new < 0) then { _new = 0; };
-			life_addiction set [_i, _new];
-			if (_new > 0 && (time - (life_used_drug select _i)) > 600) then
+			_new = life_addiction select _i;
+			if (_new > 0) then
 			{
-				switch (true) do
+				_new = _new - 0.02;
+				if (_new < 0) then { _new = 0; };
+				life_addiction set [_i, _new];
+				if (_new > 0 && (time - (life_used_drug select _i)) > 600) then
 				{
-					case (_new > 0.4): { 
-						systemChat "Damn man you need to get high, you're starting to get the shakes."; 
-						resetCamShake;
-						addCamShake [3, 40, 5];
-						life_drug_withdrawl = false; 
-					};
-					case (_new > 0.6): { 
-						systemChat "Aghh, you're reaaaallly needing a fix!"; 
-						resetCamShake;
-						addCamShake [5, 40, 7];
-						life_drug_withdrawl = false; 
-					};
-					case (_new > 0.9):
+					switch (true) do
 					{
-						systemChat "This is getting out of control, get your stuff quickly man!";
-						if (!life_drug_withdrawl) then { 
-							[] spawn { 
-								while {life_drug_withdrawl} do { 
-									resetCamShake; 
-									addCamShake [10, 16, 10];
-									sleep 15;
-								}; 
+						case (_new > 0.4 && _new <= 0.6): { 
+							systemChat "Damn man you need to get high, you're starting to get the shakes."; 
 							resetCamShake;
-							};
+							addCamShake [3, 40, 5];
+							life_drug_withdrawl = false; 
 						};
-						life_drug_withdrawl = true;
+						case (_new > 0.6 && _new <= 0.9): { 
+							systemChat "Aghh, you're reaaaallly needing a fix!"; 
+							resetCamShake;
+							addCamShake [4, 40, 7];
+							life_drug_withdrawl = false; 
+						};
+						case (_new > 0.9):
+						{
+							systemChat "This is getting out of control, get your stuff quickly man!";
+							if (!life_drug_withdrawl) then { 
+								[] spawn { 
+									while {life_drug_withdrawl} do { 
+										resetCamShake; 
+										addCamShake [10, 16, 10];
+										sleep 15;
+									}; 
+								resetCamShake;
+								};
+							};
+							life_drug_withdrawl = true;
+						};
 					};
 				};
 			};
 		};
+		sleep 240;
+		life_drug_level = life_drug_level - 0.5;
+		if (life_drug_level < 0) then { life_drug_level = 0; };
 	};
-	sleep 240;
-	life_drug_level = life_drug_level - 0.5;
-	if (life_drug_level < 0) then { life_drug_level = 0; };
 };
 [] spawn
 {

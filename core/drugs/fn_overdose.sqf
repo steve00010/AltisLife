@@ -7,7 +7,7 @@
 */
 
 _gesture = "GestureSpasm%1";
-_duration = ceil random 20;
+_duration = ceil random 30;
 
 systemChat "You have overdosed!";
 
@@ -27,7 +27,7 @@ for "_i" from 1 to _duration do {
 disableUserInput false;
 
 _death = random 1;
-if (_death > 0.7) then { systemChat "You have died of a drug overdose."; player setDamage 1; }
+if (_death > 0.65) then { systemChat "You have died of a drug overdose."; player setDamage 1; }
 else { player playActionNow "gestureNod"; };
 
-life_drug_level = life_drug_level - 1;
+life_drug_level = life_drug_level - 10;
