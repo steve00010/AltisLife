@@ -61,7 +61,7 @@ switch(playerSide) do {
 		__CONST__(life_swatlevel, parseNumber(_this select 11));
 		__CONST__(life_medicLevel,0);
 		life_blacklisted = _this select 9;
-		life_drug_level = parseNumber(_this select 12);
+		life_drug_level = _this select 12;
 		life_addiction = (call compile format["%1",_this select 13]);
 	};
 	
@@ -69,7 +69,7 @@ switch(playerSide) do {
 		life_is_arrested = _this select 7;
 		__CONST__(life_coplevel, 0);
 		__CONST__(life_medicLevel, 0);
-		life_drug_level = parseNumber(_this select 10);
+		life_drug_level = _this select 10;
 		life_addiction = (call compile format["%1",_this select 11]);
 		life_houses = _this select 12;
 		{

@@ -159,13 +159,15 @@
 					{
 						case (_new > 0.4 && _new <= 0.6): { 
 							systemChat "Damn man you need to get high, you're starting to get the shakes."; 
-							resetCamShake;
-							[] spawn { 
-								
+							resetCamShake;							
+							
+							[_i] spawn { 
+								private["_dt"];
+								_dt = _this select 0;
 								for "_j" from 0 to 55 do
 								{
 									addCamShake [random 2, 4, 1];
-									if((time - (life_used_drug select _i)) < 600) exitWith {
+									if((time - (life_used_drug select _dt)) < 600) exitWith {
 										systemChat "Ooh much better!"; 
 									};
 									"DynamicBlur" ppEffectEnable true;    
@@ -181,12 +183,14 @@
 						case (_new > 0.6 && _new <= 0.9): { 
 							systemChat "Aghh, you're reaaaallly needing a fix!"; 
 							resetCamShake;
-							[] spawn { 
-								
+							
+							[_i] spawn { 
+								private["_dt"];
+								_dt = _this select 0;
 								for "_j" from 0 to 55 do
 								{
 									addCamShake [random 3, 4, 3];
-									if((time - (life_used_drug select _i)) < 600) exitWith {
+									if((time -  (life_used_drug select _dt)) < 600) exitWith {
 										systemChat "You feel all warm inside!"; 
 									};
 									"DynamicBlur" ppEffectEnable true;    
@@ -203,11 +207,11 @@
 						{
 							systemChat "This is getting out of control, get your stuff quickly man!";
 							if (!life_drug_withdrawl) then { 
-								[] spawn { 
+								[_i] spawn { 
+									private["_dt"];
+									_dt = _this select 1;
 									while {life_drug_withdrawl} do { 
-										if((time - (life_used_drug select _i)) < 600) exitWith {
-											systemChat "Uggghhh that's the stuff!!"; 
-										};
+										if((time -  (life_used_drug select _dt)) < 600) exitWith {systemChat "Uggghhh that's the stuff!!"; };
 										resetCamShake; 
 										addCamShake [10, 16, 10];
 										"DynamicBlur" ppEffectEnable true;    
@@ -217,6 +221,7 @@
 									}; 
 								resetCamShake;
 								"DynamicBlur" ppEffectEnable false;
+
 								};
 							};
 							life_drug_withdrawl = true;
