@@ -62,7 +62,7 @@ switch(playerSide) do {
 		__CONST__(life_medicLevel,0);
 		life_blacklisted = _this select 9;
 		life_drug_level = _this select 12;
-		life_drug_addictioin = _this select 13;
+		life_addiction = _this select 13;
 	};
 	
 	case civilian: {
@@ -70,7 +70,7 @@ switch(playerSide) do {
 		__CONST__(life_coplevel, 0);
 		__CONST__(life_medicLevel, 0);
 		life_drug_level = _this select 10;
-		life_drug_addictioin = _this select 11;
+		life_addiction = _this select 11;
 		
 		life_houses = _this select 12;
 		{
