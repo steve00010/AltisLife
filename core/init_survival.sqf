@@ -162,7 +162,7 @@
 							resetCamShake;
 							[] spawn { 
 								
-								for "_i" from 0 to 55 do
+								for "_j" from 0 to 55 do
 								{
 									addCamShake [random 2, 4, 1];
 									if((time - (life_used_drug select _i)) < 600) exitWith {
@@ -174,6 +174,7 @@
 									sleep 4;
 								};
 								"DynamicBlur" ppEffectEnable false;
+								resetCamShake;
 							};
 							life_drug_withdrawl = false; 
 						};
@@ -182,7 +183,7 @@
 							resetCamShake;
 							[] spawn { 
 								
-								for "_i" from 0 to 55 do
+								for "_j" from 0 to 55 do
 								{
 									addCamShake [random 3, 4, 3];
 									if((time - (life_used_drug select _i)) < 600) exitWith {
@@ -194,6 +195,7 @@
 									sleep 4;
 								};
 								"DynamicBlur" ppEffectEnable false;
+								resetCamShake;
 							};
 							life_drug_withdrawl = false; 
 						};
