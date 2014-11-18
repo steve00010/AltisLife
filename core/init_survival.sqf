@@ -209,7 +209,7 @@
 							if (!life_drug_withdrawl) then { 
 								[_i] spawn { 
 									private["_dt"];
-									_dt = _this select 1;
+									_dt = _this select 0;
 									while {life_drug_withdrawl} do { 
 										if((time -  (life_used_drug select _dt)) < 600) exitWith {systemChat "Uggghhh that's the stuff!!"; };
 										resetCamShake; 
