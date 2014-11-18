@@ -161,9 +161,10 @@
 							systemChat "Damn man you need to get high, you're starting to get the shakes."; 
 							resetCamShake;
 							[] spawn { 
-								addCamShake [2, 220, 1];
+								
 								for "_i" from 0 to 55 do
 								{
+									addCamShake [random 2, 4, 1];
 									if((time - (life_used_drug select _i)) < 600) exitWith {
 										systemChat "Ooh much better!"; 
 									};
@@ -180,9 +181,10 @@
 							systemChat "Aghh, you're reaaaallly needing a fix!"; 
 							resetCamShake;
 							[] spawn { 
-								addCamShake [3, 220, 3];
+								
 								for "_i" from 0 to 55 do
 								{
+									addCamShake [random 3, 4, 3];
 									if((time - (life_used_drug select _i)) < 600) exitWith {
 										systemChat "You feel all warm inside!"; 
 									};
