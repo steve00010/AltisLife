@@ -91,7 +91,7 @@ switch (true) do
 	{
 		if(([false,_item,1] call life_fnc_handleInv)) then
 		{
-			[] spawn life_fnc_weed;
+			[] spawn life_fnc_heroin;
 		};
 	};
 	
@@ -102,7 +102,13 @@ switch (true) do
 			[] spawn life_fnc_weed;
 		};
 	};
-	
+		case (_item == "cocainep"):
+	{
+		if(([false,_item,1] call life_fnc_handleInv)) then
+		{
+			[] spawn life_fnc_cocaine;
+		};
+	};
 	case (_item =="bottledwhiskey"):
 	{
 		if(playerSide in [west,independent]) exitWith {hint localize "STR_MISC_WestIndNoNo";};
@@ -142,15 +148,7 @@ switch (true) do
 			[] spawn life_fnc_drinkbeer;
 		};
 	};
-	
-	case (_item == "cocainp"):
-	{
-		if(([false,_item,1] call life_fnc_handleInv)) then
-		{
-			[] spawn life_fnc_weed;
-		};
-	};
-	
+		
 	case (_item == "underwatercharge"): {
 		player reveal gold_safe;
 		(group player) reveal gold_safe;

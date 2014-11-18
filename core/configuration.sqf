@@ -34,6 +34,11 @@ life_action_gathering = false;
 life_god = false;
 life_frozen = false; 
 life_markers = false;
+life_drug_level = 0;
+life_used_drug = [0,0,0];
+life_drug_withdrawl = false;
+life_addiction = [0,0,0];
+life_cocaine_effect = false;
 life_fatigue = 0.5; //Set the max fatigue limit (50%)
 life_request_timer = false;
 life_drink = 0;
@@ -96,12 +101,12 @@ switch (playerSide) do
 {
 	case west: 
 	{
-		pbh_life_atmcash = 25000; //Starting Bank Money
-		life_paycheck = 400; //Paycheck Amount
+		pbh_life_atmcash = 12500; //Starting Bank Money
+		life_paycheck = 200; //Paycheck Amount
 	};
 	case civilian: 
 	{
-		pbh_life_atmcash = 25000; //Starting Bank Money
+		pbh_life_atmcash = 12500; //Starting Bank Money
 		life_paycheck = 400; //Paycheck Amount
 	};
 	

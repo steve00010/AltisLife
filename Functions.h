@@ -343,7 +343,6 @@ class Life_Client_Core
 		class gangInvite {};
 		class gangDisband {};
 		class gangDisbanded {};
-		class gangMarkers {};
 	};
 	
 	class Shops
@@ -387,7 +386,6 @@ class Life_Client_Core
 		class blastingCharge {};
 		class defuseKit {};
 		class storageBox {};
-		class weed {};
 		class underwaterCharge {};
 		class CarAlarmSound {};
 		class scratchcard {};
@@ -395,7 +393,15 @@ class Life_Client_Core
 		class drinkmoonshine {};
 		class drinkwhiskey {};
 	};
-	
+	class Drugs
+	{
+		file = "core\drugs";
+		class weed {};
+		class cocaine {};
+		class heroin {};
+		class overdose {};
+		class drugManage {};
+	};
 	class Dialog_Controls
 	{
 		file = "dialog\function";

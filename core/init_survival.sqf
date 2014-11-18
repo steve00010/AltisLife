@@ -143,6 +143,56 @@
 };
 [] spawn
 {
+	waitUntil { life_session_completed };
+	for "_i" from 0 to (count life_addiction)-1 do
+	{
+		_new = life_addiction select _i;
+		if (_new > 0) then
+		{
+			_new = _new - 0.02;
+			if (_new < 0) then { _new = 0; };
+			life_addiction set [_i, _new];
+			if (_new > 0 && (time - (life_used_drug select _i)) > 10) then
+			{
+				switch (true) do
+				{
+					case (_new > 0.4): { 
+						systemChat "Damn man you need to get high, you're starting to get the shakes."; 
+						resetCamShake;
+						addCamShake [3, 40, 5];
+						life_drug_withdrawl = false; 
+					};
+					case (_new > 0.6): { 
+						systemChat "Aghh, you're reaaaallly needing a fix!"; 
+						resetCamShake;
+						addCamShake [5, 40, 7];
+						life_drug_withdrawl = false; 
+					};
+					case (_new > 0.9):
+					{
+						systemChat "This is getting out of control, get your stuff quickly man!";
+						if (!life_drug_withdrawl) then { 
+							[] spawn { 
+								while {life_drug_withdrawl} do { 
+									resetCamShake; 
+									addCamShake [10, 16, 10];
+									sleep 15;
+								}; 
+							resetCamShake;
+							};
+						};
+						life_drug_withdrawl = true;
+					};
+				};
+			};
+		};
+	};
+	sleep 20;
+	life_drug_level = life_drug_level - 0.5;
+	if (life_drug_level < 0) then { life_drug_level = 0; };
+};
+[] spawn
+{
 	while {true} do
 	{
 		waitUntil {(life_drink > 0)};
