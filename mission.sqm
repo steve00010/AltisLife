@@ -2580,7 +2580,7 @@ class Mission
 					vehicle="B_RangeMaster_F";
 					skill=0.60000002;
 					text="h1_3";
-					init="this enableSimulation false; this addAction[""Cop Item Shop"",life_fnc_virt_menu,""cop""];  this allowDamage false;  this addAction[""Cop Clothing Shop"",life_fnc_clothingMenu,""cop""];  this addAction[""Cop Item Shop"",life_fnc_weaponShopMenu,""cop_basic""];  this addAction[""Marshall Weapon Shop"",life_fnc_weaponShopMenu,""cop_patrol""]; ;this addAction[""Corporal Weapon Shop"",life_fnc_weaponShopMenu,""cop_corporal""]; this addAction[""Sergeant Weapon Shop"",life_fnc_weaponShopMenu,""cop_sergeant""]; this addAction[""Lieutenant Weapon Shop"",life_fnc_weaponShopMenu,""cop_lieutenant""];this addAction[""Captain Weapon Shop"",life_fnc_weaponShopMenu,""cop_captain""]; this addAction[format[""%1 ($%2)"",[""license_cop_air""] call life_fnc_varToStr,[([""cair""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""cair"",0,false,false,"""",' !license_cop_air && playerSide == west ']; this addAction[format[""%1 ($%2)"",[""license_cop_swat""] call life_fnc_varToStr,[([""cg""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""cg"",0,false,false,"""",' !license_cop_cg && playerSide == west ']; this setObjectTexture [0,""textures\uniforms\Marshall_uniform.jpg""];";
+					init="this enableSimulation false; this addAction[""Cop Item Shop"",life_fnc_virt_menu,""cop""];  this allowDamage false;  this addAction[""Cop Clothing Shop"",life_fnc_clothingMenu,""cop""];  this addAction[""Cop Food Shop"",life_fnc_weaponShopMenu,""cop_basic""];  this addAction[""Marshall Weapon Shop"",life_fnc_weaponShopMenu,""cop_patrol""]; ;this addAction[""Corporal Weapon Shop"",life_fnc_weaponShopMenu,""cop_corporal""]; this addAction[""Sergeant Weapon Shop"",life_fnc_weaponShopMenu,""cop_sergeant""]; this addAction[""Lieutenant Weapon Shop"",life_fnc_weaponShopMenu,""cop_lieutenant""];this addAction[""Captain Weapon Shop"",life_fnc_weaponShopMenu,""cop_captain""]; this addAction[format[""%1 ($%2)"",[""license_cop_air""] call life_fnc_varToStr,[([""cair""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""cair"",0,false,false,"""",' !license_cop_air && playerSide == west ']; this addAction[format[""%1 ($%2)"",[""license_cop_swat""] call life_fnc_varToStr,[([""cg""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""cg"",0,false,false,"""",' !license_cop_cg && playerSide == west ']; this setObjectTexture [0,""textures\uniforms\Marshall_uniform.jpg""];";
 				};
 				class Item50
 				{
@@ -2626,7 +2626,7 @@ class Mission
 					side="WEST";
 					vehicle="B_RangeMaster_F";
 					skill=0.60000002;
-					init="removeallWeapons this; this enableSimulation false; this addAction[""Cop Item Shop"",life_fnc_virt_menu,""cop""]; this allowDamage false; this addAction[""Helicopter Shop"",life_fnc_vehicleShopMenu,[""cop_airhq"",west,""cop_air_2"",""cop"",""APD - Air HQ""]];  this addAction[""Vehicle Garage"",  {   [[getPlayerUID player,playerSide,""Air"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""cop_air_2""; life_garage_type = ""Air"";  },"""",0,false,false,"""",'playerSide == west'];  this addAction[""Store vehicle in Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store']; this addAction[""Cop Item Shop"",life_fnc_virt_menu,""cop""]; this addAction[""Cop Clothing Shop"",life_fnc_clothingMenu,""cop""]; this addAction[""Cop Item Shop"",life_fnc_weaponShopMenu,""cop_basic""];  this addAction[""Marshall Weapon Shop"",life_fnc_weaponShopMenu,""cop_patrol""]; ;this addAction[""Corporal Weapon Shop"",life_fnc_weaponShopMenu,""cop_corporal""]; this addAction[""Sergeant Weapon Shop"",life_fnc_weaponShopMenu,""cop_sergeant""]; this addAction[""Lieutenant Weapon Shop"",life_fnc_weaponShopMenu,""cop_lieutenant""];this addAction[""Captain Weapon Shop"",life_fnc_weaponShopMenu,""cop_captain""]; this addAction[format[""%1 ($%2)"",[""license_cop_air""] call life_fnc_varToStr,[([""cair""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""cair"",0,false,false,"""",' !license_cop_air && playerSide == west ']; this addAction[format[""%1 ($%2)"",[""license_cop_cg""] call life_fnc_varToStr,[([""cg""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""cg"",0,false,false,"""",' !license_cop_cg && playerSide == west ']; this setObjectTexture [0,""textures\uniforms\Marshall_uniform.jpg""];";
+					init="removeallWeapons this; this enableSimulation false; this allowDamage false; this addAction[""Helicopter Shop"",life_fnc_vehicleShopMenu,[""cop_airhq"",west,""cop_air_2"",""cop"",""APD - Air HQ""]];  this addAction[""Vehicle Garage"",  {   [[getPlayerUID player,playerSide,""Air"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""cop_air_2""; life_garage_type = ""Air"";  },"""",0,false,false,"""",'playerSide == west'];  this addAction[""Store vehicle in Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store']; this addAction[""Cop Food Shop"",life_fnc_virt_menu,""cop""]; this addAction[""Cop Clothing Shop"",life_fnc_clothingMenu,""cop""]; this addAction[""Cop Item Shop"",life_fnc_weaponShopMenu,""cop_basic""];  this addAction[""Marshall Weapon Shop"",life_fnc_weaponShopMenu,""cop_patrol""]; ;this addAction[""Corporal Weapon Shop"",life_fnc_weaponShopMenu,""cop_corporal""]; this addAction[""Sergeant Weapon Shop"",life_fnc_weaponShopMenu,""cop_sergeant""]; this addAction[""Lieutenant Weapon Shop"",life_fnc_weaponShopMenu,""cop_lieutenant""];this addAction[""Captain Weapon Shop"",life_fnc_weaponShopMenu,""cop_captain""]; this addAction[format[""%1 ($%2)"",[""license_cop_air""] call life_fnc_varToStr,[([""cair""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""cair"",0,false,false,"""",' !license_cop_air && playerSide == west ']; this addAction[format[""%1 ($%2)"",[""license_cop_cg""] call life_fnc_varToStr,[([""cg""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""cg"",0,false,false,"""",' !license_cop_cg && playerSide == west ']; this setObjectTexture [0,""textures\uniforms\Marshall_uniform.jpg""];";
 				};
 				class Item54
 				{
@@ -2847,7 +2847,7 @@ class Mission
 					vehicle="B_RangeMaster_F";
 					skill=0.60000002;
 					text="h1_3_2";
-					init="this enableSimulation false; this addAction[""Cop Item Shop"",life_fnc_virt_menu,""cop""];  this allowDamage false;  this addAction[""Cop Clothing Shop"",life_fnc_clothingMenu,""cop""];  this addAction[""Cop Item Shop"",life_fnc_weaponShopMenu,""cop_basic""];  this addAction[""Marshall Weapon Shop"",life_fnc_weaponShopMenu,""cop_patrol""]; ;this addAction[""Corporal Weapon Shop"",life_fnc_weaponShopMenu,""cop_corporal""]; this addAction[""Sergeant Weapon Shop"",life_fnc_weaponShopMenu,""cop_sergeant""]; this addAction[""Lieutenant Weapon Shop"",life_fnc_weaponShopMenu,""cop_lieutenant""];this addAction[""Captain Weapon Shop"",life_fnc_weaponShopMenu,""cop_captain""]; this addAction[format[""%1 ($%2)"",[""license_cop_air""] call life_fnc_varToStr,[([""cair""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""cair"",0,false,false,"""",' !license_cop_air && playerSide == west ']; this addAction[format[""%1 ($%2)"",[""license_cop_cg""] call life_fnc_varToStr,[([""cg""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""cg"",0,false,false,"""",' !license_cop_cg && playerSide == west '];   this setObjectTexture [0,""textures\uniforms\Marshall_uniform.jpg""];";
+					init="this enableSimulation false; this addAction[""Cop Item Shop"",life_fnc_virt_menu,""cop""];  this allowDamage false;  this addAction[""Cop Clothing Shop"",life_fnc_clothingMenu,""cop""];  this addAction[""Cop Food Shop"",life_fnc_weaponShopMenu,""cop_basic""];  this addAction[""Marshall Weapon Shop"",life_fnc_weaponShopMenu,""cop_patrol""]; ;this addAction[""Corporal Weapon Shop"",life_fnc_weaponShopMenu,""cop_corporal""]; this addAction[""Sergeant Weapon Shop"",life_fnc_weaponShopMenu,""cop_sergeant""]; this addAction[""Lieutenant Weapon Shop"",life_fnc_weaponShopMenu,""cop_lieutenant""];this addAction[""Captain Weapon Shop"",life_fnc_weaponShopMenu,""cop_captain""]; this addAction[format[""%1 ($%2)"",[""license_cop_air""] call life_fnc_varToStr,[([""cair""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""cair"",0,false,false,"""",' !license_cop_air && playerSide == west ']; this addAction[format[""%1 ($%2)"",[""license_cop_cg""] call life_fnc_varToStr,[([""cg""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""cg"",0,false,false,"""",' !license_cop_cg && playerSide == west '];   this setObjectTexture [0,""textures\uniforms\Marshall_uniform.jpg""];";
 				};
 				class Item73
 				{
@@ -2964,7 +2964,7 @@ class Mission
 					vehicle="B_RangeMaster_F";
 					skill=0.60000002;
 					text="h1_3_3";
-					init="this allowDamage false; this enableSimulation false; this addAction[""Cop Item Shop"",life_fnc_virt_menu,""cop""];  this allowDamage false;  this addAction[""Cop Clothing Shop"",life_fnc_clothingMenu,""cop""];  this addAction[""Cop Item Shop"",life_fnc_weaponShopMenu,""cop_basic""];  this addAction[""Marshall Weapon Shop"",life_fnc_weaponShopMenu,""cop_patrol""]; ;this addAction[""Corporal Weapon Shop"",life_fnc_weaponShopMenu,""cop_corporal""]; this addAction[""Sergeant Weapon Shop"",life_fnc_weaponShopMenu,""cop_sergeant""]; this addAction[""Lieutenant Weapon Shop"",life_fnc_weaponShopMenu,""cop_lieutenant""];this addAction[""Captain Weapon Shop"",life_fnc_weaponShopMenu,""cop_captain""]; this addAction[format[""%1 ($%2)"",[""license_cop_air""] call life_fnc_varToStr,[([""cair""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""cair"",0,false,false,"""",' !license_cop_air && playerSide == west ']; this addAction[format[""%1 ($%2)"",[""license_cop_cg""] call life_fnc_varToStr,[([""cg""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""cg"",0,false,false,"""",' !license_cop_cg && playerSide == west '];    this setObjectTexture [0,""textures\uniforms\Marshall_uniform.jpg""];";
+					init="this allowDamage false; this enableSimulation false; this addAction[""Cop Item Shop"",life_fnc_virt_menu,""cop""];  this allowDamage false;  this addAction[""Cop Clothing Shop"",life_fnc_clothingMenu,""cop""];  this addAction[""Cop Food Shop"",life_fnc_weaponShopMenu,""cop_basic""];  this addAction[""Marshall Weapon Shop"",life_fnc_weaponShopMenu,""cop_patrol""]; ;this addAction[""Corporal Weapon Shop"",life_fnc_weaponShopMenu,""cop_corporal""]; this addAction[""Sergeant Weapon Shop"",life_fnc_weaponShopMenu,""cop_sergeant""]; this addAction[""Lieutenant Weapon Shop"",life_fnc_weaponShopMenu,""cop_lieutenant""];this addAction[""Captain Weapon Shop"",life_fnc_weaponShopMenu,""cop_captain""]; this addAction[format[""%1 ($%2)"",[""license_cop_air""] call life_fnc_varToStr,[([""cair""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""cair"",0,false,false,"""",' !license_cop_air && playerSide == west ']; this addAction[format[""%1 ($%2)"",[""license_cop_cg""] call life_fnc_varToStr,[([""cg""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""cg"",0,false,false,"""",' !license_cop_cg && playerSide == west '];    this setObjectTexture [0,""textures\uniforms\Marshall_uniform.jpg""];";
 				};
 				class Item83
 				{
@@ -3258,7 +3258,7 @@ class Mission
 					vehicle="B_RangeMaster_F";
 					skill=0.60000002;
 					text="h1_3_5";
-					init="this enableSimulation false; this addAction[""Cop Item Shop"",life_fnc_virt_menu,""cop""];  this allowDamage false;  this addAction[""Cop Clothing Shop"",life_fnc_clothingMenu,""cop""];  this addAction[""Cop Item Shop"",life_fnc_weaponShopMenu,""cop_basic""];  this addAction[""Marshall Weapon Shop"",life_fnc_weaponShopMenu,""cop_patrol""]; ;this addAction[""Corporal Weapon Shop"",life_fnc_weaponShopMenu,""cop_corporal""]; this addAction[""Sergeant Weapon Shop"",life_fnc_weaponShopMenu,""cop_sergeant""]; this addAction[""Lieutenant Weapon Shop"",life_fnc_weaponShopMenu,""cop_lieutenant""];this addAction[""Captain Weapon Shop"",life_fnc_weaponShopMenu,""cop_captain""]; this addAction[format[""%1 ($%2)"",[""license_cop_air""] call life_fnc_varToStr,[([""cair""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""cair"",0,false,false,"""",' !license_cop_air && playerSide == west ']; this addAction[format[""%1 ($%2)"",[""license_cop_swat""] call life_fnc_varToStr,[([""cg""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""cg"",0,false,false,"""",' !license_cop_cg && playerSide == west ']; this setObjectTexture [0,""textures\uniforms\Marshall_uniform.jpg""];";
+					init="this enableSimulation false; this addAction[""Cop Item Shop"",life_fnc_virt_menu,""cop""];  this allowDamage false;  this addAction[""Cop Clothing Shop"",life_fnc_clothingMenu,""cop""];  this addAction[""Cop Food Shop"",life_fnc_weaponShopMenu,""cop_basic""];  this addAction[""Marshall Weapon Shop"",life_fnc_weaponShopMenu,""cop_patrol""]; ;this addAction[""Corporal Weapon Shop"",life_fnc_weaponShopMenu,""cop_corporal""]; this addAction[""Sergeant Weapon Shop"",life_fnc_weaponShopMenu,""cop_sergeant""]; this addAction[""Lieutenant Weapon Shop"",life_fnc_weaponShopMenu,""cop_lieutenant""];this addAction[""Captain Weapon Shop"",life_fnc_weaponShopMenu,""cop_captain""]; this addAction[format[""%1 ($%2)"",[""license_cop_air""] call life_fnc_varToStr,[([""cair""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""cair"",0,false,false,"""",' !license_cop_air && playerSide == west ']; this addAction[format[""%1 ($%2)"",[""license_cop_swat""] call life_fnc_varToStr,[([""cg""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""cg"",0,false,false,"""",' !license_cop_cg && playerSide == west ']; this setObjectTexture [0,""textures\uniforms\Marshall_uniform.jpg""];";
 				};
 				class Item109
 				{
@@ -41286,7 +41286,7 @@ class Mission
 		};
 		class Item3787
 		{
-			position[]={8533.5078,0.012942031,3437.9744};
+			position[]={20545.479,-0.010026086,3958.9976};
 			azimut=-180.46387;
 			offsetY=3.5;
 			id=4037;
@@ -41296,7 +41296,7 @@ class Mission
 		};
 		class Item3788
 		{
-			position[]={8532.4229,0.013803061,3438.3828};
+			position[]={20544.393,0.033026055,3959.4058};
 			azimut=-180.46387;
 			offsetY=3.5;
 			id=4038;
@@ -41306,7 +41306,7 @@ class Mission
 		};
 		class Item3789
 		{
-			position[]={8531.0859,0.010089207,3438.1372};
+			position[]={20543.057,0.045250617,3959.1602};
 			azimut=-180.46387;
 			offsetY=3.5;
 			id=4039;
@@ -41316,7 +41316,7 @@ class Mission
 		};
 		class Item3790
 		{
-			position[]={8531.9023,-0.0040602479,3436.1936};
+			position[]={20543.873,-0.073391065,3957.2163};
 			azimut=-180.46387;
 			offsetY=3.5;
 			id=4040;
@@ -41326,7 +41326,7 @@ class Mission
 		};
 		class Item3791
 		{
-			position[]={8557.7578,0.054148871,3562.3052};
+			position[]={20569.727,-0.059971035,4083.3281};
 			azimut=-270.15164;
 			offsetY=3.5;
 			id=4041;
@@ -41336,7 +41336,7 @@ class Mission
 		};
 		class Item3792
 		{
-			position[]={8557.8428,0.057789758,3542.582};
+			position[]={20569.813,0.3695944,4063.605};
 			azimut=-270.15164;
 			offsetY=3.5;
 			id=4042;
@@ -41346,7 +41346,7 @@ class Mission
 		};
 		class Item3793
 		{
-			position[]={8557.9199,-0.040201884,3522.8855};
+			position[]={20569.891,0.19653405,4043.9087};
 			azimut=-270.15164;
 			offsetY=3.5;
 			id=4043;
@@ -41356,7 +41356,7 @@ class Mission
 		};
 		class Item3794
 		{
-			position[]={8557.9424,-0.029092493,3503.2402};
+			position[]={20569.912,0.013329819,4024.2632};
 			azimut=-270.15164;
 			offsetY=3.5;
 			id=4044;
@@ -41366,7 +41366,7 @@ class Mission
 		};
 		class Item3795
 		{
-			position[]={8557.9609,0.018136259,3483.5703};
+			position[]={20569.93,0.39480853,4004.5933};
 			azimut=-270.15164;
 			offsetY=3.5;
 			id=4045;
@@ -41376,7 +41376,7 @@ class Mission
 		};
 		class Item3796
 		{
-			position[]={8558.0508,-0.063951656,3463.8303};
+			position[]={20570.02,0.30190796,3984.853};
 			azimut=-180.15167;
 			offsetY=3.5;
 			id=4046;
@@ -41386,7 +41386,7 @@ class Mission
 		};
 		class Item3797
 		{
-			position[]={8558.1055,-0.084264092,3444.1172};
+			position[]={20570.074,-0.066020742,3965.1401};
 			azimut=-0.15163106;
 			offsetY=3.5;
 			id=4047;
@@ -41396,7 +41396,7 @@ class Mission
 		};
 		class Item3798
 		{
-			position[]={8538.4844,0.026482111,3463.7793};
+			position[]={20550.455,-0.11507986,3984.8022};
 			azimut=-180.15167;
 			offsetY=3.5;
 			id=4048;
@@ -41406,7 +41406,7 @@ class Mission
 		};
 		class Item3799
 		{
-			position[]={8538.5283,-0.035825711,3444.072};
+			position[]={20550.498,0.19526245,3965.0952};
 			azimut=-0.15163106;
 			offsetY=3.5;
 			id=4049;
@@ -41416,7 +41416,7 @@ class Mission
 		};
 		class Item3800
 		{
-			position[]={8518.8672,-0.033484779,3463.73};
+			position[]={20530.838,0.15681654,3984.7529};
 			azimut=-180.15167;
 			offsetY=3.5;
 			id=4050;
@@ -41426,7 +41426,7 @@ class Mission
 		};
 		class Item3801
 		{
-			position[]={8518.915,0.028889481,3444.019};
+			position[]={20530.885,-0.17513908,3965.042};
 			azimut=-0.15163106;
 			offsetY=3.5;
 			id=4051;
@@ -41436,7 +41436,7 @@ class Mission
 		};
 		class Item3802
 		{
-			position[]={8499.2861,0.041143168,3463.7166};
+			position[]={20511.256,-0.33899081,3984.7397};
 			azimut=-180.15167;
 			offsetY=3.5;
 			id=4052;
@@ -41446,7 +41446,7 @@ class Mission
 		};
 		class Item3803
 		{
-			position[]={8499.3379,-0.027576899,3444.0144};
+			position[]={20511.307,-0.34549627,3965.0376};
 			azimut=-0.15163106;
 			offsetY=3.5;
 			id=4053;
@@ -41456,7 +41456,7 @@ class Mission
 		};
 		class Item3804
 		{
-			position[]={8479.7686,0.087639198,3463.6575};
+			position[]={20491.738,-0.25092301,3984.6802};
 			azimut=-180.15167;
 			offsetY=3.5;
 			id=4054;
@@ -41466,7 +41466,7 @@ class Mission
 		};
 		class Item3805
 		{
-			position[]={8479.8271,0.065331206,3443.9478};
+			position[]={20491.797,0.019079149,3964.9707};
 			azimut=-0.15163106;
 			offsetY=3.5;
 			id=4055;
@@ -41476,7 +41476,7 @@ class Mission
 		};
 		class Item3806
 		{
-			position[]={8460.0576,-0.0034250431,3463.6284};
+			position[]={20472.027,0.029722527,3984.6514};
 			azimut=-180.15167;
 			offsetY=3.5;
 			id=4056;
@@ -41486,7 +41486,7 @@ class Mission
 		};
 		class Item3807
 		{
-			position[]={8460.1064,0.074572958,3443.9255};
+			position[]={20472.076,-0.28138551,3964.9487};
 			azimut=-0.15163106;
 			offsetY=3.5;
 			id=4057;
@@ -41496,7 +41496,7 @@ class Mission
 		};
 		class Item3808
 		{
-			position[]={8440.5146,0.036824372,3463.5669};
+			position[]={20452.484,-0.22226633,3984.5898};
 			azimut=-180.15167;
 			offsetY=3.5;
 			id=4058;
@@ -41506,7 +41506,7 @@ class Mission
 		};
 		class Item3809
 		{
-			position[]={8440.5693,-0.012436111,3443.866};
+			position[]={20452.539,0.10472679,3964.8892};
 			azimut=-0.15163106;
 			offsetY=3.5;
 			id=4059;
@@ -41516,7 +41516,7 @@ class Mission
 		};
 		class Item3810
 		{
-			position[]={8499.0811,0.037478663,3562.1531};
+			position[]={20511.051,0.18939786,4083.1758};
 			azimut=-270.15164;
 			offsetY=3.5;
 			id=4060;
@@ -41526,7 +41526,7 @@ class Mission
 		};
 		class Item3811
 		{
-			position[]={8499.1514,0.083461374,3542.4182};
+			position[]={20511.121,0.25240523,4063.4409};
 			azimut=-270.15164;
 			offsetY=3.5;
 			id=4061;
@@ -41536,7 +41536,7 @@ class Mission
 		};
 		class Item3812
 		{
-			position[]={8499.2178,0.015128471,3522.7231};
+			position[]={20511.188,-0.20832108,4043.7461};
 			azimut=-270.15164;
 			offsetY=3.5;
 			id=4062;
@@ -41546,7 +41546,7 @@ class Mission
 		};
 		class Item3813
 		{
-			position[]={8499.2578,0.021182692,3503.0845};
+			position[]={20511.229,-0.11474138,4024.1074};
 			azimut=-270.15164;
 			offsetY=3.5;
 			id=4063;
@@ -41556,7 +41556,7 @@ class Mission
 		};
 		class Item3814
 		{
-			position[]={8499.2666,0.092704579,3483.4045};
+			position[]={20511.236,0.07567139,4004.4272};
 			azimut=-270.15164;
 			offsetY=3.5;
 			id=4064;
@@ -41566,7 +41566,7 @@ class Mission
 		};
 		class Item3815
 		{
-			position[]={8440.4658,0.049594637,3483.1294};
+			position[]={20452.436,0.04554902,4004.1523};
 			azimut=-90.15155;
 			offsetY=3.5;
 			id=4065;
@@ -41576,7 +41576,7 @@ class Mission
 		};
 		class Item3816
 		{
-			position[]={8440.3857,-0.046655133,3502.7336};
+			position[]={20452.355,0.021510765,4023.7563};
 			azimut=-90.15155;
 			offsetY=3.5;
 			id=4066;
@@ -41586,7 +41586,7 @@ class Mission
 		};
 		class Item3817
 		{
-			position[]={8440.3857,-0.054490745,3522.3784};
+			position[]={20452.355,-0.40252525,4043.4014};
 			azimut=-90.15155;
 			offsetY=3.5;
 			id=4067;
@@ -41596,7 +41596,7 @@ class Mission
 		};
 		class Item3818
 		{
-			position[]={8440.3574,0.0069360472,3541.9556};
+			position[]={20452.326,-0.22116993,4062.9785};
 			azimut=-90.15155;
 			offsetY=3.5;
 			id=4068;
@@ -41606,7 +41606,7 @@ class Mission
 		};
 		class Item3819
 		{
-			position[]={8440.3154,-0.046474256,3561.5835};
+			position[]={20452.285,-0.016233936,4082.6064};
 			azimut=-90.15155;
 			offsetY=3.5;
 			id=4069;
@@ -41616,7 +41616,7 @@ class Mission
 		};
 		class Item3820
 		{
-			position[]={8558.2734,-0.064358234,3463.7295};
+			position[]={20570.242,0.31301716,3984.7524};
 			azimut=-0.15163106;
 			offsetY=3.5;
 			id=4070;
@@ -41626,7 +41626,7 @@ class Mission
 		};
 		class Item3821
 		{
-			position[]={8440.2881,0.037665781,3463.5667};
+			position[]={20452.258,-0.22128652,3984.5894};
 			azimut=-180.15167;
 			offsetY=3.5;
 			id=4071;
@@ -41636,7 +41636,7 @@ class Mission
 		};
 		class Item3822
 		{
-			position[]={8557.7607,0.052562095,3562.1597};
+			position[]={20569.73,-0.065296747,4083.1826};
 			azimut=-90.15155;
 			offsetY=3.5;
 			id=4072;
@@ -41646,7 +41646,7 @@ class Mission
 		};
 		class Item3823
 		{
-			position[]={8440.2119,-0.04622779,3561.6602};
+			position[]={20452.182,-0.013814911,4082.6831};
 			azimut=-90.15155;
 			offsetY=3.5;
 			id=4073;
@@ -41656,7 +41656,7 @@ class Mission
 		};
 		class Item3824
 		{
-			position[]={8529.3418,0.091615036,3525.5942};
+			position[]={20541.311,0.40374747,4046.6172};
 			azimut=-180.19289;
 			id=4074;
 			side="EMPTY";
@@ -41666,7 +41666,7 @@ class Mission
 		};
 		class Item3825
 		{
-			position[]={8469.1201,0.059561435,3525.4763};
+			position[]={20481.09,-0.027555794,4046.4995};
 			azimut=-180.19289;
 			id=4075;
 			side="EMPTY";
@@ -41676,7 +41676,7 @@ class Mission
 		};
 		class Item3826
 		{
-			position[]={8434.2822,-0.070105217,3502.855};
+			position[]={20446.252,0.14282303,4023.8779};
 			azimut=-90.15155;
 			offsetY=-2.5;
 			id=4076;
@@ -41686,7 +41686,7 @@ class Mission
 		};
 		class Item3827
 		{
-			position[]={8564.249,-0.057691615,3523.0071};
+			position[]={20576.219,0.3219758,4044.0298};
 			azimut=-270.15164;
 			offsetY=-2.5;
 			id=4077;
@@ -41696,7 +41696,7 @@ class Mission
 		};
 		class Item3828
 		{
-			position[]={8528.9043,-0.0045191245,3463.3892};
+			position[]={20540.873,0.015818823,3984.4121};
 			azimut=-90.15155;
 			offsetY=3.5;
 			id=4078;
@@ -41706,7 +41706,7 @@ class Mission
 		};
 		class Item3829
 		{
-			position[]={8469.6475,0.03709776,3463.6179};
+			position[]={20481.617,0.0092228055,3984.6411};
 			azimut=-90.15155;
 			offsetY=3.5;
 			id=4079;
@@ -41716,7 +41716,7 @@ class Mission
 		};
 		class Item3830
 		{
-			position[]={8498.7305,0.041423284,3562.7703};
+			position[]={20510.701,0.22814688,4083.793};
 			azimut=-207.75797;
 			offsetY=3.5;
 			id=4080;
@@ -41726,7 +41726,7 @@ class Mission
 		};
 		class Item3831
 		{
-			position[]={8499.4922,0.0055890102,3448.3655};
+			position[]={20511.463,-0.13151148,3969.3882};
 			azimut=-180.15167;
 			offsetY=3.5;
 			id=4081;
@@ -41736,7 +41736,7 @@ class Mission
 		};
 		class Item3832
 		{
-			position[]={8565.9619,0.027455647,3570.5886};
+			position[]={20577.932,0.029296581,4091.6113};
 			azimut=-270.15164;
 			offsetY=3.7;
 			id=4082;
@@ -41746,7 +41746,7 @@ class Mission
 		};
 		class Item3833
 		{
-			position[]={8566.1094,-0.024871454,3514.8196};
+			position[]={20578.078,0.26359433,4035.8423};
 			azimut=-270.15164;
 			offsetY=3.7;
 			id=4083;
@@ -41756,7 +41756,7 @@ class Mission
 		};
 		class Item3834
 		{
-			position[]={8566.1523,-0.0071612969,3475.532};
+			position[]={20578.121,0.020209789,3996.5552};
 			azimut=-270.15164;
 			offsetY=3.7;
 			id=4084;
@@ -41766,7 +41766,7 @@ class Mission
 		};
 		class Item3835
 		{
-			position[]={8507.0879,0.038383748,3570.2637};
+			position[]={20519.057,0.39724737,4091.2866};
 			azimut=-270.15164;
 			offsetY=3.7;
 			id=4085;
@@ -41776,7 +41776,7 @@ class Mission
 		};
 		class Item3836
 		{
-			position[]={8507.2832,0.062907889,3514.5859};
+			position[]={20519.252,0.25462341,4035.6089};
 			azimut=-270.15164;
 			offsetY=3.7;
 			id=4086;
@@ -41786,7 +41786,7 @@ class Mission
 		};
 		class Item3837
 		{
-			position[]={8507.5967,0.046313737,3475.0576};
+			position[]={20519.566,-0.31673071,3996.0806};
 			azimut=-270.15164;
 			offsetY=3.7;
 			id=4087;
@@ -41796,7 +41796,7 @@ class Mission
 		};
 		class Item3838
 		{
-			position[]={8448.5518,-0.031245491,3569.8699};
+			position[]={20460.521,0.0025598556,4090.8926};
 			azimut=-270.15164;
 			offsetY=3.7;
 			id=4088;
@@ -41806,7 +41806,7 @@ class Mission
 		};
 		class Item3839
 		{
-			position[]={8448.5723,0.011967203,3514.1272};
+			position[]={20460.541,-0.030475691,4035.1499};
 			azimut=-270.15164;
 			offsetY=3.7;
 			id=4089;
@@ -41816,7 +41816,7 @@ class Mission
 		};
 		class Item3840
 		{
-			position[]={8448.7715,0.027848605,3474.8115};
+			position[]={20460.74,-0.14670475,3995.8345};
 			azimut=-270.15164;
 			offsetY=3.7;
 			id=4090;
@@ -41826,7 +41826,7 @@ class Mission
 		};
 		class Item3841
 		{
-			position[]={8432.1094,-0.0070777386,3569.8623};
+			position[]={20444.08,-0.40867668,4090.8853};
 			azimut=-90.15155;
 			offsetY=3.7;
 			id=4091;
@@ -41836,7 +41836,7 @@ class Mission
 		};
 		class Item3842
 		{
-			position[]={8432.1807,0.0080850087,3514.1699};
+			position[]={20444.15,-0.31807759,4035.1929};
 			azimut=-90.15155;
 			offsetY=3.7;
 			id=4092;
@@ -41846,7 +41846,7 @@ class Mission
 		};
 		class Item3843
 		{
-			position[]={8432.333,-0.048283018,3474.8711};
+			position[]={20444.303,0.26206419,3995.894};
 			azimut=-90.15155;
 			offsetY=3.7;
 			id=4093;
@@ -41856,7 +41856,7 @@ class Mission
 		};
 		class Item3844
 		{
-			position[]={8491.1162,-0.0021638907,3475.2209};
+			position[]={20503.086,-0.0076939762,3996.2437};
 			azimut=-90.15155;
 			offsetY=3.7;
 			id=4094;
@@ -41866,7 +41866,7 @@ class Mission
 		};
 		class Item3845
 		{
-			position[]={8490.999,0.09068168,3514.7024};
+			position[]={20502.969,-0.17612603,4035.7251};
 			azimut=-90.15155;
 			offsetY=3.7;
 			id=4095;
@@ -41876,7 +41876,7 @@ class Mission
 		};
 		class Item3846
 		{
-			position[]={8490.9395,0.053181827,3570.3445};
+			position[]={20502.908,0.11932117,4091.3672};
 			azimut=-90.15155;
 			offsetY=3.7;
 			id=4096;
@@ -41886,7 +41886,7 @@ class Mission
 		};
 		class Item3847
 		{
-			position[]={8549.6611,0.094709545,3570.4502};
+			position[]={20561.631,0.31976193,4091.4731};
 			azimut=-90.15155;
 			offsetY=3.7;
 			id=4097;
@@ -41896,7 +41896,7 @@ class Mission
 		};
 		class Item3848
 		{
-			position[]={8549.7598,0.056193914,3514.8179};
+			position[]={20561.729,0.39032212,4035.8408};
 			azimut=-90.15155;
 			offsetY=3.7;
 			id=4098;
@@ -41906,7 +41906,7 @@ class Mission
 		};
 		class Item3849
 		{
-			position[]={8549.8047,-0.072235078,3475.4451};
+			position[]={20561.775,0.20286436,3996.4683};
 			azimut=-90.15155;
 			offsetY=3.7;
 			id=4099;
@@ -41916,7 +41916,7 @@ class Mission
 		};
 		class Item3850
 		{
-			position[]={8566.6299,-0.098359399,3435.8896};
+			position[]={20578.6,0.41644517,3956.9126};
 			azimut=24.614557;
 			offsetY=3.5;
 			id=4100;
@@ -41926,7 +41926,7 @@ class Mission
 		};
 		class Item3851
 		{
-			position[]={8431.7314,0.082436442,3435.2612};
+			position[]={20443.701,-0.0058720559,3956.2842};
 			azimut=-214.15794;
 			offsetY=3.5;
 			id=4101;
@@ -41936,7 +41936,7 @@ class Mission
 		};
 		class Item3852
 		{
-			position[]={8516.2568,0.049349502,3472.3484};
+			position[]={20528.227,-0.1544072,3993.3716};
 			azimut=-21.362993;
 			offsetY=3.5;
 			id=4102;
@@ -41946,7 +41946,7 @@ class Mission
 		};
 		class Item3853
 		{
-			position[]={8469.792,0.098975897,3443.7021};
+			position[]={20481.762,-0.11345819,3964.7251};
 			azimut=179.55904;
 			id=4103;
 			side="EMPTY";
@@ -41955,7 +41955,7 @@ class Mission
 		};
 		class Item3854
 		{
-			position[]={8440.6914,-0.050719701,3532.1431};
+			position[]={20452.662,-0.021345511,4053.166};
 			azimut=180.01508;
 			id=4104;
 			side="EMPTY";
@@ -83488,14 +83488,14 @@ class Mission
 		};
 		class Item302
 		{
-			position[]={15207.854,0.13460901,15183.85};
+			position[]={15312.579,0.02537857,15393.305};
 			name="mrkGreen";
 			markerType="RECTANGLE";
 			type="Empty";
 			colorName="ColorGreen";
 			fillName="Border";
-			a=16000;
-			b=16000;
+			a=15000;
+			b=15000;
 			drawBorder=1;
 		};
 		class Item303
