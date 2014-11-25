@@ -4341,8 +4341,8 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={12435.377,16.205263,14549.9};
-					azimut=-26.903099;
+					position[]={12353.247,7.8557692,14363.806};
+					azimut=-18.464956;
 					special="NONE";
 					id=246;
 					side="CIV";
@@ -4361,8 +4361,8 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={12441.236,16.728865,14552.777};
-					azimut=322.37601;
+					position[]={12359.458,8.0462894,14365.792};
+					azimut=330.81415;
 					special="NONE";
 					id=247;
 					side="CIV";
@@ -81031,8 +81031,8 @@ class Mission
 		};
 		class Item7834
 		{
-			position[]={12440.326,16.711382,14553.764};
-			azimut=140.02411;
+			position[]={12358.707,8.0691652,14366.901};
+			azimut=148.46228;
 			id=8084;
 			side="EMPTY";
 			vehicle="Land_CashDesk_F";
@@ -83148,10 +83148,10 @@ class Mission
 		};
 		class Item260
 		{
-			position[]={4076.884,20.675785,13763.764};
+			position[]={3592.698,4.9483919,13344.911};
 			name="jail_release_1";
 			type="Empty";
-			angle=-231.89786;
+			angle=-416.57764;
 		};
 		class Item261
 		{
@@ -83531,43 +83531,43 @@ class Mission
 		};
 		class Item307
 		{
-			position[]={12430.829,16.361544,14556.066};
+			position[]={12355.197,8.1941175,14372.403};
 			name="car_g_1_1";
 			type="Empty";
-			angle=-26.902386;
+			angle=72.992744;
 		};
 		class Item308
 		{
-			position[]={12434.248,16.154768,14549.686};
+			position[]={12352.095,7.8300905,14363.76};
 			name="civ_gar_1_4";
 			text="Garage";
 			type="o_service";
 			colorName="ColorGUER";
-			angle=-78.897469;
+			angle=-70.459297;
 		};
 		class Item309
 		{
-			position[]={12440.327,16.699932,14552.534};
+			position[]={12358.526,8.0212088,14365.683};
 			name="car1_3";
 			type="c_car";
 			colorName="ColorWhite";
-			angle=222.60487;
+			angle=231.04305;
 		};
 		class Item310
 		{
-			position[]={12438.302,16.839249,14561.07};
+			position[]={12354.363,8.2783337,14375.07};
 			name="civ_car_1_3";
 			type="Empty";
-			angle=631.02124;
+			angle=797.81787;
 		};
 		class Item311
 		{
-			position[]={12440.354,16.700781,14552.539};
+			position[]={12358.556,8.0219717,14365.686};
 			name="car1_1_1";
 			text="Car Shop";
 			type="c_car";
 			colorName="ColorWhite";
-			angle=222.60487;
+			angle=231.04305;
 		};
 		class Item312
 		{
