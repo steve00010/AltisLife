@@ -30,7 +30,7 @@ else
 
 if ( (playerSide == west) or ((playerSide == independent )) ) then
 {
-	_sellPrice = 0;
+	_sellPrice = 10;
 };
 	
 _ind = [_className,(call life_garage_chop)] call TON_fnc_index;

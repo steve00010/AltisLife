@@ -3511,12 +3511,6 @@
 			<Italian>Cocaina processata</Italian>
 			<Portuguese>Cocaína Refinada</Portuguese>
 		</Key>
-		<Key ID="STR_Item_Cannabis">
-			<Original>Pot Plants</Original>
-			<English>Pot Plants</English>
-			<German>Marihuana-Pflanzen</German>
-			<French>Plants de marihuana</French>
-		</Key>
 		<Key ID="STR_Item_Rye">
 			<Original>Rye Plants</Original>
 		</Key>
