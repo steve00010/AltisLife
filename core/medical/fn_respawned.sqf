@@ -71,3 +71,4 @@ if(life_removeWanted) then {
 hideBody life_corpse;
 [] call SOCK_fnc_updateRequest;
 [] call life_fnc_hudUpdate; //Request update of hud.
+[] execVM "scripts\fn_statusBar.sqf";
