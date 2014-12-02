@@ -26,7 +26,7 @@ switch (_vehicle) do
 	{
 		_ret =
 		[
-			["\a3\air_f\Heli_Light_02\Data\heli_light_02_ext_co.paa","fed"],
+			["\a3\air_f\Heli_Light_02\Data\heli_light_02_ext_co.paa","civ"],
 			["textures\vehicles\orca_channel7.jpg","civ"],
 			["textures\vehicles\police_orca.jpg","cop"],
 			["textures\vehicles\medic_orca.jpg","med"]
