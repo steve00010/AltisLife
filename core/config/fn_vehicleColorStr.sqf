@@ -214,6 +214,13 @@ switch (_vehicle) do
 		};
 	};
 	
+	case "I_MRAP_03_F":
+	{
+		switch (_index) do
+		{
+			case 0: {_color = "Cop"};
+		};
+	};
 	
 	case "C_Boat_Civil_01_police_F":
 	{	

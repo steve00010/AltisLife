@@ -217,6 +217,13 @@ switch (_vehicle) do
 		];
 	};
 	
+	case "I_MRAP_03_F":
+	{
+		_ret = 
+		[
+			["Textures\vehicles\police_strider.jpg","cop"]
+		];
+	};
 	
 	case "C_Boat_Civil_01_police_F":
 	{
