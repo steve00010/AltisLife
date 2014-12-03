@@ -9,7 +9,7 @@ disableSerialization;
 */
 _rscLayer = "osefStatusBar" call BIS_fnc_rscLayer;
 _rscLayer cutRsc["osefStatusBar","PLAIN"];
-systemChat format["[PG v3.1.4] Loading game server info...", _rscLayer];
+systemChat format["[Prophecy Database] Loading game server info...", _rscLayer];
 
 [] spawn {
 	sleep 5;
