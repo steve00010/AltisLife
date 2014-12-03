@@ -92,7 +92,8 @@ switch (_filter) do
 	case 3:
 	{
 		[
-			["V_Press_F",nil,20000]
+			["V_Press_F",nil,10000],
+			["V_Rangemaster_belt",3000]
 		];
 	};
 	
