@@ -213,7 +213,7 @@
 									while {life_drug_withdrawl} do { 
 										if((time -  (life_used_drug select _dt)) < 600) exitWith {systemChat "Uggghhh that's the stuff!!"; };
 										resetCamShake; 
-										addCamShake [6, 16, 6];
+										addCamShake [3, 8, 3];
 										"DynamicBlur" ppEffectEnable true;    
 										"DynamicBlur" ppEffectAdjust [random 4];   
 										"DynamicBlur" ppEffectCommit 1;
