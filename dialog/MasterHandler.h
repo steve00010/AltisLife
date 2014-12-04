@@ -31,3 +31,4 @@
 #include "market.hpp"
 #include "goldSafe.h"
 #include "prisonlist.hpp"
+#include "rules.hpp"
