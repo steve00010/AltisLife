@@ -77,7 +77,8 @@ switch (_vehicle) do
 			["textures\vehicles\HighwaySportscar.jpg","cop"],
 			["textures\vehicles\civ_hatchback_wrc.jpg","civ"],
 			["textures\vehicles\redgull_hatchbacks.jpg","civ"],
-			["textures\vehicles\dayz_hatchbacks.jpg","civ"]
+			["textures\vehicles\dayz_hatchbacks.jpg","civ"],
+			["textures\vehicles\dragon_sport.jpg","civ"]
 		];
 	};
 		
