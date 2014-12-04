@@ -73,7 +73,7 @@ switch (_filter) do
 			["V_BandollierB_cbr","Bandoleer",4500],
 			["V_HarnessO_brn","Harness Brown",5500],
 			["V_HarnessO_gry","Harness Grey",5500],
-			["V_Chestrig_oli"],"Chestrig",7500],
+			["V_Chestrig_oli","Chestrig",7500],
 			["V_RebreatherIA","Re-breather",6500]
 		];
 	};
