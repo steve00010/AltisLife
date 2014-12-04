@@ -25,8 +25,8 @@ _news ctrlSetStructuredText parseText format["
 <t size='0.8px'>- Updated some vendors</t><br/>
 <t size='0.8px'>- Updated Database</t><br/>
 <t size='0.8px'>- Updated Starting Cash</t><br/>
-<t size='0.8px'></t><br/>
-<t size='0.8px'></t><br/>
+<t size='0.8px'>- New Hatchback Skin</t><br/>
+<t size='0.8px'>- New Welcome Screen</t><br/>
 <t size='0.8px'></t><br/>
 <t size='0.8px'></t><br/>
 <t size='0.8px'></t><br/>
