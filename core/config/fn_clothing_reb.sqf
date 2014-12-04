@@ -69,7 +69,7 @@ switch (_filter) do
 	{
 		[
 			["V_TacVest_khk","TacVest",12500],
-			["V_PlateCarrier_Kerry",12500],
+			["V_PlateCarrier_Kerry","PlateCarrier",12500],
 			["V_BandollierB_cbr","Bandoleer",4500],
 			["V_HarnessO_brn","Harness Brown",5500],
 			["V_HarnessO_gry","Harness Grey",5500],
