@@ -295,6 +295,7 @@ switch(_shop) do
 						["NVGoggles",nil,2500],
 						["NVGoggles_INDEP",nil,2500],
 						["optic_MRCO",nil,3500],
+						["optic_DMS",nil,3500],
 						["optic_Hamr",nil,3500],
 						["optic_Yorris",nil,3500],
 						["optic_ACO_grn",nil,3500],
