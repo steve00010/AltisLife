@@ -15,22 +15,22 @@ _news = _display displayCtrl 2303;
 
 
 
-_rules ctrlSetStructuredText parseText format["<img size='2.5' image='images\logo.jpg'/><br/><br/><t size='1.1'>Welcome %1</t><br/><br/><t size='0.8px'>If you want to play on this server you need to accept the server rules.</t><br/><br/><t size='0.8px'>Our Admin staff are on hand at most times via our TS server if you need help.</t><br/><br/><br/><br/>br/><br/><t size='1.2'>Patchnotes:</t>",name player];
+_rules ctrlSetStructuredText parseText format["<img size='2.5' image='images\logo.jpg'/><br/><br/><t size='1.1'>Welcome %1</t><br/><br/><t size='0.8px'>If you want to play on this server you need to accept the server rules.</t><br/><br/><t size='0.8px'>Our Admin staff are on hand at most times via our TS server if you need help.</t><br/><br/><br/><br/>br/><br/><t size='1.2'>Useful Info:</t>",name player];
 
 
 
 
 _news ctrlSetStructuredText parseText format["
-<br/><t size='1.1' color='#0099FF'>  Patchnotes%1</t><br/><br/>
-<t size='0.8px'>- Updated some vendors</t><br/>
-<t size='0.8px'>- Updated Database</t><br/>
-<t size='0.8px'>- Updated Starting Cash</t><br/>
-<t size='0.8px'>- New Hatchback Skin</t><br/>
-<t size='0.8px'>- New Welcome Screen</t><br/>
-<t size='0.8px'></t><br/>
-<t size='0.8px'></t><br/>
-<t size='0.8px'></t><br/>
-<t size='0.8px'></t><br/>
-<t size='0.8px'>Please report any bugs on our forums.</t><br/>
+<br/><t size='1.1' color='#0099FF'>  Useful Info%1</t><br/><br/>
+<t size='0.8px'>- Buy a phone and gps, do not carry all your money on you, you lose it if you die.</t><br/>
+<t size='0.8px'>- We have a dynamic market here, so check it regularly, illegal is not always the best choice.</t><br/>
+<t size='0.8px'>- Guides and updates can be found on our forum, prophecygaming.co.uk.</t><br/>
+<t size='0.8px'>- Enter your player id (not name) on our members section to get info about your character.</t><br/>
+<t size='0.8px'>- Press Y to access your player interaction menu.</t><br/>
+<t size='0.8px'>- We have a top 10 bounty list on our webpage.</t><br/>
+<t size='0.8px'>- Gangs are permanent, that's why they cost so much.</t><br/>
+<t size='0.8px'>- We have drug addiction and you can be breathalysed.</t><br/>
+<t size='0.8px'>- Join our community, we are always looking for new players.</t><br/>
+<t size='0.8px'>- Please report any bugs on our forums.</t><br/>
 <br/><br/><t size='0.7px'>   Have fun playing!</t>
 ",":"];
