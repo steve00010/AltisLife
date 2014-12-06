@@ -54453,7 +54453,7 @@ class Mission
 		};
 		class Item5104
 		{
-			position[]={21790.199,14.7606,7646.1602};
+			position[]={21787.428,15.0622,7657.9136};
 			azimut=218.657;
 			id=5356;
 			side="EMPTY";
@@ -74892,7 +74892,6 @@ class Mission
 		{
 			position[]={23750.383,3.1900001,18277.465};
 			azimut=359.55734;
-			offsetY=24;
 			id=7466;
 			side="EMPTY";
 			vehicle="Land_Research_house_V1_F";
@@ -80679,7 +80678,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=322;
+		items=324;
 		class Item0
 		{
 			position[]={8459.6777,104.56568,25131.203};
@@ -83267,6 +83266,20 @@ class Mission
 			type="loc_Tourism";
 			colorName="ColorGreen";
 			angle=448.65692;
+		};
+		class Item322
+		{
+			position[]={14181.41,28.815533,18697.305};
+			name="reb_spawn_3";
+			type="Empty";
+			angle=267.888;
+		};
+		class Item323
+		{
+			position[]={25675.447,17.402891,21225.307};
+			name="reb_spawn_1";
+			type="Empty";
+			angle=267.888;
 		};
 	};
 	class Sensors
