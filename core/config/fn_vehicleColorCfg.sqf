@@ -30,7 +30,7 @@ switch (_vehicle) do
 			["\a3\air_f\Heli_Light_02\Data\heli_light_02_ext_civilian_co.paa","civ"],
 			["\a3\air_f\Heli_Light_02\Data\heli_light_02_ext_indp_co.paa","civ"],
 			["\a3\air_f\Heli_Light_02\Data\heli_light_02_ext_opfor_co.paa","reb"],
-			["textures\vehicles\orca_channel7.jpg","civ"],
+			["textures\vehicles\orca_pg.jpg","civ"],
 			["textures\vehicles\police_orca.jpg","cop"],
 			["textures\vehicles\medic_orca.jpg","med"]
 		];
