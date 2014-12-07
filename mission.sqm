@@ -2910,7 +2910,7 @@ class Mission
 				};
 				class Item78
 				{
-					position[]={25704.4,20.599312,21386.646};
+					position[]={25702.129,20.571972,21383.635};
 					azimut=140.2661;
 					special="NONE";
 					id=162;
@@ -4175,7 +4175,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={21565.236,14.091439,7902.7773};
+					position[]={21566.809,14.067236,7900.1934};
 					azimut=-84.479309;
 					special="NONE";
 					id=239;
@@ -4195,7 +4195,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={21564.863,14.091537,7904.3716};
+					position[]={21566.328,14.077595,7901.5098};
 					azimut=244.00645;
 					special="NONE";
 					id=240;
@@ -4215,7 +4215,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={21562.988,14.195439,7908.9595};
+					position[]={21562.885,14.209607,7909.6226};
 					azimut=252.45488;
 					special="NONE";
 					id=241;
@@ -4416,7 +4416,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={25707.947,20.637539,21389.344};
+					position[]={25702.814,20.570154,21384.311};
 					azimut=-214.91299;
 					special="NONE";
 					id=251;
@@ -56276,8 +56276,8 @@ class Mission
 		};
 		class Item5288
 		{
-			position[]={21564.324,14.098979,7902.5474};
-			azimut=-271.79974;
+			position[]={21565.789,14.069732,7900.1724};
+			azimut=-287.79419;
 			id=5540;
 			side="EMPTY";
 			vehicle="Land_CashDesk_F";
@@ -80627,7 +80627,7 @@ class Mission
 		};
 		class Item7788
 		{
-			position[]={25708.455,20.617191,21387.309};
+			position[]={25703.252,20.557415,21383.006};
 			azimut=-402.23712;
 			id=8040;
 			side="EMPTY";
@@ -80637,7 +80637,7 @@ class Mission
 		};
 		class Item7789
 		{
-			position[]={25708.455,20.617191,21387.309};
+			position[]={25703.252,20.557415,21383.006};
 			azimut=-402.23712;
 			id=8041;
 			side="EMPTY";
@@ -81385,7 +81385,7 @@ class Mission
 		};
 		class Item88
 		{
-			position[]={25706.807,20.638931,21389.76};
+			position[]={25701.604,20.605438,21385.457};
 			name="Kavala Freight Yard_1_1_1_1_1";
 			text="Truck Shop";
 			type="c_car";

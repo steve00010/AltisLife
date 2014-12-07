@@ -194,7 +194,7 @@ switch (_vehicle) do
 			case 14: {_color = "Light"};
 			case 15: {_color = "Shadow"};
 			case 16: {_color = "Sheriff"};
-			case 17: {_color = "Wespe"};
+			case 17: {_color = "Wasp"};
 			case 18: {_color = "Oliv"};
 			case 19: {_color = "EMS"};
 			case 20: {_color = "Cop"};
@@ -217,7 +217,7 @@ switch (_vehicle) do
 			case 9: {_color = "Speedy Redline"};
 			case 10: {_color = "Sunset"};
 			case 11: {_color = "Vrana"};
-			case 12: {_color = "Wespe"};
+			case 12: {_color = "Wasp"};
 			case 13: {_color = "Waves Blue"};
 		};
 	};
