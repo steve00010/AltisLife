@@ -27,6 +27,9 @@ switch (_vehicle) do
 		_ret =
 		[
 			["\a3\air_f\Heli_Light_02\Data\heli_light_02_ext_co.paa","civ"],
+			["\a3\air_f\Heli_Light_02\Data\heli_light_02_ext_civilian_co.paa","civ"],
+			["\a3\air_f\Heli_Light_02\Data\heli_light_02_ext_indp_co.paa","civ"],
+			["\a3\air_f\Heli_Light_02\Data\heli_light_02_ext_opfor_co.paa","reb"],
 			["textures\vehicles\orca_channel7.jpg","civ"],
 			["textures\vehicles\police_orca.jpg","cop"],
 			["textures\vehicles\medic_orca.jpg","med"]
@@ -74,11 +77,18 @@ switch (_vehicle) do
 		_ret =
 		[
 			[_path + "hatchback_01_ext_sport01_co.paa","civ"],
+			[_path + "hatchback_01_ext_sport02_co.paa","civ"],
+			[_path + "hatchback_01_ext_sport03_co.paa","civ"],
+			[_path + "hatchback_01_ext_sport04_co.paa","civ"],
+			[_path + "hatchback_01_ext_sport05_co.paa","civ"],
+			[_path + "hatchback_01_ext_sport06_co.paa","civ"],
+			["#(ai,64,64,1)Fresnel(1.3,7)","civ"],
 			["textures\vehicles\HighwaySportscar.jpg","cop"],
 			["textures\vehicles\civ_hatchback_wrc.jpg","civ"],
 			["textures\vehicles\redgull_hatchbacks.jpg","civ"],
 			["textures\vehicles\dayz_hatchbacks.jpg","civ"],
-			["textures\vehicles\dragon_sport.jpg","civ"]
+			["textures\vehicles\dragon_sport.jpg","civ"],
+			["textures\vehicles\swiftyskin.jpg","civ"]
 		];
 	};
 		
@@ -92,7 +102,7 @@ switch (_vehicle) do
 			["\A3\soft_F\Offroad_01\Data\offroad_01_ext_BASE03_CO.paa","civ"],
 			["\A3\soft_F\Offroad_01\Data\offroad_01_ext_BASE04_CO.paa","civ"],
 			["\A3\soft_F\Offroad_01\Data\offroad_01_ext_BASE05_CO.paa","civ"],
-			["#(ai,64,64,1)Fresnel(0.3,3)","fed"],
+			["#(ai,64,64,1)Fresnel(0.3,3)","civ"],
 			["textures\vehicles\offroad_police.jpg","cop"],
 			["#(argb,8,8,3)color(0.6,0.3,0.01,1)","civ"],
 			["textures\vehicles\offroad_paramedic.jpg","med"],
@@ -104,11 +114,14 @@ switch (_vehicle) do
 	{
 		_ret =
 		[
+			["\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_base01_co.paa","civ"],
 			["\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_base02_co.paa","civ"],
 			["\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_base03_co.paa","civ"],
+			["\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_base04_co.paa","civ"],
 			["\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_base06_co.paa","civ"],
+			["\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_base07_co.paa","civ"],
 			["\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_base08_co.paa","civ"],
-			["\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_base09_co.paa","civ"],
+			["\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_base09_co.paa","civ"]
 			["textures\vehicles\HighwaySportscar.jpg","cop"]
 		];
 	};
@@ -167,10 +180,10 @@ switch (_vehicle) do
 	{
 		_ret = 
 		[
-			["\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_ion_co.paa","Black","fed"],
-			["\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_indp_co.paa","Digi Green","civ"],
-			["\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_blue_co.paa","Blue","civ"],
-			["\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_co.paa","Red","civ"],
+			["\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_ion_co.paa","civ"],
+			["\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_blue_co.paa","civ"],
+			["\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_co.paa","civ"],
+			["\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_indp_co.paa","civ"],
 			["\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_blueline_co.paa","civ"],
 			["\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_elliptical_co.paa","civ"],
 			["\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_furious_co.paa","civ"],
@@ -179,8 +192,36 @@ switch (_vehicle) do
 			["\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_sunset_co.paa","civ"],
 			["\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_vrana_co.paa","civ"],
 			["\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_wave_co.paa","civ"],
+			["\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_digital_co.paa","reb"],
+			["\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_graywatcher_co.paa","civ"],
+			["\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_light_co.paa","civ"],
+			["\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_shadow_co.paa","civ"],
+			["\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_sheriff_co.paa","civ"],
+			["\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_wasp_co.paa","civ"],
+			["\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_bluefor_co.paa","reb"],
 			["textures\vehicles\heli_paramedic.jpg","med"],
 			["textures\vehicles\heli_police.jpg","cop"]
+		];
+	};
+	
+	case "C_Heli_Light_01_civil_F": // hummingbird M900
+	{
+		_ret = 
+		[
+			["\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_blueline_co.paa","civ"],
+			["\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_digital_co.paa","civ"],
+			["\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_elliptical_co.paa","civ"],
+			["\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_furious_co.paa","civ"],
+			["\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_graywatcher_co.paa","civ"],
+			["\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_jeans_co.paa","civ"],
+			["\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_light_co.paa","civ"],
+			["\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_shadow_co.paa","civ"],
+			["\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_sheriff_co.paa","civ"],
+			["\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_speedy_co.paa","civ"],
+			["\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_sunset_co.paa","civ"],
+			["\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_vrana_co.paa","civ"],
+			["\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_wasp_co.paa","civ"],
+			["\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_wave_co.paa","civ"]	
 		];
 	};
 	
