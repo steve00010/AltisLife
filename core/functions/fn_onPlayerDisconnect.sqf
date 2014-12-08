@@ -11,7 +11,7 @@ _id = _this select 0;
 _pname = _this select 1; 
 _puid  = _this select 2;
 
-
+[[_puid,0],"life_fnc_setOnline",false,false] spawn life_fnc_MP;
 
 
 
