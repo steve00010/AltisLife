@@ -27,3 +27,4 @@ player assignItem "ItemRadio";
 [[player,0,"textures\uniforms\medic_uniform.jpg"],"life_fnc_setTexture",true,false] spawn life_fnc_MP;
 
 [] call life_fnc_saveGear;
+[] execVM "scripts\fn_statusBar.sqf";

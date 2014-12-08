@@ -27,4 +27,3 @@ waitUntil{!isNull (findDisplay 38500)}; //Wait for the spawn selection to be ope
 waitUntil{isNull (findDisplay 38500)}; //Wait for the spawn selection to be done.
 
 [] execVM "core\welcome.sqf";
-[] execVM "scripts\fn_statusBar.sqf";
