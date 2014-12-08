@@ -22,6 +22,7 @@ if(life_is_arrested) then
 {
 	[] call life_fnc_spawnMenu;
 	[] execVM "core\welcome.sqf";
+	[] execVM "scripts\fn_statusBar.sqf";
 	waitUntil{!isNull (findDisplay 38500)}; //Wait for the spawn selection to be open.
 	waitUntil{isNull (findDisplay 38500)}; //Wait for the spawn selection to be done.
 };
