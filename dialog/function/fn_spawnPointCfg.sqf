@@ -32,9 +32,9 @@ switch (_side) do
 		//if have reb license, only spawn here
 		if(license_civ_rebel && playerSide == civilian) then {
 		_return = [
-					["reb_spawn_2","Rebel Camp","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
-					["reb_spawn_1","Sofia HQ","\a3\ui_f\data\map\GroupIcons\badge_rotate_0_gs.paa"],
-					["reb_spawn_3","Athira HQ","\a3\ui_f\data\map\GroupIcons\badge_rotate_0_gs.paa"]
+					["reb_spawn_2","Rebel Base","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
+					["reb_spawn_1","Sofia","\a3\ui_f\data\map\GroupIcons\badge_rotate_0_gs.paa"],
+					["reb_spawn_3","Athira","\a3\ui_f\data\map\GroupIcons\badge_rotate_0_gs.paa"]
 				];
 		};
 		//if no rebel license, than can spawn normal loc
