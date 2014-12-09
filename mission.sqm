@@ -4514,7 +4514,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=7834;
+		items=7835;
 		class Item0
 		{
 			position[]={8065.1616,35.674362,24985.314};
@@ -81418,6 +81418,15 @@ class Mission
 			vehicle="Land_CashDesk_F";
 			skill=0.60000002;
 			init="this enableSimulation false; this allowDamage false;";
+		};
+		class Item7834
+		{
+			position[]={10743.564,15.928346,12342.676};
+			azimut=216.58369;
+			id=8091;
+			side="EMPTY";
+			vehicle="Land_RampConcreteHigh_F";
+			skill=0.60000002;
 		};
 	};
 	class Markers

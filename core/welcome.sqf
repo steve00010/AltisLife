@@ -8,7 +8,7 @@
 
 _onScreenTime = 4;
 
-sleep 10; //Wait in seconds before the credits start after player is in-game
+sleep 15; //Wait in seconds before the credits start after player is in-game
  
 _role1 = "Hello";
 _role1names = ["Welcome to","Prophecy Gaming"];
@@ -26,7 +26,7 @@ _role7 = "Enjoy your stay";
 _role7names = ["Have fun and follow the rules posted on our website"];
  
 {
-sleep 5;
+sleep 8;
 _memberFunction = _x select 0;
 _memberNames = _x select 1;
 _finalText = format ["<t size='0.40' color='#f2cb0b' align='right'>%1<br /></t>", _memberFunction];
@@ -39,7 +39,7 @@ _finalText,
 [safezoneX + safezoneW - 0.8,0.50], //DEFAULT: 0.5,0.35
 [safezoneY + safezoneH - 0.8,0.7], //DEFAULT: 0.8,0.7
 _onScreenTime,
-3.5
+4.0
 ] spawn BIS_fnc_dynamicText;
 sleep (_onScreenTime);
 } forEach [
