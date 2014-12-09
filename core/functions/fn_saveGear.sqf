@@ -9,21 +9,14 @@
 private["_ret","_uItems","_bItems","_vItems","_pItems","_hItems","_yItems","_uMags","_vMags","_bMags","_pMag","_hMag","_uni","_ves","_bag","_handled"];
 _ret = [];
 
-_ret pushBack uniform player;
-_ret pushBack vest player;
-_ret pushBack backpack player;
-_ret pushBack goggles player;
-_ret pushBack headgear player;
-_ret pushBack assignedItems player;
-_ret pushBack primaryWeapon player;
-_ret pushBack handGunWeapon player;
-if(playerSide == west || playerSide == civilian && {(call life_save_civ)}) then {
-    _return pushBack primaryWeapon player;
-    _return pushBack handgunWeapon player;
-} else {
-    _return pushBack [];
-    _return pushBack [];
-};
+_ret set[count _ret,uniform player];
+_ret set[count _ret,vest player];
+_ret set[count _ret,backpack player];
+_ret set[count _ret,goggles player];
+_ret set[count _ret,headgear player];
+_ret set[count _ret,assignedItems player];
+_ret set[count _ret,primaryWeapon player];
+_ret set[count _ret,handGunWeapon player];
 
 _uItems = [];
 _uMags  = [];
@@ -198,19 +191,14 @@ if(count (handGunItems player) > 0) then
 	["life_inv_zipties", life_inv_zipties]
 ];
 
-_ret pushBack _uItems;
-_ret pushBack _uMags;
-_ret pushBack _bItems;
-_ret pushBack _bMags;
-_ret pushBack _vItems;
-_ret pushBack _vMags;
-_ret pushBack _pItems;
-_ret pushBack _hItems;
-_ret pushBack _yItems;
-if(call life_save_yinv) then {
-    _return pushBack _yItems;
-} else {
-    _return pushBack [];
-};
+_ret set[count _ret,_uItems];
+_ret set[count _ret,_uMags];
+_ret set[count _ret,_bItems];
+_ret set[count _ret,_bMags];
+_ret set[count _ret,_vItems];
+_ret set[count _ret,_vMags];
+_ret set[count _ret,_pItems];
+_ret set[count _ret,_hItems];
+_ret set[count _ret,_yItems];
 
 life_gear = _ret;
