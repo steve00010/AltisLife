@@ -73751,8 +73751,8 @@ class Mission
 		};
 		class Item7085
 		{
-			position[]={22142.301,3.6654041,14426.1};
-			azimut=358.48401;
+			position[]={22137.969,3.6761782,14415.282};
+			azimut=358.17874;
 			id=7342;
 			side="EMPTY";
 			vehicle="Land_Cargo_House_V2_F";
@@ -74400,8 +74400,8 @@ class Mission
 		};
 		class Item7150
 		{
-			position[]={22140.6,3.7379823,14426.1};
-			azimut=267.66501;
+			position[]={22136.264,3.6874487,14415.272};
+			azimut=267.35974;
 			offsetY=0.486056;
 			id=7407;
 			side="EMPTY";
@@ -74411,8 +74411,8 @@ class Mission
 		};
 		class Item7151
 		{
-			position[]={22140.699,3.7374976,14426.5};
-			azimut=84.175201;
+			position[]={22136.367,3.6905127,14415.675};
+			azimut=83.870026;
 			offsetY=1.3;
 			id=7408;
 			side="EMPTY";
