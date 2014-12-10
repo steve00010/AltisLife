@@ -181,7 +181,7 @@ switch (_shop) do
 		_return =
 		[
 			["C_Heli_Light_01_civil_F",300000],
-			["B_Heli_Light_01_F",400000]
+			["B_Heli_Light_01_F",300000]
 		];
 		
 		if(__GETC__(life_donator) > 1) then
@@ -200,7 +200,7 @@ switch (_shop) do
 	{
 		if(__GETC__(life_coplevel) > 2) then
 		{
-			_return set[count _return, ["B_Heli_Light_01_F",400000]];
+			_return set[count _return, ["B_Heli_Light_01_F",300000]];
 			_return set[count _return, ["B_Heli_Transport_03_unarmed_F",3500000]];
 		};
 		if(__GETC__(life_donator) > 1) then
@@ -224,7 +224,7 @@ switch (_shop) do
 	{
 		if(__GETC__(life_coplevel) > 2) then
 		{
-			_return set[count _return,["B_Heli_Light_01_F",400000]];
+			_return set[count _return,["B_Heli_Light_01_F",300000]];
 			_return set[count _return, ["B_Heli_Transport_03_unarmed_F",3500000]];
 		};
 		
