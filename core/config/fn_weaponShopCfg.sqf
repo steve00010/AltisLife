@@ -39,7 +39,10 @@ switch(_shop) do
 						["NVGoggles_OPFOR",nil,2500],
 						["ToolKit",nil,0],
 						["Medikit",nil,0],
-						["ItemRadio","SmartPhone",500]
+						["ItemRadio","SmartPhone",500],
+						["ItemCompass",nil,500],
+						["ItemWatch",nil,500],
+						["ItemMap",nil,250]
 					]
 				];
 			};
@@ -137,7 +140,6 @@ switch(_shop) do
 					[
 						["arifle_MX_Black_F",nil,6000],
 						["arifle_MXC_Black_F",nil,6000],
-						["SMG_02_F",nil,10000],
 						["30Rnd_65x39_caseless_mag",nil,0],
 						["30Rnd_65x39_caseless_mag_Tracer",nil,0],
 						["30Rnd_9x21_Mag",nil,0],
@@ -255,7 +257,7 @@ switch(_shop) do
 						["acc_pointer_IR",nil,0],
 						["acc_flashlight",nil,0],
 						["B_IR_Grenade",nil,1000],
-						["muzzle_snds_H",nil,25000],
+						["muzzle_snds_H","Silencer6.5mm",25000],
 						["Rangefinder",nil,2000],
 						["SmokeShellBlue","Tear Gas Grenade",10000],
 						["HandGrenade_Stone","Flashbang",10000]
@@ -320,6 +322,15 @@ switch(_shop) do
 				
 				["Billy Joe's Firearms",
 					[
+						["Binocular",nil,150],
+						["ItemGPS",nil,100],
+						["ToolKit",nil,250],
+						["FirstAidKit",nil,150],
+						["NVGoggles",nil,2500],
+						["ItemRadio","SmartPhone",500],
+						["ItemCompass",nil,500],
+						["ItemWatch",nil,500],
+						["ItemMap",nil,250],
 						["hgun_Rook40_F",nil,6500],
 						["hgun_Pistol_heavy_01_F",nil,9850],
 						["hgun_ACPC2_F",nil,11500],
@@ -418,7 +429,10 @@ switch(_shop) do
 				["ToolKit",nil,250],
 				["FirstAidKit",nil,150],
 				["NVGoggles",nil,2500],
-				["ItemRadio","SmartPhone",500]
+				["ItemRadio","SmartPhone",500],
+				["ItemCompass",nil,500],
+				["ItemWatch",nil,500],
+				["ItemMap",nil,250]
 			]
 		];
 	};
