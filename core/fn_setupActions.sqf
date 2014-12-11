@@ -12,8 +12,7 @@ switch (playerSide) do
 		//Seize Items      
 		life_actions = life_actions + [player addAction["Seize Player Weapon",life_fnc_seizePlayerWeapon,cursorTarget,0,false,false,"",'!isNull cursorTarget && (player distance cursorTarget) < 6 && speed cursorTarget < 2 && cursorTarget isKindOf "Man" && (isPlayer cursorTarget) && (side cursorTarget == civilian) && (cursorTarget getVariable "restrained")']];
 		life_actions = life_actions + [player addAction["Seize Objects",life_fnc_seizeObjects,cursorTarget,0,false,false,"",'count(nearestObjects [player,["weaponholder"],3])>0']];  
-		// nano EMP Little Bird
-		life_actions = life_actions + [player addAction["<t color='#FF0000'>EMP Operator Console Open</t>",life_fnc_openEmpMenu,[],8,false,false,"",'[_this] call life_fnc_isEmpOperator']];
+
     };
 
 	case civilian:

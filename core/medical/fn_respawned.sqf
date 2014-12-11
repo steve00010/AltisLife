@@ -27,12 +27,15 @@ switch(playerSide) do
 {
 	case west: {
 		_handle = [] spawn life_fnc_copLoadout;
+		wakPlugs = false;
 	};
 	case civilian: {
 		_handle = [] spawn life_fnc_civLoadout;
+		wakPlugs = false;
 	};
 	case independent: {
 		_handle = [] spawn life_fnc_medicLoadout;
+		wakPlugs = false;
 	};
 	waitUntil {scriptDone _handle};
 };
