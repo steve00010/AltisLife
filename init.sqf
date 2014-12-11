@@ -15,6 +15,7 @@ life_versionInfo = "Altis Life RPG v3.1.4.8";
 [] execVM "scripts\fn_statusBar.sqf";
 [] execVM "nosidechat.sqf";
 [] execVM "scripts\zlt_fastrope.sqf";
+[] execVM "scripts\D41_Wetter.sqf";
 
 StartProgress = true;
 {_x setMarkerAlphaLocal 0} forEach ["mrkRed","mrkRed_1","mrkRed_1_1","mrkRed_1_3","mrkGreen"];
