@@ -244,6 +244,8 @@ class Life_Client_Core
 		class fatigueReset {};
 		class prisonbreak {};
 		class progressBar {};
+		class EarPlugsOn {};
+		class EarPlugsOff {};
 	};
 	
 	class Network
