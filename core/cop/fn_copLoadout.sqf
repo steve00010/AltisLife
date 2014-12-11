@@ -38,4 +38,3 @@ player assignItem "ItemRadio";
 
 [] spawn life_fnc_customUniforms;
 [] call life_fnc_saveGear;
-[] execVM "scripts\fn_statusBar.sqf";

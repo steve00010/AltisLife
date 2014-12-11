@@ -23,4 +23,3 @@ player addItem "ItemRadio";
 player assignItem "ItemRadio";
 
 [] call life_fnc_saveGear;
-[] execVM "scripts\fn_statusBar.sqf";
