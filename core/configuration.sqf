@@ -360,6 +360,16 @@ __CONST__(buy_array,buy_array);
 
 life_weapon_shop_array =
 [
+	["arifle_MX_Black_F",nil,6000],
+	["arifle_MXC_Black_F",nil,6000],
+	["SMG_02_F",nil,10000],
+	["30Rnd_9x21_Mag",nil,20],
+	["srifle_LRR_SOS_F",nil,40000],
+	["7Rnd_408_Mag",nil,0],
+	["srifle_EBR_ARCO_pointer_F",nil,20000],
+	["20Rnd_762x51_Mag",nil,0],
+	["30Rnd_65x39_caseless_mag",nil,0],
+	["30Rnd_65x39_caseless_mag_Tracer",nil,0],
 	["arifle_sdar_F",7500],
 	["hgun_P07_snds_F",650],
 	["hgun_P07_F",1500],
@@ -369,6 +379,9 @@ life_weapon_shop_array =
 	["FirstAidKit",65],
 	["Medikit",450],
 	["NVGoggles",980],
+	["ItemCompass",nil,500],
+	["ItemWatch",nil,500],
+	["ItemMap",nil,250],
 	["16Rnd_9x21_Mag",15],
 	["20Rnd_556x45_UW_mag",35],
 	["ItemMap",35],
@@ -385,18 +398,26 @@ life_weapon_shop_array =
 	["srifle_EBR_F",15000],
 	["arifle_TRG21_F",3500],
 	["optic_MRCO",5000],
-	["optic_Aco",850],
+	["optic_Holosight",nil,1000],
+	["optic_SOS",nil,1000],
+	["optic_NVS",nil,1000],
+	["optic_DMS",nil,1000],
+	["optic_Arco",850],
+	["optic_Holosight_smg",nil,1000],
 	["arifle_MX_F",7500],
 	["arifle_MXC_F",5000],
 	["arifle_MXM_F",8500],
 	["MineDetector",500],
-	["optic_Holosight",275],
-	["acc_pointer_IR",175],
 	["arifle_TRG20_F",2500],
 	["SMG_01_F",1500],
 	["arifle_Mk20C_F",4500],
+	["B_IR_Grenade",nil,1000],
 	["30Rnd_45ACP_Mag_SMG_01",60],
-	["30Rnd_9x21_Mag",30]
+	["acc_flashlight",nil,0],
+	["acc_pointer_IR",nil,0],
+	["30Rnd_9x21_Mag",30],
+	["SmokeShellBlue","Tear Gas Grenade",10000],
+	["HandGrenade_Stone","Flashbang",10000]
 ];
 __CONST__(life_weapon_shop_array,life_weapon_shop_array);
 
