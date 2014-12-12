@@ -67,11 +67,13 @@ if(!alive player OR life_istazed OR (player getVariable["restrained",false]) OR 
 	life_action_inUse = false;
 	_unit setVariable["KidneyTheftInProgress",false,true];
 } else {
-	if(!([true,"kidney",1] call life_fnc_handleInv)) exitWith {hint "You don't have room to store any organs!"; _unit setVariable["KidneyTheftInProgress",false,true];};//if no room for kidney, you cannot take their kidney, duh, waste not want not
+	if(!([true,"kidney",1] call life_fnc_handleInv)) exitWith {hint "You don't have room to store any organs!";
+	_unit setVariable["KidneyTheftInProgress",false,true];};//if no room for kidney, you cannot take their kidney, duh, waste not want not
 	player setVariable["hasOrgan",true,true];//sets variable on thief, so as not to consistently take organs, set to 5 minute cooldown
 	_unit setVariable["missingOrgan",true,true];//sets the missing organ variable so effects can take place
 	life_action_inUse = false;//once variables are set, and actions stop, then you can use scrolly wheely
 	[[player], "life_fnc_hasOrgan", _unit, false] spawn life_fnc_MP;//this then calls the fn_hasOrgan.sqf on the thief
-	_msg = format["%1 took %2's organ",getVariable["realname",name player],getVariable["realname",name _unit]];
+	
+	_msg = format["%1 took %2's organ",profileName,getVariable["realname",name _unit]];
 	[[_msg],"life_fnc_logMSG",false,false] spawn life_fnc_MP;
 };
