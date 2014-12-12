@@ -96,7 +96,6 @@ life_fnc_moveIn = compileFinal
 	player moveInCargo (_this select 0);
 ";
 [[getPlayerUID player,1],"life_fnc_setOnline",false,false] spawn life_fnc_MP;
-diag_log "PLAYER SET ONLINE 1";
 life_fnc_garageRefund = compileFinal
 "
 	_price = _this select 0;
