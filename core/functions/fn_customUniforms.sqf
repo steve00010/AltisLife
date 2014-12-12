@@ -1,4 +1,4 @@
-
+	#define __GETC__(var) (call var)
 
 if (playerSide == west) then
 {
@@ -15,6 +15,11 @@ if (playerSide == west) then
 	if(uniform player == "U_B_HeliPilotCoveralls") then 
 	{
 		player setObjectTextureGlobal [0,"textures\uniforms\pilot_uniform.jpg"];
+	};
+	
+	if(uniform player == "U_B_CTRG_1")  then 
+	{
+		player setObjectTextureGlobal [0,"textures\uniforms\cop\P_Uniform_SWAT.jpg"];
 	};
 };
 

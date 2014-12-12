@@ -25,7 +25,7 @@ switch (_filter) do
 			_ret pushBack ["U_Rangemaster","Marshall Uniform",5000];
 		};
 		
-		if(__GETC__(life_coplevel) > 2) then //corp only
+		if(__GETC__(life_coplevel) > 2) then //corporal
 		{
 			_ret pushBack ["U_B_HeliPilotCoveralls","Pilot Uniform",10000];
 		};
@@ -37,6 +37,11 @@ switch (_filter) do
 		if(__GETC__(life_coplevel) > 4) then //Lieutenant
 		{
 			_ret pushBack ["U_B_GhillieSuit","Ghillie Suit",15000];
+		};
+		
+		if(__GETC__(life_coplevel) > 4) then
+		{
+			_ret set[count _ret,["U_B_CTRG_1","SWAT Uniform",2500]];		
 		};
 		
 	};
