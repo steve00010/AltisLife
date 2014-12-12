@@ -35,8 +35,3 @@ MAC_fnc_switchMove = {
     _object switchMove _anim;
     
 };
-while {true} do
-{
-	sleep 100;
-	0 setFog 0;
-};
