@@ -96,7 +96,7 @@
 		{
 			[] call _fnc_D41_WetterWerte;
 			sleep 1;
-			60 setfog (D41_Nebel);
+			//60 setfog (D41_Nebel);
 			60 setRain (D41_Regen);
 			0 setOvercast (D41_Vorschau);
 			setWind (D41_Wind);
@@ -110,7 +110,7 @@
 	{
 		while{true}do
 		{
-			60 setfog (D41_Nebel);
+			//60 setfog (D41_Nebel);
 			60 setRain (D41_Regen);
 			0 setOvercast (D41_Vorschau);
 			setWind (D41_Wind);
