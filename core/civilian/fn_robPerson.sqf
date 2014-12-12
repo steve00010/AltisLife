@@ -16,7 +16,7 @@ if(pbh_life_cash > 0) then
 	//[[1,format["%1 has robbed %2 for $%3",_robber getVariable["realname",name _robber],profileName,[pbh_life_cash] call life_fnc_numberText]],"life_fnc_broadcast",nil,false] spawn life_fnc_MP;
 	[[1,"STR_NOTF_Robbed",true,[_robber getVariable["realname",name _robber],profileName,[pbh_life_cash] call life_fnc_numberText]],"life_fnc_broadcast",nil,false] spawn life_fnc_MP;
 	pbh_life_cash = 0;
-	_msg = format["%1 robbed %2",profileName,getVariable["realname",name _robber]];
+	_msg = format["%1 robbed %2",profileName,_robber getVariable["realname",_robber]];
 	[[_msg],"life_fnc_logMSG",false,false] spawn life_fnc_MP;
 }
 	else
