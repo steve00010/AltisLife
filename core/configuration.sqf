@@ -415,7 +415,6 @@ life_weapon_shop_array =
 	["30Rnd_45ACP_Mag_SMG_01",60],
 	["acc_flashlight",nil,0],
 	["acc_pointer_IR",nil,0],
-	["30Rnd_9x21_Mag",30],
 	["SmokeShellBlue","Tear Gas Grenade",10000],
 	["HandGrenade_Stone","Flashbang",10000]
 ];
