@@ -2263,8 +2263,8 @@
 			<Portuguese>Alguem já está acessando o cofre.</Portuguese>
 		</Key>
 		<Key ID="STR_Civ_NotEnoughCops">
-			<Original>There needs to be 8 or more cops online to continue.</Original>
-			<English>There needs to be 5 or more cops online to continue.</English>
+			<Original>There needs to be 6 or more cops online to continue.</Original>
+			<English>There needs to be 6 or more cops online to continue.</English>
 			<German>Es müssen 5 oder mehr Polizisten online sein, um fortfahren zu können.</German>
 			<French>Il faut au minimum 5 flic pour continuer</French>
 			<Italian>Servono almeno 5 poliziotti online per continuare.</Italian>
