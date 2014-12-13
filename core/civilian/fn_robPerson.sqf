@@ -22,5 +22,5 @@ if(pbh_life_cash > 0) then
 	else
 {
 	//[[2,format["%1 doesn't have any money.",profileName]],"life_fnc_broadcast",_robber,false] spawn life_fnc_MP;
-	[[2,"STR_NOTF_RobFail",true,[profileName]],"life_fnc_broadcast",getVariable["realname",name player],false] spawn life_fnc_MP;
+	[[2,"STR_NOTF_RobFail",true,[profileName]],"life_fnc_broadcast",profileName,false] spawn life_fnc_MP;
 };

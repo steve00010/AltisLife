@@ -110,8 +110,7 @@ pbh_life_cash = 0;
 [] call life_fnc_hudUpdate; //Get our HUD updated.
 [[player,life_sidechat,playerSide],"TON_fnc_managesc",false,false] spawn life_fnc_MP;
 
-_msg = format["%1 killed by %2",profileName,_killer getVariable["realname", _killer]];
-diag_log format["%1",_msg];
+_msg = format["%1 was killed by %2",profileName,_killer getVariable["realname", _killer]];
 [[_msg],"life_fnc_logMSG",false,false] spawn life_fnc_MP;
 
 [0] call SOCK_fnc_updatePartial;
