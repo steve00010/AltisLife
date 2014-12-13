@@ -3327,7 +3327,7 @@ class Mission
 					vehicle="B_RangeMaster_F";
 					skill=0.60000002;
 					text="h1_3_4";
-					init="this enableSimulation false; this addAction[""Cop Item Shop"",life_fnc_virt_menu,""cop""]; this addAction[""Swat Weapon Shop"",life_fnc_weaponShopMenu,""cop_swat""]; this addAction[""Swat Clothing Shop"",life_fnc_clothingMenu,""swat""]; ";
+					init="this enableSimulation false; this addAction[""Cop Item Shop"",life_fnc_virt_menu,""cop""]; this addAction[""Swat Weapon Shop"",life_fnc_weaponShopMenu,""cop_swat""];";
 				};
 				class Item115
 				{
