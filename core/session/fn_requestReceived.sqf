@@ -91,7 +91,7 @@ switch(playerSide) do {
 };
 
 if(count (_this select 14) > 0) then {
-	{life_vehicles pushBack _x;} foreach (_this select 12);
+	{life_vehicles pushBack _x;} foreach (_this select 14);
 };
 
 life_session_completed = true;
