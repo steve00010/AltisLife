@@ -107,6 +107,7 @@ life_fnc_garageRefund = compileFinal
 [] execVM "core\init_survival.sqf";
 [] execVM "core\welcome.sqf";
 [] execVM "core\fn_addKey.sqf";
+[] execVM "scripts\earplug\earplugInit.sqf";
 
 
 __CONST__(life_paycheck,life_paycheck);
