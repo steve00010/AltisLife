@@ -54,5 +54,5 @@ player addUniform "U_C_WorkerCoveralls";//Add line
 [[player,0,"textures\uniforms\prisoner_uniform.jpg"],"life_fnc_setTexture",true,false] spawn life_fnc_MP;
 
 
-[[player,_bad],"life_fnc_logit",false,false] spawn life_fnc_MP;
+[[player,_bad],"life_fnc_jailSys",false,false] spawn life_fnc_MP;
 [5] call SOCK_fnc_updatePartial;
