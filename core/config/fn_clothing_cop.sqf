@@ -39,10 +39,15 @@ switch (_filter) do
 			_ret pushBack ["U_B_GhillieSuit","Ghillie Suit",15000];
 		};
 		
-		if(__GETC__(life_coplevel) > 4) then
+		if(__GETC__(life_swatlevel) > 0) then
 		{
-			_ret set[count _ret,["U_B_CTRG_1","SWAT Uniform",2500]];		
+			_ret set[count _ret,["U_B_CTRG_1","SWAT Uniform",12500]];			
 		};
+		
+		if(__GETC__(life_coplevel) > 1) then
+		{
+		    _ret set[count _ret,["U_B_CTRG_3","DEA Uniform",12500]];
+		};	
 		
 	};
 	

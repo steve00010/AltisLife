@@ -9,7 +9,7 @@ if (playerSide == west) then
 
 	if(uniform player == "U_B_CombatUniform_mcam_worn") then 
 	{
-		player setObjectTextureGlobal [0,"textures\uniforms\swat_shirt.jpg"];
+		player setObjectTextureGlobal [0,"textures\uniforms\senior_shirt.jpg"];
 	};
 	
 	if(uniform player == "U_B_HeliPilotCoveralls") then 
@@ -21,6 +21,11 @@ if (playerSide == west) then
 	{
 		player setObjectTextureGlobal [0,"textures\uniforms\cop\P_Uniform_SWAT.jpg"];
 	};
+	
+	if(uniform player == "U_B_CTRG_3")  then 
+	{
+		player setObjectTextureGlobal [0,"textures\uniforms\cop\dea.jpg"];
+	};	
 };
 
 if (playerSide == independent) then
