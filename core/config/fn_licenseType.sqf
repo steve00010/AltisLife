@@ -65,6 +65,7 @@ switch (_mode) do
 			case "license_civ_gun": {_var = "gun"}; //Firearm/gun license cost
 			case "license_civ_dive": {_var = "dive"}; //Diving license cost
 			case "license_civ_oil": {_var = "oil"}; //Oil processing license cost
+			case "license_cop_dea": {_var = "dea" };
 			case "license_cop_air": {_var = "cair"}; //Cop Pilot License cost
 			case "license_cop_swat": {_var = "swat"}; //Swat License cost
 			case "license_cop_cg": {_var = "cg"}; //Coast guard license cost
