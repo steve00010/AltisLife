@@ -64,7 +64,7 @@ for "_i" from 0 to count(_colorArray)-1 do
 {
 	if(((_colorArray select _i) select 1 == (life_veh_shop select 2)) or ((_colorArray select _i) select 1 == steamid)) then 
 	{
-		if((_colorArray select _i) select 1 != "BUFFER") then {
+		if((_colorArray select _i) select 0 != "BUFFER") then {
 			_temp = [_className,_i] call life_fnc_vehicleColorStr;
 			_ctrl lbAdd format["%1",_temp];
 			_ctrl lbSetValue [(lbSize _ctrl)-1,_i];
