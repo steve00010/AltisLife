@@ -94,27 +94,27 @@ switch (_vehicle) do
 		
 	case "C_Offroad_01_F":
 	{
-			_ret = 
-			[
-				["\A3\soft_F\Offroad_01\Data\offroad_01_ext_co.paa","civ"], 
-				["\A3\soft_F\Offroad_01\Data\offroad_01_ext_BASE01_CO.paa","civ"],
-				["\A3\soft_F\Offroad_01\Data\offroad_01_ext_BASE02_CO.paa","civ"],
-				["\A3\soft_F\Offroad_01\Data\offroad_01_ext_BASE03_CO.paa","civ"],
-				["\A3\soft_F\Offroad_01\Data\offroad_01_ext_BASE04_CO.paa","civ"],
-				["\A3\soft_F\Offroad_01\Data\offroad_01_ext_BASE05_CO.paa","civ"],
-				["#(ai,64,64,1)Fresnel(0.3,3)","civ"],
-				["textures\vehicles\offroad_police.jpg","cop"],
-				["#(argb,8,8,3)color(0.6,0.3,0.01,1)","civ"],
-				["textures\vehicles\offroad_paramedic.jpg","med"],
-				["textures\vehicles\civ_dodge.jpg","civ"]
-			];
+
+			_ret pushBack ["\A3\soft_F\Offroad_01\Data\offroad_01_ext_co.paa","civ"];
+			_ret pushBack ["\A3\soft_F\Offroad_01\Data\offroad_01_ext_BASE01_CO.paa","civ"];
+			_ret pushBack ["\A3\soft_F\Offroad_01\Data\offroad_01_ext_BASE02_CO.paa","civ"];
+			_ret pushBack ["\A3\soft_F\Offroad_01\Data\offroad_01_ext_BASE03_CO.paa","civ"];
+			_ret pushBack ["\A3\soft_F\Offroad_01\Data\offroad_01_ext_BASE04_CO.paa","civ"];
+			_ret pushBack ["\A3\soft_F\Offroad_01\Data\offroad_01_ext_BASE05_CO.paa","civ"];
+			_ret pushBack ["#(ai,64,64,1)Fresnel(0.3,3)","civ"];
+			_ret pushBack ["textures\vehicles\offroad_police.jpg","cop"];
+			_ret pushBack ["#(argb,8,8,3)color(0.6,0.3,0.01,1)","civ"];
+			_ret pushBack ["textures\vehicles\offroad_paramedic.jpg","med"];
+			_ret pushBack ["textures\vehicles\civ_dodge.jpg","civ"];
+		
+		if(__GETC__(life_swatlevel) > 0) then {
+			_ret pushBack ["textures\vehicles\offroad_swat.jpg","cop"];
+		};
 		if(license_cop_dea) then {
 			hint format["%1",license_cop_dea];
 			_ret pushBack ["textures\vehicles\offroad_dea.jpg","cop"];
 		};
-		if(__GETC__(life_swatlevel) > 0) then {
-			_ret pushBack ["textures\vehicles\offroad_swat.jpg","cop"];
-		};
+
 	};
 	
 	case "C_Hatchback_01_F":
