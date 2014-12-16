@@ -57,7 +57,7 @@ _DiscountText
 
 _ctrl = getControl(2300,2304);
 lbClear _ctrl;
-_colorArray = [_className] call life_fnc_vehicleColorCfg;
+_colorArray = [_className] call life_fnc_vehicleShopColorCfg;
 
 for "_i" from 0 to count(_colorArray)-1 do 
 {

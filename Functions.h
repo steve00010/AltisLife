@@ -142,6 +142,7 @@ class Life_Client_Core
 		file = "core\config";
 		class licensePrice {};
 		class vehicleColorCfg {};
+		class vehicleShopColorCfg {};
 		class vehicleColorStr {};
 		class vehicleListCfg {};
 		class licenseType {};
