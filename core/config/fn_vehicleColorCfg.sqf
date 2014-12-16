@@ -110,7 +110,7 @@ switch (_vehicle) do
 		if(license_cop_dea) then {
 			_ret pushBack ["textures\vehicles\offroad_dea.jpg","cop"];
 		};
-		if(life_swatlevel > 0) then {
+		if(__GETC__(life_swatlevel) > 0) then {
 			_ret pushBack ["textures\vehicles\offroad_swat.jpg","cop"];
 		};
 	};
