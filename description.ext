@@ -9,7 +9,7 @@ disableChannels[]={0,1,2};
 enableDebugConsole = 1;
 LoadScreen = "images\prologo.jpg";
 respawnDialog = 0;	
-
+allowFunctionsRecompile = 1;
 class Header
 {
 	gameType = RPG;
