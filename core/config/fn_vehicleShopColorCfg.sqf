@@ -109,7 +109,6 @@ switch (_vehicle) do
 				["textures\vehicles\civ_dodge.jpg","civ"]
 			];
 		if(license_cop_dea) then {
-			diag_log format["LIS: %1",license_cop_dea];
 			_ret pushBack ["textures\vehicles\offroad_dea.jpg","cop"];
 		};
 		if(__GETC__(life_swatlevel) > 0) then {
