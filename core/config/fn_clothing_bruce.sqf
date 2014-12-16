@@ -5,18 +5,19 @@
 	Description:
 	Master configuration file for Bruce's Outback Outfits.
 */
-private["_filter"];
+private["_filter","_ret"];
 _filter = [_this,0,0,[0]] call BIS_fnc_param;
 //Classname, Custom Display name (use nil for Cfg->DisplayName, price
 
 //Shop Title Name
 ctrlSetText[3103,"Bruce's Outback Outfits"];
-
+_ret = [];
 switch (_filter) do
 {
 	//Uniforms
 	case 0:
 	{
+		_ret =
 		[
 		["U_C_Poloshirt_blue","Poloshirt Blue",250],
 		["U_C_Poloshirt_burgundy","Poloshirt Burgundy",275],
@@ -44,6 +45,7 @@ switch (_filter) do
 	//Hats
 	case 1:
 	{
+	_ret =
 		[
 			["H_Bandanna_camo","Camo Bandanna",120],
 			["H_Bandanna_surfer","Surfer Bandanna",130],
@@ -75,6 +77,7 @@ switch (_filter) do
 	//Glasses
 	case 2:
 	{
+	_ret =
 		[
 			["G_Shades_Black",nil,25],
 			["G_Shades_Blue",nil,20],
@@ -95,6 +98,7 @@ switch (_filter) do
 	//Vest
 	case 3:
 	{
+	_ret =
 		[
 			["V_Rangemaster_belt",3000]
 		];
@@ -106,6 +110,7 @@ switch (_filter) do
 	//Backpacks
 	case 4:
 	{
+	_ret =
 		[
 			["B_AssaultPack_cbr",nil,2500],
 			["B_Kitbag_mcamo",nil,4500],
@@ -118,3 +123,4 @@ switch (_filter) do
 		];
 	};
 };
+_ret;
