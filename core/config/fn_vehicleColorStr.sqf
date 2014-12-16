@@ -31,6 +31,7 @@ switch (_vehicle) do
 			case 3: {_color = "Desert Digi"};
 			case 4: {_color = "Cop"};
 			case 5: {_color = "EMS"};
+			case 6: {_color = "Channel 7"};
 		};
 	};
 	

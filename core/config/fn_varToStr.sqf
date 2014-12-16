@@ -107,4 +107,5 @@ switch (_var) do
 	case "license_civ_stiller": {"Distillers License"};
 	case "license_civ_liquor": {"Liquor License"};
 	case "license_civ_bottler": {"Bottling License"};
+	case "license_civ_channelseven": {"Channel 7 News"};
 };

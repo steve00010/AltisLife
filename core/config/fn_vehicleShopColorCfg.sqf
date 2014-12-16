@@ -34,6 +34,10 @@ switch (_vehicle) do
 			["textures\vehicles\police_orca.jpg","cop"],
 			["textures\vehicles\medic_orca.jpg","med"]
 		];
+		if(license_civ_channelseven) then {
+			_ret pushBack ["textures\vehicles\orca_channel7.jpg","civ"];
+		};
+		
 	};
 	
 	case "B_Heli_Light_01_armed_F":

@@ -203,7 +203,7 @@ switch (_shop) do
 			_return set[count _return, ["B_Heli_Light_01_F",300000]];
 			_return set[count _return, ["B_Heli_Transport_03_unarmed_F",3500000]];
 		};
-		if(__GETC__(life_donator) > 1) then
+		if(__GETC__(life_donator) > 1 && license_civ_channelseven) then
 		{
 			_return set[count _return,["O_Heli_Light_02_unarmed_F",600000]];
 		};

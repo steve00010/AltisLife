@@ -31,12 +31,14 @@ switch (_filter) do
 		["U_C_HunterBody_grn","The Hunters Look",1500],
 		["U_OrestesBody","Surfing On Land",1100],
 		["U_NikosAgedBody","Casual Wears",5000],
-		["U_C_Journalist","Journalist",7500],
 		["U_NikosBody","Jeans and Shirt",7500],
 		["U_I_Protagonist_VR","Tracksuit Green",20000],
 		["U_O_Protagonist_VR","Tracksuit Red",20000],
 		["U_B_Protagonist_VR","Tracksuit Blue",20000]
 		];
+		if(license_civ_channelseven) then {
+			_ret pushBack ["U_C_Journalist","Journalist",7500];
+		};
 	};
 	
 	//Hats
@@ -63,9 +65,11 @@ switch (_filter) do
 			["H_Cap_grn_BI",nil,150],
 			["H_Cap_oli",nil,150],
 			["H_Cap_red",nil,150],
-			["H_Cap_tan",nil,150],
-			["H_Cap_press",nil,500]
+			["H_Cap_tan",nil,150]
 		];
+		if(license_civ_channelseven) then {
+			_ret pushBack ["H_Cap_press",nil,500];
+		};
 	};
 	
 	//Glasses
@@ -92,9 +96,11 @@ switch (_filter) do
 	case 3:
 	{
 		[
-			["V_Press_F",nil,10000],
 			["V_Rangemaster_belt",3000]
 		];
+		if(license_civ_channelseven) then {
+			_ret pushBack ["V_Press_F",nil,10000];
+		};
 	};
 	
 	//Backpacks
