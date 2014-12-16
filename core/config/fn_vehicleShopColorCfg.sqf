@@ -108,7 +108,7 @@ switch (_vehicle) do
 				["textures\vehicles\offroad_paramedic.jpg","med"],
 				["textures\vehicles\civ_dodge.jpg","civ"]
 			];
-		if(missionNamespace getVariable "license_cop_dea" == 1) then {
+		if(license_cop_dea == 1) then {
 			diag_log format["LIS: %1",license_cop_dea];
 			_ret pushBack ["textures\vehicles\offroad_dea.jpg","cop"];
 		};
