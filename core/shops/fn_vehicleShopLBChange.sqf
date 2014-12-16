@@ -15,7 +15,8 @@ _index = _this select 1;
 //Fetch some information.
 _className = _control lbData _index;
 _vIndex = _control lbValue _index;
-_vehicleList = [life_veh_shop select 0] call life_fnc_vehicleListCfg; _basePrice = (_vehicleList select _vIndex) select 1;
+_vehicleList = [life_veh_shop select 0] call life_fnc_vehicleListCfg;
+_basePrice = (_vehicleList select _vIndex) select 1;
 _vehicleInfo = [_className] call life_fnc_fetchVehInfo;
 _trunkSpace = [_className] call life_fnc_vehicleWeightCfg;
 
@@ -63,9 +64,11 @@ for "_i" from 0 to count(_colorArray)-1 do
 {
 	if(((_colorArray select _i) select 1 == (life_veh_shop select 2)) or ((_colorArray select _i) select 1 == steamid)) then 
 	{
-		_temp = [_className,_i] call life_fnc_vehicleColorStr;
-		_ctrl lbAdd format["%1",_temp];
-		_ctrl lbSetValue [(lbSize _ctrl)-1,_i];
+		if((_colorArray select _i) select 1 != "BUFFER") then {
+			_temp = [_className,_i] call life_fnc_vehicleColorStr;
+			_ctrl lbAdd format["%1",_temp];
+			_ctrl lbSetValue [(lbSize _ctrl)-1,_i];
+		};
 	};
 };
 

@@ -106,13 +106,14 @@ switch (_vehicle) do
 			_ret pushBack ["#(argb,8,8,3)color(0.6,0.3,0.01,1)","civ"];
 			_ret pushBack ["textures\vehicles\offroad_paramedic.jpg","med"];
 			_ret pushBack ["textures\vehicles\civ_dodge.jpg","civ"];
-		
-		if(__GETC__(life_swatlevel) > 0) then {
-			_ret pushBack ["textures\vehicles\offroad_swat.jpg","cop"];
-		};
 		if(license_cop_dea) then {
 			_ret pushBack ["textures\vehicles\offroad_dea.jpg","cop"];
 		};
+		if(__GETC__(life_swatlevel) > 0) then {
+			_ret pushBack ["BUFFER","cop"];
+			_ret pushBack ["textures\vehicles\offroad_swat.jpg","cop"];
+		};
+
 
 	};
 	
