@@ -105,6 +105,8 @@ switch (_vehicle) do
 			case 8: {_color = "Taxi"};
 			case 9: {_color = "EMS"};
 			case 10: {_color = "Dodge"};
+			case 11: {_color = "SWAT" };
+			case 12: {_color = "DEA" };
 		};
 	};
 	

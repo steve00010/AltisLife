@@ -111,7 +111,6 @@ switch (_vehicle) do
 			_ret pushBack ["textures\vehicles\offroad_swat.jpg","cop"];
 		};
 		if(license_cop_dea) then {
-			hint format["%1",license_cop_dea];
 			_ret pushBack ["textures\vehicles\offroad_dea.jpg","cop"];
 		};
 
