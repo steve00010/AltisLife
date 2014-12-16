@@ -44,10 +44,10 @@ switch (_filter) do
 			_ret set[count _ret,["U_B_CTRG_1","SWAT Uniform",12500]];			
 		};
 		
-		if(__GETC__(life_coplevel) > 1) then
+		if(license_cop_dea) then
 		{
 		    _ret set[count _ret,["U_B_CTRG_3","DEA Uniform",12500]];
-		};	
+		};		
 		
 	};
 	
