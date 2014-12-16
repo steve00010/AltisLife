@@ -198,6 +198,7 @@ life_inv_items =
 life_licenses =
 [
 	["license_cop_air","cop"],
+	["license_cop_dea","cop"],
 	["license_cop_swat","cop"],
 	["license_cop_cg","cop"],
 	["license_civ_driver","civ"],
