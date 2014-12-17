@@ -11,16 +11,7 @@ waitUntil {scriptDone _handle};
 
 //Load player with default cop gear.
 player forceAddUniform "U_Rangemaster";
-player addVest "V_TacVest_blk_POLICE";
 player addBackpack "H_Cap_police";
-
-player addWeapon "hgun_P07_snds_F";
-player addMagazine "16Rnd_9x21_Mag";
-player addMagazine "16Rnd_9x21_Mag";
-player addMagazine "16Rnd_9x21_Mag";
-player addMagazine "16Rnd_9x21_Mag";
-player addMagazine "16Rnd_9x21_Mag";
-player addMagazine "16Rnd_9x21_Mag";
 
 /* ITEMS */
 player addItem "ItemMap";
