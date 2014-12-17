@@ -139,6 +139,7 @@ switch (_vehicle) do
 			case 4: {_color = "Carbon"};
 			case 5: {_color = "Cop"};
 			case 6: {_color = "EMS"};
+			case 7: {_color = "Ferrari"};
 		};
 	};
 	
