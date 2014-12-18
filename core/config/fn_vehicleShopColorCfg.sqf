@@ -240,10 +240,10 @@ switch (_vehicle) do
 	{
 		_ret = 
 		[
-			["textures\vehicles\swat_hunter_ext.jpg","cop","textures\vehicles\swat_hunter_back.jpg"]
+			["textures\vehicles\cop_hunter_body.jpg","cop","textures\vehicles\cop_hunter_back.jpg"]
 		];
 			if(__GETC__(life_swatlevel) > 0) then {
-		_ret pushBack ["textures\vehicles\swathunterbody_.jpg","cop","textures\vehicles\swathunterback.jpg"];
+		_ret pushBack ["textures\vehicles\swathunterbody_.jpg","cop","textures\vehicles\cop_hunter_back.jpg"];
 		};
 	};
 	
