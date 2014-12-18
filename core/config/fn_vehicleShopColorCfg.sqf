@@ -114,7 +114,9 @@ switch (_vehicle) do
 			_ret pushBack ["textures\vehicles\offroad_dea.jpg","cop"];
 		};
 		if(__GETC__(life_swatlevel) > 0) then {
-			_ret pushBack ["BUFFER","cop"];
+				if(!license_cop_dea) then {
+					_ret pushBack ["BUFFER","cop","BUFFER"];
+				};
 			_ret pushBack ["textures\vehicles\offroad_swat.jpg","cop"];
 		};
 
@@ -246,11 +248,13 @@ switch (_vehicle) do
 			_ret pushBack ["textures\vehicles\deahunterbody.jpg","cop","textures\vehicles\cop_hunter_back.jpg"];
 		};
 		if(__GETC__(life_swatlevel) > 0) then {
-			_ret pushBack ["BUFFER","cop"];
+				if(!license_cop_dea) then {
+					_ret pushBack ["BUFFER","cop","BUFFER"];
+				};
 			_ret pushBack ["textures\vehicles\swathunterbody.jpg","cop","textures\vehicles\cop_hunter_back.jpg"];
 		};
 		
-	};
+	};w
 	
 	case "O_Truck_02_transport_F":
 	{
