@@ -68,7 +68,7 @@ switch (_vehicle) do
 	{
 		_ret =
 		[
-			["textures\vehicles\orca_rebel.jpg","paa"]
+			["textures\vehicles\orca_rebel.paa","Camo"]
 		];
 	};
 	
@@ -143,7 +143,8 @@ switch (_vehicle) do
 			["textures\vehicles\poly_suv.jpg","civ"],
 			["textures\vehicles\suv_police.jpg","cop"],
 			["textures\vehicles\suv_paramedic.jpg","med"],
-			["textures\vehicles\suv_ferrari.jpg","civ"]
+			["textures\vehicles\suv_ferrari.jpg","civ"],
+			["textures\vehicles\suv_rusty.jpg","civ"]
 		];
 	};
 	
@@ -236,7 +237,8 @@ switch (_vehicle) do
 	{
 		_ret = 
 		[
-			["textures\vehicles\swat_hunter_ext.jpg","cop","textures\vehicles\swat_hunter_back.jpg"]
+			["textures\vehicles\cop_hunter_body.jpg","cop","textures\vehicles\cop_hunter_back.jpg"],
+			["textures\vehicles\swathunterbody_.jpg","cop","textures\vehicles\swathunterback.jpg"]
 		];
 	};
 	
