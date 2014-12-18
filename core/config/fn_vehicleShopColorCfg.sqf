@@ -254,7 +254,7 @@ switch (_vehicle) do
 			_ret pushBack ["textures\vehicles\swathunterbody.jpg","cop","textures\vehicles\cop_hunter_back.jpg"];
 		};
 		
-	};w
+	};
 	
 	case "O_Truck_02_transport_F":
 	{
