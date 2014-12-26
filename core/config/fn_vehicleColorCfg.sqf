@@ -31,9 +31,9 @@ switch (_vehicle) do
 			["\a3\air_f\Heli_Light_02\Data\heli_light_02_ext_civilian_co.paa","civ"],
 			["\a3\air_f\Heli_Light_02\Data\heli_light_02_ext_indp_co.paa","civ"],
 			["\a3\air_f\Heli_Light_02\Data\heli_light_02_ext_opfor_co.paa","civ"],
-			["textures\vehicles\police_orca.paa","cop"],
-			["textures\vehicles\medic_orca.paa","med"],
-			["textures\vehicles\orca_channel7.paa","med"]
+			["textures\vehicles\police_orca.jpg","cop"],
+			["textures\vehicles\medic_orca.jpg","med"],
+			["textures\vehicles\orca_channel7.jpg","civ"]
 		];
 	};
 	
@@ -41,7 +41,7 @@ switch (_vehicle) do
 		{
 		_ret = 
 		[
-			["textures\vehicles\rebel_hummingbird.paa","civ"]
+			["textures\vehicles\rebel_hummingbird.jpg","civ"]
 		];
 	};
 	
@@ -49,7 +49,7 @@ switch (_vehicle) do
 		{
 		_ret = 
 		[
-			["textures\vehicles\cop_hellcat.paa","cop"]
+			["textures\vehicles\cop_hellcat.jpg","cop"]
 		];
 	};
 	
@@ -60,7 +60,7 @@ switch (_vehicle) do
 		_ret =
 		[
 			[_path + "heli_transport_01_ext01_co.paa","civ",_path + "heli_transport_01_ext02_co.paa"],
-			["textures\vehicles\ghosthawk_01.paa","cop","textures\vehicles\ghosthawk_02.paa"]
+			["textures\vehicles\ghosthawk_01.jpg","cop","textures\vehicles\ghosthawk_02.jpg"]
 		];
 	};
 	
@@ -68,7 +68,7 @@ switch (_vehicle) do
 	{
 		_ret =
 		[
-			["textures\vehicles\orca_rebel.paa","Camo"]
+			["textures\vehicles\orca_rebel.jpg","Camo"]
 		];
 	};
 	
@@ -207,8 +207,8 @@ switch (_vehicle) do
 			["\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_sheriff_co.paa","civ"],
 			["\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_wasp_co.paa","civ"],
 			["\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_bluefor_co.paa","reb"],
-			["textures\vehicles\heli_paramedic.paa","med"],
-			["textures\vehicles\heli_police.paa","cop"]
+			["textures\vehicles\heli_paramedic.jpg","med"],
+			["textures\vehicles\heli_police.jpg","cop"]
 		];
 	};
 	
