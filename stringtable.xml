@@ -2263,12 +2263,12 @@
 			<Portuguese>Alguem já está acessando o cofre.</Portuguese>
 		</Key>
 		<Key ID="STR_Civ_NotEnoughCops">
-			<Original>There needs to be 6 or more cops online to continue.</Original>
-			<English>There needs to be 6 or more cops online to continue.</English>
-			<German>Es müssen 6 oder mehr Polizisten online sein, um fortfahren zu können.</German>
-			<French>Il faut au minimum 6 flic pour continuer</French>
-			<Italian>Servono almeno 6 poliziotti online per continuare.</Italian>
-			<Portuguese>É necessário ter pelo menos 6 Policiais online para continuar.</Portuguese>
+			<Original>There needs to be 8 or more cops online to continue.</Original>
+			<English>There needs to be 8 or more cops online to continue.</English>
+			<German>Es müssen 8 oder mehr Polizisten online sein, um fortfahren zu können.</German>
+			<French>Il faut au minimum 8 flic pour continuer</French>
+			<Italian>Servono almeno 8 poliziotti online per continuare.</Italian>
+			<Portuguese>É necessário ter pelo menos 8 Policiais online para continuar.</Portuguese>
 		</Key>
 		<Key ID="STR_Civ_SafeInv">
 			<Original>Safe Inventory</Original>
