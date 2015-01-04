@@ -16,5 +16,5 @@ while {true} do
 	_fps ctrlSetText format["%1", round diag_fps];					
 	_fps ctrlCommit 0;
 	};
-	sleep 1.5;//save some cpu
+	sleep 2.0;//save some cpu
 };
