@@ -45,7 +45,7 @@ switch (_className) do
 	case "O_Truck_02_transport_F": {300};
 	case "O_Truck_03_transport_F": {425};
 	case "O_Truck_03_covered_F": {525};
-	case "B_Truck_01_transport_F": {600};
+	case "B_Truck_01_mover_F": {20};//Towtruck keep low
 	case "O_Truck_03_device_F": {550};
 	case "O_Heli_Light_02_unarmed_F": {60};
 	case "O_Heli_Light_02_F": {60};
