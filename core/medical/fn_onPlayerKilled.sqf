@@ -108,6 +108,7 @@ life_carryWeight = 0;
 pbh_life_cash = 0;
 
 [] call life_fnc_hudUpdate; //Get our HUD updated.
+[] call SOCK_fnc_syncData;
 [[player,life_sidechat,playerSide],"TON_fnc_managesc",false,false] spawn life_fnc_MP;
 
 _msg = format["%1 was killed by %2",profileName,_killer getVariable["realname", _killer]];
