@@ -181,7 +181,7 @@ if(count (handGunItems player) > 0) then
     ["life_inv_rock", life_inv_rock],
     ["life_inv_cement", life_inv_cement],
     ["life_inv_goldbar", life_inv_goldbar],
-	["life_inv_goldbap", life_inv_goldbarp],
+	["life_inv_goldbarp", life_inv_goldbarp],
     ["life_inv_blastingcharge", life_inv_blastingcharge],
     ["life_inv_boltcutter", life_inv_boltcutter],
     ["life_inv_defusekit", life_inv_defusekit],
