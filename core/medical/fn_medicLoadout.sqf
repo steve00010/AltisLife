@@ -9,7 +9,7 @@ private["_handle"];
 _handle = [] spawn life_fnc_stripDownPlayer;
 waitUntil {scriptDone _handle};
 
-player addbackpack "B_FieldPack_blk";
+player addbackpack "B_Carryall_khk";
 player addUniform "U_Rangemaster";
 player addItem "ToolKit";
 player addItem "Medikit";
