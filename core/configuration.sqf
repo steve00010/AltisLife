@@ -307,9 +307,9 @@ sell_array =
 	["whiskey",5000], 
 	["beerp",4500], 
 	["mash",2500], 
-	["rye",2000], 
-	["hops",1800], 
-	["yeast",2000], 
+	["rye",150], 
+	["hops",150], 
+	["yeast",150], 
 	["cornmeal",200], 
 	["bottles",75]
 ];
@@ -399,6 +399,8 @@ life_weapon_shop_array =
 	["acc_flashlight",100],
 	["srifle_EBR_F",15000],
 	["arifle_TRG21_F",3500],
+	["srifle_DMR_01_ACO_F",nil,75000],
+    ["10Rnd_762x51_Mag",nil,400],
 	["optic_MRCO",5000],
 	["optic_Holosight",nil,1000],
 	["optic_SOS",nil,1000],
