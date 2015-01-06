@@ -32,3 +32,4 @@
 #include "goldSafe.h"
 #include "prisonlist.hpp"
 #include "rules.hpp"
+#include "revoke_license.h"

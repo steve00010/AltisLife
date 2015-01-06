@@ -196,6 +196,7 @@ class Life_Client_Core
 		class cellphone2 {};
 		class deleteMsg {};
 		class p_prisonbreak {};
+		class revokeLicense {};
 	};
 	
 	class Functions

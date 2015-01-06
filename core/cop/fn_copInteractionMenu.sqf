@@ -16,7 +16,7 @@
 #define Btn9 37458
 #define Title 37401
 
-private["_display","_curTarget","_Btn1","_Btn2","_Btn3","_Btn4","_Btn5","_Btn6","_Btn7","_Btn9"];
+private["_display","_curTarget","_Btn1","_Btn2","_Btn3","_Btn4","_Btn5","_Btn6","_Btn7","_Btn8","_Btn9"];
 if(!dialog) then {
 	createDialog "pInteraction_Menu";
 };
@@ -34,6 +34,7 @@ if(_curTarget isKindOf "House_F") exitWith {
 		_Btn5 = _display displayCtrl Btn5;
 		_Btn6 = _display displayCtrl Btn6;
 		_Btn7 = _display displayCtrl Btn7;
+		_Btn8 = _display displayCtrl Btn8;
 		_Btn9 = _display displayCtrl Btn9;
 		life_pInact_curTarget = _curTarget;
 		
@@ -47,6 +48,7 @@ if(_curTarget isKindOf "House_F") exitWith {
 		_Btn5 ctrlShow false;
 		_Btn6 ctrlShow false;
 		_Btn7 ctrlShow false;
+		_Btn8 ctrlShow false;
 	} else {
 		closeDialog 0;
 	};
@@ -61,6 +63,7 @@ _Btn4 = _display displayCtrl Btn4;
 _Btn5 = _display displayCtrl Btn5;
 _Btn6 = _display displayCtrl Btn6;
 _Btn7 = _display displayCtrl Btn7;
+_Btn8 = _display displayCtrl Btn8;
 _Btn9 = _display displayCtrl Btn9;
 life_pInact_curTarget = _curTarget;
 
@@ -94,6 +97,10 @@ _Btn6 buttonSetAction "[life_pInact_curTarget] call life_fnc_arrestAction;";
 
 _Btn7 ctrlSetText localize "STR_pInAct_PutInCar";
 _Btn7 buttonSetAction "[life_pInact_curTarget] call life_fnc_putInCar;";
+
+//Revoke License
+_Btn8 ctrlSetText localize "STR_pInAct_RevokeLicense";
+_Btn8 buttonSetAction "[life_pInact_curTarget] call life_fnc_revokeLicense;";
 
 //actually the Breathalyser button
 _Btn9 ctrlSetText localize "STR_pInAct_Breathalyzer";
