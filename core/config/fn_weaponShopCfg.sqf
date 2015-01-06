@@ -149,8 +149,7 @@ switch(_shop) do
 						["optic_SOS",nil,1000],
 						["acc_pointer_IR",nil,0],
 						["acc_flashlight",nil,0],
-						["SmokeShellBlue","Tear Gas Grenade",10000],
-						["HandGrenade_Stone","Flashbang",10000]
+						["SmokeShellBlue","Tear Gas Grenade",10000]
 					]
 				];
 			};
@@ -182,7 +181,6 @@ switch(_shop) do
 						["optic_NVS",nil,1000],
 						["acc_pointer_IR",nil,0],
 						["acc_flashlight",nil,0],
-						["Rangefinder",nil,2000],
 						["SmokeShellBlue","Tear Gas Grenade",10000]
 					]
 				];
@@ -254,9 +252,7 @@ switch(_shop) do
 						["acc_flashlight",nil,0],
 						["B_IR_Grenade",nil,1000],
 						["muzzle_snds_H","Silencer6.5mm",25000],
-						["Rangefinder",nil,2000],
-						["SmokeShellBlue","Tear Gas Grenade",10000],
-						["HandGrenade_Stone","Flashbang",10000]
+						["SmokeShellBlue","Tear Gas Grenade",10000]
 					]
 				];
 			};
