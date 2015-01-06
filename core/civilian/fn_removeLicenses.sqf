@@ -51,41 +51,41 @@ switch (_state) do
 	
 	// Revoking Licenses
 	
-	// Drivers License
+	// Marijuana License
 	case 10:
 	{
-		license_civ_driver = false;
-		hint localize "STR_Civ_RevokeLicense_Driver";
+		license_civ_marijuana = false;
+		hint localize "STR_Civ_RevokeLicense_Marijuana";
 	};
 	// Truck License
 	case 11:
 	{
-		license_civ_truck = false;
-		hint localize "STR_Civ_RevokeLicense_Truck";
+		license_civ_heroin = false;
+		hint localize "STR_Civ_RevokeLicense_Heroin";
 	};
 	// Pilot License
 	case 12:
 	{
-		license_civ_air = false;
-		hint localize "STR_Civ_RevokeLicense_Pilot";
+		license_civ_coke = false;
+		hint localize "STR_Civ_RevokeLicense_Coke";
 	};
 	// Boating License
 	case 13:
 	{
-		license_civ_boat = false;
-		hint localize "STR_Civ_RevokeLicense_Boating";
+		license_civ_air = false;
+		hint localize "STR_Civ_RevokeLicense_Air";
 	};
 	// Diving License
 	case 14:
 	{
-		license_civ_dive = false;
-		hint localize "STR_Civ_RevokeLicense_Diving";
+		license_civ_driver = false;
+		hint localize "STR_Civ_RevokeLicense_Driving";
 	};
-	// Taxi License
+	// Rebel License
 	case 15:
 	{
-		license_civ_taxi = false;
-		hint localize "STR_Civ_RevokeLicense_Taxi";
+		license_civ_rebel = false;
+		hint localize "STR_Civ_RevokeLicense_Rebel";
 	};
 	// All Motor Vehicle
 	case 16:
