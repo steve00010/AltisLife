@@ -81,7 +81,8 @@ switch (_shop) do
 		[
 			["C_Van_01_box_F",50000],
 			["I_Truck_02_covered_F",225000],
-			["I_Truck_02_transport_F",150000]
+			["I_Truck_02_transport_F",150000],
+			["O_Truck_03_ammo_F",300000]
 		];
 		
 		if(__GETC__(life_donator) > 0) then

@@ -13,8 +13,8 @@ switch (_className) do
 	case "C_Offroad_01_F": {80};
 	case "B_G_Offroad_01_F": {80};
 	case "B_Quadbike_01_F": {20};
-	case "I_Truck_02_covered_F": {375}; // Zamak Covered
-	case "I_Truck_02_transport_F": {325}; // Zamak
+	case "I_Truck_02_covered_F": {350}; // Zamak Covered
+	case "I_Truck_02_transport_F": {300}; // Zamak
 	case "I_Truck_02_Box_F": {450}; // Zamak Box
 	case "C_Hatchback_01_F": {60};
 	case "C_Hatchback_01_sport_F": {75};
@@ -25,7 +25,7 @@ switch (_className) do
 	case "C_Boat_Civil_01_F": {200};
 	case "C_Boat_Civil_01_police_F": {100};
 	case "C_Boat_Civil_01_rescue_F": {200};
-	case "B_Truck_01_transport_F": {700};
+	case "B_Truck_01_transport_F": {650};
 	case "B_Truck_01_covered_F": {800};
 	case "B_Truck_01_box_F": {900};
 	case "B_MRAP_01_F": {100};
@@ -43,10 +43,11 @@ switch (_className) do
 	//New Below
 	case "O_Truck_02_covered_F": {375};
 	case "O_Truck_02_transport_F": {300};
-	case "O_Truck_03_transport_F": {425};
-	case "O_Truck_03_covered_F": {525};
+	case "O_Truck_03_transport_F": {450};
+	case "O_Truck_03_covered_F": {500};
+	case "O_Truck_03_ammo_F": {400};
 	case "B_Truck_01_mover_F": {20};//Towtruck keep low
-	case "O_Truck_03_device_F": {550};
+	case "O_Truck_03_device_F": {600};
 	case "O_Heli_Light_02_unarmed_F": {60};
 	case "O_Heli_Light_02_F": {60};
 	case "B_Heli_Transport_01_F": {100};

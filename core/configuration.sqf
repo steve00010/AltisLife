@@ -474,6 +474,7 @@ life_garage_prices =
 	["O_Truck_03_transport_F",8000],
 	["O_Truck_03_covered_F",10000],
 	["O_Truck_03_device_F",15000],
+	["O_Truck_03_ammo_F",5000],
 	["O_Truck_03_device_F",25000]
 ];
 __CONST__(life_garage_prices,life_garage_prices);
@@ -526,6 +527,7 @@ life_garage_sell =
 	["O_Truck_02_transport_F",200000],
 	["O_Truck_03_transport_F",300000],
 	["O_Truck_03_covered_F",450000],
+	["O_Truck_03_ammo_F",300000],
 	["O_Truck_03_device_F",500000]
 ];
 __CONST__(life_garage_sell,life_garage_sell);
@@ -577,6 +579,7 @@ life_garage_chop =
 	["O_Truck_02_transport_F",100000],
 	["O_Truck_03_transport_F",150000],
 	["O_Truck_03_covered_F",250000],
-	["O_Truck_03_device_F",750000]
+	["O_Truck_03_device_F",750000],
+	["O_Truck_03_ammo_F",150000]
 ];
 __CONST__(life_garage_chop,life_garage_chop);
