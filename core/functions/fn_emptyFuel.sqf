@@ -21,7 +21,7 @@ while{true} do
 		};
 		_vehicleToFuel setFuel ((fuel _vehicleToFuel)-_fuelConsumption);
 		_fuelDisplay = round(_fuelConsumption*100000/2)/10;
-		hint format["Spalanie: %1 L/km",_fuelDisplay];
+		hint format["Fuel Usage: %1 L/km",_fuelDisplay];
 
 		if(fuel _vehicleToFuel < 0.2 && fuel _vehicleToFuel > 0.18) then
 		{
