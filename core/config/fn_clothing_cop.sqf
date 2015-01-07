@@ -62,12 +62,12 @@ switch (_filter) do
 		if(__GETC__(life_coplevel) > 2) then //corporal above
 		{
 			_ret pushBack ["H_Cap_blk","Black","Cap",0];
+			_ret pushBack ["H_CrewHelmetHeli_B","Gas Mask",15000];
 
 			_ret pushBack ["H_PilotHelmetHeli_B","Pilot Helm",0];
 		};
 		if(__GETC__(life_coplevel) > 3) then //Sergeant
 		{
-			_ret pushBack ["H_CrewHelmetHeli_B","Gas Mask",15000];
 			_ret pushBack ["H_Beret_blk_POLICE","Police beret",0];
 			
 		};

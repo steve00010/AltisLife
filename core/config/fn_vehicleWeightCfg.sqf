@@ -33,7 +33,7 @@ switch (_className) do
 	case "I_MRAP_03_F": {60};
 	case "B_Heli_Light_01_F": {40};
 	case "O_Heli_Light_02_unarmed_F": {90};
-	case "I_Heli_Transport_02_F": {120};
+	case "I_Heli_Transport_02_F": {100};
 	case "C_Rubberboat": {85};
 	case "O_Boat_Armed_01_hmg_F": {175};
 	case "B_Boat_Armed_01_minigun_F": {175};
@@ -51,7 +51,7 @@ switch (_className) do
 	case "O_Heli_Light_02_unarmed_F": {60};
 	case "O_Heli_Light_02_F": {60};
 	case "B_Heli_Transport_01_F": {100};
-	case "B_Heli_Transport_01_camo_F": {100}; // Ghosthawk
+	case "B_Heli_Transport_01_camo_F": {120}; // Ghosthawk
 	case "Land_CargoBox_V1_F": {3000};
 	case "B_SDV_01_F": {150};
 	case "I_SDV_01_F": {150};
