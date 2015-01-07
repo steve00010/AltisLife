@@ -20,7 +20,7 @@ switch (_vehicle) do
 		[
 			[_path + "heli_transport_02_1_ion_co.paa","civ",_path + "heli_transport_02_2_ion_co.paa",_path + "heli_transport_02_3_ion_co.paa"],
 			[_path + "heli_transport_02_1_dahoman_co.paa","civ",_path + "heli_transport_02_2_dahoman_co.paa",_path + "heli_transport_02_3_dahoman_co.paa"],
-			[_path + "textures\vehicle\MohawkDoors.jpg","civ",_path + "textures\vehicle\Mohawkmiddle.jpg",_path + "texture\vehicle\Mohawksides.jpg"]
+			["textures\vehicles\MohawkDoors.jpg","civ","textures\vehicles\Mohawkmiddle.jpg","textures\vehicles\Mohawksides.jpg"]
 		];
 	};
 	
