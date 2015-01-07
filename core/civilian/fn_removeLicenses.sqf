@@ -69,7 +69,7 @@ switch (_state) do
 		license_civ_coke = false;
 		hint localize "STR_Civ_RevokeLicense_Coke";
 	};
-	// Boating License
+	// Pilot License
 	case 13:
 	{
 		license_civ_air = false;
@@ -86,18 +86,6 @@ switch (_state) do
 	{
 		license_civ_rebel = false;
 		hint localize "STR_Civ_RevokeLicense_Rebel";
-	};
-	// All Motor Vehicle
-	case 16:
-	{
-		license_civ_driver = false;
-		license_civ_truck = false;
-		license_civ_air = false;
-		license_civ_boat = false;
-		license_civ_air = false;
-		license_civ_dive = false;
-		license_civ_taxi = false;
-		hint localize "STR_Civ_RevokeLicense_AllMotor";
 	};
 	// Firearms License
 	case 17:
