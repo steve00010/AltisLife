@@ -182,7 +182,8 @@ switch (_shop) do
 		_return =
 		[
 			["C_Heli_Light_01_civil_F",300000],
-			["B_Heli_Light_01_F",300000]
+			["B_Heli_Light_01_F",300000],
+			["I_Heli_Transport_02_F",2250000]
 		];
 		
 		if(__GETC__(life_donator) > 1) then
