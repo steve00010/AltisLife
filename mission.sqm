@@ -45948,7 +45948,7 @@ class Mission
 		};
 		class Item4238
 		{
-			position[]={15110.382,17.91,16974.588};
+			position[]={15110.592,17.91,16974.307};
 			azimut=89.76236;
 			id=4502;
 			side="EMPTY";
@@ -99701,17 +99701,17 @@ class Mission
 		};
 		class Item103
 		{
-			position[]={15117.3,17.91,16959.182};
+			position[]={15116.043,17.91,16959.148};
 			name="civ_air_1";
 			type="Empty";
-			angle=-119.23225;
+			angle=-26.720955;
 		};
 		class Item104
 		{
-			position[]={15110.514,17.91,16974.361};
+			position[]={15110.024,17.91,16973.66};
 			name="civ_air_1_2";
 			type="Empty";
-			angle=-122.18747;
+			angle=-213.9106;
 		};
 		class Item105
 		{
@@ -100007,10 +100007,10 @@ class Mission
 		};
 		class Item141
 		{
-			position[]={15117.207,17.91,16959.271};
+			position[]={15116.023,17.91,16959.133};
 			name="air_g_1";
 			type="Empty";
-			angle=73.483986;
+			angle=328.22028;
 		};
 		class Item142
 		{
