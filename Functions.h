@@ -249,6 +249,7 @@ class Life_Client_Core
 		class progressBar {};
 		class EarPlugsOn {};
 		class EarPlugsOff {};
+		class emptyFuel {};
 	};
 	
 	class Network
