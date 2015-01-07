@@ -1,3 +1,4 @@
+#include <macro.h>
 /*
 	File: fn_escInterupt.sqf
 	Author: Bryan "Tonic" Boardwine
@@ -18,8 +19,7 @@ _escSync = {
 		private["_abortButton","_timeStamp"];
 		_abortButton = (findDisplay 49) displayCtrl 104;
 		_timeStamp = time + 10;
-		if(__GETC__(life_adminlevel) < 5) then
-		{
+		if(__GETC__(life_adminlevel) < 5) then {
 			waitUntil {
 				_abortButton ctrlSetText format[localize "STR_NOTF_AbortESC",[(_timeStamp - time),"SS.MS"] call BIS_fnc_secondsToString];
 				_abortButton ctrlCommit 0;
