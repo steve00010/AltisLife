@@ -15,7 +15,7 @@ _news = _display displayCtrl 2303;
 
 
 
-_rules ctrlSetStructuredText parseText format["<img size='2.5' image='images\logo.paa'/><br/><br/><t size='1.1'>Welcome %1</t><br/><br/><t size='0.8px'>If you want to play on this server you need to accept the server rules.</t><br/><br/><t size='0.8px'>Our Admin staff are on hand at most times via our TS server if you need help.</t><br/><br/><br/><br/><br/><br/><t size='1.2'>Useful Info:</t>",name player];
+_rules ctrlSetStructuredText parseText format["<img size='2.5' image='images\logo.jpg'/><br/><br/><t size='1.1'>Welcome %1</t><br/><br/><t size='0.8px'>If you want to play on this server you need to accept the server rules.</t><br/><br/><t size='0.8px'>Our Admin staff are on hand at most times via our TS server if you need help.</t><br/><br/><br/><br/><br/><br/><t size='1.2'>Useful Info:</t>",name player];
 
 
 
