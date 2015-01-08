@@ -1,9 +1,9 @@
 /*
 	File: fn_radar.sqf
-	Author: Silly Aussie kid named Jaydon
+	Author: Steve
 	
 	Description:
-	Looks like weird but radar?
+	Radar with gun or when in car for cops
 */
 if(playerSide != west) exitWith {};
 private ["_speed","_vehicle"];
