@@ -41,7 +41,7 @@ switch (_shop) do
 				
 		if(__GETC__(life_donator) > 2) then
 		{		
-			_return set [count _return],["O_Heli_Light_02_unarmed_F",400000]];
+			_return set[count _return,["O_Heli_Light_02_unarmed_F",400000]];
 		};
 	};
 
