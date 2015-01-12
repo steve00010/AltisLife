@@ -37,9 +37,11 @@ switch (_shop) do
 		if(__GETC__(life_mediclevel) > 1) then
 		{
 			_return = [
-				["B_Heli_Light_01_F",200000],
-				["O_Heli_Light_02_unarmed_F",400000]
-			];
+				["B_Heli_Light_01_F",200000]
+				
+		if(__GETC__(life_donator) > 2) then
+		{		
+			_return set [count _return],["O_Heli_Light_02_unarmed_F",400000]];
 		};
 	};
 
