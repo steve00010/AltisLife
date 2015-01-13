@@ -101733,17 +101733,17 @@ class Mission
 		};
 		class Item321
 		{
-			position[]={14181.41,28.815533,18697.305};
+			position[]={14010.329,25.990505,18670.186};
 			name="reb_spawn_3";
 			type="Empty";
 			angle=267.888;
 		};
 		class Item322
 		{
-			position[]={25675.447,17.402891,21225.307};
+			position[]={25727.916,20.601091,21367.078};
 			name="reb_spawn_1";
 			type="Empty";
-			angle=267.888;
+			angle=312.98499;
 		};
 		class Item323
 		{
