@@ -20,7 +20,7 @@ switch (_vehicle) do
 		[
 			[_path + "heli_transport_02_1_ion_co.paa","civ",_path + "heli_transport_02_2_ion_co.paa",_path + "heli_transport_02_3_ion_co.paa"],
 			[_path + "heli_transport_02_1_dahoman_co.paa","civ",_path + "heli_transport_02_2_dahoman_co.paa",_path + "heli_transport_02_3_dahoman_co.paa"],
-			["textures\vehicles\MohawkDoors.paa","civ","textures\vehicles\Mohawkmiddle.paa","textures\vehicles\Mohawksides.paa"]
+			["textures\vehicles\MohawkDoors.jpg","civ","textures\vehicles\Mohawkmiddle.jpg","textures\vehicles\Mohawksides.jpg"]
 		];
 	};
 	
@@ -32,11 +32,11 @@ switch (_vehicle) do
 			["\a3\air_f\Heli_Light_02\Data\heli_light_02_ext_civilian_co.paa","civ"],
 			["\a3\air_f\Heli_Light_02\Data\heli_light_02_ext_indp_co.paa","civ"],
 			["\a3\air_f\Heli_Light_02\Data\heli_light_02_ext_opfor_co.paa","civ"],
-			["textures\vehicles\police_orca.paa","cop"],
-			["textures\vehicles\medic_orca.paa","med"]
+			["textures\vehicles\police_orca.jpg","cop"],
+			["textures\vehicles\medic_orca.jpg","med"]
 		];
 		if(license_civ_channelseven) then {
-			_ret pushBack ["textures\vehicles\orca_channel7.paa","civ"];
+			_ret pushBack ["textures\vehicles\orca_channel7.jpg","civ"];
 		};
 		
 	};
@@ -45,7 +45,7 @@ switch (_vehicle) do
 		{
 		_ret = 
 		[
-			["textures\vehicles\rebel_hummingbird.paa","civ"]
+			["textures\vehicles\rebel_hummingbird.jpg","civ"]
 		];
 	};
 	
@@ -53,7 +53,7 @@ switch (_vehicle) do
 		{
 		_ret = 
 		[
-			["textures\vehicles\cop_hellcat.paa","cop"]
+			["textures\vehicles\cop_hellcat.jpg","cop"]
 		];
 	};
 	
@@ -64,7 +64,7 @@ switch (_vehicle) do
 		_ret =
 		[
 			[_path + "heli_transport_01_ext01_co.paa","civ",_path + "heli_transport_01_ext02_co.paa"],
-			["textures\vehicles\ghosthawk_01.paa","cop","textures\vehicles\ghosthawk_02.paa"]
+			["textures\vehicles\ghosthawk_01.jpg","cop","textures\vehicles\ghosthawk_02.jpg"]
 		];
 	};
 	
@@ -72,7 +72,7 @@ switch (_vehicle) do
 	{
 		_ret =
 		[
-			["textures\vehicles\orca_rebel.paa","civ"]
+			["textures\vehicles\orca_rebel.jpg","civ"]
 		];
 	};
 	
@@ -88,12 +88,12 @@ switch (_vehicle) do
 			[_path + "hatchback_01_ext_sport05_co.paa","civ"],
 			[_path + "hatchback_01_ext_sport06_co.paa","civ"],
 			["#(ai,64,64,1)Fresnel(1.3,7)","civ"],
-			["textures\vehicles\HighwaySportscar.paa","cop"],
-			["textures\vehicles\civ_hatchback_wrc.paa","civ"],
-			["textures\vehicles\redgull_hatchbacks.paa","civ"],
-			["textures\vehicles\dayz_hatchbacks.paa","civ"],
-			["textures\vehicles\dragon_sport.paa","civ"],
-			["textures\vehicles\swiftyskin.paa","civ"]
+			["textures\vehicles\HighwaySportscar.jpg","cop"],
+			["textures\vehicles\civ_hatchback_wrc.jpg","civ"],
+			["textures\vehicles\redgull_hatchbacks.jpg","civ"],
+			["textures\vehicles\dayz_hatchbacks.jpg","civ"],
+			["textures\vehicles\dragon_sport.jpg","civ"],
+			["textures\vehicles\swiftyskin.jpg","civ"]
 		];
 	};
 		
@@ -107,18 +107,18 @@ switch (_vehicle) do
 			_ret pushBack ["\A3\soft_F\Offroad_01\Data\offroad_01_ext_BASE04_CO.paa","civ"];
 			_ret pushBack ["\A3\soft_F\Offroad_01\Data\offroad_01_ext_BASE05_CO.paa","civ"];
 			_ret pushBack ["#(ai,64,64,1)Fresnel(0.3,3)","civ"];
-			_ret pushBack ["textures\vehicles\offroad_police.paa","cop"];
+			_ret pushBack ["textures\vehicles\offroad_police.jpg","cop"];
 			_ret pushBack ["#(argb,8,8,3)color(0.6,0.3,0.01,1)","civ"];
-			_ret pushBack ["textures\vehicles\offroad_paramedic.paa","med"];
-			_ret pushBack ["textures\vehicles\civ_dodge.paa","civ"];
+			_ret pushBack ["textures\vehicles\offroad_paramedic.jpg","med"];
+			_ret pushBack ["textures\vehicles\civ_dodge.jpg","civ"];
 		if(license_cop_dea) then {
-			_ret pushBack ["textures\vehicles\offroad_dea.paa","cop"];
+			_ret pushBack ["textures\vehicles\offroad_dea.jpg","cop"];
 		};
 		if(__GETC__(life_swatlevel) > 0) then {
 				if(!license_cop_dea) then {
 					_ret pushBack ["BUFFER","cop","BUFFER"];
 				};
-			_ret pushBack ["textures\vehicles\offroad_swat.paa","cop"];
+			_ret pushBack ["textures\vehicles\offroad_swat.jpg","cop"];
 		};
 
 
@@ -136,7 +136,7 @@ switch (_vehicle) do
 			["\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_base07_co.paa","civ"],
 			["\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_base08_co.paa","civ"],
 			["\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_base09_co.paa","civ"],
-			["textures\vehicles\HighwaySportscar.paa","cop"]
+			["textures\vehicles\HighwaySportscar.jpg","cop"]
 		];
 	};
 	
@@ -148,11 +148,11 @@ switch (_vehicle) do
 			["\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_02_co.paa","civ"],
 			["\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_03_co.paa","civ"],
 			["\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_04_co.paa","civ"],
-			["textures\vehicles\poly_suv.paa","civ"],
-			["textures\vehicles\suv_police.paa","cop"],
-			["textures\vehicles\suv_paramedic.paa","med"],
-			["textures\vehicles\suv_ferrari.paa","civ"],
-			["textures\vehicles\suv_rusty.paa","civ"]
+			["textures\vehicles\poly_suv.jpg","civ"],
+			["textures\vehicles\suv_police.jpg","cop"],
+			["textures\vehicles\suv_paramedic.jpg","med"],
+			["textures\vehicles\suv_ferrari.jpg","civ"],
+			["textures\vehicles\suv_rusty.jpg","civ"]
 		];
 	};
 	
@@ -180,7 +180,7 @@ switch (_vehicle) do
 	{
 		_ret = 
 		[
-			["textures\vehicles\quad_police.paa","cop"],
+			["textures\vehicles\quad_police.jpg","cop"],
 			["\A3\Soft_F\Quadbike_01\Data\quadbike_01_opfor_co.paa","reb"],
 			["\A3\Soft_F_beta\Quadbike_01\Data\quadbike_01_civ_black_co.paa","civ"],
 			["\A3\Soft_F_beta\Quadbike_01\Data\quadbike_01_civ_blue_co.paa","civ"],
@@ -215,8 +215,8 @@ switch (_vehicle) do
 			["\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_sheriff_co.paa","civ"],
 			["\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_wasp_co.paa","civ"],
 			["\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_bluefor_co.paa","reb"],
-			["textures\vehicles\heli_paramedic.paa","med"],
-			["textures\vehicles\heli_police.paa","cop"]
+			["textures\vehicles\heli_paramedic.jpg","med"],
+			["textures\vehicles\heli_police.jpg","cop"]
 		];
 	};
 	
@@ -245,16 +245,16 @@ switch (_vehicle) do
 	{
 		_ret = 
 		[
-			["textures\vehicles\cop_hunter_body.paa","cop","textures\vehicles\cop_hunter_back.paa"]
+			["textures\vehicles\cop_hunter_body.jpg","cop","textures\vehicles\cop_hunter_back.jpg"]
 		];
 		if(license_cop_dea) then {
-			_ret pushBack ["textures\vehicles\deahunterbody.paa","cop","textures\vehicles\cop_hunter_back.paa"];
+			_ret pushBack ["textures\vehicles\deahunterbody.jpg","cop","textures\vehicles\cop_hunter_back.jpg"];
 		};
 		if(__GETC__(life_swatlevel) > 0) then {
 				if(!license_cop_dea) then {
 					_ret pushBack ["BUFFER","cop","BUFFER"];
 				};
-			_ret pushBack ["textures\vehicles\swathunterbody.paa","cop","textures\vehicles\cop_hunter_back.paa"];
+			_ret pushBack ["textures\vehicles\swathunterbody.jpg","cop","textures\vehicles\cop_hunter_back.jpg"];
 		};
 		
 	};
@@ -289,7 +289,7 @@ switch (_vehicle) do
 	{
 		_ret = 
 		[
-			["Textures\vehicles\police_strider.paa","cop"]
+			["Textures\vehicles\police_strider.jpg","cop"]
 		];
 	};
 	
@@ -297,7 +297,7 @@ switch (_vehicle) do
 	{
 		_ret = 
 		[
-			["textures\vehicles\boat_police.paa","cop"]
+			["textures\vehicles\boat_police.jpg","cop"]
 		];
 	};
 };	
