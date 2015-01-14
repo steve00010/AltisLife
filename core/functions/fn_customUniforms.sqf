@@ -4,7 +4,7 @@ if (playerSide == west) then
 {
 	if(uniform player == "U_Rangemaster") then 
 	{
-		player setObjectTextureGlobal [0,"textures\uniforms\Marshall_uniform.paa"];
+		player setObjectTextureGlobal [0,"textures\uniforms\Marshall_uniform.jpg"];
 	};
 
 	if(uniform player == "U_B_CombatUniform_mcam_worn") then 
@@ -14,7 +14,7 @@ if (playerSide == west) then
 	
 	if(uniform player == "U_B_HeliPilotCoveralls") then 
 	{
-		player setObjectTextureGlobal [0,"textures\uniforms\pilot_uniform.paa"];
+		player setObjectTextureGlobal [0,"textures\uniforms\pilot_uniform.jpg"];
 	};
 	
 	if(uniform player == "U_B_CTRG_1")  then 
@@ -32,13 +32,13 @@ if (playerSide == independent) then
 {
 	sleep 1;
 	//player setObjectTextureGlobal [0,"textures\uniforms\medic_uniform.paa"];
-	player setObjectTextureGlobal [0,"textures\uniforms\medic_uniform.paa"];
+	player setObjectTextureGlobal [0,"textures\uniforms\medic_uniform.jpg"];
 
 	_Count = 0;
 	while {_Count < 5} do
 	{
 		//player setObjectTextureGlobal [0,"textures\uniforms\medic_uniform.paa"];
-		player setObjectTextureGlobal [0,"textures\uniforms\medic_uniform.paa"];
+		player setObjectTextureGlobal [0,"textures\uniforms\medic_uniform.jpg"];
 		_Count = _Count + 1;
 		sleep 2;
 	};
@@ -54,6 +54,6 @@ if ( (playerSide == independent) or (playerSide == west) ) then
 };
 if (playerSide == civilian) then {
 	if (uniform player == "U_C_WorkerCoveralls") then {
-		player setObjectTextureGlobal [0,"textures\uniforms\prisoner_uniform.paa"];
+		player setObjectTextureGlobal [0,"textures\uniforms\prisoner_uniform.jpg"];
 	};
 };
