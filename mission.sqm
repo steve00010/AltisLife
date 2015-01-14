@@ -2551,7 +2551,7 @@ class Mission
 					special="NONE";
 					id=129;
 					side="CIV";
-					vehicle="C_man_polo_3_F";
+					vehicle="B_RangeMaster_F";
 					skill=0.60000002;
 					init="this enableSimulation false; this allowDamage false; this addAction[""Medical Assistance"",life_fnc_healHospital]; this setObjectTexture [0,""textures\uniforms\medic_uniform.jpg""];";
 				};
@@ -4199,7 +4199,7 @@ class Mission
 					special="NONE";
 					id=244;
 					side="CIV";
-					vehicle="C_man_polo_3_F";
+					vehicle="B_RangeMaster_F";
 					leader=1;
 					skill=0.60000002;
 					init="this enableSimulation false; this allowDamage false; this addAction[""Medical Assistance"",life_fnc_healHospital]; this setObjectTexture [0,""textures\uniforms\medic_uniform.jpg""];";
@@ -4220,7 +4220,7 @@ class Mission
 					special="NONE";
 					id=245;
 					side="CIV";
-					vehicle="C_man_polo_3_F";
+					vehicle="B_RangeMaster_F";
 					leader=1;
 					skill=0.60000002;
 					init="this enableSimulation false; this allowDamage false; this addAction[""Medical Assistance"",life_fnc_healHospital]; this setObjectTexture [0,""textures\uniforms\medic_uniform.jpg""];";
