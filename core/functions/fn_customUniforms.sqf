@@ -31,13 +31,13 @@ if (playerSide == west) then
 if (playerSide == independent) then
 {
 	sleep 1;
-	//player setObjectTextureGlobal [0,"textures\uniforms\medic_uniform.paa"];
+	
 	player setObjectTextureGlobal [0,"textures\uniforms\medic_uniform.jpg"];
 
 	_Count = 0;
 	while {_Count < 5} do
 	{
-		//player setObjectTextureGlobal [0,"textures\uniforms\medic_uniform.paa"];
+		
 		player setObjectTextureGlobal [0,"textures\uniforms\medic_uniform.jpg"];
 		_Count = _Count + 1;
 		sleep 2;
