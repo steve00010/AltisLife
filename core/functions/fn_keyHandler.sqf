@@ -274,7 +274,7 @@ switch (_code) do
     };
 	
 	// Q Key options for Pickaxe
-	case 16: 
+	case 184: 
 	{
 		if((!life_action_inUse) && (vehicle player == player) ) then
 		{
