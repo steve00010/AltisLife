@@ -20,6 +20,7 @@ switch (_item) do
 	case "apple": {1};
 	case "water": {1};
 	case "rabbit": {1};
+	case "redgull": {1};
 	case "salema": {2};
 	case "ornate": {2};
 	case "mackerel": {4};
@@ -73,5 +74,6 @@ switch (_item) do
 	case "bottledbeer": {10};
 	case "bottledshine": {10};
 	case "bottles": {2};
+	case "monster": {1};
 	default {1};
 };
