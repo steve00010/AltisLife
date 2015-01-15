@@ -245,6 +245,7 @@ player createDiarySubject ["controls","Controls"];
 		[
 			"",
 				"
+				AltGR: Use Pick Axe<br/>
 				Y: Open Player Menu<br/>
 				U: Lock and unlock Cars / Houses<br/>
 				F: Cop Siren (if cop), Shift F for yelp<br/>
