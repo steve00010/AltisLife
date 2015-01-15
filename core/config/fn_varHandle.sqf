@@ -158,7 +158,7 @@ switch (_mode) do
 			case "life_inv_bottledbeer": {"bottledbeer"};
 			case "life_inv_bottledshine": {"bottledshine"};
 			case "life_inv_moonshine": {"moonshine"};		
-			case "life_inv_monster" {"monster"};
+			case "life_inv_monster": {"monster"};
 		};
 	};
 };
