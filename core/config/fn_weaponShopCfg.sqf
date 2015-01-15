@@ -222,8 +222,8 @@ switch(_shop) do
 						["acc_flashlight",nil,0],
 						["B_IR_Grenade",nil,1000],
 						["Rangefinder",nil,2000],
-						["muzzle_snds_H","Silencer6.5mm","6.5 Suppressor",10000],
-						["muzzle_snds_B","Silencer6.5mm","7.62 Suppressor"10000],
+						["muzzle_snds_H","6.5 Suppressor",10000],
+						["muzzle_snds_B","7.62 Suppressor"10000],
 						["SmokeShellBlue","Tear Gas Grenade",10000],
 						["HandGrenade_Stone","Flashbang",10000]
 					]
