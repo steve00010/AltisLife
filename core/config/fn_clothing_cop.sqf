@@ -63,6 +63,7 @@ switch (_filter) do
 		{
 			_ret pushBack ["H_Cap_blk","Black","Cap",0];
 			_ret pushBack ["H_CrewHelmetHeli_B","Gas Mask",15000];
+			_ret pushBack ["H_HelmetB_plain_blk","Combat Helm",15000];
 
 			_ret pushBack ["H_PilotHelmetHeli_B","Pilot Helm",0];
 		};
