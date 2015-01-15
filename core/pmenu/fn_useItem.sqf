@@ -57,6 +57,23 @@ switch (true) do
 		};
 	};
 	
+	case (_item == "coffee"):
+	{
+		if(([false,_item,1] call life_fnc_handleInv)) then
+		{
+			life_thirst = 100;
+			player setFatigue 0;
+			[] spawn
+			{
+				life_redgull_effect = time;
+				titleText[localize "STR_ISTR_RedGullEffect","PLAIN"];
+				player enableFatigue false;
+				waitUntil {!alive player OR ((time - life_redgull_effect) > (2 * 60))};
+				player enableFatigue true;
+			};
+		};
+	};
+	
 	case (_item == "spikeStrip"):
 	{
 		if(!isNull life_spikestrip) exitWith {hint localize "STR_ISTR_SpikesDeployment"};

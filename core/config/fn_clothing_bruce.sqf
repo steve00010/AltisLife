@@ -143,12 +143,12 @@ switch (_filter) do
 		
 		if(license_civ_channelseven) then {
 			[
-				["V_Rangemaster_belt",nil,3000],
+				["V_Rangemaster_belt",nil,4000],
 				["V_Press_F",nil,10000]
 			];
 		} else {
 			[
-				["V_Rangemaster_belt",nil,3000]
+				["V_Rangemaster_belt",nil,4000]
 			];
 		};
 	};
