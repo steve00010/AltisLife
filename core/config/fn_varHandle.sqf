@@ -83,6 +83,7 @@ switch (_mode) do
 			case "beerp": {"life_inv_beerp"};
 			case "whiskey": {"life_inv_whiskey"};
 			case "mash": {"life_inv_mash"};
+			case "monster": {"life_inv_monster"};
 		};
 	};
 	
@@ -156,7 +157,8 @@ switch (_mode) do
 			case "life_inv_bottledwhiskey": {"bottledwhiskey"};
 			case "life_inv_bottledbeer": {"bottledbeer"};
 			case "life_inv_bottledshine": {"bottledshine"};
-			case "life_inv_moonshine": {"moonshine"};			
+			case "life_inv_moonshine": {"moonshine"};		
+			case "life_inv_monster" {"monster"};
 		};
 	};
 };
