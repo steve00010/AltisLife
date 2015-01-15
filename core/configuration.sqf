@@ -189,7 +189,8 @@ life_inv_items =
 	"life_inv_bottledbeer",
 	"life_inv_bottledwhiskey",
 	"life_inv_moonshine",
-	"life_inv_mash"
+	"life_inv_mash",
+	"life_inv_monster"
 ];
 
 //Setup variable inv vars.
@@ -311,7 +312,8 @@ sell_array =
 	["hops",150], 
 	["yeast",150], 
 	["cornmeal",200], 
-	["bottles",75]
+	["bottles",75],
+	["monster",200]
 ];
 __CONST__(sell_array,sell_array);
 
@@ -355,7 +357,8 @@ buy_array =
 	["beerp",5000], 
 	["cornmeal",500], 
 	["mash",2500], 
-	["bottles",100]
+	["bottles",100],
+	["monster",1500]
 	
 ];
 __CONST__(buy_array,buy_array);
