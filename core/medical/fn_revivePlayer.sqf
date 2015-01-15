@@ -13,7 +13,7 @@ _revivable = _target getVariable["Revive",FALSE];
 if(_revivable) exitWith {};
 if(_target getVariable ["Reviving",ObjNull] == player) exitWith {hint localize "STR_Medic_AlreadyReviving";};
 if(player distance _target > 5) exitWith {}; //Not close enough.
-
+if(side player == west && independent countSide playableUnits > 1) exitWith { hint "There are 2 or more medics online; no reviving allowed!";};
 //Fetch their name so we can shout it.
 _targetName = _target getVariable["name","Unknown"];
 _title = format[localize "STR_Medic_Progress",_targetName];
