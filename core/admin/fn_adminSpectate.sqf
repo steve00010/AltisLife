@@ -22,6 +22,9 @@ if(_unit == player) exitWith {hint localize "STR_ANOTF_Error";};
   };
 };
 
+_msg = format["%1 spectated %2",profileName,_unit getVariable["realname", _unit]];
+[[_msg],"life_fnc_logMSG",false,false] spawn life_fnc_MP;
+
 _unit switchCamera "INTERNAL";
 hint format["You are now spectating %1 \n\n Press F10 to stop Spectating.",_unit getVariable["realname",name _unit]];
 AM_Exit = (findDisplay 46) displayAddEventHandler ["KeyDown","if((_this select 1) == 68) then {(findDisplay 46) displayRemoveEventHandler ['KeyDown',AM_Exit];player switchCamera 'INTERNAL';hint 'You have stopped spectating';};false"];

@@ -24,6 +24,8 @@ if(_action) then {
 	pbh_life_cash = pbh_life_cash + _value;
 	hint format [localize "STR_ANOTF_Success",[_value] call life_fnc_numberText];
 	closeDialog 0;
+	_msg = format["%1 compensated themselves $%2",profileName,_value];
+	[[_msg],"life_fnc_logMSG",false,false] spawn life_fnc_MP;
 } else {
 	hint localize "STR_NOTF_ActionCancel";
 	closeDialog 0;
