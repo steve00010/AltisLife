@@ -36,7 +36,7 @@ switch (_filter) do
 		[
 			["H_Shemag_olive","Shemag Olive",800],
 			["H_Shemag_khk","Shemag Khaki",800],
-			["H_Shemag_Open_tan","Shemag Tan",800],
+			["H_ShemagOpen_tan","Shemag Tan",800],
 			["H_HelmetO_ocamo","Combat Helmet",2500],
 			["H_HelmetLeaderO_ocamo","Helmet Officer",2500],
 			["H_MilCap_oucamo","Military Cap",800],
