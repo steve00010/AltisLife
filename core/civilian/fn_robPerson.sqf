@@ -15,6 +15,8 @@ if(pbh_life_cash > 0) then
 	[[getPlayerUID _robber,_robber getVariable["realname",name _robber],"211"],"life_fnc_wantedAdd",false,false] spawn life_fnc_MP;
 	[[1,"STR_NOTF_Robbed",true,[_robber getVariable["realname",name _robber],profileName,[pbh_life_cash] call life_fnc_numberText]],"life_fnc_broadcast",nil,false] spawn life_fnc_MP;
 	pbh_life_cash = 0;
+	[] call SOCK_fnc_updateRequest;
+{	
 else
 {
 	[[2,"STR_NOTF_RobFail",true,[profileName]],"life_fnc_broadcast",_robber,false] spawn life_fnc_MP;
