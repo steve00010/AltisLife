@@ -20,7 +20,7 @@ switch (_vehicle) do
 		[
 			[_path + "heli_transport_02_1_ion_co.paa","civ",_path + "heli_transport_02_2_ion_co.paa",_path + "heli_transport_02_3_ion_co.paa"],
 			[_path + "heli_transport_02_1_dahoman_co.paa","civ",_path + "heli_transport_02_2_dahoman_co.paa",_path + "heli_transport_02_3_dahoman_co.paa"],
-			["textures\vehicles\MohawkDoors.paa","civ","textures\vehicles\Mohawkmiddle.paa","textures\vehicles\Mohawksides.paa"]
+			["textures\vehicles\MohawkDoors.paa","civ","textures\vehicles\Mohawkmiddle.jpg","textures\vehicles\Mohawksides.paa"]
 		];
 	};
 	
@@ -36,7 +36,7 @@ switch (_vehicle) do
 			["textures\vehicles\medic_orca.paa","med"]
 		];
 		if(license_civ_channelseven) then {
-			_ret pushBack ["textures\vehicles\orca_channel7.paa","civ"];
+			_ret pushBack ["textures\vehicles\orca_channel7.jpg","civ"];
 		};
 		
 	};
@@ -242,16 +242,16 @@ switch (_vehicle) do
 	{
 		_ret = 
 		[
-			["textures\vehicles\cop_hunter_body.paa","cop","textures\vehicles\cop_hunter_back.paa"]
+			["textures\vehicles\cop_hunter_body.paa","cop","textures\vehicles\cop_hunter_back.jpg"]
 		];
 		if(license_cop_dea) then {
-			_ret pushBack ["textures\vehicles\deahunterbody.paa","cop","textures\vehicles\cop_hunter_back.paa"];
+			_ret pushBack ["textures\vehicles\deahunterbody.paa","cop","textures\vehicles\cop_hunter_back.jpg"];
 		};
 		if(__GETC__(life_swatlevel) > 0) then {
 				if(!license_cop_dea) then {
 					_ret pushBack ["BUFFER","cop","BUFFER"];
 				};
-			_ret pushBack ["textures\vehicles\swathunterbody.paa","cop","textures\vehicles\cop_hunter_back.paa"];
+			_ret pushBack ["textures\vehicles\swathunterbody.paa","cop","textures\vehicles\cop_hunter_back.jpg"];
 		};
 		
 	};
