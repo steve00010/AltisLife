@@ -150,7 +150,7 @@ switch (_vehicle) do
 			["textures\vehicles\suv_police.paa","cop"],
 			["textures\vehicles\suv_paramedic.paa","med"],
 			["textures\vehicles\suv_ferrari.paa","civ"],
-			["textures\vehicles\suv_flames.paa","civ"]
+			["textures\vehicles\suv_flames.jpg","civ"]
 		];
 	};
 	
