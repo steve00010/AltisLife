@@ -149,7 +149,8 @@ switch (_shop) do
 	{
 		_return =
 		[
-			["I_SDV_01_F",30000]
+			["I_SDV_01_F",30000],
+			["O_G_Boat_Transport_01_F",15000]
 		];
 	};
 	

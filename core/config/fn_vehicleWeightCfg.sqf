@@ -63,5 +63,6 @@ switch (_className) do
 	case "I_Heli_light_03_F": {20}; // Hellcat
 	case "Box_IND_Grenades_F": {350}; // Small Supply Crate
 	case "B_supplyCrate_F": {700}; // Large Supply Crate
+	case "O_G_Boat_Transport_01_F": {100}; //Reb Boat
 	default {-1};
 };
