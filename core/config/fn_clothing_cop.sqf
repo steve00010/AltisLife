@@ -22,31 +22,31 @@ switch (_filter) do
 		if(__GETC__(life_coplevel) > 0) then
 		{
 			_ret pushBack ["U_B_Wetsuit",nil,0];
-			_ret pushBack ["U_Rangemaster","Marshall Uniform",5000];
+			_ret pushBack ["U_Rangemaster","Marshall Uniform",2500];
 		};
 		
 		if(__GETC__(life_coplevel) > 2) then //corporal
 		{
-			_ret pushBack ["U_B_HeliPilotCoveralls","Pilot Uniform",10000];
+			_ret pushBack ["U_B_HeliPilotCoveralls","Pilot Uniform",5000];
 		};
 		
 		if(__GETC__(life_coplevel) > 3) then //sergeant
 		{
-			_ret pushBack ["U_B_CombatUniform_mcam_worn","Senior Uniform",10000];
+			_ret pushBack ["U_B_CombatUniform_mcam_worn","Senior Uniform",5000];
 		};
 		if(__GETC__(life_coplevel) > 4) then //Lieutenant
 		{
-			_ret pushBack ["U_B_GhillieSuit","Ghillie Suit",15000];
+			_ret pushBack ["U_B_GhillieSuit","Ghillie Suit",7000];
 		};
 		
 		if(__GETC__(life_swatlevel) > 0) then
 		{
-			_ret set[count _ret,["U_B_CTRG_1","SWAT Uniform",12500]];			
+			_ret set[count _ret,["U_B_CTRG_1","SWAT Uniform",6500]];			
 		};
 		
 		if(license_cop_dea) then
 		{
-		    _ret set[count _ret,["U_B_CTRG_3","DEA Uniform",12500]];
+		    _ret set[count _ret,["U_B_CTRG_3","DEA Uniform",6500]];
 		};		
 		
 	};
@@ -62,10 +62,10 @@ switch (_filter) do
 		if(__GETC__(life_coplevel) > 2) then //corporal above
 		{
 			_ret pushBack ["H_Cap_blk","Black","Cap",0];
-			_ret pushBack ["H_CrewHelmetHeli_B","Gas Mask",15000];
-			_ret pushBack ["H_HelmetB_plain_blk","Combat Helm",15000];
+			_ret pushBack ["H_CrewHelmetHeli_B","Gas Mask",2000];
+			_ret pushBack ["H_HelmetB_plain_blk","Combat Helm",2000];
 
-			_ret pushBack ["H_PilotHelmetHeli_B","Pilot Helm",0];
+			_ret pushBack ["H_PilotHelmetHeli_B","Pilot Helm",1500];
 		};
 		if(__GETC__(life_coplevel) > 3) then //Sergeant
 		{
@@ -100,11 +100,11 @@ switch (_filter) do
 	case 3:
 	{
 		_ret pushBack ["V_RebreatherB","Re-breather",0];
-		_ret pushBack ["V_TacVest_blk_POLICE","Tac Police Vest",10000];
+		_ret pushBack ["V_TacVest_blk_POLICE","Tac Police Vest",5000];
 
 		if(__GETC__(life_coplevel) > 2) then //Corporal
 		{
-			_ret pushBack ["V_PlateCarrier1_blk","PlateCarrier",10000];
+			_ret pushBack ["V_PlateCarrier1_blk","PlateCarrier",3000];
 
 		};
 	};
@@ -114,7 +114,7 @@ switch (_filter) do
 	{
 		_ret =
 		[
-			["B_Bergen_sgg","Bergen",5000],
+			["B_Bergen_sgg","Bergen",2000],
 			["B_Carryall_cbr","Carryall",0]
 		];
 	};
