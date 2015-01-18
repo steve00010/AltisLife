@@ -165,15 +165,14 @@ switch (_vehicle) do
 	{
 		switch (_index) do
 		{
-			case 0: {_color = "Cop"};
-			case 1: {_color = "Digi Desert"};
-			case 2: {_color = "Black"};
-			case 3: {_color = "Blue"};
-			case 4: {_color = "Red"};
-			case 5: {_color = "White"};
-			case 6: {_color = "Digi Green"};
-			case 7: {_color = "Hunter Camo"};
-			case 8: {_color = "Rebel Camo"};
+			case 0: {_color = "Digi Desert"};
+			case 1: {_color = "Black"};
+			case 2: {_color = "Blue"};
+			case 3: {_color = "Red"};
+			case 4: {_color = "White"};
+			case 5: {_color = "Digi Green"};
+			case 6: {_color = "Hunter Camo"};
+			case 7: {_color = "Rebel Camo"};
 		};
 	};
 	
@@ -259,14 +258,6 @@ switch (_vehicle) do
 		switch (_index) do
 		{
 			case 0: {_color = "Black"};
-		};
-	};
-	
-	case "I_MRAP_03_F":
-	{
-		switch (_index) do
-		{
-			case 0: {_color = "Cop"};
 		};
 	};
 	

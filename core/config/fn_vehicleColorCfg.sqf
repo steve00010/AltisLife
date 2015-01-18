@@ -171,7 +171,6 @@ switch (_vehicle) do
 	{
 		_ret = 
 		[
-			["textures\vehicles\quad_police.paa","cop"],
 			["\A3\Soft_F\Quadbike_01\Data\quadbike_01_opfor_co.paa","reb"],
 			["\A3\Soft_F_beta\Quadbike_01\Data\quadbike_01_civ_black_co.paa","civ"],
 			["\A3\Soft_F_beta\Quadbike_01\Data\quadbike_01_civ_blue_co.paa","civ"],
@@ -266,14 +265,6 @@ switch (_vehicle) do
 		_ret = 
 		[
 			["#(argb,8,8,3)color(0.05,0.05,0.05,1)","fed"]
-		];
-	};
-	
-	case "I_MRAP_03_F":
-	{
-		_ret = 
-		[
-			["Textures\vehicles\police_strider.paa","cop"]
 		];
 	};
 	
