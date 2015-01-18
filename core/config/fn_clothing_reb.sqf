@@ -45,7 +45,8 @@ switch (_filter) do
 			["H_Beret_red","Beret Black",650],
 			["H_CrewHelmetHeli_O","Crew Helmet",2500],
 			["H_HelmetSpecO_blk","Spec Op Black",2500],
-			["H_PilotHelmetHeli_O","Pilot Helmet",2500]
+			["H_PilotHelmetHeli_O","Pilot Helmet",2500],
+			["H_Booniehat_indp","Boonie Hat",700]
 			
 		];
 	};
