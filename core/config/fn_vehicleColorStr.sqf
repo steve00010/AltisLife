@@ -88,7 +88,6 @@ switch (_vehicle) do
 			case 9: {_color = "RedBull"};
 			case 10: {_color = "Dayz"};
 			case 11: {_color = "Dragon"};
-			case 12: {_color = "T-Swift"};
 		};
 	};
 	
@@ -106,9 +105,8 @@ switch (_vehicle) do
 			case 7: {_color = "Cop"};
 			case 8: {_color = "Taxi"};
 			case 9: {_color = "EMS"};
-			case 10: {_color = "Dodge"};
-			case 11: {_color = "DEA" };
-			case 12: {_color = "SWAT" };
+			case 10: {_color = "DEA" };
+			case 11: {_color = "SWAT" };
 
 		};
 	};
@@ -141,7 +139,7 @@ switch (_vehicle) do
 			case 5: {_color = "Cop"};
 			case 6: {_color = "EMS"};
 			case 7: {_color = "Ferrari"};
-			case 8: {_color = "Rusty"};
+			case 8: {_color = "Flames"};
 		};
 	};
 	
