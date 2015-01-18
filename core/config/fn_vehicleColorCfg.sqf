@@ -272,7 +272,7 @@ switch (_vehicle) do
 	{
 		_ret = 
 		[
-			["textures\vehicles\boat_police.paa","cop"]
+			["textures\vehicles\boat_police.jpg","cop"]
 		];
 	};
 };	
