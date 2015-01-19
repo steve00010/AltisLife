@@ -120,12 +120,10 @@ if(__GETC__(life_donator) > 2) then
 
 switch (__GETC__(life_donator)) do
 {
-	case 0: { life_houseLimit = 2; };
-	case 1: { life_houseLimit = 4; };
-	case 2: { life_houseLimit=  5; };
-	case 3: { life_houseLimit = 6; };
-	case 4: { life_houseLimit = 7; };
-	case 5: { life_houseLimit = 8; };
+	default: { __CONST__(life_houseLimit,3); };
+	case 3: { __CONST__(life_houseLimit,4); };
+	case 4: { __CONST__(life_houseLimit,4); };
+	case 5: { __CONST__(life_houseLimit,5); };
 };
 
 [] spawn life_fnc_fatigueReset;
