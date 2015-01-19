@@ -120,7 +120,7 @@ if(__GETC__(life_donator) > 2) then
 
 switch (__GETC__(life_donator)) do
 {
-	default: { life_houseLimit=3 };
+	default: { life_houseLimit=3; };
 	case 3: { life_houseLimit=4); };
 	case 4: { life_houseLimit=4); };
 	case 5: { life_houseLimit=5); };
