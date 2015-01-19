@@ -34,7 +34,7 @@ if ((_x select 2) > 1 ) then {
 		_price = _x select 2;
 		_achatliste lbAdd format["%1  ($%2)",_name,[_price] call life_fnc_numberText];
 		_achatliste lbSetData [(lbSize _achatliste)-1,_x select 0];
-		_achatliste lbSetValue [(lbSize _achatliste)-1,_price];
+		_achatliste lbSetValue [(lbSize _achatliste)-1,(lbSize _achatliste)-1];
 	
 	};
 } foreach _array;
@@ -50,7 +50,7 @@ if ((_x select 2) > 1 ) then {
 		_price = _x select 1;
 		_venteliste lbAdd format["%1  ($%2)",_name,[_price] call life_fnc_numberText];
 		_venteliste lbSetData [(lbSize _venteliste)-1,_x select 0];
-		_venteliste lbSetValue [(lbSize _venteliste)-1,_price];
+		_venteliste lbSetValue [(lbSize _venteliste)-1,(lbSize _achatliste)-1];
 		
 	};
 } foreach (_array);
