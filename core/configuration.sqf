@@ -486,51 +486,106 @@ __CONST__(life_weapon_shop_array,life_weapon_shop_array);
 
 life_garage_prices =
 [
-	["B_QuadBike_01_F",100],
-	["C_Kart_01_Blu_F",300],
-	["C_Kart_01_Fuel_F",300],
-	["C_Kart_01_Red_F",300],
-	["C_Kart_01_Vrana_F",300],
-	["C_Hatchback_01_F",400],
-	["C_Offroad_01_F", 600],
-	["B_G_Offroad_01_F",800],
-	["C_SUV_01_F",1400],
-	["C_Van_01_transport_F",2000],
-	["C_Hatchback_01_sport_F",600],
-	["C_Van_01_fuel_F",1100],
-	["I_Heli_Transport_02_F",30000],
-	["I_Heli_light_03_F",75000],
-	["C_Van_01_box_F",2300],
-	["I_Truck_02_transport_F",3000],
-	["I_Truck_02_covered_F",3500],
-	["B_Truck_01_transport_F",6500],
-	["B_Truck_01_box_F", 8000],
-	["O_MRAP_02_F",7500],
-	["B_Heli_Light_01_F",12000],
-	["C_Heli_Light_01_civil_F",12000],
-	["B_Heli_Light_01_armed_F",14000],
-	["O_Heli_Light_02_unarmed_F",16000],
-	["O_Heli_Light_02_F",18000],
-	["B_Heli_Transport_01_F",25000],
-	["B_Heli_Transport_01_camo_F",25000],
-	["B_Heli_Transport_03_unarmed_F",45000],
-	["O_Heli_Transport_04_bench_F",45000],
+//Nato
+	["B_Heli_Light_01_F",12000],  			//MH-9 Hummingbird
+	["B_Heli_Light_01_armed_F",14000],  	//AH-9 Pawnee
+	["B_Heli_Transport_01_F",25000],  		//UH-80 Ghost Hawk
+	["B_Heli_Transport_01_camo_F",25000],  	//UH-80 Ghost Hawk (Camo)
+	["B_Boat_Armed_01_minigun_F",4000],  	//Speedboat Minigun
+	["B_Boat_Transport_01_F",150], 			//Assault Boat
+	["B_Lifeboat",100],  					//Rescue Boat
+	["B_SDV_01_F",6000],  					//SDV
+	["B_MRAP_01_F",7500],  					//Hunter
+	["B_G_Offroad_01_repair_F",800],  		//Off-road (Repair)
+	["B_G_Offroad_01_F",800],  				//Off-road
+	["B_Quadbike_01_F",100],  				//Quad-bike
+	["B_Truck_01_transport_F",6000],  		//HEMTT Transport
+	["B_Truck_01_covered_F" ,6000], 		//HEMTT Transport (Covered)
+	["B_Truck_01_mover_F",6000],  			//HEMTT Mover
+	["B_Truck_01_box_F",6000],  			//HEMTT Box
+	["B_Truck_01_Repair_F",6000],   		//HEMTT Repair
+	["B_Truck_01_ammo_F",6000],   			//HEMTT Ammo
+	["B_Truck_01_fuel_F",6000],   			//HEMTT Fuel
+	["B_Truck_01_medical_F",6000],   		//HEMTT Medical
+	["B_G_Van_01_transport_F",2300],  		//Van
+	["B_G_Van_01_fuel_F",2300],  			//Fuel Van
+	["B_Heli_Transport_03_F",45000],  		//CH-67 Huron
+	["B_Heli_Transport_03_unarmed_F",45000],//CH-67 Huron Black
+//Rebel
+	["O_Heli_Light_02_F",18000],  			//PO-30 Orca
+	["O_Heli_Light_02_unarmed_F",16000], 	//PO-30 Orca (Black)
+	["O_Boat_Armed_01_hmg_F",4000],  		//Speedboat HMG
+	["O_Lifeboat",100],  					//Rescue Boat
+	["O_SDV_01_F",6000],  					//SDV
+	["O_G_Boat_Transport_01_F",3000],  		//Assault Boat
+	["O_MRAP_02_F",7500],  					//Iffrit
+	["O_G_Offroad_01_repair_F",800],  		//Off-road (Repair)
+	["O_G_Offroad_01_F",800],  				//Off-road
+	["O_Quadbike_01_F",100],  				//Quad-bike
+	["O_G_Quadbike_01_F",100],  			//Quad-bike
+	["O_Truck_02_covered_F",5000],    		//Zamak Transport (Covered)
+	["O_Truck_02_transport_F",5000],  		//Zamak Transport
+	["O_Truck_03_transport_F",6000],  		//Tempest Transport
+	["O_Truck_03_covered_F",6000],  		//Tempest Transport (Covered)
+	["O_Truck_03_repair_F",6000],   		//Tempest Repair
+	["O_Truck_03_ammo_F",6000],   			//Tempest Ammo
+	["O_Truck_03_fuel_F",6000],   			//Tempest Fuel
+	["O_Truck_03_medical_F",6000],   		//Tempest Medical
+	["O_Truck_03_device_F",15000],   		//Tempest (Device)
+	["O_Truck_02_box_F",5000],  			//Zamak Repair
+	["O_Truck_02_medical_F",5000],   		//Zamak Medical
+	["O_Truck_02_Ammo_F",5000],   			//Zamak Ammo
+	["O_Truck_02_fuel_F",5000],   			//Zamak Fuel
+	["O_G_Van_01_transport_F",2300],  		//Boxer Van
+	["O_G_Van_01_fuel_F",2300],  			//Van Fuel
+	["O_Heli_Transport_04_F",45000],  		//Taru
+	["O_Heli_Transport_04_ammo_F",45000],  	//Taru Ammo
+	["O_Heli_Transport_04_bench_F",45000],  //Taru Bench
+	["O_Heli_Transport_04_box_F",45000],  	//Taru Cargo
+	["O_Heli_Transport_04_covered_F",45000],//Taru Transport
+	["O_Heli_Transport_04_fuel_F",45000],   //Taru Fuel
+	["O_Heli_Transport_04_medevac_F",45000],//Taru Medical
+	["O_Heli_Transport_04_repair_F",45000], //Taru Repair
+//Independent
+	["I_Heli_Transport_02_F",30000],  		//CH-49 Mohawk
+	["I_Heli_light_03_F",75000],  			//WY-55 Hellcat
+	["I_Heli_light_03_unarmed_F",75000],  	//WY-55 Hellcat (Unarmed)
+	["I_Boat_Armed_01_minigun_F",4000],  	//Speedboat Minigun
+	["I_Boat_Transport_01_F",150],  		//Assault Boat (Camo)
+	["I_SDV_01_F",6000],  					//SDV
+	["I_G_Boat_Transport_01_F",3000],   	//Assault Boat
+	["I_G_Offroad_01_F",800], 				//Off-road 
+	["I_Quadbike_01_F",100],  				//Quad-bike
+	["I_MRAP_03_F",7500],  					//Strider
+	["I_Truck_02_covered_F",5000],  		//Zamak Transport (Covered)
+	["I_Truck_02_transport_F",5000],   		//Zamak Transport
+	["I_Truck_02_ammo_F",5000],   			//Zamak Ammo
+	["I_Truck_02_box_F",5000],   			//Zamak Repair
+	["I_Truck_02_medical_F",5000],   		//Zamak Medical
+	["I_Truck_02_fuel_F",5000],   			//Zamak Fuel
+	["I_G_Van_01_transport_F",2300],  		//Van
+	["I_G_Van_01_fuel_F",2300],  			//Van Fuel
+//Civ
 	["C_Rubberboat",100],
-	["C_Boat_Civil_01_F",1100],
-	["B_Boat_Transport_01_F",150],
-	["C_Boat_Civil_01_police_F",1000],
-	["B_Boat_Armed_01_minigun_F",4000],
-	["B_SDV_01_F",6000],
-	["B_MRAP_01_F",7500],
-	["B_Truck_01_mover_F",5000],
-	["O_Truck_02_transport_F",5000],
-	["O_Truck_02_covered_F",6000],
-	["O_Truck_03_transport_F",8000],
-	["O_Truck_03_covered_F",10000],
-	["O_Truck_03_device_F",15000],
-	["O_Truck_03_ammo_F",5000],
-	["O_Truck_03_device_F",25000],
-	["O_G_Boat_Transport_01_F",15000]
+	["C_Boat_Civil_01_F",1100], 			//PowerBoat
+	["C_Boat_Civil_01_rescue_F",1100],		//PowerBoat
+	["C_Boat_Civil_01_police_F",1100],		//PowerBoat
+	["C_Offroad_01_F",800],					//Off-Road
+	["C_Offroad_01_repair_F",800],			//Off-Road Repair
+	["C_Quadbike_01_F",100],				//Quad-Bike
+	["C_Hatchback_01_F",400],				//Hatchback
+	["C_Hatchback_01_sport_F",600],			//Hatchback Sport
+	["C_SUV_01_F",1400],					//SUV
+	["C_Van_01_transport_F",2000],  		//Van
+	["C_Van_01_box_F",2300],  				//Van Boxer
+	["C_Van_01_fuel_F",1100],  				//Van Fuel
+	["C_Kart_01_F",300],					//Kart
+	["C_Kart_01_Fuel_F",300],				//Kart Fuel
+	["C_Kart_01_Blu_F",300],				//Kart Blue
+	["C_Kart_01_Red_F",300],				//Kart Red
+	["C_Kart_01_Vrana_F",300],				//Kart Vrana
+	["C_Heli_Light_01_civil_F",12000]  		//M-900 
+
 ];
 __CONST__(life_garage_prices,life_garage_prices);
 
