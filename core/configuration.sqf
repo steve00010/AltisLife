@@ -371,7 +371,7 @@ life_weapon_shop_array =
 	["hgun_Rook40_F",500],
 	["hgun_PDW2000_F",500],
 	["arifle_Katiba_F",1000],
-	["arifle_Katiba_GL_F",
+	["arifle_Katiba_GL_F",1000],
 	["arifle_MXC_F",1000],
 	["arifle_MX_F",1000],
 	["arifle_MX_GL_F",1000],
