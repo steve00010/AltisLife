@@ -631,6 +631,7 @@ class Mission
 					id=24;
 					side="CIV";
 					vehicle="C_man_1";
+					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
 					text="civ_1";
@@ -3580,6 +3581,7 @@ class Mission
 					id=217;
 					side="GUER";
 					vehicle="I_soldier_F";
+					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
 					text="medic_1";
