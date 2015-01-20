@@ -118,6 +118,7 @@ class Life_Client_Core
 		class robShops {};
 		class relinquishLicense {};
 		class takeOrgans {};
+		class processCasinoSlots {};
 	};
 	
 	class Housing
@@ -250,6 +251,8 @@ class Life_Client_Core
 		class EarPlugsOn {};
 		class EarPlugsOff {};
 		class emptyFuel {};
+		class slotMachineRewards {};
+		class slotMachineRandomizer{};
 	};
 	
 	class Network
@@ -402,6 +405,7 @@ class Life_Client_Core
 		class drinkbeer {};
 		class drinkmoonshine {};
 		class drinkwhiskey {};
+		class SlotJackpotSound {};
 	};
 	class Drugs
 	{
@@ -440,6 +444,16 @@ class Life_Client_Core
 		class safeGold {};
 		class goldTake {};
 	};
+	class SlotMachine {
+		file = "core\casino";
+		class slotInit {};
+		class slotPlay {};
+		class slotReceive {};
+		class RaidCasino {};
+		class CasinoRaidSuccess {};
+		class InitCasinoRaid {};
+	};
+	
 	class IntroCam {
 		file="core";
 		class IntroCam {};
