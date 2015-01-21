@@ -9,5 +9,5 @@ if (wakPlugs) then {
 } else {
     wakPlugs = true;
     0.5 fadeSound 0.1;
-    _unit1 addAction ["<t color='#ffff33'>Ear Plugs Off</t>", "scripts\earplug\actionManager.sqf", [], -90, false, true, "", "_target == vehicle player"];
+    _unit1 addAction ["<t color='#ffff33'>Ear Plugs Out</t>", "scripts\earplug\actionManager.sqf", [], -90, false, true, "", "_target == vehicle player"];
 };
