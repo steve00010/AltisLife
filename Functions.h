@@ -10,6 +10,7 @@
 		class updateRequest {};
 		class syncData {};
 		class updatePartial {};
+		class moneyCheck {};
 	};
 };
 
@@ -254,7 +255,7 @@ class Life_Client_Core
 		class slotMachineRewards {};
 		class slotMachineRandomizer{};
 		class updateCash {};
-		class moneychecking {};
+		
 	};
 	
 	class Network
