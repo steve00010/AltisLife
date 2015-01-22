@@ -18,10 +18,10 @@ switch (_side) do
 	{
 		_return = [
 			["cop_spawn_1","Kavala HQ","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
-			["cop_spawn_2","Pyrgos HQ","\a3\ui_f\data\map\MapControl\fuelstation_ca.paa"],
-			["cop_spawn_3","Athira HQ","\a3\ui_f\data\map\GroupIcons\badge_rotate_0_gs.paa"],
-			["cop_spawn_4","Air HQ","\a3\ui_f\data\map\Markers\NATO\b_air.paa"],
-			["cop_spawn_5","Sofia HQ","\a3\ui_f\data\map\GroupIcons\badge_rotate_0_gs.paa"],
+			["cop_spawn_2","Pyrgos HQ","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
+			["cop_spawn_3","Athira HQ","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
+			["cop_spawn_4","Air HQ","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
+			["cop_spawn_5","Sofia HQ","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
 			["cop_spawn_1_1","Training Center","\a3\ui_f\data\map\MapControl\watertower_ca.paa"]
 		];
 	};
@@ -44,7 +44,8 @@ switch (_side) do
 			["civ_spawn_1","Kavala","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
 			["civ_spawn_2","Pyrgos","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
 			["civ_spawn_3","Athira","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
-			["civ_spawn_4","Sofia","\a3\ui_f\data\map\MapControl\watertower_ca.paa"]
+			["civ_spawn_4","Sofia","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
+			["civ_spawn_5","Zaros","\a3\ui_f\data\map\MapControl\watertower_ca.paa"]
 		];
 	    };	
 		if(count life_houses > 0) then {
