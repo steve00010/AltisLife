@@ -38,7 +38,7 @@ if(_action) then {
 	
 	_msg = format["%1 bought a house for %2",profileName,(round((_houseCfg select 0)/2))];
 	[[_msg],"life_fnc_logMSG",false,false] spawn life_fnc_MP;
-	["atm","take",_(round((_houseCfg select 0)/2))] call life_fnc_updateCash;
+	["atm","take",(round((_houseCfg select 0)/2))] call life_fnc_updateCash;
 	
 	
 	
