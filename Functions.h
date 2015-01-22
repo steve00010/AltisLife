@@ -253,6 +253,8 @@ class Life_Client_Core
 		class emptyFuel {};
 		class slotMachineRewards {};
 		class slotMachineRandomizer{};
+		class updateCash {};
+		class moneychecking {};
 	};
 	
 	class Network

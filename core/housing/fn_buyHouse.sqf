@@ -34,7 +34,14 @@ if(_action) then {
 	_house setVariable["Trunk",[[],0],true];
 	_house setVariable["containers",[],true];
 	_house setVariable["uid",round(random 99999),true];
-	pbh_life_atmcash = pbh_life_atmcash - (_houseCfg select 0);
+	
+	
+	_msg = format["%1 bought a house for %2",profileName,(round((_houseCfg select 0)/2))];
+	[[_msg],"life_fnc_logMSG",false,false] spawn life_fnc_MP;
+	["atm","take",_(round((_houseCfg select 0)/2))] call life_fnc_updateCash;
+	
+	
+	
 	life_vehicles pushBack _house;
 	life_houses pushBack [str(getPosATL _house),[]];
 	_marker = createMarkerLocal [format["house_%1",(_house getVariable "uid")],getPosATL _house];
