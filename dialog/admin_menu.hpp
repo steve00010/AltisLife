@@ -147,8 +147,8 @@ class life_admin_menu {
 			idc = 2912;
 			text = "$STR_Admin_Summon";
 			onButtonClick = "[] call life_fnc_adminSummon;";
-			x = -0.06 + (6.25 / 40) + (1 / 250 / (safezoneW / safezoneH));
-			y = 0.890 + (1 / 25);
+			x = 0.58 + (6.25 / 40) + (1 / 250 / (safezoneW / safezoneH));
+			y = 0.885;
 			w = (6.25 / 40);
 			h = (1 / 25);
 		};
