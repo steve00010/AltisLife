@@ -21,4 +21,3 @@ if(_value > pbh_life_cash) exitWith {hint localize "STR_ATM_NotEnoughCash"};
 
 hint format[localize "STR_ATM_DepositMSG",[_value] call life_fnc_numberText];
 [] call life_fnc_atmMenu;
-[6] call SOCK_fnc_updatePartial;

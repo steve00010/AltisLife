@@ -26,8 +26,6 @@ pbh_life_atmcash = pbh_life_atmcash - (_val + _tax);
 
 hint format[localize "STR_ATM_SentMoneySuccess",[_val] call life_fnc_numberText,_unit getVariable["realname",name _unit],[_tax] call life_fnc_numberText];
 
+
 _msg = format["%1 (%2) sent $%3 to %4 (%5)",profileName,getPlayerUID player,[_val] call life_fnc_numberText,_unit getVariable["realname",name _unit],getPlayerUID _unit];
-
 [[_msg],"life_fnc_logMSG",false,false] spawn life_fnc_MP;
-
-[1] call SOCK_fnc_updatePartial;

@@ -1,18 +1,25 @@
 /*
-	COPY PASTE TIME
+	File: fn_bankDeposit.sqf
+	Author: Bryan "Tonic" Boardwine
+	
+	Description:
+	Withdraw from the bank
 */
-private["_val"];
-_val = parseNumber(ctrlText 2702);
 
-if(_val > 999999) exitWith {hint localize "STR_ATM_WithdrawMax";};
-if(_val < 0) exitwith {};
-if(!([str(_val)] call life_fnc_isnumeric)) exitWith {hint localize "STR_ATM_notnumeric"};
-if(_val > pbh_life_atmcash) exitWith {hint localize "STR_ATM_NotEnoughFunds"};
+private["_value"];
+_value = parseNumber(ctrlText 2702);
+
+//Series of stupid checks
+if(_value > 999999) exitWith {hint localize "STR_ATM_GreaterThan";};
+if(_value < 0) exitWith {};
+if(!([str(_value)] call life_fnc_isnumeric)) exitWith {hint localize "STR_ATM_notnumeric"};
+if(_value > pbh_life_atmcash) exitWith {hint localize "STR_ATM_NotEnoughCash"};
 if(_val < 100 && pbh_life_atmcash > 20000000) exitWith {hint localize "STR_ATM_WithdrawMin"}; //Temp fix for something.
 
-["cash","add",_val] call life_fnc_updateCash;
-["atm","take",_val] call life_fnc_updateCash;
+["cash","add",_value] call life_fnc_updateCash;
+["atm","take",_value] call life_fnc_updateCash;
 
-hint format [localize "STR_ATM_WithdrawSuccess",[_val] call life_fnc_numberText];
+
+
+hint format[localize "STR_ATM_WithdrawSuccess",[_value] call life_fnc_numberText];
 [] call life_fnc_atmMenu;
-[6] call SOCK_fnc_updatePartial;
