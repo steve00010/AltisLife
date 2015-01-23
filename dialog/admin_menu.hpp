@@ -143,5 +143,14 @@ class life_admin_menu {
 			w = (6.25 / 40);
 			h = (1 / 25);
 		};
+		class Summon : Life_RscButtonMenu {
+			idc = 2912;
+			text = "$STR_Admin_Summon";
+			onButtonClick = "[] call life_fnc_adminSummon;";
+			x = -0.06 + (6.25 / 40) + (1 / 250 / (safezoneW / safezoneH));
+			y = 0.890 + (1 / 25);
+			w = (6.25 / 40);
+			h = (1 / 25);
+		};
 	};
 };

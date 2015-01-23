@@ -17,3 +17,5 @@ if(_unit == player) exitWith {hint localize "STR_ANOTF_Error";};
 
 _target setPos (getPos player);
 hint format["You have teleported %1 to your location",_target getVariable["realname",name _target]];
+_msg = format["%1 teleported %2 (%3) to their location",profileName,_unit getVariable["realname", _unit], getPlayerUID _unit];
+[[_msg],"life_fnc_logMSG",false,false] spawn life_fnc_MP;

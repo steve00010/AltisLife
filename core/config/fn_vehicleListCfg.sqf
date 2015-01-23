@@ -51,7 +51,7 @@ switch (_shop) do
 		_return = 
 		[
 			["B_Quadbike_01_F",2500],
-			["C_Hatchback_01_F",5500],
+			["C_Hatchback_01_F",6500],
 			["C_Offroad_01_F",7500],
 			["C_SUV_01_F",10000],
 			["C_Van_01_transport_F",25000]
@@ -67,7 +67,7 @@ switch (_shop) do
 	{
 		_return = 
 		[
-			["C_Hatchback_01_F",5500],
+			["C_Hatchback_01_F",6500],
 			["C_Offroad_01_F",7500],
 			["C_SUV_01_F",10000]
 		];
@@ -157,11 +157,11 @@ switch (_shop) do
 	case "cop_car":
 	{
 		_return set[count _return,
-		["C_Offroad_01_F",7000]];
+			["C_Offroad_01_F",7000]];
 		_return set[count _return,
-		["C_Hatchback_01_F",5500]];
+			["C_Hatchback_01_F",6500]];
 		_return set[count _return,
-		["C_SUV_01_F",11000]];
+			["C_SUV_01_F",11000]];
 		if(__GETC__(life_donator) > 2) then
 		{
 			_return set[count _return,["C_Hatchback_01_sport_F",30000]];

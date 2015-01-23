@@ -14,8 +14,10 @@ if(_value < 0) exitWith {};
 if(!([str(_value)] call life_fnc_isnumeric)) exitWith {hint localize "STR_ATM_notnumeric"};
 if(_value > pbh_life_cash) exitWith {hint localize "STR_ATM_NotEnoughCash"};
 
-pbh_life_cash = pbh_life_cash - _value;
-pbh_life_atmcash = pbh_life_atmcash + _value;
+["cash","take",_value] call life_fnc_updateCash;
+["atm","add",_value] call life_fnc_updateCash;
+
+
 
 hint format[localize "STR_ATM_DepositMSG",[_value] call life_fnc_numberText];
 [] call life_fnc_atmMenu;

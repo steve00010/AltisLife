@@ -22,6 +22,10 @@ if(_price == -1) then {_price = 1000;} else {_price = (__GETC__(life_garage_sell
 
 [[_vid,_pid,_price,player,life_garage_type],"TON_fnc_vehicleDelete",false,false] spawn life_fnc_MP;
 hint format[localize "STR_Garage_SoldCar",[_price] call life_fnc_numberText];
-pbh_life_atmcash = pbh_life_atmcash + _price;
+
+["atm","add",_price] call life_fnc_updateCash;
 
 closeDialog 0;
+
+_msg = format["Vehicle Sell Log: %1 (%2) has sold a %3 for $%4",profileName, getPlayerUID player,getText(configFile >> "CfgVehicles" >> _vehicle >> "displayName"),[_price] call life_fnc_numberText];
+[[_msg],"life_fnc_logMSG",false,false] spawn life_fnc_MP;

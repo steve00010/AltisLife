@@ -130,6 +130,13 @@
 			<German>Markers</German>
 			<French>Markers</French>
 		</Key>
+		<Key ID="STR_Admin_Summons">
+			<Original>Summon</Original>
+			<English>Summon</English>
+			<German>Summons</German>
+			<French>Summon</French>
+		</Key>
+	
 		<Key ID="STR_ANOTF_CompWarn">
 			<Original>You are about to give yourself $%1 to compensate to another player &lt;br/&gt;&lt;br/&gt;You must give this cash to the person you are compensating manually.</Original>
 			<English>You are about to give yourself $%1 to compensate to another player &lt;br/&gt;&lt;br/&gt;You must give this cash to the person you are compensating manually.</English>

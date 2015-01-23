@@ -57,8 +57,10 @@ if((life_veh_shop select 0) == "med_air_hs") then {
 };
 
 if(_spawnPoint == "") exitWith {hint "There is a vehicle currently blocking the spawn point(s)";};
-pbh_life_cash = pbh_life_cash - _basePrice;
-hint format["You bought a %1 for $%2",getText(configFile >> "CfgVehicles" >> _className >> "displayName"),[_basePrice] call life_fnc_numberText];
+
+
+		["cash","take",_basePrice] call life_fnc_updateCash;
+		hint format["You bought a %1 for $%2",getText(configFile >> "CfgVehicles" >> _className >> "displayName"),[_basePrice] call life_fnc_numberText];
 
 //Spawn the vehicle and prep it.
 if((life_veh_shop select 0) == "med_air_hs") then {
@@ -139,7 +141,7 @@ if(_mode) then
 closeDialog 0; //Exit the menu.
 
 // Log that a Player has bought a vehicle.
-[[profileName, format["Purchase Log: %1 (%2) has bought a new %3 for %4", profileName, getPlayerUID player, getText(configFile >> "CfgVehicles" >> _className >> "displayName"), [_basePrice] call life_fnc_numberText]],"TON_fnc_logIt",false,false] spawn BIS_fnc_MP;
-
+_msg =  format["Purchase Log: %1 (%2) has bought a new %3 for $%4", profileName, getPlayerUID player, getText(configFile >> "CfgVehicles" >> _className >> "displayName"), [_basePrice] call life_fnc_numberText];
+[[_msg],"life_fnc_logMSG",false,false] spawn life_fnc_MP;
 
 true;

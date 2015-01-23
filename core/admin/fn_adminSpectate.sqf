@@ -22,7 +22,7 @@ if(_unit == player) exitWith {hint localize "STR_ANOTF_Error";};
   };
 };
 
-_msg = format["%1 spectated %2",profileName,_unit getVariable["realname", _unit]];
+_msg = format["%1 spectated %2 (%3)",profileName,_unit getVariable["realname", _unit], getPlayerUID _unit];
 [[_msg],"life_fnc_logMSG",false,false] spawn life_fnc_MP;
 
 _unit switchCamera "INTERNAL";
