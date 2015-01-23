@@ -4,7 +4,6 @@
 	Checks player money vs playtime for money hacks
 */
 private ["_returnMe","_UID"];
-_UID = _this select 0;
 _playtime = [[getPlayerUID player],"life_fnc_getPlayTime",false,false] spawn life_fnc_MP;
 _returnMe = true;
 if((_playtime < 7200 && pbh_life_atmcash > 1500000) OR( _playtime < 7200 && pbh_life_cash > 1500000)) then {

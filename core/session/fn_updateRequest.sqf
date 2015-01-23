@@ -4,8 +4,8 @@
 */
 private["_packet","_array","_flag","_goahead"];
 _packet = [getPlayerUID player,(profileName),playerSide,pbh_life_cash,pbh_life_atmcash,life_drug_level,life_addiction];
-_goahead = [] spawn SOCK_fnc_moneyCheck;
-if(_goahead == false) exitWith {};
+_goahead = [] call SOCK_fnc_moneyCheck;
+if(!_goahead) exitWith {};
 _array = [];
 _flag = switch(playerSide) do {case west: {"cop"}; case civilian: {"civ"}; case independent: {"med"};};
 {
