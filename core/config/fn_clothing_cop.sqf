@@ -37,8 +37,8 @@ switch (_filter) do
 		
 		if(__GETC__(life_swatlevel) > 0) then
 		{
-			_ret set[count _ret,["U_B_CTRG_1","SWAT Uniform",6500]];
-			_ret set[count _ret,["U_B_GhillieSuit","Ghillie Suit",7000];
+			_ret set[count _ret,["U_B_CTRG_1","SWAT Uniform",6500];
+			_ret set[count _ret,["U_B_GhillieSuit","Ghillie Suit",7000]];
 		};			
 		
 		if(license_cop_dea) then
