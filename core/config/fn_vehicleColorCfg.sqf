@@ -236,6 +236,7 @@ switch (_vehicle) do
 		_ret = 
 		[
 			["textures\vehicles\cop_hunter_body.paa","cop","textures\vehicles\cop_hunter_back.jpg"],
+			["\a3\soft_f\MRAP_01\data\mrap_01_base_co.paa","civ","\a3\soft_f\MRAP_01\data\mrap_01_adds_co.paa"],
 			["textures\vehicles\deahunterbody.paa","cop","textures\vehicles\cop_hunter_back.jpg"],
 			["textures\vehicles\swathunterbody.paa","cop","textures\vehicles\cop_hunter_back.jpg"]
 

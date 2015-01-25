@@ -240,9 +240,11 @@ switch (_vehicle) do
 	
 	case "B_MRAP_01_F":
 	{
+
 		_ret = 
 		[
-			["textures\vehicles\cop_hunter_body.paa","cop","textures\vehicles\cop_hunter_back.jpg"]
+			["textures\vehicles\cop_hunter_body.paa","cop","textures\vehicles\cop_hunter_back.jpg"],
+			["\a3\soft_f\MRAP_01\data\mrap_01_base_co.paa","civ","\a3\soft_f\MRAP_01\data\mrap_01_adds_co.paa"]	
 		];
 		if(license_cop_dea) then {
 			_ret pushBack ["textures\vehicles\deahunterbody.paa","cop","textures\vehicles\cop_hunter_back.jpg"];
