@@ -202,7 +202,7 @@ switch(_shop) do
 		{
 			case (playerSide != west): {"You are not a cop!"};
 			case (__GETC__(life_swatlevel) < 1): {"You are not a member of the Swat team!"};
-			default
+			case (__GETC__(life_swatlevel) == 2)
 			{
 				
 				["Altis Swat Shop",
@@ -233,7 +233,39 @@ switch(_shop) do
 					]
 				];
 			};
+			default:
+			{
+				
+				["Altis Swat Shop",
+					[
+						["SMG_02_F",nil,5000],
+						["30Rnd_9x21_Mag",nil,0],
+						["30Rnd_65x39_caseless_mag",nil,0],
+						["7Rnd_408_Mag",nil,0],
+						["srifle_EBR_ARCO_pointer_F",nil,10000],
+						["20Rnd_762x51_Mag",nil,0],
+						["optic_ACO_grn","Aco Green",1000],
+						["optic_Aco","Aco Red",1000],
+						["optic_Holosight","Holosight",1000],
+						["optic_MRCO","MRCO",1000],
+						["optic_Holosight_smg","SMG",1000],
+						["optic_SOS","SOS",1000],
+						["optic_Arco","Arco",1000],
+						["optic_NVS","NVoptic",1000],
+						["acc_pointer_IR",nil,0],
+						["acc_flashlight",nil,0],
+						["B_IR_Grenade",nil,1000],
+						["Rangefinder",nil,2000],
+						["muzzle_snds_H","6.5 Suppressor",1000],
+						["muzzle_snds_B","7.62 Suppressor",1000],
+						["SmokeShellBlue","Tear Gas Grenade",10000],
+						["HandGrenade_Stone","Flashbang",10000]
+					]
+				];
+			};
 		};
+
+		
 	};
 
 	case "cop_captain":
