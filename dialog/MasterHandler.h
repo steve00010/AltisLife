@@ -20,7 +20,6 @@
 #include "spawnSelection.hpp"
 #include "chopShop.h"
 #include "chop_shop.h"
-#include "chop_shop2.h"
 #include "pInteraction.h"
 #include "deathScreen.h"
 #include "vehicleShop.h"
@@ -34,3 +33,4 @@
 #include "rules.hpp"
 #include "revoke_license.h"
 #include "slot.hpp"
+#include "spray_shop.h"

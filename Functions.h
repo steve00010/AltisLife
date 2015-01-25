@@ -382,13 +382,16 @@ class Life_Client_Core
 		class virt_update {};
 		class virt_sell {};
 		class chopShopMenu {};
-		class chopshopMenuV2{};
-		class chopShop2Menu {};
 		class chopShopSelection {};
 		class chopShopSell {};
 		class chopShopLBChange {};
 		class chopShopClaim {};
 		class chopShopV2{};
+		class sprayShopMenu {};
+		class sprayShopSelection {};
+		class sprayShopPaint {};
+		class sprayShopColSelection {};
+		class sprayShopClose{};
 	};
 	
 	class Items
