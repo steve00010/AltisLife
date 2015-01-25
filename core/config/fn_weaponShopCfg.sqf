@@ -233,7 +233,7 @@ switch(_shop) do
 					]
 				];
 			};
-			default:
+			default
 			{
 				
 				["Altis Swat Shop",
