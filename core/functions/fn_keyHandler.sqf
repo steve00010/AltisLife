@@ -5,7 +5,7 @@
 	Description:
 	Main key handler for event 'keyDown'
 */
-private ["_handled","_shift","_alt","_code","_ctrl","_alt","_ctrlKey","_veh","_locked","_interactionKey","_mapKey","_interruptionKeys"];
+private ["_handled","_shift","_alt","_code","_ctrl","_alt","_ctrlKey","_veh","_locked","_interactionKey","_mapKey","_interruptionKeys""_commandKey","_pushToTalkKeyArray","_pushToTalkDirectKeyArray""_CommandMode"];
 _ctrl = _this select 0;
 _code = _this select 1;
 _shift = _this select 2;
@@ -16,15 +16,27 @@ _handled = false;
 
 _interactionKey = if(count (actionKeys "User10") == 0) then {219} else {(actionKeys "User10") select 0};
 _mapKey = actionKeys "ShowMap" select 0;
+_commandKey = actionKeys "TacticalView" select 0;
+
+_pushToTalkKeyArray = actionKeys "PushToTalk";
+_pushToTalkDirectKeyArray = actionKeys "PushToTalkDirect";
+_pushToTalkSideKeyArray = actionKeys "PushToTalkSide";
+_allTalkKeys = _pushToTalkKeyArray + _pushToTalkDirectKeyArray + _pushToTalkSideKeyArray;
+
+_CommandMode = actionKeys "forceCommandingMode";
+
 //hint str _code;
 _interruptionKeys = [17,30,31,32]; //A,S,W,D
+_isTalkKeys = ( _code in _allTalkKeys );
 
 //Vault handling...
 if ((_code in (actionKeys "GetOver") || _code in (actionKeys "salute")) && {(player getVariable ["restrained",false])} ) exitWith {
 true;
 };
-if (_code in (actionKeys "TacticalView")) exitWith { true; };
-if(life_action_inUse) exitWith {
+
+
+
+if(life_action_inUse && !(_isTalkKeys)) exitWith {
 	if(!life_interrupted && _code in _interruptionKeys) then {life_interrupted = true;};
 	_handled;
 };
@@ -32,9 +44,11 @@ if(life_action_inUse) exitWith {
 //Hotfix for Interaction key not being able to be bound on some operation systems.
 if(count (actionKeys "User10") != 0 && {(inputAction "User10" > 0)}) exitWith 
 {
+	Diag_log "Custom User Key 10 Pressed";
 	//Interaction key (default is Left Windows, can be mapped via Controls -> Custom -> User Action 10)
 	if(!life_action_inUse) then 
 	{
+		Diag_log "No Action in use. Continue with ActionKeyHandler";
 		[] spawn
 		{
 			private["_handle"];
@@ -71,6 +85,12 @@ switch (_code) do
 		};
 	};
 	
+	case _commandKey:
+	{
+		hint "You are not allowed to use Tactical View";
+		_handled = true;
+	};
+	
 	//Holster / recall weapon.
 	case 35:
 	{
@@ -100,6 +120,22 @@ switch (_code) do
 			};
 		};
 	};
+	
+	/*
+	case _pushToTalkKey;
+	case _pushToTalkKey2:
+	{
+		_chan = "";
+		disableSerialization;
+		//waitUntil { !isNull (findDisplay 24) };
+		_chan = ctrlText ((findDisplay 63) displayCtrl 101);
+		if (_chan == "Side Channel") then 
+		{
+			[] spawn life_fnc_PunishSideChat;
+			hint "You cannot use voice in Side Chat"; 
+			_handled = true; 
+		};
+	};*/
 	
 	//Restraining (Shift + R)
 	case 19:
@@ -362,6 +398,56 @@ switch (_code) do
 				};
 			};
 		};
+	};
+
+	default
+	{
+		// Push To Talk Direct
+		if ( _code in _pushToTalkDirectKeyArray ) then
+		{
+			_Talking = player getVariable["Talking", false ];
+			if ( !(_Talking) ) then
+			{
+				player setVariable["Talking", true, true];
+			};
+		};
+		
+		if ( _code in _pushToTalkSideKeyArray ) then
+		{
+			hint "You cannot use voice in Side Chat"; 
+			_handled = true; 
+		};
+		
+		// Push to Talk 
+		if ( _code in _pushToTalkKeyArray ) then
+		{
+			_chan = "";
+			disableSerialization;
+			//waitUntil { !isNull (findDisplay 24) };
+			_chan = ctrlText ((findDisplay 63) displayCtrl 101);
+			if ( ( _chan == localize "str_channel_direct" ) OR ( _chan == "Direct communication" ) ) then 
+			{
+				_Talking = player getVariable["Talking", false ];
+				if ( !(_Talking) ) then
+				{
+					player setVariable["Talking", true, true];
+				};
+			};
+			
+			if ( ( _chan == localize "str_channel_side" ) OR ( _chan == "Side Channel" ) ) then 
+			{
+				[] spawn life_fnc_PunishSideChat;
+				hint "You cannot use voice in Side Chat"; 
+				_handled = true; 
+			};
+		};
+
+		if ( _code in _CommandMode ) then
+		{
+			hint "You cannot use Command Mode"; 
+			_handled = true; 
+		};
+		
 	};
 };
 
