@@ -47,5 +47,5 @@ _colorIndex = lbValue[2304,(lbCurSel 2304)];
 pbh_life_cash = pbh_life_cash - _price;
 _plate = (_vehicle getVariable "dbInfo") select 1;
 _vehicle setVariable["OColor",_colorIndex];
-[[getPlayerUID player,_plate,_colorIndex],"TON_fnc_vehicleSpray",false,false] spawn life_fnc_MP;
+[[getPlayerUID player,_plate,_colorIndex,_vehicle],"TON_fnc_vehicleSpray",false,false] spawn life_fnc_MP;
 closeDialog 0;
