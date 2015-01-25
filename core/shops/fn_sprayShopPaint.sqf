@@ -15,7 +15,7 @@ _colorIndex = lbValue[2304,(lbCurSel 2304)];
 
 _ind = [_className,(call life_garage_sell)] call TON_fnc_index;
 _price = ((call life_garage_sell) select _ind) select 1;
-_price = round (_price / 3);
+_price = round (_price / 4);
 
 if (pbh_life_cash < _price) exitWith { hint "You do not have the cash required!"};
 
