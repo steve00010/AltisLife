@@ -5,7 +5,7 @@
 	Description:
 	Main key handler for event 'keyDown'
 */
-private ["_handled","_shift","_alt","_code","_ctrl","_alt","_ctrlKey","_veh","_locked","_interactionKey","_mapKey","_interruptionKeys""_commandKey","_pushToTalkKeyArray","_pushToTalkDirectKeyArray""_CommandMode"];
+private ["_handled","_shift","_alt","_code","_ctrl","_alt","_ctrlKey","_veh","_locked","_interactionKey","_mapKey","_interruptionKeys","_commandKey","_pushToTalkKeyArray","_pushToTalkDirectKeyArray""_CommandMode"];
 _ctrl = _this select 0;
 _code = _this select 1;
 _shift = _this select 2;
