@@ -11,6 +11,7 @@ if(_var == "") exitWith {""};
 
 switch (_var) do
 {
+	default {("icons\items\noicon.paa")};
 	//Virtual Inventory Items
 	case "life_inv_oilu": {("icons\items\oil_unprocessed.paa")};
 	case "life_inv_oilp": {("icons\items\oil_processed.paa")};
