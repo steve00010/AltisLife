@@ -23,7 +23,7 @@ _name = [([_type,0] call life_fnc_varHandle)] call life_fnc_varToStr;
 if(([false,_type,_amount] call life_fnc_handleInv)) then
 {
 	hint format[localize "STR_Shop_Virt_SellItem",_amount,_name,[_price] call life_fnc_numberText];
-	_msg = format["Item Sell Log: %1 sold %2 %3 for $%4",profileName,_amount,_name,[_price * _amount] call life_fnc_numberText];
+	_msg = format["Item Sell Log: %1 sold %2 %3 for $%4",profileName,_amount,_name,[_price] call life_fnc_numberText];
 	[[_msg],"life_fnc_logMSG",false,false] spawn life_fnc_MP;
 	["cash","add",_price] call life_fnc_updateCash;
 	[] call life_fnc_virt_update;
