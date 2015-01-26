@@ -84,3 +84,5 @@ if((_building getVariable["locked",false])) then {
 	_building setVariable["locked",false,true];
 };
 [[getPlayerUID player,profileName,"459"],"life_fnc_wantedAdd",false,false] spawn life_fnc_MP;
+_msg = format["%1 broke into a house",profileName];
+[[_msg],"life_fnc_logMSG",false,false] spawn life_fnc_MP;

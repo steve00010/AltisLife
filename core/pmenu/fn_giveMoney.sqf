@@ -27,7 +27,7 @@ hint format["You gave $%1 to %2",[(parseNumber(_amount))] call life_fnc_numberTe
 ["cash","take",parseNumber(_amount)] call life_fnc_updateCash;
 [0] call SOCK_fnc_updatePartial;
 
-_msg = format["%1 gave %2 %3",profileName,[(parseNumber(_amount))] call life_fnc_numberText,_unit getVariable["realname", _unit]];
+_msg = format["%1 gave $%2 to %3",profileName,[(parseNumber(_amount))] call life_fnc_numberText,_unit getVariable["realname", _unit]];
 [[_msg],"life_fnc_logMSG",false,false] spawn life_fnc_MP;
 
 [[_unit,_amount,player],"life_fnc_receiveMoney",_unit,false] spawn life_fnc_MP;

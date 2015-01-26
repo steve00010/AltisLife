@@ -4,7 +4,7 @@
 */
 private["_packet","_array","_flag"];
 _packet = [getPlayerUID player,(profileName),playerSide,pbh_life_cash,pbh_life_atmcash,life_drug_level,life_addiction];
-[[getPlayerUID player,player],"DB_fnc_checkMoney",false,false] spawn life_fnc_MP;
+[[getPlayerUID player,player],"life_fnc_checkMoney",false,false] spawn life_fnc_MP;
 
 _array = [];
 _flag = switch(playerSide) do {case west: {"cop"}; case civilian: {"civ"}; case independent: {"med"};};
