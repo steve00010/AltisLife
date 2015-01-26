@@ -67,4 +67,7 @@ switch (_var) do
 	case "life_inv_zipties": {("icons\items\zipties.paa")};
 	case "life_inv_bottles": {("icons\items\bottles.paa")};
 	case "life_inv_monster": {("icons\items\monster.paa")};
+	case "life_inv_monster": {("icons\items\monster.paa")};
+	case "life_inv_bottledbeer": {("icons\items\bottledbeer")};
+	case "life_inv_bottledshine": {("icons\items\bottledshine")};
 };
