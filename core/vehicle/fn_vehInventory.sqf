@@ -32,7 +32,7 @@ if(count _data == 0) then {_veh setVariable["Trunk",[[],0],true]; _data = [];} e
 //Player Inventory Items
 {
 	//Money Handle
-	if(_x != "life_cash") then
+	if(_x != "pbh_life_cash") then
 	{
 		_str = [_x] call life_fnc_varToStr;
 		_shrt = [_x,1] call life_fnc_varHandle;
