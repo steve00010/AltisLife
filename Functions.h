@@ -387,6 +387,7 @@ class Life_Client_Core
 		class chopShopLBChange {};
 		class chopShopClaim {};
 		class chopShopV2{};
+		class chopshopMenuV2{};
 		class sprayShopMenu {};
 		class sprayShopSelection {};
 		class sprayShopPaint {};
