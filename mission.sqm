@@ -5086,7 +5086,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="sprayshop_1";
-					init="this enableSimulation false; this allowDamage false; this addAction[""Spray Shop"",life_fnc_sprayShopMenu,[""civ_car"",civilian,[""civ_car_1"",""civ_car_1_1"",""civ_car_1_2""],""civ"",""Steve's Spray Shop""]]; this setVariable[""realname"", ""Spray Shop""];";
+					init="this enableSimulation false; this allowDamage false; this addAction[""Spray Shop"",life_fnc_sprayShopMenu,[""civ_car"",civilian,[""civ_car_1"",""civ_car_1_1"",""civ_car_1_2""],""civ"",""Steve's Spray Shop""]]; this setVariable[""realname"", ""Spray Shop""]; this addAction[""<t color='#ADFF2F'>ATM</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 '];";
 				};
 			};
 		};
@@ -5107,7 +5107,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="sprayshop_1_1";
-					init="this enableSimulation false; this allowDamage false; this addAction[""Spray Shop"",life_fnc_sprayShopMenu,[""civ_car"",civilian,[""civ_car_1"",""civ_car_1_1"",""civ_car_1_2""],""civ"",""Steve's Spray Shop""]]; this setVariable[""realname"", ""Spray Shop""];";
+					init="this enableSimulation false; this allowDamage false; this addAction[""Spray Shop"",life_fnc_sprayShopMenu,[""civ_car"",civilian,[""civ_car_1"",""civ_car_1_1"",""civ_car_1_2""],""civ"",""Steve's Spray Shop""]]; this setVariable[""realname"", ""Spray Shop""]; this addAction[""<t color='#ADFF2F'>ATM</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 '];";
 				};
 			};
 		};
@@ -47196,10 +47196,10 @@ class Mission
 		class Item4320
 		{
 			position[]={3497.1589,8.1822262,13000.487};
-			azimut=638.11218;
+			azimut=638.112;
 			id=4610;
 			side="EMPTY";
-			vehicle="Land_Atm_02_F";
+			vehicle="Land_Billboard_F";
 			skill=0.60000002;
 			init="this enableSimulation false; this allowDamage false; this addAction[""<t color='#ADFF2F'>ATM</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 '];";
 		};
@@ -102874,7 +102874,7 @@ class Mission
 			name="Spray_shop_1";
 			text="Spray Shop";
 			type="respawn_motor";
-			colorName="ColorGreen";
+			colorName="ColorYellow";
 		};
 		class Item382
 		{
@@ -102882,7 +102882,7 @@ class Mission
 			name="Spray_shop_1_1";
 			text="Spray Shop";
 			type="respawn_motor";
-			colorName="ColorGreen";
+			colorName="ColorYellow";
 		};
 	};
 	class Sensors
