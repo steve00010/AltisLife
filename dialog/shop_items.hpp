@@ -31,7 +31,7 @@ class shops_menu {
 			text = "$STR_VS_SI";
 			sizeEx = 0.04;
 			x = 0.12; y = 0.27;
-			w = 0.275; h = 0.04;
+			w = 0.375; h = 0.04;
 		};
 		
 		class vasgText : Life_RscText
@@ -41,8 +41,8 @@ class shops_menu {
 			text = "$STR_VS_PI";
 			sizeEx = 0.04;
 			
-			x = 0.60; y = 0.27;
-			w = 0.275; h = 0.04;
+			x = 0.50; y = 0.27;
+			w = 0.375; h = 0.04;
 		};
 	};
 	
@@ -56,7 +56,7 @@ class shops_menu {
 			//onLBSelChanged = "[] call fnc_selection";
 			
 			x = 0.12; y = 0.31;
-			w = 0.275; h = 0.340;
+			w = 0.375; h = 0.340;
 		};
 		
 		class pItemlist : Life_RscListBox 
@@ -66,8 +66,8 @@ class shops_menu {
 			sizeEx = 0.030;
 			//onLBSelChanged = "[2502] execVM 'gear\selection.sqf'";
 			
-			x = 0.60; y = 0.31;
-			w = 0.275; h = 0.340;
+			x = 0.50; y = 0.31;
+			w = 0.375; h = 0.340;
 		};
 			
 		class Title : Life_RscTitle {
