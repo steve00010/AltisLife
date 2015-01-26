@@ -24,7 +24,7 @@ if(isNull _unit) exitWith {ctrlShow[2001,true];};
 if(isNil "_unit") exitWith {ctrlShow[2001,true]; hint "The selected player is not within range";};
 hint format["You gave $%1 to %2",[(parseNumber(_amount))] call life_fnc_numberText,_unit getVariable["realname",name _unit]];
 
-["cash","take",_amount] call life_fnc_updateCash;
+["cash","take",parseNumber(_amount)] call life_fnc_updateCash;
 [0] call SOCK_fnc_updatePartial;
 
 _msg = format["%1 gave %2 %3",profileName,[(parseNumber(_amount))] call life_fnc_numberText,_unit getVariable["realname", _unit]];

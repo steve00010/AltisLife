@@ -202,7 +202,7 @@ switch(_shop) do
 		{
 			case (playerSide != west): {"You are not a cop!"};
 			case (__GETC__(life_swatlevel) < 1): {"You are not a member of the Swat team!"};
-			case (__GETC__(life_swatlevel) == 2)
+			case (__GETC__(life_swatlevel) == 2):
 			{
 				
 				["Altis Swat Shop",
@@ -233,7 +233,7 @@ switch(_shop) do
 					]
 				];
 			};
-			default:
+			default
 			{
 				
 				["Altis Swat Shop",
