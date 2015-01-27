@@ -69,7 +69,6 @@ switch (_var) do
 	case "life_inv_monster": {("icons\items\monster.paa")};
 	case "life_inv_bottledbeer": {("icons\items\bottledbeer")};
 	case "life_inv_bottledshine": {("icons\items\bottledshine")};
-	case "life_inv_scratchcard": {("icons\items\scratchcard")};
 	case "life_inv_surgeryknife": {("icons\items\surgeryknife")};
 	case "life_inv_bottledwhiskey": {("icons\items\bottledwhiskey")};
 	case "life_inv_moonshine": {("icons\items\moonshine.paa")};
@@ -77,4 +76,5 @@ switch (_var) do
 	case "life_inv_hops": {("icons\items\hops.paa")};
 	case "life_inv_yeast": {("icons\items\yeast.paa")};
 	case "life_inv_mash": {("icons\items\mash.paa")};
+	case "life_inv_scratchcard": {("icons\items\scratchcard.paa")};
 };
