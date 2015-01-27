@@ -34,7 +34,7 @@ switch (_vehicle) do
 			["\a3\air_f\Heli_Light_02\Data\heli_light_02_ext_opfor_co.paa","civ"],
 			["textures\vehicles\police_orca.paa","cop"],
 			["textures\vehicles\medic_orca.paa","med"],
-			["textures\vehicles\orca_channel7.jpg","civ"]
+			["textures\vehicles\orca_channel7.paa","civ"]
 		];
 	};
 	
@@ -108,7 +108,10 @@ switch (_vehicle) do
 				["#(argb,8,8,3)color(0.6,0.3,0.01,1)","civ"],
 				["textures\vehicles\offroad_paramedic.paa","med"],
 				["textures\vehicles\offroad_dea.paa","cop"],
-				["textures\vehicles\offroad_swat.paa","cop"]
+				["textures\vehicles\offroad_swat.paa","cop"],
+				["textures\vehicles\offroad_monster.paa","civ"],
+				["textures\vehicles\offroad_captain.paa","civ"],
+				["textures\vehicles\offroad_drug.paa","civ"]
 			];
 
 
@@ -208,7 +211,8 @@ switch (_vehicle) do
 			["\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_wasp_co.paa","civ"],
 			["\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_bluefor_co.paa","reb"],
 			["textures\vehicles\heli_paramedic.paa","med"],
-			["textures\vehicles\heli_police.paa","cop"]
+			["textures\vehicles\heli_police.paa","cop"],
+			["textures\vehicles\msi_humm.paa","civ"]
 		];
 	};
 	
@@ -275,7 +279,7 @@ switch (_vehicle) do
 	{
 		_ret = 
 		[
-			["textures\vehicles\boat_police.jpg","cop"]
+			["textures\vehicles\boat_police.paa","cop"]
 		];
 	};
 };	
