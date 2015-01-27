@@ -77,4 +77,5 @@ switch (_var) do
 	case "life_inv_yeast": {("icons\items\yeast.paa")};
 	case "life_inv_mash": {("icons\items\mash.paa")};
 	case "life_inv_scratchcard": {("icons\items\scratchcard.paa")};
+	case "life_inv_cornmeal": {("icons\items\cornmeal.paa")};
 };
