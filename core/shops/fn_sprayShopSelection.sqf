@@ -33,11 +33,11 @@ if(count _nearVehicles > 0) then
 			if((_x getVariable "dbInfo") select 1 == _vIndex) exitWith
 			{
 				_vehicle = _x;
-			} else {
-				if((getPlayerUID player) == _vehOwner) then {
-					[_x,_x getVariable "OColor"] spawn life_fnc_colorVehicle;
-				};
-			}
+			};
+			if((getPlayerUID player) == _vehOwner) then {
+				[_x,_x getVariable "OColor"] spawn life_fnc_colorVehicle;
+			};
+			
 		};
 	} foreach _nearVehicles;
 };
