@@ -24,8 +24,9 @@ switch(playerSide) do
 	};
 	case independent:
 	{
+	
 		ctrlShow[2011,false];
-		ctrlShow[9800,false];	
+		ctrlShow[2012,false];	
 	}
 };
 
