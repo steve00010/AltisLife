@@ -107,11 +107,12 @@ switch (_vehicle) do
 				["textures\vehicles\offroad_police.paa","cop"],
 				["#(argb,8,8,3)color(0.6,0.3,0.01,1)","civ"],
 				["textures\vehicles\offroad_paramedic.paa","med"],
-				["textures\vehicles\offroad_dea.paa","cop"],
-				["textures\vehicles\offroad_swat.paa","cop"],
 				["textures\vehicles\offroad_monster.paa","civ"],
 				["textures\vehicles\offroad_captain.paa","civ"],
-				["textures\vehicles\offroad_drug.paa","civ"]
+				["textures\vehicles\offroad_drug.paa","civ"],
+				["textures\vehicles\offroad_dea.paa","cop"],
+				["textures\vehicles\offroad_swat.paa","cop"]
+
 			];
 
 
