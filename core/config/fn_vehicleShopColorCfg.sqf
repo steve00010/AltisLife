@@ -109,6 +109,9 @@ switch (_vehicle) do
 			_ret pushBack ["textures\vehicles\offroad_police.paa","cop"];
 			_ret pushBack ["#(argb,8,8,3)color(0.6,0.3,0.01,1)","civ"];
 			_ret pushBack ["textures\vehicles\offroad_paramedic.paa","med"];
+			_ret pushBack ["textures\vehicles\offroad_monster.paa","civ"];
+			_ret pushBack ["textures\vehicles\offroad_captain.paa","civ"];
+			_ret pushBack ["textures\vehicles\offroad_drug.paa","civ"];
 		if(license_cop_dea) then {
 			_ret pushBack ["textures\vehicles\offroad_dea.paa","cop"];
 		};
@@ -118,9 +121,6 @@ switch (_vehicle) do
 				};
 			_ret pushBack ["textures\vehicles\offroad_swat.paa","cop"];
 		};
-			_ret pushBack ["textures\vehicles\offroad_monster.paa","civ"];
-			_ret pushBack ["textures\vehicles\offroad_captain.paa","civ"];
-			_ret pushBack ["textures\vehicles\offroad_drug.paa","civ"];
 
 
 	};
