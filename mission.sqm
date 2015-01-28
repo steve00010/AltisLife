@@ -102981,7 +102981,7 @@ class Mission
 			class Effects
 			{
 				titleType="TEXT";
-				title="WARNING!! ""Thia is a Safe Zone, please obey the Rules of a Safe Zone"". ";
+				title="WARNING!! ""This is a Safe Zone, please obey the Rules of a Safe Zone"". ";
 			};
 		};
 		class Item2
@@ -103239,7 +103239,7 @@ class Mission
 			class Effects
 			{
 				titleType="TEXT";
-				title="WARNING!! ""Thia is a Safe Zone, please obey the Rules of a Safe Zone"". ";
+				title="WARNING!! ""This is a Safe Zone, please obey the Rules of a Safe Zone"". ";
 			};
 		};
 		class Item16
@@ -103258,7 +103258,7 @@ class Mission
 			class Effects
 			{
 				titleType="TEXT";
-				title="WARNING!! ""Thia is a Safe Zone, please obey the Rules of a Safe Zone"". ";
+				title="WARNING!! ""This is a Safe Zone, please obey the Rules of a Safe Zone"". ";
 			};
 		};
 	};
