@@ -206,7 +206,7 @@ switch (_vehicle) do
 			case 18: {_color = "Oliv"};
 			case 19: {_color = "EMS"};
 			case 20: {_color = "Cop"};
-			case 21; {_color = "MSI"};
+			case 21: {_color = "MSI"};
 		};
 	};
 	
