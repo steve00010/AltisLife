@@ -20,7 +20,7 @@ ctrlShow [2330,true];
 ctrlShow [2304,true];
 _ind = [_className,(call life_garage_sell)] call TON_fnc_index;
 _price = ((call life_garage_sell) select _ind) select 1;
-_price = round (_price / 2);
+_price = round (_price / 3);
 _nearVehicles = nearestObjects[getPos (player),["Car","Air","Truck"],25]; //Fetch vehicles within 30m.
 if(count _nearVehicles > 0) then
 	{
@@ -33,7 +33,11 @@ if(count _nearVehicles > 0) then
 			if((_x getVariable "dbInfo") select 1 == _vIndex) exitWith
 			{
 				_vehicle = _x;
-			};
+			} else {
+				if((getPlayerUID player) == _vehOwner) then {
+					[_x,_x getVariable "OColor"] spawn life_fnc_colorVehicle;
+				};
+			}
 		};
 	} foreach _nearVehicles;
 };
