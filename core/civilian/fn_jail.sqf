@@ -19,7 +19,7 @@ player setVariable["Escorting",false,true];
 player setVariable["transporting",false,true];
 
 titleText["You have been arrested, wait your time out. If you attempt to respawn or reconnect your time will increase!","PLAIN"];
-hint "For being arrested you have lost the following licenses if you own them\n\nFirearms License\nRebel License";
+hint "For being arrested you have lost the following licenses if you own them\n\nFirearms License";
 player setPos (getMarkerPos "jail_marker");
 
 if(_bad) then
@@ -50,6 +50,8 @@ removeAllWeapons player;
 removeUniform player; //Add line
 removeVest player;//Add line
 removeBackpack player;//Add line
+removeHeadgear player;
+removeItems player;
 player addUniform "U_C_WorkerCoveralls";//Add line
 [[player,0,"textures\uniforms\prisoner_uniform.jpg"],"life_fnc_setTexture",true,false] spawn life_fnc_MP;
 
