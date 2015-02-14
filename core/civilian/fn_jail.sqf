@@ -51,7 +51,7 @@ removeUniform player; //Add line
 removeVest player;//Add line
 removeBackpack player;//Add line
 removeHeadgear player;
-removeItems player;
+
 player addUniform "U_C_WorkerCoveralls";//Add line
 [[player,0,"textures\uniforms\prisoner_uniform.jpg"],"life_fnc_setTexture",true,false] spawn life_fnc_MP;
 
