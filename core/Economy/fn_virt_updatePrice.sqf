@@ -37,7 +37,7 @@ if ((_x select 1) > 1 ) then {
 		_item_list lbSetValue [(lbSize _item_list)-1,_price];
 		_item_list lbSetPicture [(lbSize _item_list)-1,_icon];
 	};
-} foreach _array;
+} foreach buy_array;
 
 {
 	if ((_x select 2) > 1 ) then {

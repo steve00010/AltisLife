@@ -24,14 +24,14 @@ class Market
 			x = 0.1;
 			y = 0.2 + (11 / 250);
 			w = 0.7;
-			h = 0.7 - (22 / 250);
+			h = 0.7;
 		};
 		
 		class RscTitleText : Life_RscTitle
 		{
 			colorBackground[] = {0, 0, 0, 0};
 			idc = 39001;
-			text = "";
+			text = "Economy Prices!";
 			x = 0.1;
 			y = 0.2;
 			w = 0.7;
@@ -47,7 +47,7 @@ class Market
 			sizeEx = 0.04;
 			
 			x = 0.11; y = 0.25;
-			w = 0.3; h = 0.04;
+			w = 0.33; h = 0.04;
 		};
 		
 		class RscPlayerText : Life_RscText
@@ -57,8 +57,8 @@ class Market
 			text = "Selling Price";
 			sizeEx = 0.04;
 			
-			x = 0.49; y = 0.25;
-			w = 0.3; h = 0.04;
+			x = 0.45; y = 0.25;
+			w = 0.33; h = 0.04;
 		};	
 	};
 	
@@ -71,7 +71,7 @@ class Market
 			sizeEx = 0.030;
 			
 			x = 0.11; y = 0.29;
-			w = 0.3; h = 0.55;
+			w = 0.33; h = 0.65;
 		};
 		
 		class VenteGear : Life_RscListBox
@@ -80,10 +80,9 @@ class Market
 			text = "";
 			sizeEx = 0.030;
 			
-			x = 0.49; y = 0.29;
-			w = 0.3; h = 0.55;
+			x = 0.45; y = 0.29;
+			w = 0.33; h = 0.65;
 		};
-		
 		
 		class ButtonClose : Life_RscButtonMenu {
 			idc = -1;
@@ -91,7 +90,7 @@ class Market
 			text = "$STR_Global_Close";
 			onButtonClick = "closeDialog 0;";
 			x = 0.1;
-			y = 0.9 - (1 / 25);
+			y = 0.948 ;
 			w = (6.25 / 40);
 			h = (1 / 25);
 		};

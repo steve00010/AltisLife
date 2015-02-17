@@ -24,19 +24,21 @@ ctrlSetText[2403,format["%1", _shop_data select 0]];
 _sender = player;
 _uid = getPlayerUID _sender;
 
-[[0,_sender,life_shop_type],"TON_fnc_getprices",false,false] spawn life_fnc_MP;
+//[[0,_sender,life_shop_type],"TON_fnc_getprices",false,false] spawn life_fnc_MP;
 
 
-/*
+
 {
 	_name = [([_x,0] call life_fnc_varHandle)] call life_fnc_vartostr;
-	_index = [_x,__GETC__(buy_array)] call fnc_index;
+	_index = [_x,__GETC__(buy_array)] call TON_fnc_index;
+	_icon = [([_x,0] call life_fnc_varHandle)] call life_fnc_itemIcon;
 	if(_index != -1) then
 	{
 		_price = (__GETC__(buy_array) select _index) select 1;
 		_item_list lbAdd format["%1  ($%2)",_name,[_price] call life_fnc_numberText];
 		_item_list lbSetData [(lbSize _item_list)-1,_x];
 		_item_list lbSetValue [(lbSize _item_list)-1,_price];
+		_item_list lbSetPicture [(lbSize _item_list)-1,_icon];
 	};
 } foreach (_shop_data select 1);
 
@@ -44,12 +46,13 @@ _uid = getPlayerUID _sender;
 	_var = [_x,0] call life_fnc_varHandle;
 	_val = missionNameSpace getVariable _var;
 	_name = [_var] call life_fnc_vartostr;
+		_icon = [_var] call life_fnc_itemIcon;
 	
 	if(_val > 0) then
 	{
 		_gear_list lbAdd format["%1x %2",_val,_name];
 		_gear_list lbSetData [(lbSize _gear_list)-1,_x];
+		_gear_list lbSetPicture [(lbSize _gear_list)-1,_icon];
 	};
 } foreach (_shop_data select 1);
 
-*/

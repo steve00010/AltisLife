@@ -129,7 +129,7 @@ switch (__GETC__(life_donator)) do
 	case 5: { life_houseLimit=5; };
 };
 __CONST__(life_houseLimit,life_houseLimit);
-
+[[0,player,"economy"],"TON_fnc_getprices",false,false] spawn life_fnc_MP;
 [] spawn life_fnc_fatigueReset;
 [] spawn life_fnc_autoSave;
 [] spawn life_fnc_introCam;
