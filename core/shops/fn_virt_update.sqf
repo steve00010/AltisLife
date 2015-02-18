@@ -50,7 +50,7 @@ _uid = getPlayerUID _sender;
 
 	if(_val > 0) then
 	{
-		_price = (__GETC__(sell_array) select _index) select 1;
+
 		_gear_list lbAdd format["%1x %2",_val,_name];
 		_gear_list lbSetData [(lbSize _gear_list)-1,_x];
 
