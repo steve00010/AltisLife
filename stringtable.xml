@@ -495,6 +495,9 @@
 			<Italian>Msg Polizia</Italian>		
 			<Portuguese>Polícia</Portuguese>
 		</Key>
+		<Key ID="STR_CELL_AdacRequest">
+			<Original>Request Adac</Original>
+		</Key>
 		<Key ID="STR_CELL_TextAdmins">
 			<Original>Text Admins</Original>
 			<German>An die Admins</German>

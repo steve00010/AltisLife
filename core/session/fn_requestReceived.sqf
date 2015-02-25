@@ -57,6 +57,7 @@ switch(playerSide) do {
 		CONST(life_coplevel, parseNumber(SEL(_this,7)));
 		CONST(life_swatlevel, parseNumber(_this select 11));
 		CONST(life_medicLevel,0);
+		CONST(life_adaclevel,0);		
 		life_blacklisted = SEL(_this,9);
 		life_drug_level = SEL(_this,12);
 		life_addiction = (call compile format["%1",SEL(_this,13)]);
@@ -66,6 +67,7 @@ switch(playerSide) do {
 		life_is_arrested = SEL(_this,7);
 		CONST(life_coplevel, 0);
 		CONST(life_medicLevel, 0);
+		CONST(life_adaclevel,0);		
 		life_drug_level = SEL(_this,10);
 		life_addiction = (call compile format["%1",SEL(_this,11)]);
 		life_houses = SEL(_this,12);
@@ -84,6 +86,13 @@ switch(playerSide) do {
 	case independent: {
 		CONST(life_medicLevel, parseNumber(SEL(_this,7)));
 		CONST(life_coplevel,0);
+		CONST(life_adaclevel,0);
+	};
+	
+	case east: {
+		CONST(life_adaclevel, parseNumber(_this select 7));
+		CONST(life_coplevel,0);
+		CONST(life_medicLevel,0);
 	};
 };
 
