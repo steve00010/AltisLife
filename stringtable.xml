@@ -488,9 +488,6 @@
 			<Italian>Msg Giocatore:</Italian>
 			<Portuguese>Mensagem:</Portuguese>
 		</Key>
-		 <Key ID="STR_CELL_AdacRequest">
-			<Original>Request Adac</Original>
-		</Key>
 		<Key ID="STR_CELL_TextPolice">
 			<Original>Text Police</Original>
 			<German>An die Polizei</German>
@@ -3662,13 +3659,6 @@
 			<French>Channel7 License</French>
 			<Italian>Channel7 License</Italian>
 			<Portuguese>Channel7 License</Portuguese>
-		</Key>
-		<Key ID="STR_License_Adac">
-			<Original>ARC License</Original>
-			<German>ARC License</German>
-			<French>ARC License</French>
-			<Italian>ARC License</Italian>
-			<Portuguese>ARC License</Portuguese>
 		</Key>
 	</Package>
 	<Package name="More_Item_Strings">

@@ -40,22 +40,7 @@ class CarShops {
 	class med_air_hs {
 		side = "med";
 		vehicles[] = {
-			{ "C_Offroad_01_F", 5000, "", {"life_mediclevel",1 },
-			{ "C_SUV_01_F", 10000, "", }
-		};
-	};
-	
-	class adac_car {
-		side = "adac";
-		vehicles[] = {
-			{ "C_Offroad_01_F", 5000,"", {"life_adaclevel",1 } }
-		};
-	};
-	
-	class adac_air {
-		side = "adac";
-		vehicles[] = {
-			{ "O_Heli_Light_02_unarmed_F", 50000, "", {"life_adaclevel", 1 } }
+			{ "O_Heli_Light_02_unarmed_F", 50000, "mAir",{ "life_mediclevel", 1 } }
 		};
 	};
 

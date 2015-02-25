@@ -97,52 +97,6 @@ class Clothing {
 			{ "B_OutdoorPack_tan", "", 5000, { "", "", -1 } }
 		};
 	};
-	
-	class adac {
-				title = "STR_Shops_C_Adac";
-		license = "";
-		side = "adac";
-
-		uniforms[] = {
-			{ "NONE", "Remove Uniform", 0, { "", "", -1 } },
-			{ "U_Rangemaster", "Adac Junior", 550, { "life_adaclevel", "SCALAR", 1 } },
-			{ "U_Rangemaster", "Adac Senior", 550, { "life_adaclevel", "SCALAR", 2 } }
-
-		};
-
-		headgear[] = {
-			{ "NONE", "Remove Hat", 0, { "", "", -1 } },
-			{ "H_Beret_blk_POLICE", "Adac Beret", 100, { "life_coplevel", "SCALAR", 2 } }
-
-		};
-
-		goggles[] = {
-			{ "NONE", "Remove Glasses", 0, { "", "", -1 } },
-			{ "G_Shades_Black", "", 25, { "", "", -1 } },
-			{ "G_Shades_Blue", "", 20, { "", "", -1 } },
-			{ "G_Sport_Blackred", "", 20, { "", "", -1 } },
-			{ "G_Sport_Checkered", "", 20, { "", "", -1 } },
-			{ "G_Sport_Blackyellow", "", 20, { "", "", -1 } },
-			{ "G_Sport_BlackWhite", "", 20, { "", "", -1 } },
-			{ "G_Squares", "", 10, { "", "", -1 } },
-			{ "G_Aviator", "", 100, { "", "", -1 } },
-			{ "G_Lady_Mirror", "", 150, { "", "", -1 } },
-			{ "G_Lady_Dark", "", 150, { "", "", -1 } },
-			{ "G_Lady_Blue", "", 150, { "", "", -1 } },
-			{ "G_Lowprofile", "", 30, { "", "", -1 } },
-			{ "G_Combat", "", 55, { "", "", -1 } }
-		};
-
-		vests[] = {
-			{ "NONE", "Remove Vest", 0, { "", "", -1 } },
-			{ "V_Rangemaster_belt", "RangeMaster Belt", 4000, { "", "", -1 } }
-		};
-
-		backpacks[] = {
-			{ "NONE", "Remove Backpack", 0, { "", "", -1 } },
-			{ "B_Carryall_cbr", "", 2500, { "", "", -1 } }
-		};
-	};
 
 	class cop {
 		title = "STR_Shops_C_Police";

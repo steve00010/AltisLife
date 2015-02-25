@@ -103,11 +103,6 @@ switch (playerSide) do {
 	case independent: {
 		BANK = 500000;
 		life_paycheck = 600;
-	};	
-	
-    case east: {
-		life_atmcash = 500000; //Starting Bank Money
-		life_paycheck = 500; //Paycheck Amount		
 	};
 };
 

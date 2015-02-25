@@ -26,13 +26,6 @@ switch (_side) do
 		];
 	};
 	
-	case east: 
-	{
-		_return = [
-			["adac_headquarters","ADAC Headquarters","\a3\ui_f\data\map\MapControl\watertower_ca.paa"]
-		];
-	};
-	
 	case civilian:
 	{
 		

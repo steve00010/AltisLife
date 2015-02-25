@@ -16,7 +16,7 @@ class Header
 {
 	gameType = RPG;
 	minPlayers = 1;
-	maxPlayers = 112;
+	maxPlayers = 100;
 };
 
 wreckLimit = 3;
@@ -278,15 +278,6 @@ class CfgNotifications
 		description = "%1";
 		duration = 10;
 		priority = 6;
-	};
-	
-	class AdacMessage
-	{
-		title = "ADAC Message";
-		iconPicture = "icons\messagenew.paa";
-		description = "%1";
-		duration = 10;
-		priority = 5;
 	};
 	
 	class PoliceDispatch
