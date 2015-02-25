@@ -42,6 +42,14 @@ if (playerSide == independent) then
 	
 };
 
+if (playerSide == east) then
+{
+	if(uniform player == "U_Rangemaster") then 
+	{
+		player setObjectTextureGlobal [0,"textures\uniforms\adac_junior.paa"];
+	};	
+};
+
 // Make Backpack invisible
 if (playerSide == west) then
 {
