@@ -78,7 +78,7 @@ if(_rip) then
    5 cutText ["","PLAIN"];
    titleText[format["You have stolen $%1, now get away before the cops arrive!",[_kassa] call life_fnc_numberText],"PLAIN"];
    deleteMarker _marker; // by ehno delete marker
-   pbh_life_cash = pbh_life_cash + _kassa;
+   life_cash = life_cash + _kassa;
 
    _rip = false;
    life_use_atm = false;

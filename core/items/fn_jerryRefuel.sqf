@@ -29,9 +29,9 @@ _cP = 0.01;
 
 while{true} do
 {
-	if(animationState player != "AinvPknlMstpSnonWnonDnon_medic_1") then {
-		[[player,"AinvPknlMstpSnonWnonDnon_medic_1"],"life_fnc_animSync",true,false] spawn life_fnc_MP;
-		player playMoveNow "AinvPknlMstpSnonWnonDnon_medic_1";
+	_previous = animationState player;
+	if(animationState player == _previous) then {
+		player playMoveNow "AinvPknlMstpSnonWnonDr_medic0";
 	};
 	sleep 0.2;
 	if(isNull _ui) then {
@@ -60,7 +60,7 @@ switch (true) do
 	{
 		if(!local _vehicle) then
 		{
-			[[_vehicle,(Fuel _vehicle) + 0.5],"life_fnc_setFuel",_vehicle,false] spawn life_fnc_MP;
+			[[_vehicle,(Fuel _vehicle) + 0.5],"life_fnc_setFuel",_vehicle,false] call life_fnc_MP;
 		}
 			else
 		{
@@ -72,7 +72,7 @@ switch (true) do
 	{
 		if(!local _vehicle) then
 		{
-			[[_vehicle,(Fuel _vehicle) + 0.2],"life_fnc_setFuel",_vehicle,false] spawn life_fnc_MP;
+			[[_vehicle,(Fuel _vehicle) + 0.2],"life_fnc_setFuel",_vehicle,false] call life_fnc_MP;
 		}
 			else
 		{
@@ -84,7 +84,7 @@ switch (true) do
 	{
 		if(!local _vehicle) then
 		{
-			[[_vehicle,(Fuel _vehicle) + 0.35],"life_fnc_setFuel",_vehicle,false] spawn life_fnc_MP;
+			[[_vehicle,(Fuel _vehicle) + 0.35],"life_fnc_setFuel",_vehicle,false] call life_fnc_MP;
 		}
 			else
 		{

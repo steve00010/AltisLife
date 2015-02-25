@@ -14,5 +14,5 @@ _array = [_this,1,[],[[]]] call BIS_fnc_param;
 	sell_array pushBack [_x select 0,_x select 2];
 }forEach _array;
 
-__CONST__(buy_array,buy_array);
-__CONST__(sell_array,sell_array);
+CONST(buy_array,buy_array);
+CONST(sell_array,sell_array);

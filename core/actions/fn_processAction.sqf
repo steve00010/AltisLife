@@ -1,3 +1,4 @@
+#include <macro.h>
 /*
 	File: fn_processAction.sqf
 	Author: Bryan "Tonic" Boardwine
@@ -14,16 +15,15 @@ if(isNull _vendor OR _type == "" OR (player distance _vendor > 10)) exitWith {};
 //unprocessed item,processed item, cost if no license,Text to display (I.e Processing  (percent) ..."
 _itemInfo = switch (_type) do
 {
-	case "oil": {["oilu","oilp",1200,"Processing Oil"];};
-	case "diamond": {["diamond","diamondc",1350,"Processing Diamond"]};
-	case "heroin": {["heroinu","heroinp",2100,"Processing Heroin"]};
-	case "copper": {["copperore","copper_r",750,"Processing Copper"]};
-	case "iron": {["ironore","iron_r",1120,"Processing Iron"]};
+	case "oil": {["oil_unprocessed","oil_processed",1200,"Processing Oil"];};
+	case "diamond": {["diamond_uncut","diamond_cut",1350,"Processing Diamond"]};
+	case "copper": {["copper_unrefined","copper_refined",750,"Processing Copper"]};
+	case "iron": {["iron_unrefined","iron_refined",1120,"Processing Iron"]};
 	case "sand": {["sand","glass",650,"Processing Sand"]};
-	case "salt": {["salt","salt_r",450,"Processing Salt"]};
-	case "cocaine": {["cocaine","cocainep",1500,"Making Cocaine"]};
+	case "salt": {["salt_unrefined","salt_refined",450,"Processing Salt"]};
+	case "cocaine": {["cocaine_unprocessed","cocaine_processed",1500,"Making Cocaine"]};
 	case "marijuana": {["cannabis","marijuana",500,"Drying and Bagging Marijuana"]};
-	case "heroin": {["heroinu","heroinp",1720,"Processing Heroin"]};
+	case "heroin": {["heroin_unprocessed","heroin_processed",1720,"Processing Heroin"]};
 	case "cement": {["rock","cement",350,"Mixing Cement"]};
 	case "mash": {["water","mash",100,"Mixing Grain Mash",true,"cornmeal"]};//new
 	case "whiskey": {["yeast","whiskey",300,"Fermenting Whiskey",true,"rye"]};//new
@@ -37,26 +37,31 @@ _itemInfo = switch (_type) do
 
 //Error checking
 if(count _itemInfo == 0) exitWith {};
-
+_2var = false;
 //Setup vars.
 _oldItem = _itemInfo select 0;
 _newItem = _itemInfo select 1;
 _cost = _itemInfo select 2;
 _upp = _itemInfo select 3;
-_2var = _itemInfo select 4;
-if(_2var) then { _oldItem2 = _itemInfo select 5;};  
+if(!isNil(_itemInfo select 4)) then {
+	_2var = _itemInfo select 4;
+	if(_2var) then { _oldItem2 = _itemInfo select 5;};  
+}else {
+	_2var = false;
+};
 
 
 if(_vendor in [mari_processor,coke_processor,heroin_processor]) then {
 	_hasLicense = true;
 } else {
-	_hasLicense = missionNamespace getVariable (([_type,0] call life_fnc_licenseType) select 0);
+	_hasLicense = LICENSE_VALUE(_type,"civ");
 };
-_itemName = [([_newItem,0] call life_fnc_varHandle)] call life_fnc_varToStr;
-_oldVal = missionNamespace getVariable ([_oldItem,0] call life_fnc_varHandle);
+
+_itemName = M_CONFIG(getText,"VirtualItems",_newItem,"displayName");
+_oldVal = ITEM_VALUE(_oldItem);
 
 //2vars
-if(_2var) then { _oldVal2 = missionNamespace getVariable ([_oldItem2,0] call life_fnc_varHandle); }; 
+if(_2var) then { _oldVal2 = M_CONFIG(getText,"VirtualItems",_oldItem2,"displayName");}; 
 _error1 = false;
 _error2 = false;
 if(_2var) then { 
@@ -120,19 +125,19 @@ if(_hasLicense) then
 				
 				([false,_oldItem2,_oldVal2] call life_fnc_handleInv);
 				5 cutText ["","PLAIN"];
-				titleText[format["You have processed %1 and %2 into %3.",_oldItem,_oldItem2,_itemName],"PLAIN"];
+				titleText[format["You have processed %1 and %2 into %3.",localize _oldItem,localize _oldItem2,localize _itemName],"PLAIN"];
 			} else
 			{
 				
 				5 cutText ["","PLAIN"];
-				titleText[format["You have processed %1 into %2.",_oldItem,_itemName],"PLAIN"];
+				titleText[format["You have processed %1 into %2.",localize _oldItem,localize _itemName],"PLAIN"];
 			};
 	life_is_processing = false;
 	_ui = "osefStatusBar" call BIS_fnc_rscLayer;_ui cutRsc["osefStatusBar","PLAIN"];
 }
 	else
 {
-	if(pbh_life_cash < _cost) exitWith {hint format["You need $%1 to process without a license!",[_cost] call life_fnc_numberText]; 5 cutText ["","PLAIN"]; life_is_processing = false;};
+	if(CASH < _cost) exitWith {hint format["You need $%1 to process without a license!",[_cost] call life_fnc_numberText]; 5 cutText ["","PLAIN"]; life_is_processing = false;};
 	
 	while{true} do
 	{
@@ -145,7 +150,7 @@ if(_hasLicense) then
 	};
 	
 	if(player distance _vendor > 10) exitWith {hint "You need to stay within 10m to process."; 5 cutText ["","PLAIN"]; life_is_processing = false;_ui = "osefStatusBar" call BIS_fnc_rscLayer;_ui cutRsc["osefStatusBar","PLAIN"];};
-	if(pbh_life_cash < _cost) exitWith {hint format["You need $%1 to process  without a license!",[_cost] call life_fnc_numberText]; 5 cutText ["","PLAIN"]; life_is_processing = false;_ui = "osefStatusBar" call BIS_fnc_rscLayer;_ui cutRsc["osefStatusBar","PLAIN"];};
+	if(CASH < _cost) exitWith {hint format["You need $%1 to process  without a license!",[_cost] call life_fnc_numberText]; 5 cutText ["","PLAIN"]; life_is_processing = false;_ui = "osefStatusBar" call BIS_fnc_rscLayer;_ui cutRsc["osefStatusBar","PLAIN"];};
 	if(!([false,_oldItem,_oldVal] call life_fnc_handleInv)) exitWith {
 		5 cutText ["","PLAIN"]; life_is_processing = false;
 		_ui = "osefStatusBar" call BIS_fnc_rscLayer;
@@ -162,14 +167,14 @@ if(_hasLicense) then
 				
 				([false,_oldItem2,_oldVal2] call life_fnc_handleInv);
 				5 cutText ["","PLAIN"];
-				titleText[format["You have processed %1 and %2 into %3 for %4.",_oldItem,_oldItem2,_itemName,[_cost] call life_fnc_numberText],"PLAIN"];
+				titleText[format["You have processed %1 and %2 into %3 for %4.",localize _oldItem,localize _oldItem2,localize _itemName,[_cost] call life_fnc_numberText],"PLAIN"];
 			} else
 			{
 				
 				5 cutText ["","PLAIN"];
-				titleText[format["You have processed %1 into %2 for %3.",_oldVal,_itemName,[_cost] call life_fnc_numberText],"PLAIN"];
+				titleText[format["You have processed %1 into %2 for %3.",localize _oldVal,localize _itemName,[_cost] call life_fnc_numberText],"PLAIN"];
 			};
-	pbh_life_cash = pbh_life_cash - _cost;
+	SUB(CASH,_cost);
 	life_is_processing = false;
 	_ui = "osefStatusBar" call BIS_fnc_rscLayer;_ui cutRsc["osefStatusBar","PLAIN"];
 };

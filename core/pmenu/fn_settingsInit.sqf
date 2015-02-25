@@ -5,9 +5,9 @@
 	Description:
 	Initializes key parts for the Settings menu for View distance and other stuff.
 */
-tawvd_foot = 700;
-tawvd_car = 700;
-tawvd_air = 1600;
+tawvd_foot = viewDistance;
+tawvd_car = viewDistance;
+tawvd_air = viewDistance;
 tawvd_addon_disable = true;
 
 [] spawn

@@ -10,7 +10,7 @@ with missionNamespace do {
 	player setVariable ["slotmachine_lastplay", time];
 	
 	_bet = player getVariable ["slotmachine_bet", 0];
-	if (pbh_Cash < _bet) exitWith { hint "You don't have enough money with you."; };
+	if (CASH < _bet) exitWith { hint "You don't have enough money with you."; };
 	
 	playSound "caching";
 	

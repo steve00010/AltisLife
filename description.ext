@@ -1,6 +1,6 @@
-author = "Tonic";
-onLoadName = "Altis Life RPG";
-onLoadMission = "Developed by Tonic,Edited by Prophecy";
+author = "Tonic, Prophecy";
+onLoadName = "Altis Life RPG v4.1";
+onLoadMission = "An RPG game mode developed by Tonic and expanded by Prophecy Gaming";
 joinUnassigned = 1;
 respawn = BASE;
 respawndelay = 5;
@@ -8,30 +8,37 @@ disabledAI = true;
 disableChannels[]={0,1,2};
 enableDebugConsole = 1;
 LoadScreen = "images\prologo.jpg";
-respawnDialog = 0;	
+respawnDialog = 0;
+
+
 
 class Header
 {
 	gameType = RPG;
 	minPlayers = 1;
-	maxPlayers = 100;
+	maxPlayers = 112;
 };
 
 wreckLimit = 3;
 wreckRemovalMinTime = 60;
 wreckRemovalMaxTime = 320;
 corpseLimit = 150;
-corpseRemovalMinTime = 600;
-corpseRemovalMaxTime = 999;
+corpseRemovalMinTime = 500;
+corpseRemovalMaxTime = 9999;
+
+//SpyGlass configuration
+SPY_Enable = true;
+
+#include "Config_Spyglass.hpp"
 
 #include "dialog\MasterHandler.h"
+#include "Config_Master.hpp"
 
 class RscTitles
 {
 	#include "dialog\ui.hpp"
 	#include "dialog\progress.hpp"
 	#include "dialog\hud_nameTags.h"
-	#include "dialog\slotmachine.hpp"
 	#include "dialog\statusBar.hpp"  
 };
 
@@ -180,14 +187,19 @@ class CfgSounds
 		sound[] = {"\sounds\introsong.ogg", 1.0, 1};
 		titles[] = {};
 	};
-	  class sms
-  {
-    name = "sms";
-    sound[] = {"\sounds\sms.ogg", 1.0, 1};
-    titles[] = {};
-  };
+	 class sms
+	{
+		name = "sms";
+		sound[] = {"\sounds\sms.ogg", 1.0, 1};
+		titles[] = {};
+	};
+  	class bagopen
+	{
+		name = "bagopen";
+		sound[] = {"\sounds\bagopen.ogg", 1.0, 1};
+		titles[] = {};		
+	};
 };
-
 class CfgDebriefing
 {
 	class NotWhitelisted
@@ -266,6 +278,15 @@ class CfgNotifications
 		description = "%1";
 		duration = 10;
 		priority = 6;
+	};
+	
+	class AdacMessage
+	{
+		title = "ADAC Message";
+		iconPicture = "icons\messagenew.paa";
+		description = "%1";
+		duration = 10;
+		priority = 5;
 	};
 	
 	class PoliceDispatch

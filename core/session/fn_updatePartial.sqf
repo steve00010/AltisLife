@@ -11,24 +11,22 @@ private["_mode","_packet","_array","_flag"];
 _mode = [_this,0,0,[0]] call BIS_fnc_param;
 _packet = [steamid,playerSide,nil,_mode];
 _array = [];
-_flag = switch(playerSide) do {case west: {"cop"}; case civilian: {"civ"}; case independent: {"med"};};
+_flag = switch(playerSide) do {case west: {"cop"}; case east: {"adac"}; case civilian: {"civ"}; case independent: {"med"};};
 
 switch(_mode) do {
 	case 0: {
-		_packet set[2,pbh_life_cash];
+		_packet set[2,CASH];
 	};
 	
 	case 1: {
-		_packet set[2,pbh_life_atmcash];
+		_packet set[2,BANK];
 	};
 	
 	case 2: {
 		{
-			if(_x select 1 == _flag) then
-			{
-				_array pushBack [_x select 0,(missionNamespace getVariable (_x select 0))];
-			};
-		} foreach life_licenses;
+			_varName = LICENSE_VARNAME(configName _x,_flag);
+			_array pushBack [_varName,LICENSE_VALUE(configName _x,_flag)];
+		} foreach (format["getText(_x >> 'side') isEqualTo '%1'",_flag] configClasses (missionConfigFile >> "Licenses"));
 		
 		_packet set[2,_array];
 	};
@@ -47,8 +45,8 @@ switch(_mode) do {
 	};
 	
 	case 6: {
-		_packet set[2,pbh_life_cash];
-		_packet set[4,pbh_life_atmcash];
+		_packet set[2,CASH];
+		_packet set[4,BANK];
 	};
 };
 

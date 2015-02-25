@@ -1,3 +1,4 @@
+#include <macro.h>
 /*
 	File: fn_keyMenu.sqf
 	Author: Bryan "Tonic" Boardwine
@@ -6,7 +7,7 @@
 	Initializes the key menu
 	Will be revised.
 */
-private["_display","_vehicles","_plist","_near_units","_pic","_name","_text","_color","_index"];
+private["_display","_vehicles","_plist","_near_units","_pic","_name","_text","_color","_index","_skin","_skinI"];
 disableSerialization;
 
 waitUntil {!isNull (findDisplay 2700)};
@@ -24,8 +25,9 @@ for "_i" from 0 to (count life_vehicles)-1 do
 	_veh = life_vehicles select _i;
 	if(!isNull _veh && alive _veh) then
 	{
-		_color = [(typeOf _veh),(_veh getVariable "Life_VEH_color")] call life_fnc_vehicleColorStr;
-		_text = format["(%1)",_color];
+		_skinI = _veh getVariable "Life_VEH_color";
+		_skin = SEL(SEL(M_CONFIG(getArray,CONFIG_VEHICLES,(typeOf _veh),"textures"),_skinI),0);
+		_text = format["(%1)",_skin];
 		if(_text == "()") then
 		{
 			_text = "";

@@ -18,12 +18,12 @@ if([false,_food,1] call life_fnc_handleInv) then {
 		case "salema": {_val = 30};
 		case "ornate": {_val = 25};
 		case "mackerel": {_val = 30};
-		case "tuna": {_val = 50};
+		case "tuna": {_val = 100};
 		case "mullet": {_val = 80};
-		case "catshark": {_val = 30};
-		case "turtle": {_val = 30};
-		case "turtlesoup": {_val = 50};
-		case "donuts": {_val = 20};
+		case "catshark": {_val = 100};
+		case "turtle": {_val = 100};
+		case "turtlesoup": {_val = 100};
+		case "donuts": {_val = 30};
 		case "tbacon": {_val = 40};
 		case "peach": {_val = 10};
 	};

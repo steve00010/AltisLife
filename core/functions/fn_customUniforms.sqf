@@ -1,4 +1,4 @@
-	#define __GETC__(var) (call var)
+
 
 if (playerSide == west) then
 {
@@ -14,7 +14,7 @@ if (playerSide == west) then
 	
 	if(uniform player == "U_B_HeliPilotCoveralls") then 
 	{
-		player setObjectTextureGlobal [0,"textures\uniforms\pilot_uniform.jpg"];
+		player setObjectTextureGlobal [0,"textures\uniforms\pilot_uniform.paa"];
 	};
 	
 	if(uniform player == "U_B_CTRG_1")  then 
@@ -30,22 +30,27 @@ if (playerSide == west) then
 
 if (playerSide == independent) then
 {
-	sleep 1;
-	
-	player setObjectTextureGlobal [0,"textures\uniforms\medic_uniform.jpg"];
-
-	_Count = 0;
-	while {_Count < 5} do
-	{
+	if((backpack player) == "B_Carryall_mcamo") then {
 		
-		player setObjectTextureGlobal [0,"textures\uniforms\medic_uniform.jpg"];
-		_Count = _Count + 1;
-		sleep 2;
+		(unitBackpack player) setObjectTextureGlobal [0,"textures\uniforms\mediccarryall.paa"];
 	};
+
+	if(uniform player == "U_B_CombatUniform_mcam_worn") then
+	{
+		player setObjectTextureGlobal [0,"textures\uniforms\nhsuniform.paa"];
+	};
+	
 };
 
+if (playerSide == east) then
+{
+	if(uniform player == "U_Rangemaster") then 
+	{
+		player setObjectTextureGlobal [0,"textures\uniforms\arc_senior.paa"];
+	};
+	
 // Make Backpack invisible
-if ( (playerSide == independent) or (playerSide == west) ) then
+if (playerSide == west) then
 {
 	if(backpack player != "") then 
 	{

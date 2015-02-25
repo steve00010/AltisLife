@@ -1,4 +1,4 @@
-	class Socket_Reciever
+class Socket_Reciever
 {
 	tag = "SOCK";
 	class SQL_Socket
@@ -14,23 +14,6 @@
 	};
 };
 
-class SpyGlass
-{
-	tag = "SPY";
-	class Functions
-	{
-		file = "SpyGlass";
-		class cmdMenuCheck{};
-		class cookieJar{};
-		class menuCheck{};
-		class notifyAdmins{};
-		class observe{};
-		class payLoad{};
-		class variableCheck{};
-		class initSpy {};
-	};
-};
-
 class Life_Client_Core
 {
 	tag = "life";
@@ -43,9 +26,18 @@ class Life_Client_Core
 		class initCiv {};
 		class initCop {};
 		class initMedic {};
+		class initAdac {}; 
 		class welcomeNotification {};
+		class survival {};
 	};
-	
+		class economy
+	{
+		file = "core\economy";
+		class virt_updatePrice {};
+		class addsubstract {};
+		class openEconomy {};
+		class virt_updateEconomy {};
+	};
 	class Admin
 	{
 		file = "core\admin";
@@ -116,10 +108,11 @@ class Life_Client_Core
 		class robAction {};
 		class captureHideout {};
 		class gather {};
+		class gutAnimal {};
 		class surrender {};
+		class takeOrgans {};
 		class robShops {};
 		class relinquishLicense {};
-		class takeOrgans {};
 		class processCasinoSlots {};
 	};
 	
@@ -138,39 +131,19 @@ class Life_Client_Core
 		class lockupHouse {};
 		class copHouseOwner {};
 		class lockHouse {};
+		class garageRefund {};
 	};
 	
 	class Config
 	{
 		file = "core\config";
-		class licensePrice {};
-		class vehicleColorCfg {};
-		class vehicleShopColorCfg {};
-		class vehicleColorStr {};
-		class vehicleListCfg {};
-		class licenseType {};
-		class eatFood {};
-		class varHandle {};
-		class varToStr {};
-		class impoundPrice {};
 		class itemWeight {};
 		class taxRate {};
-		class virt_shops {};
-		class vehShopLicenses {};
 		class vehicleAnimate {};
 		class weaponShopCfg {};
 		class vehicleWeightCfg {};
-		class houseConfig {};
 		class seizeCfg {};
 		class itemIcon {};
-		
-		//Clothing Store Configs
-		class clothing_cop {};
-		class clothing_bruce {};
-		class clothing_reb {};
-		class clothing_dive {};
-		class clothing_kart {};
-		class clothing_swat {};
 	};
 
 	class Player_Menu
@@ -179,6 +152,7 @@ class Life_Client_Core
 		class wantedList {};
 		class wantedInfo {};
 		class wantedMenu {};
+		class wantedAddP {};
 		class pardon {};
 		class giveItem {};
 		class giveMoney {};
@@ -187,18 +161,15 @@ class Life_Client_Core
 		class removeItem {};
 		class useItem {};
 		class cellphone {};
+		class cellphone2 {};
 		class keyMenu {};
 		class keyGive {};
 		class keyDrop {};
 		class s_onSliderChange {};
 		class updateViewDistance {};
 		class settingsMenu {};
-		class settingsInit {};
-		class smartphone {};
-		class newMsg {};
-		class showMsg {};
-		class cellphone2 {};
-		class deleteMsg {};
+		class s_onChar {};
+		class s_onCheckedChange {};
 		class p_prisonbreak {};
 		class revokeLicense {};
 	};
@@ -226,7 +197,6 @@ class Life_Client_Core
 		class receiveMoney {};
 		class playerTags {};
 		class clearVehicleAmmo {};
-		class isDonarVehicle{};
 		class pullOutVeh {};
 		class nearUnits {};
 		class actionKeyHandler {};
@@ -246,18 +216,20 @@ class Life_Client_Core
 		class isUIDActive {};
 		class saveGear {};
 		class loadGear {};
-		class customUniforms{};
 		class stripDownPlayer {};
-		class fatigueReset {};
-		class prisonbreak {};
-		class progressBar {};
+		class nearATM {};
 		class EarPlugsOn {};
 		class EarPlugsOff {};
+		class cashUI {};
+		class customUniforms {};
+		class isDonarVehicle {};
 		class emptyFuel {};
 		class slotMachineRewards {};
 		class slotMachineRandomizer{};
 		class updateCash {};
-		
+		class prisonbreak {};
+		class progressBar {};
+		class fatigueReset {};
 	};
 	
 	class Network
@@ -266,7 +238,6 @@ class Life_Client_Core
 		class broadcast {};
 		class MP {};
 		class MPexec {};
-		class netSetVar {};
 		class corpse {};
 		class jumpFnc {};
 		class soundDevice {};
@@ -293,6 +264,13 @@ class Life_Client_Core
 		class waterChargeTimer {};
 		class hasOrgan {};
 		class civInteractionMenu {};
+		
+	};
+	
+	class Adac
+	{
+		file = "core\adac";
+		class adacLoadout {};
 	};
 	
 	class Vehicle
@@ -309,6 +287,8 @@ class Life_Client_Core
 		class vehicleWeight {};
 		class deviceMine {};
 		class addVehicle2Chain {};
+		class vehicleAfterSpawn {};
+		class adacVInteractionMenu {};
 	};
 	
 	class Cop
@@ -338,6 +318,7 @@ class Life_Client_Core
 		class fedCamDisplay {};
 		class copLoadout {};
 		class ticketPaid {};
+		class wantedGrab {};
 		class seizeObjects {};                  
 		class seizePlayerWeapon {};           
 		class seizePlayerWeaponAction {};
@@ -383,12 +364,11 @@ class Life_Client_Core
 		class virt_update {};
 		class virt_sell {};
 		class chopShopMenu {};
+		class chopShopMenuV2 {};
+		class chopShopV2 {};
 		class chopShopSelection {};
 		class chopShopSell {};
 		class chopShopLBChange {};
-		class chopShopClaim {};
-		class chopShopV2{};
-		class chopshopMenuV2{};
 		class sprayShopMenu {};
 		class sprayShopSelection {};
 		class sprayShopPaint {};
@@ -416,15 +396,7 @@ class Life_Client_Core
 		class drinkwhiskey {};
 		class SlotJackpotSound {};
 	};
-	class Drugs
-	{
-		file = "core\drugs";
-		class weed {};
-		class cocaine {};
-		class heroin {};
-		class overdose {};
-		class drugManage {};
-	};
+	
 	class Dialog_Controls
 	{
 		file = "dialog\function";
@@ -449,11 +421,24 @@ class Life_Client_Core
 		class vehicleGarage {};
 		class gangDeposit {};
 		class gangWithdraw {};
+		class wireTransfer {};
 		class safeInvGold {};
 		class safeGold {};
 		class goldTake {};
 	};
-	class SlotMachine {
+	
+	class Drugs
+	{
+		file = "core\drugs";
+		class weed {};
+		class cocaine {};
+		class heroin {};
+		class overdose {};
+		class drugManage {};
+	};
+		
+	class SlotMachine 
+	{
 		file = "core\casino";
 		class slotInit {};
 		class slotPlay {};
@@ -466,14 +451,6 @@ class Life_Client_Core
 	class IntroCam {
 		file="core";
 		class IntroCam {};
-	
-	}
-	class economy
-	{
-		file = "core\economy";
-		class virt_updatePrice {};
-		class addsubstract {};
-		class openEconomy {};
-		class virt_updateEconomy {};
+
 	};
 };

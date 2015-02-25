@@ -5,7 +5,7 @@
  
 	Description: Summons a player onto Teamspeak
 */
-if(__GETC__(life_adminlevel) < 1) exitWith {closeDialog 0; hint localize "STR_Admin_ErrorLevel";};
+if(FETCH_CONST(life_adminlevel) < 1) exitWith {closeDialog 0; hint localize "STR_Admin_ErrorLevel";};
 
 private["_unit"];
 _unit = lbData[2902,lbCurSel (2902)];

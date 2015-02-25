@@ -1,17 +1,20 @@
-/*
+#include <macro.h>
+/*	
+	File: fn_surrender.sqf
 	Author: MrKraken
-	filename: fn_surrender.sqf
-	Description: places player into a surrendered state!
+	
+	Description: 
+	places player into a surrendered state!
 */
 
-player setVariable ["surrender", true, true]; //Set surrender to true
+player SVAR ["surrender", true, true]; //Set surrender to true
 
-while { player getVariable ["surrender", false] }  do { 
+while { player GVAR ["surrender", false] }  do { 
 	player playMove "amovpercmstpsnonwnondnon_amovpercmstpssurwnondnon"; //Animation in
 	
 	// Check if player is alive.
 	if (!alive player) then {
-		player setVariable ["surrender", false, true];
+		player SVAR ["surrender", false, true];
 	};
 };
 

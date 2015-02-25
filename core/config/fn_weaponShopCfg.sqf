@@ -76,7 +76,7 @@ switch(_shop) do
 		switch(true) do
 		{
 			case (playerSide != west): {"You are not a cop!"};
-			case (__GETC__(life_coplevel) < 2): {"You are not a Marshall!"};
+			case (FETCH_CONST(life_coplevel) < 2): {"You are not a Marshall!"};
 			default
 			{
 				
@@ -103,7 +103,7 @@ switch(_shop) do
 		switch(true) do
 		{
 			case (playerSide != west): {"You are not a cop!"};
-			case (__GETC__(life_coplevel) < 3): {"You are not a Corporal!"};
+			case (FETCH_CONST(life_coplevel) < 3): {"You are not a Corporal!"};
 			default
 			{
 				
@@ -134,7 +134,7 @@ switch(_shop) do
 		switch(true) do
 		{
 			case (playerSide != west): {"You are not a cop!"};
-			case (__GETC__(life_coplevel) < 4): {"You are not a Sergeant!"};
+			case (FETCH_CONST(life_coplevel) < 4): {"You are not a Sergeant!"};
 			default
 			{
 				
@@ -166,7 +166,7 @@ switch(_shop) do
 		switch(true) do
 		{
 			case (playerSide != west): {"You are not a cop!"};
-			case (__GETC__(life_coplevel) < 5): {"You are not a Lieutenant!"};
+			case (FETCH_CONST(life_coplevel) < 5): {"You are not a Lieutenant!"};
 			default
 			{
 				
@@ -201,8 +201,8 @@ switch(_shop) do
 		switch(true) do
 		{
 			case (playerSide != west): {"You are not a cop!"};
-			case (__GETC__(life_swatlevel) < 1): {"You are not a member of the Swat team!"};
-			case (__GETC__(life_swatlevel) == 2):
+			case (FETCH_CONST(life_swatlevel) < 1): {"You are not a member of the Swat team!"};
+			case (FETCH_CONST(life_swatlevel) == 2):
 			{
 				
 				["Altis Swat Shop",
@@ -273,7 +273,7 @@ switch(_shop) do
 		switch(true) do
 		{
 			case (playerSide != west): {"You are not a cop!"};
-			case (__GETC__(life_coplevel) < 6): {"You are not a Captain!"};
+			case (FETCH_CONST(life_coplevel) < 6): {"You are not a Captain!"};
 			default
 			{
 				
@@ -316,6 +316,7 @@ switch(_shop) do
 				["Mohammed's Jihadi Shop",
 					[
 						["hgun_Rook40_F",nil,500],
+						["hgun_ACPC2_F",nil,750],
 						["hgun_PDW2000_Holo_F",nil,7000],
 						["SMG_01_F",nil,15000],
 						["16Rnd_9x21_Mag",nil,20],

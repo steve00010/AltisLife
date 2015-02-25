@@ -10,37 +10,30 @@ if(!alive player || dialog) exitWith {}; //Prevent them from opening this for ex
 createDialog "playerSettings";
 disableSerialization;
 
-switch(playerSide) do
-{
-	case west: 
-	{
+switch(playerSide) do {
+	case west: {
 		ctrlShow[2011,false];
 	};
-	
-	case civilian:
-	{
+	case independent: {
+		ctrlShow[2011,false];
 		ctrlShow[2012,false];
-		ctrlShow[9800,false]; // // << Wantend+ Dialog Button
 	};
-	case independent:
-	{
-	
-		ctrlShow[2011,false];
-		ctrlShow[2012,false];	
-	}
+	case civilian: {
+		ctrlShow[2012,false];
+	};
+	case east: {
+		ctrlShow[2012,false];
+	};
 };
 
-if(__GETC__(life_adminlevel) < 1) then
-{
+if(FETCH_CONST(life_adminlevel) < 1) then {
 	ctrlShow[2020,false];
 	ctrlShow[2021,false];
-	ctrlShow[9800,false]; // << Wantend+ Dialog Button
 };
 
 [] call life_fnc_p_updateMenu;
 
-if(__GETC__(life_adminlevel) < 1) then
-{
+if(FETCH_CONST(life_adminlevel) < 1) then {
 	ctrlShow[2020,false];
 	ctrlShow[2021,false];
 };

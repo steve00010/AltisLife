@@ -8,20 +8,23 @@
 	displays various bits of information about the vehicle.
 */
 disableSerialization;
-private["_control","_index","_className","_basePrice","_vehicleInfo","_colorArray","_ctrl","_DiscountMod","_rentPrice","_buyPrice","_DiscountText"];
+private["_control","_index","_className","_basePrice","_vehicleInfo","_colorArray","_ctrl"];
 _control = _this select 0;
 _index = _this select 1;
 
 //Fetch some information.
 _className = _control lbData _index;
 _vIndex = _control lbValue _index;
-_vehicleList = [life_veh_shop select 0] call life_fnc_vehicleListCfg;
-_basePrice = (_vehicleList select _vIndex) select 1;
+
+_vehicleList = M_CONFIG(getArray,"CarShops",SEL(life_veh_shop,0),"vehicles");
+_basePrice = SEL(SEL(_vehicleList,_vIndex),1);
+
 _vehicleInfo = [_className] call life_fnc_fetchVehInfo;
 _trunkSpace = [_className] call life_fnc_vehicleWeightCfg;
-
-switch(__GETC__(life_donator)) do
+_DiscountMod = 1;
+switch(FETCH_CONST(life_donator)) do
 {
+
 	case 1: {_DiscountMod = 0.95;};
 	case 2: {_DiscountMod = 0.90;};
 	case 3: {_DiscountMod = 0.85;};
@@ -29,63 +32,51 @@ switch(__GETC__(life_donator)) do
 	case 5: {_DiscountMod = 0.75;};
 };
 
-if(__GETC__(life_donator) > 0) then
-{
-	_rentPrice = _basePrice * _DiscountMod;
-	_buyPrice = (_basePrice * 1.5) * _DiscountMod;
-	_DiscountText = format["%1%2 discount applied", (1 - _DiscountMod) * 100, "%"];
-}
-else
-{
-	_rentPrice = _basePrice;
-	_buyPrice = _basePrice * 1.5;
-	_DiscountText = "";
-};
-
 ctrlShow [2330,true];
-(getControl(2300,2303)) ctrlSetStructuredText parseText format[
-"Rental Price: <t color='#8cff9b'>$%1</t><br/>Ownership Price: <t color='#8cff9b'>$%2</t><br/>Max Speed: %3 km/h<br/>Horse Power: %4<br/>Passenger Seats: %5<br/>Trunk Capacity: %6<br/>Fuel Capacity: %7<br/>Armor Rating: %8<br/><br/><t color='#8cff9b'>%9</t>",
-[_rentPrice] call life_fnc_numberText,
-[round(_buyPrice)] call life_fnc_numberText,
+(CONTROL(2300,2303)) ctrlSetStructuredText parseText format[
+(localize "STR_Shop_Veh_UI_Rental")+ " <t color='#8cff9b'>$%1</t><br/>" +
+(localize "STR_Shop_Veh_UI_Ownership")+ " <t color='#8cff9b'>$%2</t><br/>" +
+(localize "STR_Shop_Veh_UI_MaxSpeed")+ " %3 km/h<br/>" +
+(localize "STR_Shop_Veh_UI_HPower")+ " %4<br/>" +
+(localize "STR_Shop_Veh_UI_PSeats")+ " %5<br/>" +
+(localize "STR_Shop_Veh_UI_Trunk")+ " %6<br/>" +
+(localize "STR_Shop_Veh_UI_Fuel")+ " %7<br/>" +
+(localize "STR_Shop_Veh_UI_Armor")+ " %8",
+[_basePrice] call life_fnc_numberText,
+[round(_basePrice * 1.5 * _DiscountMod)] call life_fnc_numberText,
 _vehicleInfo select 8,
 _vehicleInfo select 11,
 _vehicleInfo select 10,
 if(_trunkSpace == -1) then {"None"} else {_trunkSpace},
 _vehicleInfo select 12,
-_vehicleInfo select 9,
-_DiscountText
+_vehicleInfo select 9
 ];
 
-_ctrl = getControl(2300,2304);
+_ctrl = CONTROL(2300,2304);
 lbClear _ctrl;
-_colorArray = [_className] call life_fnc_vehicleShopColorCfg;
+_colorArray = M_CONFIG(getArray,CONFIG_VEHICLES,_className,"textures");
 
-for "_i" from 0 to count(_colorArray)-1 do 
 {
-	if(((_colorArray select _i) select 1 == (life_veh_shop select 2)) or ((_colorArray select _i) select 1 == steamid)) then 
-	{
-		if((_colorArray select _i) select 0 != "BUFFER") then {
-			_temp = [_className,_i] call life_fnc_vehicleColorStr;
-			_ctrl lbAdd format["%1",_temp];
-			_ctrl lbSetValue [(lbSize _ctrl)-1,_i];
+	_flag = SEL(_x,1);
+	_textureName = SEL(_x,0);
+	_levelData = SEL(_x,3);
+	_passOver = false;
+	if(EQUAL(SEL(life_veh_shop,2),_flag)) then {
+		if(!isNil "_levelData" && {_var = GVAR_MNS (SEL(_levelData,0));!(FETCH_CONST(_var) >= (SEL(_levelData,1)))}) then {_passOver = true;};
+		if(!_passOver) then {
+			_ctrl lbAdd _textureName;
+			_ctrl lbSetValue [(lbSize _ctrl)-1,_forEachIndex];
 		};
 	};
-};
+} foreach _colorArray;
 
-if(_className in (__GETC__(life_vShop_rentalOnly))) then 
-{
+if(_className in (LIFE_SETTINGS(getArray,"vehicleShop_rentalOnly"))) then {
 	ctrlEnable [2309,false];
-} 
-else 
-{
-	if(!(life_veh_shop select 3)) then 
-	{
+} else {
+	if(!(life_veh_shop select 3)) then {
 		ctrlEnable [2309,true];
 	};
 };
-
-// Disable Renting completely
-ctrlEnable [2308, false];
 
 lbSetCurSel[2304,0];
 if((lbSize _ctrl)-1 != -1) then {
@@ -93,4 +84,5 @@ if((lbSize _ctrl)-1 != -1) then {
 } else {
 	ctrlShow[2304,false];
 };
+true;
 true;

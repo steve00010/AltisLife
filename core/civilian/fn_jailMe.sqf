@@ -10,6 +10,7 @@ _ret = [_this,0,[],[[]]] call BIS_fnc_param;
 _bad = [_this,1,false,[false]] call BIS_fnc_param;
 if(_bad) then { _time = time + 1100; } else { _time = time + (15 * 60); };
 player setObjectTextureGlobal [0,"textures\uniforms\prisoner_uniform.jpg"];
+
 if(count _ret > 0) then { 
 	life_bail_amount = (_ret select 3); 
 	if(life_bail_amount < 25000) then {
@@ -30,27 +31,10 @@ if(count _ret > 0) then {
 _esc = false; 
 _bail = false;
 
-[_bad] spawn
+[_time] spawn
 {
 	life_canpay_bail = false;
-	if(_this select 0) then
-	{
-		if(life_bail_amount < 25000) then {
-			_time = time + (20*30);
-		} else {
-			if(life_bail_amount > 24999 && life_bail_amount < 50000) then  {
-				_time = time + (26*30);
-			}
-			else {
-			_time = time +(30*30);
-			};
-		};
-		sleep _time;
-	}
-		else
-	{
-		sleep (7 * 60);
-	};
+	sleep ((_this select 0)/2);
 	life_canpay_bail = nil;
 };
 

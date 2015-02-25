@@ -2,60 +2,57 @@
 /*
 	File: fn_virt_update.sqf
 	Author: Bryan "Tonic" Boardwine
-	edited by worldtrade1101
+	
 	Description:
 	Update and fill the virtual shop menu.
 */
-private["_display","_item_list","_gear_list","_shop_data","_name","_price"];
+private["_item_list","_gear_list","_shopItems","_name","_price"];
 disableSerialization;
 
 //Setup control vars.
-_display = findDisplay 2400;
-_item_list = _display displayCtrl 2401;
-_gear_list = _display displayCtrl 2402;
+_item_list = CONTROL(2400,2401);
+_gear_list = CONTROL(2400,2402);
 
 //Purge list
 lbClear _item_list;
 lbClear _gear_list;
 
-_shop_data = [life_shop_type] call life_fnc_virt_shops;
-ctrlSetText[2403,format["%1", _shop_data select 0]];
-
-_sender = player;
-_uid = getPlayerUID _sender;
-
-//[[0,_sender,life_shop_type],"TON_fnc_getprices",false,false] spawn life_fnc_MP;
-
-
+if(!isClass(missionConfigFile >> "VirtualShops" >> life_shop_type)) exitWith {closeDialog 0; hint "Config does not exist?";}; //Make sure the entry exists..
+ctrlSetText[2403,localize (M_CONFIG(getText,"VirtualShops",life_shop_type,"name"))];
+_shopItems = M_CONFIG(getArray,"VirtualShops",life_shop_type,"items");
 
 {
-	_name = [([_x,0] call life_fnc_varHandle)] call life_fnc_vartostr;
-	_index = [_x,__GETC__(buy_array)] call TON_fnc_index;
-	_icon = [([_x,0] call life_fnc_varHandle)] call life_fnc_itemIcon;
-	_price = (__GETC__(buy_array) select _index) select 1;
-	if(_index != -1 && _price > 0) then
-	{
-		
-		_item_list lbAdd format["%1  ($%2)",_name,[_price] call life_fnc_numberText];
+
+	_index = [_x,FETCH_CONST(buy_array)] call TON_fnc_index;
+	if(_index >0 ) then {
+		_price = SEL(SEL(FETCH_CONST(buy_array),_index),1);
+	}else {
+		_price = M_CONFIG(getNumber,"VirtualItems",_x,"buyPrice");	
+	};
+	_displayName = M_CONFIG(getText,"VirtualItems",_x,"displayName");
+	
+	if(_price > 0) then {
+		_item_list lbAdd format["%1  ($%2)",(localize _displayName),[_price] call life_fnc_numberText];
 		_item_list lbSetData [(lbSize _item_list)-1,_x];
 		_item_list lbSetValue [(lbSize _item_list)-1,_price];
-		_item_list lbSetPicture [(lbSize _item_list)-1,_icon];
+		_icon = M_CONFIG(getText,"VirtualItems",_x,"icon");
+		if(!(EQUAL(_icon,""))) then {
+			_item_list lbSetPicture [(lbSize _item_list)-1,_icon];
+		};
 	};
-} foreach (_shop_data select 1);
+
+} foreach _shopItems;
 
 {
-	_var = [_x,0] call life_fnc_varHandle;
-	_val = missionNameSpace getVariable _var;
-	_name = [_var] call life_fnc_vartostr;
-	_icon = [_var] call life_fnc_itemIcon;
-
-	if(_val > 0) then
-	{
-
-		_gear_list lbAdd format["%1x %2",_val,_name];
+	_name = M_CONFIG(getText,"VirtualItems",_x,"displayName");
+	_val = ITEM_VALUE(_x);
+	
+	if(_val > 0) then {
+		_gear_list lbAdd format["%2 [x%1]",_val,(localize _name)];
 		_gear_list lbSetData [(lbSize _gear_list)-1,_x];
-
-		_gear_list lbSetPicture [(lbSize _gear_list)-1,_icon];
+		_icon = M_CONFIG(getText,"VirtualItems",_x,"icon");
+		if(!(EQUAL(_icon,""))) then {
+			_gear_list lbSetPicture [(lbSize _gear_list)-1,_icon];
+		};
 	};
-} foreach (_shop_data select 1);
-
+} foreach _shopItems;

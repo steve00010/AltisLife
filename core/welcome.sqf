@@ -13,15 +13,15 @@ sleep 15; //Wait in seconds before the credits start after player is in-game
 _role1 = "Hello";
 _role1names = ["Welcome to","Prophecy Gaming"];
 _role2 = "Join us on Teamspeak at!";
-_role2names = ["ts3.prophecygaming.co.uk"];
+_role2names = ["ts3.prophecygaming.co.uk:11377"];
 _role3 = "Developed from an idea by Tonic";
-_role3names = ["Enhanced by Bruce, Jock and Steve"];
-_role4 = "Featuring Scripts and Textures";
-_role4names = ["from MrKracken, Midgetgrimm, Silex, Fusion and SeanTest"];
+_role3names = ["Enhanced by Bruce, Steve and Jock"];
+_role4 = "Upgraded to the 4.0 Framework";
+_role4names = ["Lots of Custom Scripts"];
 _role5 = "Special thanks to";
-_role5names = ["All you guys that join us daily!<br/>Thankyou!"];
+_role5names = ["All you guys that are part of our great community!<br/>Thankyou!"];
 _role6 = "Like our server?";
-_role6names = ["Please support us by donating at prophecygaming.co.uk"];
+_role6names = ["Please support us by contributing at prophecygaming.co.uk"];
 _role7 = "Enjoy your stay";
 _role7names = ["Have fun and follow the rules posted on our website"];
  

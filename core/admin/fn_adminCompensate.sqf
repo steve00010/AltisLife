@@ -7,7 +7,7 @@
 	Figure it out.
 */
 private["_value","_action"];
-if(__GETC__(life_adminlevel) < 3) exitWith {closeDialog 0; hint localize "STR_ANOTF_ErrorLevel";};
+if(FETCH_CONST(life_adminlevel) < 2) exitWith {closeDialog 0; hint localize "STR_ANOTF_ErrorLevel";};
 _value = parseNumber(ctrlText 9922);
 if(_value < 0) exitWith {};
 if(_value > 999999) exitWith {hint localize "STR_ANOTF_Fail"};
@@ -21,7 +21,7 @@ _action = [
 ] call BIS_fnc_guiMessage;
 
 if(_action) then {
-	pbh_life_cash = pbh_life_cash + _value;
+	ADD(CASH,_value);
 	hint format [localize "STR_ANOTF_Success",[_value] call life_fnc_numberText];
 	closeDialog 0;
 	_msg = format["%1 compensated themselves $%2",profileName,_value];

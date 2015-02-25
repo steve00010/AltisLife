@@ -18,8 +18,13 @@ _className = _control lbData _selection;
 _vIndex = lbValue[2302,(lbCurSel 2302)];
 ctrlShow [2330,true];
 ctrlShow [2304,true];
-_ind = [_className,(call life_garage_sell)] call TON_fnc_index;
-_price = ((call life_garage_sell) select _ind) select 1;
+
+_price = switch(playerSide) do {
+	case civilian: {SEL(M_CONFIG(getArray,CONFIG_VEHICLES,_className,"garageSell"),0)};
+	case west: {SEL(M_CONFIG(getArray,CONFIG_VEHICLES,_className,"garageSell"),1)};
+	case independent: {SEL(M_CONFIG(getArray,CONFIG_VEHICLES,__className,"garageSell"),2)};
+	case east: {SEL(M_CONFIG(getArray,CONFIG_VEHICLES,_className,"garageSell"),4)};
+};
 _price = round (_price / 3);
 _nearVehicles = nearestObjects[getPos (player),["Car","Air","Truck"],25]; //Fetch vehicles within 30m.
 if(count _nearVehicles > 0) then
@@ -43,21 +48,18 @@ if(count _nearVehicles > 0) then
 };
 
 _skinI = _vehicle getVariable "Life_VEH_color";
-_skin = [_className,_skinI] call life_fnc_vehicleColorStr;
-getControl(2300,2303) ctrlSetStructuredText parseText format["Spray Price: <t color='#8cff9b'>$%1</t><br/>Current Skin: <t color='#8cff9b'>%2</t>", _price,_skin];
+_skin = SEL(SEL(M_CONFIG(getArray,CONFIG_VEHICLES,_className,"textures"),_skinI),0);
+CONTROL(2300,2303) ctrlSetStructuredText parseText format["Spray Price: <t color='#8cff9b'>$%1</t><br/>Current Skin: <t color='#8cff9b'>%2</t>", _price,_skin];
 
 
-_ctrl = getControl(2300,2304);
+_ctrl = CONTROL(2300,2304);
 lbClear _ctrl;
-_colorArray = [_className] call life_fnc_vehicleShopColorCfg;
-for "_i" from 0 to count(_colorArray)-1 do 
-{
-	if((_colorArray select _i) select 1 == "civ") then 
+_colorArray = M_CONFIG(getArray,CONFIG_VEHICLES,_className,"textures");
+
+{	 
+	if(_x select 1 == "civ") then 
 	{
-		if((_colorArray select _i) select 0 != "BUFFER") then {
-			_temp = [_className,_i] call life_fnc_vehicleColorStr;
-			_ctrl lbAdd format["%1",_temp];
-			_ctrl lbSetValue [(lbSize _ctrl)-1,_i];
-		};
+		_ctrl lbAdd format["%1",_x select 0];
+		_ctrl lbSetValue [(lbSize _ctrl)-1,_forEachIndex];
 	};
-};
+} forEach _colorArray;

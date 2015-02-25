@@ -1,3 +1,4 @@
+#include <macro.h>
 waitUntil {!(isNull (findDisplay 46))};
 disableSerialization;
 /*
@@ -9,7 +10,7 @@ disableSerialization;
 */
 _rscLayer = "osefStatusBar" call BIS_fnc_rscLayer;
 _rscLayer cutRsc["osefStatusBar","PLAIN"];
-systemChat format["[Prophecy Database] Loading game server info...", _rscLayer];
+systemChat format["[ProphecyServer] Loading game server info...", _rscLayer];
 
 [] spawn {
 	sleep 5;
@@ -17,8 +18,8 @@ systemChat format["[Prophecy Database] Loading game server info...", _rscLayer];
 	_timeSinceLastUpdate = 0;
 	while {true} do
 	{
-		sleep 1;
+		sleep 3;
 		_counter = (240-(round(serverTime/60)));
-		((uiNamespace getVariable "osefStatusBar")displayCtrl 1000)ctrlSetText format["Minutes until restart: %8 | Cops: %2 | Civs: %3 | Medics: %4 | BANK: %6 | GRIDREF: %7", round diag_fps, west countSide playableUnits, civilian countSide playableUnits, independent countSide playableUnits,[pbh_life_cash] call life_fnc_numberText,[pbh_life_atmcash] call life_fnc_numberText,mapGridPosition player, _counter];
+		((uiNamespace getVariable "osefStatusBar")displayCtrl 1000)ctrlSetText format["Minutes until restart: %6 | FPS: %7 | Cops: %1 | Civs: %2 | Medics: %3 | BANK: %4 | GRIDREF: %5", west countSide playableUnits, civilian countSide playableUnits, independent countSide playableUnits,[BANK] call life_fnc_numberText,mapGridPosition player, _counter,round diag_fps];
 	}; 
 };

@@ -26,9 +26,9 @@ _cP = 0.01;
 
 while {true} do
 {
-	if(animationState player != "AinvPknlMstpSnonWnonDnon_medic_1") then {
-		[[player,"AinvPknlMstpSnonWnonDnon_medic_1"],"life_fnc_animSync",true,false] spawn life_fnc_MP;
-		player playMoveNow "AinvPknlMstpSnonWnonDnon_medic_1";
+	_previous = animationState player;
+	if(animationState player == _previous) then {
+		player playMoveNow "AinvPknlMstpSnonWnonDr_medic0";
 	};
 	sleep 0.26;
 	if(isNull _ui) then {

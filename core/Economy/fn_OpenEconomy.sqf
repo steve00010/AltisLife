@@ -19,29 +19,34 @@ lbClear _buylist;
 lbClear _selllist;
 
 {
-	if((_x select 1)>0) then {
-		_name = [([(_x select 0),0] call life_fnc_varHandle)] call life_fnc_vartostr;
-		_icon = [([(_x select 0),0] call life_fnc_varHandle)] call life_fnc_itemIcon;
-		_price = _x select 1;
-		_selllist lbAdd format["%1  ($%2)",_name,[_price] call life_fnc_numberText];
-		_selllist lbSetData [(lbSize _selllist)-1,_x select 0];
+
+	_displayName = M_CONFIG(getText,"VirtualItems",SEL(_x,0),"displayName");
+	_price = SEL(_x,1);
+	if(_price > 0) then {
+		_selllist lbAdd format["%1  ($%2)",(localize _displayName),[_price] call life_fnc_numberText];
+		_selllist lbSetData [(lbSize _selllist)-1,SEL(_x,0)];
 		_selllist lbSetValue [(lbSize _selllist)-1,(lbSize _selllist)-1];
-		_selllist lbSetPicture [(lbSize _selllist)-1,_icon];
+		_icon = M_CONFIG(getText,"VirtualItems",SEL(_x,0),"icon");
+		if(!(EQUAL(_icon,""))) then {
+			_selllist lbSetPicture [(lbSize _selllist)-1,_icon];
+		};
 	};
-} foreach (__GETC__(sell_array));
+} foreach (FETCH_CONST(sell_array));
 
 {
-	if((_x select 1)>0) then {
-		_name = [([(_x select 0),0] call life_fnc_varHandle)] call life_fnc_vartostr;
-		_icon = [([(_x select 0),0] call life_fnc_varHandle)] call life_fnc_itemIcon;
-		_price = _x select 1;
-		_buylist lbAdd format["%1  ($%2)",_name,[_price] call life_fnc_numberText];
-		_buylist lbSetData [(lbSize _buylist)-1,_x select 0];
+
+	_displayName = M_CONFIG(getText,"VirtualItems",SEL(_x,0),"displayName");
+	_price = SEL(_x,1);
+	if(_price > 0) then {
+		_buylist lbAdd format["%1  ($%2)",(localize _displayName),[_price] call life_fnc_numberText];
+		_buylist lbSetData [(lbSize _buylist)-1,SEL(_x,0)];
 		_buylist lbSetValue [(lbSize _buylist)-1,(lbSize _buylist)-1];
-		_buylist lbSetPicture [(lbSize _buylist)-1,_icon];
-		
+		_icon = M_CONFIG(getText,"VirtualItems",SEL(_x,0),"icon");
+		if(!(EQUAL(_icon,""))) then {
+			_buylist lbSetPicture [(lbSize _buylist)-1,_icon];
+		};
 	};
-} foreach (__GETC__(buy_array));
+} foreach (FETCH_CONST(buy_array));
 
 lbSortByValue _selllist;
 lbSortByValue _buylist;

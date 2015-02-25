@@ -34,16 +34,11 @@ _cP = 0.01;
 
 while {true} do
 {
-	if(animationState player != "AinvPknlMstpsnonWnonDnon_medic_1" ) then 
-	{
-		player action ["SwitchWeapon", player, player, 100];   //EDIT
-		player playMove "AinvPknlMstpsnonWnonDnon_medic_1"; //Durée action 6.5 secondes
-		player playActionNow "stop";
-		player playMove "AinvPknlMstpsnonWnonDnon_medic_1";
-		player playActionNow "stop";
-		player playMove "AinvPknlMstpsnonWnonDnon_medic_1";
+	_previous = animationState player;
+	if(animationState player == _previous) then {
+		player playMoveNow "AinvPknlMstpSnonWnonDr_medic0";
 	};
-	sleep 0.195;
+	sleep 0.26;
 	if(isNull _ui) then {
 		5 cutRsc ["life_progress","PLAIN"];
 		_ui = uiNamespace getVariable "life_progress";
@@ -77,14 +72,13 @@ if(!_isVehicle) then {
 	_curTarget setVariable["transporting",false,true];
 } else {
 	_dice = random(100);
-	if(_dice < 50) then {
-		titleText["You now have keys to this vehicle.","PLAIN"];
+	if(_dice < 30) then {
+		titleText[localize "STR_ISTR_Lock_Success","PLAIN"];
 		life_vehicles pushBack _curTarget;
-		[[getPlayerUID player,profileName,"487"],"life_fnc_wantedAdd",false,false] spawn life_fnc_MP;
-		[[_curTarget],"life_fnc_CarAlarmSound",nil,true] spawn life_fnc_MP;
+		[[getPlayerUID player,profileName,"487"],"life_fnc_wantedAdd",false,false] call life_fnc_MP;
 	} else {
-		[[getPlayerUID player,profileName,"215"],"life_fnc_wantedAdd",false,false] spawn life_fnc_MP;
-		[[0,"STR_ISTR_Lock_FailedNOTF",true,[profileName]],"life_fnc_broadcast",west,false] spawn life_fnc_MP;
+		[[getPlayerUID player,profileName,"215"],"life_fnc_wantedAdd",false,false] call life_fnc_MP;
+		[[0,"STR_ISTR_Lock_FailedNOTF",true,[profileName]],"life_fnc_broadcast",west,false] call life_fnc_MP;
 		titleText[localize "STR_ISTR_Lock_Failed","PLAIN"];
 	};
 };

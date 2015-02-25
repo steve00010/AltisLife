@@ -53,7 +53,7 @@ switch(true) do
 	case ((round(_timer - time)) < 1): 
 	{ 
 		hint format["You have successfully robbed $%1",[_funds] call life_fnc_numberText]; 
-		pbh_life_cash = pbh_life_cash + _funds;
+		CASH = CASH + _funds;
 		[[_vault,1,_funds],"TON_fnc_CasinoState",false,false] spawn life_fnc_MP; 
 	}; 
 };

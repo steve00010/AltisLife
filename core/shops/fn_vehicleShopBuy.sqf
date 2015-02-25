@@ -6,15 +6,16 @@
 	Description:
 	Does something with vehicle purchasing.
 */
-private["_mode","_spawnPoints","_className","_basePrice","_colorIndex","_spawnPoint","_vehicle","_DiscountMod"];
-_mode = _this select 0;
-if((lbCurSel 2302) == -1) exitWith {hint "You did not pick a vehicle!"};
+private["_mode","_spawnPoints","_className","_basePrice","_colorIndex","_spawnPoint","_vehicle","_shopSide","_license","_DiscountMod"];
+_mode = SEL(_this,0);
+if((lbCurSel 2302) == -1) exitWith {hint localize "STR_Shop_Veh_DidntPick"};
 _className = lbData[2302,(lbCurSel 2302)];
 _vIndex = lbValue[2302,(lbCurSel 2302)];
-_vehicleList = [life_veh_shop select 0] call life_fnc_vehicleListCfg; 
-_basePrice = (_vehicleList select _vIndex) select 1;
 
-switch(__GETC__(life_donator)) do
+_vehicleList = M_CONFIG(getArray,"CarShops",SEL(life_veh_shop,0),"vehicles");
+_shopSide = M_CONFIG(getText,"CarShops",SEL(life_veh_shop,0),"side");
+_basePrice = SEL(SEL(_vehicleList,_vIndex),1);
+switch(FETCH_CONST(life_donator)) do
 {
 	case 1: {_DiscountMod = 0.95;};
 	case 2: {_DiscountMod = 0.90;};
@@ -23,32 +24,28 @@ switch(__GETC__(life_donator)) do
 	case 5: {_DiscountMod = 0.75;};
 };
 
-if(_mode) then 
-{
-	// Buy Vehicle
-	_basePrice = round(_basePrice * 1.5);
-};
-
-if(__GETC__(life_donator) > 0) then
+ if(_mode) then {_basePrice = round(_basePrice * 1.5)};
+ if(FETCH_CONST(life_donator) > 0) then
 {
 	_basePrice = round(_basePrice * _DiscountMod);
 };
-
 _colorIndex = lbValue[2304,(lbCurSel 2304)];
 
 //Series of checks (YAY!)
 if(_basePrice < 0) exitWith {}; //Bad price entry
-if(pbh_life_cash < _basePrice) exitWith {hint format["You do not have enough cash to purchase this vehicle.\n\nAmount Lacking: $%1",[_basePrice - pbh_life_cash] call life_fnc_numberText];};
-if(!([_className] call life_fnc_vehShopLicenses) && _className != "B_MRAP_01_hmg_F") exitWith {hint "You do not have the required license!"};
+if(CASH < _basePrice) exitWith {hint format[localize "STR_Shop_Veh_NotEnough",[_basePrice - CASH] call life_fnc_numberText];};
 
-_spawnPoints = life_veh_shop select 1;
+_license = SEL(SEL(_vehicleList,_vIndex),2);
+if(!(EQUAL(_license,"")) && {!(LICENSE_VALUE(_license,_shopSide))}) exitWith {hint localize "STR_Shop_Veh_NoLicense"};
+
+_spawnPoints = SEL(life_veh_shop,1);
 _spawnPoint = "";
 
-if((life_veh_shop select 0) == "med_air_hs") then {
+if((SEL(life_veh_shop,0) == "med_air_hs")) then {
 	if(count(nearestObjects[(getMarkerPos _spawnPoints),["Air"],35]) == 0) exitWith {_spawnPoint = _spawnPoints};
 } else {
 	//Check if there is multiple spawn points and find a suitable spawnpoint.
-	if(typeName _spawnPoints == typeName []) then {
+	if(EQUAL(typeName _spawnPoints,typeName [])) then {
 		//Find an available spawn point.
 		{if(count(nearestObjects[(getMarkerPos _x),["Car","Ship","Air"],5]) == 0) exitWith {_spawnPoint = _x};} foreach _spawnPoints;
 	} else {
@@ -56,11 +53,10 @@ if((life_veh_shop select 0) == "med_air_hs") then {
 	};
 };
 
-if(_spawnPoint == "") exitWith {hint "There is a vehicle currently blocking the spawn point(s)";};
 
-
-		["cash","take",_basePrice] call life_fnc_updateCash;
-		hint format["You bought a %1 for $%2",getText(configFile >> "CfgVehicles" >> _className >> "displayName"),[_basePrice] call life_fnc_numberText];
+if(EQUAL(_spawnPoint,"")) exitWith {hint localize "STR_Shop_Veh_Block";};
+SUB(CASH,_basePrice);
+hint format[localize "STR_Shop_Veh_Bought",getText(configFile >> "CfgVehicles" >> _className >> "displayName"),[_basePrice] call life_fnc_numberText];
 
 //Spawn the vehicle and prep it.
 if((life_veh_shop select 0) == "med_air_hs") then {
@@ -68,12 +64,12 @@ if((life_veh_shop select 0) == "med_air_hs") then {
 	waitUntil {!isNil "_vehicle"}; //Wait?
 	_vehicle allowDamage false;
 	_hs = nearestObjects[getMarkerPos _spawnPoint,["Land_Hospital_side2_F"],50] select 0;
-	_vehicle setPosATL (_hs modelToWorld [-0.4,-4,14]);
+	_vehicle setPosATL (_hs modelToWorld [-0.4,-4,12.65]);
 	_vehicle lock 2;
-	[[_vehicle,_colorIndex],"life_fnc_colorVehicle",true,false] spawn life_fnc_MP;
+	[[_vehicle,_colorIndex],"life_fnc_colorVehicle",true,false] call life_fnc_MP;
 	[_vehicle] call life_fnc_clearVehicleAmmo;
-	_vehicle setVariable["trunk_in_use",false,true];
-	_vehicle setVariable["vehicle_info_owners",[[getPlayerUID player,profileName]],true];
+	[[_vehicle,"trunk_in_use",false,true],"TON_fnc_setObjVar",false,false] call life_fnc_MP;
+	[[_vehicle,"vehicle_info_owners",[[getPlayerUID player,profileName]],true],"TON_fnc_setObjVar",false,false] call life_fnc_MP;
 	_vehicle disableTIEquipment true; //No Thermals.. They're cheap but addictive.
 } else {
 	_vehicle = createVehicle [_className, (getMarkerPos _spawnPoint), [], 0, "NONE"];
@@ -82,66 +78,43 @@ if((life_veh_shop select 0) == "med_air_hs") then {
 	_vehicle lock 2;
 	_vehicle setVectorUp (surfaceNormal (getMarkerPos _spawnPoint));
 	_vehicle setDir (markerDir _spawnPoint);
-	//_vehicle setPos (getMarkerPos _spawnPoint);
-	[[_vehicle, (getMarkerPos _spawnPoint)],"TON_fnc_SetPos",false,false] spawn life_fnc_MP;
-	[[_vehicle,_colorIndex],"life_fnc_colorVehicle",true,false] spawn life_fnc_MP;
+	_vehicle setPos (getMarkerPos _spawnPoint);
+	[[_vehicle,_colorIndex],"life_fnc_colorVehicle",true,false] call life_fnc_MP;
 	[_vehicle] call life_fnc_clearVehicleAmmo;
-	_vehicle setVariable["trunk_in_use",false,true];
-	_vehicle setVariable["vehicle_info_owners",[[getPlayerUID player,profileName]],true];
+	[[_vehicle,"trunk_in_use",false,true],"TON_fnc_setObjVar",false,false] call life_fnc_MP;
+	[[_vehicle,"vehicle_info_owners",[[getPlayerUID player,profileName]],true],"TON_fnc_setObjVar",false,false] call life_fnc_MP;
 	_vehicle disableTIEquipment true; //No Thermals.. They're cheap but addictive.
 };
 
 //Side Specific actions.
 switch(playerSide) do {
-	case west: 
-	{
+	case west: {
 		[_vehicle,"cop_offroad",true] spawn life_fnc_vehicleAnimate;
 	};
 	
-	case west: 
-	{
-		if(_veh == "C_Offroad_01_F") then 
-		{
-			[_vehicle,"cop_offroad",true] spawn life_fnc_vehicleAnimate;
-		};
-		if(_veh == "B_Heli_Light_01_F") then 
-		{
-			_vehicle setVariable ["nano_emp_enabled", true, true];
-		};
-	};
-	
 	case civilian: {
-		if((life_veh_shop select 2) == "civ" && {_className == "B_Heli_Light_01_F"}) then {
+		if(EQUAL(SEL(life_veh_shop,2),"civ") && {_className == "B_Heli_Light_01_F"}) then {
 			[_vehicle,"civ_littlebird",true] spawn life_fnc_vehicleAnimate;
 		};
 	};
+	
 	case independent: {
 		[_vehicle,"med_offroad",true] spawn life_fnc_vehicleAnimate;
 	};
 };
 
-[_vehicle] spawn
-{
-	_vehicle = (_this select 0);
-	Sleep 2;
-	_vehicle allowDamage true;
-	
-	_vehicle addEventHandler["handleDamage",{_this call life_fnc_handleVehicleDamage;}];
-};
+_vehicle allowDamage true;
 
-life_vehicles set[count life_vehicles,_vehicle]; //Add err to the chain.
-if(_mode) then 
-{
-	if(!(_className in ["B_MRAP_01_hmg_F"])) then {
-		[[(getPlayerUID player),playerSide,_vehicle,_colorIndex],"TON_fnc_vehicleCreate",false,false] spawn life_fnc_MP;
+//life_vehicles set[count life_vehicles,_vehicle]; //Add err to the chain.
+life_vehicles pushBack _vehicle;
+[[getPlayerUID player,playerSide,_vehicle,1],"TON_fnc_keyManagement",false,false] call life_fnc_MP;
+
+if(_mode) then {
+	if(!(_className in ["B_G_Offroad_01_armed_F","B_MRAP_01_hmg_F"])) then {
+		[[(getPlayerUID player),playerSide,_vehicle,_colorIndex],"TON_fnc_vehicleCreate",false,false] call life_fnc_MP;
 	};
 };
 
-[] call SOCK_fnc_updateRequest; //Sync silently because it's obviously silently..
+[0] call SOCK_fnc_updatePartial;
 closeDialog 0; //Exit the menu.
-
-// Log that a Player has bought a vehicle.
-_msg =  format["Purchase Log: %1 (%2) has bought a new %3 for $%4", profileName, getPlayerUID player, getText(configFile >> "CfgVehicles" >> _className >> "displayName"), [_basePrice] call life_fnc_numberText];
-[[_msg],"life_fnc_logMSG",false,false] spawn life_fnc_MP;
-
 true;

@@ -1,3 +1,4 @@
+#include <macro.h>
 /*
 	File: fn_handleDamage.sqf
 	Author: Bryan "Tonic" Boardwine
@@ -5,17 +6,13 @@
 	Description:
 	Handles damage, specifically for handling the 'tazer' pistol and nothing else.
 */
-private["_unit","_damage","_source","_projectile","_part","_curWep", "_curMag"];
-_unit = _this select 0;
-_part = _this select 1;
-_damage = _this select 2;
-_source = _this select 3;
-_projectile = _this select 4;
+private["_unit","_damage","_source","_projectile","_part","_curWep"];
+_unit = SEL(_this,0);
+_part = SEL(_this,1);
+_damage = SEL(_this,2);
+_source = SEL(_this,3);
+_projectile = SEL(_this,4);
 
-//Internal Debugging.
-if(!isNil "TON_Debug") then {
-	systemChat format["PART: %1 || DAMAGE: %2 || SOURCE: %3 || PROJECTILE: %4 || FRAME: %5",_part,_damage,_source,_projectile,diag_frameno];
-};
 
 //Handle the tazer first (Top-Priority).
 if(!isNull _source) then 
@@ -116,4 +113,3 @@ if(!isNull _source) then
 [] call life_fnc_hudUpdate;
 
 _damage;
-

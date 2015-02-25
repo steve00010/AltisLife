@@ -221,22 +221,18 @@ switch (_code) do
 		};
 	};
 	//L Key?
-	case 38: 
+	case 38:
 	{
 		//If cop run checks for turning lights on.
 		if(_shift && playerSide in [west,independent]) then {
-			if(vehicle player != player && (typeOf vehicle player) in ["C_Offroad_01_F","B_MRAP_01_F","C_SUV_01_F","C_Hatchback_01_sport_F","C_Hatchback_01_F","I_MRAP_03_F"]) then {
+			if(vehicle player != player && (typeOf vehicle player) in life_sirenLightsVehicles) then {
 				if(!isNil {vehicle player getVariable "lights"}) then {
-					if(playerSide == west) then {
-						[vehicle player] call life_fnc_sirenLights;
-					} else {
-						[vehicle player] call life_fnc_medicSirenLights;
-					};
+					[vehicle player] call life_fnc_sirenLights;
 					_handled = true;
 				};
 			};
 		};
-		
+
 		if(!_alt && !_ctrlKey) then { [] call life_fnc_radar; };
 	};
 	//Y Player Menu

@@ -10,7 +10,7 @@ _obj = objNull;
 	if(_temp == _unit) exitWith {
 		_obj = _x;
 	};
-} forEach nearestObjects [getMarkerPos "jail_marker",["Man"],15]; 
+} forEach nearestObjects [getMarkerPos "jail_marker",["Man"],25]; 
 // 15 = distance from jail_marker
 // this adds all the prisoners around the jail_marker within 15 meters
 

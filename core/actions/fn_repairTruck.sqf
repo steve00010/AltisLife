@@ -6,69 +6,53 @@
 	Description:
 	Main functionality for toolkits, to be revised in later version.
 */
-private["_veh","_upp","_ui","_progress","_pgText","_cP","_displayName"];
+private["_veh","_upp","_ui","_progress","_pgText","_cP","_displayName","_test"];
 _veh = cursorTarget;
 life_interrupted = false;
 if(isNull _veh) exitwith {};
 if((_veh isKindOf "Car") OR (_veh isKindOf "Ship") OR (_veh isKindOf "Air")) then
 {
-	if ( !(_veh getVariable ["nano_empd", false]) ) then
+	if("ToolKit" in (items player)) then
 	{
-		if("ToolKit" in (items player)) then
+		life_action_inUse = true;
+		_displayName = getText(configFile >> "CfgVehicles" >> (typeOf _veh) >> "displayName");
+		_upp = format[localize "STR_NOTF_Repairing",_displayName];
+		//Setup our progress bar.
+		disableSerialization;
+		5 cutRsc ["life_progress","PLAIN"];
+		_ui = uiNameSpace getVariable "life_progress";
+		_progress = _ui displayCtrl 38201;
+		_pgText = _ui displayCtrl 38202;
+		_pgText ctrlSetText format["%2 (1%1)...","%",_upp];
+		_progress progressSetPosition 0.01;
+		_cP = 0.01;
+		
+		while{true} do
 		{
-			life_action_inUse = true;
-			_displayName = getText(configFile >> "CfgVehicles" >> (typeOf _veh) >> "displayName");
-			_upp = format["Repairing %1",_displayName];
-			//Setup our progress bar.
-			disableSerialization;
-			5 cutRsc ["life_progress","PLAIN"];
-			_ui = uiNameSpace getVariable "life_progress";
-			_progress = _ui displayCtrl 38201;
-			_pgText = _ui displayCtrl 38202;
-			_pgText ctrlSetText format["%2 (1%1)...","%",_upp];
-			_progress progressSetPosition 0.01;
-			_cP = 0.01;
-			
-			while{true} do
-			{
-				if(animationState player != "AinvPknlMstpsnonWnonDnon_medic_1" ) then 
-				{
-					player action ["SwitchWeapon", player, player, 100];   //EDIT
-					player playMove "AinvPknlMstpsnonWnonDnon_medic_1"; //Durée action 6.5 secondes
-					player playActionNow "stop";
-					player playMove "AinvPknlMstpsnonWnonDnon_medic_1";
-					player playActionNow "stop";
-					player playMove "AinvPknlMstpsnonWnonDnon_medic_1";
-				};
-				sleep 0.195;
-				_cP = _cP + 0.01;
-				_progress progressSetPosition _cP;
-				_pgText ctrlSetText format["%3 (%1%2)...",round(_cP * 100),"%",_upp];
-				if(_cP >= 1) exitWith {};
-				if(!alive player) exitWith {};
-				if(player != vehicle player) exitWith {};
-				if(life_interrupted) exitWith {};
+			_previous = animationState player;
+			if(animationState player == _previous) then {
+				player playMoveNow "AinvPknlMstpSnonWnonDr_medic0";
 			};
-			
-			life_action_inUse = false;
-			5 cutText ["","PLAIN"];
-			player playActionNow "stop";
-			if(life_interrupted) exitWith {life_interrupted = false; titleText["Action cancelled","PLAIN"]; life_action_inUse = false;};
-			if(player != vehicle player) exitWith {titleText["You must be outside of the vehicle to fix it. Sorry that this prevents you from exploiting the system, well not really.","PLAIN"];};
-			// Remove Toolkit if they are less than donator 2
-			if(__GETC__(life_donator) < 2) then
-			{
-				player removeItem "ToolKit"; 
-			};
-			_veh setDamage 0;
-			titleText["You have repaired that vehicle.","PLAIN"];
+			sleep 0.27;
+			_cP = _cP + 0.01;
+			_progress progressSetPosition _cP;
+			_pgText ctrlSetText format["%3 (%1%2)...",round(_cP * 100),"%",_upp];
+			if(_cP >= 1) exitWith {};
+			if(!alive player) exitWith {};
+			if(player != vehicle player) exitWith {};
+			if(life_interrupted) exitWith {};
 		};
-	}
-	else
-	{
-		titleText["You can't find anything wrong with your vehicle, It's as if all the electronics aren't working.","PLAIN"];
+		
+		life_action_inUse = false;
+		5 cutText ["","PLAIN"];
+		player playActionNow "stop";
+		if(life_interrupted) exitWith {life_interrupted = false; titleText[localize "STR_NOTF_ActionCancel","PLAIN"]; life_action_inUse = false;};
+		if(player != vehicle player) exitWith {titleText[localize "STR_NOTF_RepairingInVehicle","PLAIN"];};
+		if(FETCH_CONST(life_donator)<3) then {
+			player removeItem "ToolKit";
+		};
+		
+		_veh setDamage 0;
+		titleText[localize "STR_NOTF_RepairedVehicle","PLAIN"];
 	};
 };
-
-_ui = "osefStatusBar" call BIS_fnc_rscLayer;
-_ui cutRsc["osefStatusBar","PLAIN"];

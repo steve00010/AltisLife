@@ -12,9 +12,8 @@
 #define Btn4 37453
 #define Btn5 37454
 #define Btn6 37455
-#define Btn7 37456
 #define Title 37401
-private["_display","_curTarget","_Btn1","_Btn2","_Btn3","_Btn4","_Btn5","_Btn6","_Btn7"];
+private["_display","_curTarget","_Btn1","_Btn2","_Btn3","_Btn4","_Btn5","_Btn6"];
 if(!dialog) then {
 	createDialog "vInteraction_Menu";
 };
@@ -30,7 +29,6 @@ _Btn3 = _display displayCtrl Btn3;
 _Btn4 = _display displayCtrl Btn4;
 _Btn5 = _display displayCtrl Btn5;
 _Btn6 = _display displayCtrl Btn6;
-_Btn7 = _display displayCtrl Btn7;
 life_vInact_curTarget = _curTarget;
 
 //Set Repair Action
@@ -53,14 +51,11 @@ if(playerSide == west) then {
 	_Btn5 ctrlSetText localize "STR_vInAct_Impound";
 	_Btn5 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_impoundAction;";
 	
-	if(_curTarget isKindOf "Ship") then 
-	{
+	if(_curTarget isKindOf "Ship") then {
 		_Btn6 ctrlSetText localize "STR_vInAct_PushBoat";
 		_Btn6 buttonSetAction "[] spawn life_fnc_pushObject; closeDialog 0;";
 		if(_curTarget isKindOf "Ship" && {local _curTarget} && {count crew _curTarget == 0}) then { _Btn6 ctrlEnable true;} else {_Btn6 ctrlEnable false};
-	} 
-	else 
-	{
+	} else {
 		if(typeOf (_curTarget) in ["C_Kart_01_Blu_F","C_Kart_01_Red_F","C_Kart_01_Fuel_F","C_Kart_01_Vrana_F"]) then {
 			_Btn6 ctrlSetText localize "STR_vInAct_GetInKart";
 			_Btn6 buttonSetAction "player moveInDriver life_vInact_curTarget; closeDialog 0;";
@@ -72,19 +67,8 @@ if(playerSide == west) then {
 		};
 	};
 	
-	if(__GETC__(life_coplevel) > 2) then
-	{
-		_Btn7 ctrlSetText localize "STR_vInAct_Crush";
-		_Btn7 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_CrushAction;"
-	}
-	else
-	{
-		_Btn7 ctrlShow false;
-	};
+} else {
 	
-} 
-else 
-{
 	if(_curTarget isKindOf "Ship") then {
 		_Btn2 ctrlSetText localize "STR_vInAct_PushBoat";
 		_Btn2 buttonSetAction "[] spawn life_fnc_pushObject; closeDialog 0;";
@@ -110,13 +94,10 @@ else
 			_Btn3 ctrlEnable true;
 		};
 	} else {
-		_Btn3 ctrlSetText localize "STR_vInAct_PullOut";
-		_Btn3 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_pulloutAction;";
-		if(count crew _curTarget == 0) then {_Btn3 ctrlEnable false;};
+		_Btn3 ctrlShow false;
 	};
 	
 	_Btn4 ctrlShow false;
 	_Btn5 ctrlShow false;
 	_Btn6 ctrlShow false;
-	_Btn7 ctrlShow false;
 };

@@ -1,3 +1,4 @@
+#include <macro.h>
 /*
 	File: fn_respawned.sqf
 	Author: Bryan "Tonic" Boardwine
@@ -11,7 +12,7 @@ life_use_atm = TRUE;
 life_hunger = 100;
 life_thirst = 100;
 life_carryWeight = 0;
-pbh_life_cash = 0; //Make sure we don't get our cash back.
+CASH = 0; //Make sure we don't get our cash back.
 life_respawned = false;
 player playMove "amovpercmstpsnonwnondnon";
 
@@ -27,28 +28,28 @@ switch(playerSide) do
 {
 	case west: {
 		_handle = [] spawn life_fnc_copLoadout;
-		wakPlugs = false;
 	};
 	case civilian: {
 		_handle = [] spawn life_fnc_civLoadout;
-		wakPlugs = false;
 	};
 	case independent: {
 		_handle = [] spawn life_fnc_medicLoadout;
-		wakPlugs = false;
+	};
+	case east: {
+		_handle = [] spawn life_fnc_adacLoadout;
 	};
 	waitUntil {scriptDone _handle};
 };
 
 //Cleanup of weapon containers near the body & hide it.
-/*if(!isNull life_corpse) then {
-	private["_containers"];
+if(!isNull life_corpse) then {
+	private "_containers";
 	life_corpse setVariable["Revive",TRUE,TRUE];
 	_containers = nearestObjects[life_corpse,["WeaponHolderSimulated"],5];
 	{deleteVehicle _x;} foreach _containers; //Delete the containers.
 	hideBody life_corpse;
 };
-*/
+
 //Destroy our camera...
 life_deathCamera cameraEffect ["TERMINATE","BACK"];
 camDestroy life_deathCamera;
@@ -63,7 +64,7 @@ if(life_is_arrested) exitWith {
 
 //Johnny law got me but didn't let the EMS revive me, reward them half the bounty.
 if(!isNil "life_copRecieve") then {
-	[[player,life_copRecieve,true],"life_fnc_wantedBounty",false,false] spawn life_fnc_MP;
+	[[getPlayerUID player,player,life_copRecieve,true],"life_fnc_wantedBounty",false,false] spawn life_fnc_MP;
 	life_copRecieve = nil;
 };
 
@@ -71,6 +72,6 @@ if(!isNil "life_copRecieve") then {
 if(life_removeWanted) then {
 	[[getPlayerUID player],"life_fnc_wantedRemove",false,false] spawn life_fnc_MP;
 };
-deleteVehicle life_corpse;
+
 [] call SOCK_fnc_updateRequest;
 [] call life_fnc_hudUpdate; //Request update of hud.

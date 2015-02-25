@@ -1,6 +1,4 @@
-create file fn_vehicleAfterSpawn.sqf
 
-place in it this - adjust vehicle names to suit yours.
 
 /*
 

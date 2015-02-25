@@ -9,8 +9,8 @@ private["_handle"];
 _handle = [] spawn life_fnc_stripDownPlayer;
 waitUntil {scriptDone _handle};
 
-player addbackpack "B_Carryall_khk";
-player addUniform "U_Rangemaster";
+player addBackpack "B_Carryall_mcamo";
+["U_B_CombatUniform_mcam_worn",true] call life_fnc_handleItem;
 player addItem "ToolKit";
 player addItem "Medikit";
 player addItem "ItemMap";
@@ -24,6 +24,6 @@ player assignItem "ItemGPS";
 player addItem "ItemRadio";
 player assignItem "ItemRadio";
 
-[[player,0,"textures\uniforms\medic_uniform.jpg"],"life_fnc_setTexture",true,false] spawn life_fnc_MP;
 
+[] call life_fnc_customUniforms; 
 [] call life_fnc_saveGear;

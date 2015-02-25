@@ -264,3 +264,11 @@
 		
 	};
 };
+
+[] spawn {
+	while {true} do
+	{
+		enableSentences false;
+		sleep 30;
+	};
+};

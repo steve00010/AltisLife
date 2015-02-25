@@ -18,14 +18,14 @@ sleep 45;
 
 if (license_civ_rebel) then
 {
-	if(_funds > pbh_life_atmcash) then
+	if(_funds >BANK) then
 	{
 		hint "Due to the robbery on the Rebel Casino you have lost a percentage of your money but you have went bankrupt.\n\nNext time buy some banking insurance on your next visit to a ATM to better protect your assets!";
-		pbh_life_atmcash=0;
+		BANK=0;
 	}
 	else
 	{		
 		hint format["Due to the recent robbery on the Rebel Casino you have lost $%1 from your bank account, next time buy some banking insurance!\n\nYou can buy banking insurance from a ATM!",[_funds] call life_fnc_numberText];
-		pbh_life_atmcash = pbh_life_atmcash - _funds;
+		BANK =BANK - _funds;
 	};
 };
