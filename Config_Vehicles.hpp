@@ -86,6 +86,20 @@ class CarShops {
 			{ "B_MRAP_01_F", 150000, "", { "life_coplevel", 4 } }
 		};
 	};
+	
+	class adac_air {
+		side = "adac";
+		vehicles[] = {
+			{ "B_Heli_Light_01_F", 253000, "pilot" }
+		};
+	};
+	
+	class adac_car {
+		side = "civ";
+		vehicles[] = {
+			{ "C_Offroad_01_F", 7500, "" }
+		};
+	};
 
 	class civ_air {
 		side = "civ";
