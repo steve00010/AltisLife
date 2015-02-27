@@ -56207,7 +56207,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_InfoStand_V2_F";
 			skill=0.60000002;
-			init="this enableSimulation false;  this allowDamage false;  this addAction[""ARC Clothing Shop"",life_fnc_clothingMenu,""arc"",0,false,false,"""",' license_civ_arc && playerSide == east'];  this addAction[""ARC Weapon Shop"",life_fnc_weaponShopMenu,""arc"",0,false,false,"""",' license_civ_arc && playerSide == east'];";
+			init="this enableSimulation false;  this allowDamage false;  this addAction[""ARC Clothing Shop"",life_fnc_clothingMenu,""arc"",0,false,false,"""",' license_east_arc && playerSide == east'];  this addAction[""ARC Weapon Shop"",life_fnc_weaponShopMenu,""arc"",0,false,false,"""",' license_east_arc && playerSide == east'];";
 		};
 		class Item5461
 		{
@@ -56218,7 +56218,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_InfoStand_V2_F";
 			skill=0.60000002;
-			init="removeallWeapons this;  this enableSimulation false;  this allowDamage false; this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""arc"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""arc"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""arc"",0,false,false,"""",' !license_civ_arc && playerSide == east '];";
+			init="removeallWeapons this;  this enableSimulation false;  this allowDamage false; this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""arc"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""arc"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""arc"",0,false,false,"""",' !license_east_arc && playerSide == east '];";
 		};
 		class Item5462
 		{
