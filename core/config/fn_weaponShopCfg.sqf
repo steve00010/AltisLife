@@ -467,7 +467,7 @@ switch(_shop) do
 	{
 		switch(true) do
 		{
-			case (playerSide != civilian): {"You are not a civilian!"};
+			case (playerSide != east): {"You are not a A.R.C!"};
 			case (!license_civ_arc): {"HAHA, get a license if you want to be in A.R.C!"};
 			default
 			{
