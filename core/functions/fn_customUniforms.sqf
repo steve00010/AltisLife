@@ -42,6 +42,18 @@ if (playerSide == independent) then
 	
 };
 
+if (playerSide == east) then
+{
+	if((backpack player) == "B_Carryall_mcamo") then {
+		
+		(unitBackpack player) setObjectTextureGlobal [0,"textures\uniforms\arccarryall.paa"];
+	};	
+
+	if(uniform player == "U_Rangemaster") then {
+		player setObjectTextureGlobal [0,"textures\uniforms\arc_senior.paa"];
+	};
+};	
+
 // Make Backpack invisible
 if (playerSide == west) then
 {
