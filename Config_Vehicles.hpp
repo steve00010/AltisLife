@@ -360,10 +360,10 @@ class CfgVehicles {
             } },
 			{ "MSI", "civ", {
               "textures\vehicles\msi_humm.paa"
-            } }
+            } },
 			{ "Wasp", "arc", {
               "textures\vehicles\arc_hummingbird.paa"
-            } },			
+            } }			
         };
     };
 
