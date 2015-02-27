@@ -35443,7 +35443,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_InfoStand_V2_F";
 			skill=0.60000002;
-			init="removeallWeapons this;  this enableSimulation false;  this allowDamage false; this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""rebel"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""rebel"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""rebel"",0,false,false,"""",' !license_civ_rebel && playerSide == civilian ']; this addAction[format[""Relinquish %1"",[""license_civ_rebel""] call life_fnc_varToStr],life_fnc_relinquishLicense,""rebel"",0,false,false,"""",' license_civ_rebel && playerSide == civilian '];";
+			init="removeallWeapons this;  this enableSimulation false;  this allowDamage false; this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""rebel"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""rebel"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""rebel"",0,false,false,"""",' !license_civ_rebel && playerSide == civilian '];";
 		};
 		class Item3362
 		{
@@ -56207,7 +56207,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_InfoStand_V2_F";
 			skill=0.60000002;
-			init="this enableSimulation false;  this allowDamage false;  this addAction[""ARC Clothing Shop"",life_fnc_clothingMenu,""arc"",0,false,false,"""",' license_east_arc && playerSide == east'];  this addAction[""ARC Weapon Shop"",life_fnc_weaponShopMenu,""arc"",0,false,false,"""",' license_east_arc && playerSide == east'];";
+			init="removeallWeapons this;  this enableSimulation false;  this allowDamage false;  this addAction[""Rebel Clothing Shop"",life_fnc_clothingMenu,""arc"",0,false,false,"""",' license_arc_arc && playerSide == east'];  this addAction[""ARC Weapon Shop"",life_fnc_weaponShopMenu,""arc"",0,false,false,"""",' license_arc_arc && playerSide == east'];";
 		};
 		class Item5461
 		{
@@ -56218,7 +56218,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_InfoStand_V2_F";
 			skill=0.60000002;
-			init="removeallWeapons this;  this enableSimulation false;  this allowDamage false; this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""arc"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""arc"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""arc"",0,false,false,"""",' !license_east_arc && playerSide == east '];";
+			init="removeallWeapons this;  this enableSimulation false;  this allowDamage false; this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""arc"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""arc"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""arc"",0,false,false,"""",' !license_arc_arc && playerSide == east'];";
 		};
 		class Item5462
 		{

@@ -191,7 +191,7 @@ class Clothing {
 	
 	class arc {
 		title = "STR_Shops_C_ARC";
-		license = "arc";
+		license = "";
 		side = "east";
 
 		uniforms[] = {
