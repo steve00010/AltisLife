@@ -44,13 +44,13 @@ if (playerSide == independent) then
 
 if (playerSide == east) then
 {
+	if(uniform player == "U_Rangemaster") then {
+		player setObjectTextureGlobal [0,"textures\uniforms\arc_senior.paa"];
+	};	
+		
 	if((backpack player) == "B_Carryall_mcamo") then {
 		
 		(unitBackpack player) setObjectTextureGlobal [0,"textures\uniforms\arccarryall.paa"];
-	};	
-
-	if(uniform player == "U_Rangemaster") then {
-		player setObjectTextureGlobal [0,"textures\uniforms\arc_senior.paa"];
 	};
 };	
 
