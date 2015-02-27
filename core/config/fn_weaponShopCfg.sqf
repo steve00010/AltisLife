@@ -467,7 +467,7 @@ switch(_shop) do
 	{
 		switch(true) do
 		{
-			case (playerSide != east): {"You are not a A.R.C!"};
+			case (playerSide != east): {"You are not A.R.C!"};
 			default
 			{
 				
