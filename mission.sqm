@@ -56207,7 +56207,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_InfoStand_V2_F";
 			skill=0.60000002;
-			init="removeallWeapons this;  this enableSimulation false;  this allowDamage false;  this addAction[""Rebel Clothing Shop"",life_fnc_clothingMenu,""arc"",0,false,false,"""",' license_arc_arc && playerSide == east'];  this addAction[""ARC Weapon Shop"",life_fnc_weaponShopMenu,""arc"",0,false,false,"""",' license_arc_arc && playerSide == east'];";
+			init="removeallWeapons this;  this enableSimulation false;  this allowDamage false;  this addAction[""ARC Clothing Shop"",life_fnc_clothingMenu,""arc"",0,false,false,"""",' license_arc_arc && playerSide == east'];  this addAction[""ARC Weapon Shop"",life_fnc_weaponShopMenu,""arc"",0,false,false,"""",' license_arc_arc && playerSide == east'];";
 		};
 		class Item5461
 		{
