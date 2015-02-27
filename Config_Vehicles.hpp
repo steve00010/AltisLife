@@ -20,8 +20,8 @@ class CarShops {
 	class arc_car {
 		side = "arc";
 		vehicles[] = { 
-			{ "C_Offroad_01_F", 7500, "driver" },
-			{ "C_SUV_01_F", 10000, "driver" }
+			{ "C_Offroad_01_F", 7500, "" },
+			{ "C_SUV_01_F", 10000, "" }
 		};
 	};
 	
