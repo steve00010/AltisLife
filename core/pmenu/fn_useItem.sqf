@@ -82,7 +82,7 @@ switch (true) do
 		[] spawn life_fnc_pickAxeUse;
 	};
 	
-	case (_item == "heroinp"):
+	case (_item == "heroin_processed"):
 	{
 		if(([false,_item,1] call life_fnc_handleInv)) then
 		{
@@ -97,7 +97,7 @@ switch (true) do
 			[] spawn life_fnc_weed;
 		};
 	};
-		case (_item == "cocainep"):
+		case (_item == "cocaine_processed"):
 	{
 		if(([false,_item,1] call life_fnc_handleInv)) then
 		{

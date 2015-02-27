@@ -76,7 +76,7 @@ SUB(_units,[player]);
 					_text = format["<t color='#000000'>%1</t>", _name];
 				};
 				case (!isNil {(_x GVAR "rank")}): {
-					format["<img image='%1' size='1'></img> %2",
+					format["<img image='%1' size='1'></img> <t color='#2980b9'>%2</t>",
 					switch ((_x GVAR "rank")) do {
 						case 2: {"\a3\ui_f\data\gui\cfg\Ranks\private_gs.paa"}; 
 						case 3: {"\a3\ui_f\data\gui\cfg\Ranks\corporal_gs.paa"};

@@ -26,7 +26,7 @@ switch (typeOf _vehicle) do {
 
 };
 
-_lightRed = [0.1, 0.1, 20];
+_lightRed = [20, 0.1, 0.1];
 _lightBlue = [0.1, 0.1, 20];
 
 _lightleft = createVehicle ["#lightpoint", getPos _vehicle, [], 0, "CAN_COLLIDE"];

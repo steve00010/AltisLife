@@ -6,7 +6,7 @@
 	Description:
 	Master handling for processing an item.
 */
-private["_vendor","_type","_error1","_error2","_itemInfo","_oldItem","_oldItem2","_newItem","_cost","_upp","_hasLicense","_itemName","_oldVal","_ui","_progress","_pgText","_cP","_oldVal2","_2var"];
+private["_vendor","_type","_error1","_error2","_itemInfo","_oldItem","_oldItem2","_newItem","_cost","_upp","_hasLicense","_itemName","_oldVal","_ui","_progress","_pgText","_cP","_oldVal2","_2var","_oldItemName","_oldItemName2"];
 _vendor = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param;
 _type = [_this,3,"",[""]] call BIS_fnc_param;
 //Error check
@@ -58,6 +58,8 @@ if(_vendor in [mari_processor,coke_processor,heroin_processor]) then {
 };
 
 _itemName = M_CONFIG(getText,"VirtualItems",_newItem,"displayName");
+_oldItemName = M_CONFIG(getText,"VirtualItems",_oldItem,"displayName");
+_oldItemName2 = M_CONFIG(getText,"VirtualItems",_oldItem2,"displayName");
 _oldVal = ITEM_VALUE(_oldItem);
 
 //2vars
@@ -125,12 +127,12 @@ if(_hasLicense) then
 				
 				([false,_oldItem2,_oldVal2] call life_fnc_handleInv);
 				5 cutText ["","PLAIN"];
-				titleText[format["You have processed %1 and %2 into %3.",localize _oldItem,localize _oldItem2,localize _itemName],"PLAIN"];
+				titleText[format["You have processed %1 and %2 into %3.",localize _oldItemName,localize _oldItemName2,localize _itemName],"PLAIN"];
 			} else
 			{
 				
 				5 cutText ["","PLAIN"];
-				titleText[format["You have processed %1 into %2.",localize _oldItem,localize _itemName],"PLAIN"];
+				titleText[format["You have processed %1 into %2.",localize _oldItemName,localize _itemName],"PLAIN"];
 			};
 	life_is_processing = false;
 	_ui = "osefStatusBar" call BIS_fnc_rscLayer;_ui cutRsc["osefStatusBar","PLAIN"];
@@ -167,7 +169,7 @@ if(_hasLicense) then
 				
 				([false,_oldItem2,_oldVal2] call life_fnc_handleInv);
 				5 cutText ["","PLAIN"];
-				titleText[format["You have processed %1 and %2 into %3 for %4.",localize _oldItem,localize _oldItem2,localize _itemName,[_cost] call life_fnc_numberText],"PLAIN"];
+				titleText[format["You have processed %1 and %2 into %3 for %4.",localize _oldItemName,localize _oldItemName2,localize _itemName,[_cost] call life_fnc_numberText],"PLAIN"];
 			} else
 			{
 				

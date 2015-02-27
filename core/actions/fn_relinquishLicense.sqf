@@ -21,4 +21,15 @@ if( _type == "rebel") then
 	//[[5],"life_fnc_removeLicenses",_source,false] spawn life_fnc_MP;
 };
 
-player setVariable["IsRebel", license_civ_rebel,true];
+if( _type == "arc") then
+{
+	_action = [
+		"Are you sure you want to relinquish your A.R.C license? <BR/>You will lose all Altis Rifle Club related Licenses","Relinquish A.R.C License","Relinquish","Cancel"
+	] call BIS_fnc_guiMessage;
+	
+	if (_action) then
+	{
+		[7] call life_fnc_removeLicenses;
+	};
+	//[[4],"life_fnc_removeLicenses",_source,false] spawn life_fnc_MP;
+};

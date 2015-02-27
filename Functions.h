@@ -26,7 +26,6 @@ class Life_Client_Core
 		class initCiv {};
 		class initCop {};
 		class initMedic {};
-		class initAdac {}; 		
 		class welcomeNotification {};
 		class survival {};
 	};
@@ -38,7 +37,6 @@ class Life_Client_Core
 		class openEconomy {};
 		class virt_updateEconomy {};
 	};
-	
 	class Admin
 	{
 		file = "core\admin";
@@ -268,12 +266,6 @@ class Life_Client_Core
 		
 	};
 	
-    class Adac
-	{
-		file = "core\adac";
-		class adacLoadout {};
-	};	
-	
 	class Vehicle
 	{
 		file = "core\vehicle";
@@ -289,7 +281,6 @@ class Life_Client_Core
 		class deviceMine {};
 		class addVehicle2Chain {};
 		class vehicleAfterSpawn {};
-		class adacVInteractionMenu {};
 	};
 	
 	class Cop

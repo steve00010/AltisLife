@@ -35432,7 +35432,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_InfoStand_V2_F";
 			skill=0.60000002;
-			init="removeallWeapons this;  this enableSimulation false;  this allowDamage false; this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""rebel"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""rebel"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""rebel"",0,false,false,"""",' !license_civ_rebel && playerSide == civilian '];";
+			init="removeallWeapons this;  this enableSimulation false;  this allowDamage false; this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""rebel"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""rebel"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""rebel"",0,false,false,"""",' !license_civ_rebel && playerSide == civilian ']; this addAction[format[""Relinquish %1"",[""license_civ_arc""] call life_fnc_varToStr],life_fnc_relinquishLicense,""arc"",0,false,false,"""",' license_civ_rebel && playerSide == civilian '];";
 		};
 		class Item3362
 		{
@@ -56170,7 +56170,7 @@ class Mission
 		};
 		class Item5458
 		{
-			position[]={12854.604,85.551178,16739.273};
+			position[]={12855.017,85.548843,16738.682};
 			azimut=-4.3832998;
 			id=5559;
 			side="EMPTY";
@@ -56190,13 +56190,13 @@ class Mission
 		};
 		class Item5460
 		{
-			position[]={12815.193,86.57444,16709.064};
+			position[]={12815.311,86.57489,16709.18};
 			azimut=639.83301;
 			id=5561;
 			side="EMPTY";
 			vehicle="Land_InfoStand_V2_F";
 			skill=0.60000002;
-			init="this allowDamage false; this enableSimulation false; this addAction[""Clothing Store"",life_fnc_clothingMenu,""adac""];";
+			init="this allowDamage false; this enableSimulation false; this addAction[""Clothing Store"",life_fnc_clothingMenu,""arc""];";
 		};
 		class Item5461
 		{
@@ -56207,7 +56207,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_InfoStand_V2_F";
 			skill=0.60000002;
-			init="removeallWeapons this;  this enableSimulation false;  this allowDamage false; this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""arc"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""arc"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""rebel"",0,false,false,"""",' !license_civ_arc && playerSide == civilian '];";
+			init="removeallWeapons this;  this enableSimulation false;  this allowDamage false; this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""arc"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""arc"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""arc"",0,false,false,"""",' !license_civ_arc && playerSide == civilian ']; this addAction[format[""Relinquish %1"",[""license_civ_rebel""] call life_fnc_varToStr],life_fnc_relinquishLicense,""rebel"",0,false,false,"""",' license_civ_rebel && playerSide == civilian '];";
 		};
 		class Item5462
 		{
@@ -56262,7 +56262,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=428;
+		items=423;
 		class Item0
 		{
 			position[]={8316.7881,80.619583,25059.641};
@@ -59684,9 +59684,9 @@ class Mission
 		class Item417
 		{
 			position[]={12816.89,86.402321,16721.246};
-			name="adac_headquarters";
+			name="arc_headquarters";
 			type="Empty";
-			angle=-157.9086;
+			angle=-157.909;
 		};
 		class Item418
 		{
@@ -59728,46 +59728,6 @@ class Mission
 			name="arc_1";
 			type="Empty";
 			angle=-469.29599;
-		};
-		class Item423
-		{
-			position[]={12798.148,87.472595,16637.836};
-			name="archq";
-			text="A.R.C H.Q";
-			type="o_hq";
-			colorName="ColorYellow";
-		};
-		class Item424
-		{
-			position[]={12843.04,91.03891,16683.314};
-			name="arcye";
-			text="A.R.C Recruitment";
-			type="loc_Bush";
-			colorName="ColorYellow";
-		};
-		class Item425
-		{
-			position[]={12815.11,86.574799,16709.242};
-			name="arcye_1";
-			text="A.R.C Equipment";
-			type="loc_Bush";
-			colorName="ColorYellow";
-		};
-		class Item426
-		{
-			position[]={12854.572,85.551285,16739.324};
-			name="arcye_2";
-			text="A.R.C Air";
-			type="loc_Bush";
-			colorName="ColorYellow";
-		};
-		class Item427
-		{
-			position[]={12860.234,86.62191,16709.506};
-			name="arcye_3";
-			text="A.R.C Cars";
-			type="loc_Bush";
-			colorName="ColorYellow";
 		};
 	};
 	class Sensors

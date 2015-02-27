@@ -4,6 +4,9 @@
 		<Key ID="STR_Shops_C_Bruce">
 			<Original>Bruce's Outback Outfits</Original>
 		</Key>
+		<Key ID="STR_Shops_C_ARC">
+			<Original>A.R.C Clothing</Original>
+		</Key>
 		<Key ID="STR_Shops_C_Police">
 			<Original>Altis Police Department Shop</Original>
 		</Key>
@@ -494,9 +497,6 @@
 			<French>Text Police</French>
 			<Italian>Msg Polizia</Italian>		
 			<Portuguese>Polícia</Portuguese>
-		</Key>
-		<Key ID="STR_CELL_AdacRequest">
-			<Original>Request Adac</Original>
 		</Key>
 		<Key ID="STR_CELL_TextAdmins">
 			<Original>Text Admins</Original>
@@ -3557,6 +3557,13 @@
 			<French>Entrainement rebelle</French>
 			<Italian>Licenza da Ribelle</Italian>
 			<Portuguese>Treinamento Rebelde</Portuguese>
+		</Key>
+		<Key ID="STR_License_Arc">
+			<Original>Arc Training</Original>
+			<German>Arc Training</German>
+			<French>Arc Training</French>
+			<Italian>Arc Training</Italian>
+			<Portuguese>Arc Training</Portuguese>
 		</Key>
 		<Key ID="STR_License_Truck">
 			<Original>Truck License</Original>

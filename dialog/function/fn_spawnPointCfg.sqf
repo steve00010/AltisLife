@@ -26,15 +26,21 @@ switch (_side) do
 		];
 	};
 	
-	case east: 
-	{
-		_return = [
-			["adac_headquarters","ADAC Headquarters","\a3\ui_f\data\map\MapControl\watertower_ca.paa"]
-		];
-	};
-	
 	case civilian:
 	{
+		
+		//if have Arc license, only spawn here
+		if(license_civ_arc && playerSide == civilian) then {
+		_return = [
+					["adac_headquarters","Arc H.Q","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
+					["civ_spawn_1","Kavala","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
+					["civ_spawn_2","Pyrgos","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
+					["civ_spawn_3","Athira","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
+					["civ_spawn_4","Sofia","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
+					["civ_spawn_5","Zaros","\a3\ui_f\data\map\MapControl\watertower_ca.paa"]
+
+				];
+		};
 		
 		//if have reb license, only spawn here
 		if(license_civ_rebel && playerSide == civilian) then {
@@ -44,6 +50,7 @@ switch (_side) do
 					["reb_spawn_3","Athira","\a3\ui_f\data\map\MapControl\watertower_ca.paa"]
 				];
 		};
+		
 		//if no rebel license, than can spawn normal loc
 		
 		if(!license_civ_rebel && playerSide == civilian) then {

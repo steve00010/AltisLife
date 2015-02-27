@@ -385,8 +385,7 @@ switch(_shop) do
 						["20Rnd_556x45_UW_mag",nil,125],
 						["9Rnd_45ACP_Mag",nil,45],
 						["11Rnd_45ACP_Mag",nil,50],
-						["30Rnd_9x21_Mag",nil,75],
-						["ItemRadio","SmartPhone",500]
+						["30Rnd_9x21_Mag",nil,75]
 					]
 				];
 			};
@@ -458,6 +457,32 @@ switch(_shop) do
 						["11Rnd_45ACP_Mag",nil,50],
 						["30Rnd_9x21_Mag",nil,75],
 						["ItemRadio","SmartPhone",500]
+					]
+				];
+			};
+		};
+	};
+	
+	case "arc":
+	{
+		switch(true) do
+		{
+			case (playerSide != civilian): {"You are not a civilian!"};
+			case (!license_civ_arc): {"HAHA, get a license if you want to be in A.R.C!"};
+			default
+			{
+				
+				["A.R.C Weapons",
+					[
+						["Binocular",nil,150],
+						["ItemGPS",nil,100],
+						["ToolKit",nil,250],
+						["FirstAidKit",nil,150],
+						["NVGoggles",nil,2500],
+						["ItemRadio","SmartPhone",500],
+						["ItemCompass",nil,500],
+						["ItemWatch",nil,500],
+						["ItemMap",nil,250]
 					]
 				];
 			};
