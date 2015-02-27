@@ -62,11 +62,7 @@ switch(playerSide) do {
 		life_drug_level = SEL(_this,12);
 		life_addiction = (call compile format["%1",SEL(_this,13)]);
 	};
-	case east: {
-		CONST(life_medicLevel,0);
-		CONST(life_coplevel,0);
-		CONST(life_arclevel,1);	
-	};
+	
 	case civilian: {
 		life_is_arrested = SEL(_this,7);
 		CONST(life_coplevel, 0);
@@ -91,6 +87,11 @@ switch(playerSide) do {
 		CONST(life_medicLevel, parseNumber(SEL(_this,7)));
 		CONST(life_coplevel,0);
 		CONST(life_arclevel,0);		
+	};
+		case east: {
+		CONST(life_medicLevel,0);
+		CONST(life_coplevel,0);
+		CONST(life_arclevel,0);	
 	};
 };
 
