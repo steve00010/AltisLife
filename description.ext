@@ -289,6 +289,15 @@ class CfgNotifications
 		priority = 6;
 	};
 	
+	class ArcMessage
+	{
+		title = "ARC Message";
+		iconPicture = "icons\messagenew.paa";
+		description = "%1";
+		duration = 10;
+		priority = 5;
+	};
+	
 	class AdminDispatch
 	{
 		title = "Admin Dispatch Center";

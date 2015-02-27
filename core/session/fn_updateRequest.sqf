@@ -7,7 +7,7 @@ private["_packet","_array","_flag"];
 _packet = [getPlayerUID player,(profileName),playerSide,CASH,BANK,life_drug_level,life_addiction];
 
 _array = [];
-_flag = switch(playerSide) do {case west: {"cop"}; case civilian: {"civ"}; case independent: {"med"};};
+_flag = switch(playerSide) do {case west: {"cop"}; case east: {"arc"}; case civilian: {"civ"}; case independent: {"med"};};
 
 {
 	_varName = LICENSE_VARNAME(configName _x,_flag);

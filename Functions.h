@@ -26,6 +26,7 @@ class Life_Client_Core
 		class initCiv {};
 		class initCop {};
 		class initMedic {};
+		class initArc {};
 		class welcomeNotification {};
 		class survival {};
 	};
@@ -266,6 +267,13 @@ class Life_Client_Core
 		
 	};
 	
+	class Arc
+	{
+		file = "core\arc";
+		class arcLoadout {};
+		class arcMarkers {};		
+	};
+	
 	class Vehicle
 	{
 		file = "core\vehicle";
@@ -281,6 +289,7 @@ class Life_Client_Core
 		class deviceMine {};
 		class addVehicle2Chain {};
 		class vehicleAfterSpawn {};
+		class arcVInteractionMenu {};
 	};
 	
 	class Cop
