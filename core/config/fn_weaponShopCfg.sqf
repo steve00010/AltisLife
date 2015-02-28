@@ -325,7 +325,6 @@ switch(_shop) do
 						["30Rnd_65x39_caseless_mag",nil,300],
 						["arifle_TRG20_F",nil,10000],
 						["arifle_Mk20_F",nil,10000],
-						["arifle_TRG21_ACO_pointer_F",nil,10000],
 						["arifle_Katiba_F",nil,20000],
 						["srifle_DMR_01_ACO_F",nil,35000],
 						["10Rnd_762x51_Mag",nil,400],
@@ -464,11 +463,11 @@ switch(_shop) do
 	{
 		switch(true) do
 		{
-			case (playerSide != east): {"You are not A.R.C!"};
+			case (playerSide != east): {"You are not ARC!"};
 			default
 			{
 				
-				["A.R.C Weapons",
+				["ARC Weapons",
 					[
 						["Binocular",nil,150],
 						["ItemGPS",nil,100],
@@ -478,7 +477,20 @@ switch(_shop) do
 						["ItemRadio","SmartPhone",500],
 						["ItemCompass",nil,500],
 						["ItemWatch",nil,500],
-						["ItemMap",nil,250]
+						["ItemMap",nil,250],
+						["arifle_TRG21_ACO_pointer_F",nil,10000],
+						["hgun_Pistol_heavy_02_F",nil,1000],
+						["6Rnd_45ACP_Cylinder",nil,100],						
+						["SMG_02_ACO_F",nil,5000],
+						["30Rnd_9x21_Mag",nil,300],					
+						["30Rnd_556x45_Stanag",nil,300],
+						["optic_MRCO",nil,3500],
+						["optic_DMS",nil,3500],
+						["optic_Hamr",nil,3500],
+						["optic_Yorris",nil,3500],
+						["optic_ACO_grn",nil,3500],
+						["optic_Aco_smg",nil,3500],
+						["optic_NVS",nil,3500]						
 					]
 				];
 			};
