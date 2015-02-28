@@ -24,7 +24,7 @@ if(getPlayerUID player != grpPlayer getVariable["gang_owner",""]) exitWith { hin
 _gFund = grpPlayer getVariable ["gang_bank",0];
 if(_value > _gFund) exitWith {hint localize "STR_NOTF_NotEnoughFunds"};
 
-pbh_life_atmcash = pbh_life_atmcash + _value;
+life_atmcash = life_atmcash + _value;
 _gFund = _gFund - _value;
 grpPlayer setVariable ["gang_bank",_gFund,true];
 

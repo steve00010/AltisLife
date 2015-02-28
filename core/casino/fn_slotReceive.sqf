@@ -21,7 +21,7 @@ life_slot_update = {
 	_jackpot ctrlSetText format ["Current Jackpot: $%1", [_pot] call life_fnc_formatMoney];
 	_bettext ctrlSetText format ["Your bet: $%1", [_bet] call life_fnc_formatMoney];
 	_last ctrlSetText format ["Last winning: $%1", [_won] call life_fnc_formatMoney];
-	_cash ctrlSetText format ["Your cash: $%1", [pbh_Cash] call life_fnc_formatMoney];
+	_cash ctrlSetText format ["Your cash: $%1", [_Cash] call life_fnc_formatMoney];
 };
 
 _bet = _this select 0;
