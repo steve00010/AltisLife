@@ -208,7 +208,7 @@ switch(_shop) do
 					[
 						["30Rnd_65x39_caseless_mag",nil,0],
 						["srifle_LRR_SOS_F",nil,10000],
-						["arifle_Katiba_GL_F",Riot Control,40000],
+						["arifle_Katiba_GL_F","Riot Control",40000],
 						["7Rnd_408_Mag",nil,0],
 						["srifle_EBR_ARCO_pointer_F",nil,10000],
 						["20Rnd_762x51_Mag",nil,0],
