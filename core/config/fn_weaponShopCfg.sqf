@@ -177,7 +177,6 @@ switch(_shop) do
 						["arifle_MXC_Black_F",nil,3000],
 						["30Rnd_65x39_caseless_mag",nil,0],
 						["30Rnd_65x39_caseless_mag_Tracer",nil,0],
-						["30Rnd_65x39_caseless_green",nil,0],
 						["16Rnd_9x21_Mag",nil,0],
 						["optic_ACO_grn","Aco Green",1000],
 						["optic_Aco","Aco Red",1000],
@@ -207,10 +206,9 @@ switch(_shop) do
 				
 				["Altis Swat Shop",
 					[
-						["SMG_02_F",nil,5000],
-						["30Rnd_9x21_Mag",nil,0],
 						["30Rnd_65x39_caseless_mag",nil,0],
 						["srifle_LRR_SOS_F",nil,10000],
+						["arifle_Katiba_GL_F",Riot Control,40000],
 						["7Rnd_408_Mag",nil,0],
 						["srifle_EBR_ARCO_pointer_F",nil,10000],
 						["20Rnd_762x51_Mag",nil,0],
@@ -229,6 +227,7 @@ switch(_shop) do
 						["muzzle_snds_H","6.5 Suppressor",1000],
 						["muzzle_snds_B","7.62 Suppressor",1000],
 						["SmokeShellBlue","Tear Gas Grenade",10000],
+						["1Rnd_SmokeBlue_Grenade_shell","Riot Control Grenade",10000],
 						["HandGrenade_Stone","Flashbang",10000]
 					]
 				];
@@ -238,8 +237,6 @@ switch(_shop) do
 				
 				["Altis Swat Shop",
 					[
-						["SMG_02_F",nil,5000],
-						["30Rnd_9x21_Mag",nil,0],
 						["30Rnd_65x39_caseless_mag",nil,0],
 						["7Rnd_408_Mag",nil,0],
 						["srifle_EBR_ARCO_pointer_F",nil,10000],
