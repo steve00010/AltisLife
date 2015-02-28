@@ -20,16 +20,15 @@ class CarShops {
 	class arc_car {
 		side = "arc";
 		vehicles[] = { 
-			{ "C_Offroad_01_F", 7500, "" },
-			{ "C_SUV_01_F", 10000, "" }
+			{ "C_Offroad_01_F", 7500, "driver" },
+			{ "C_SUV_01_F", 10000, "driver" }
 		};
 	};
 	
 	class arc_air {
 		side = "arc";
 		vehicles[] = {
-			{ "O_Heli_Light_02_unarmed_F", 500000, "", },
-			{ "B_Heli_Light_01_F", 253000, "" }			
+			{ "O_Heli_Light_02_unarmed_F", 500000, "", }
 		};
 	};
 
@@ -66,7 +65,6 @@ class CarShops {
 			{ "C_Van_01_box_F", 20000, "trucking" },
 			{ "I_Truck_02_transport_F", 125000, "trucking" },
 			{ "I_Truck_02_covered_F", 150000, "trucking" },
-			{ "B_Truck_01_transport_F", 275000, "trucking" },
 			{ "O_Truck_03_ammo_F", 300000, "trucking" },
 			{ "O_Truck_03_transport_F", 300000, "trucking",{ "life_donator", 1 } },
 			{ "O_Truck_03_covered_F", 450000, "trucking",{ "life_donator", 2 } },
@@ -213,8 +211,9 @@ class CfgVehicles {
 	class B_Truck_01_transport_F {									//HEMTT Transport
         vItemSpace = 350;
         storageFee[] = { 2500, 0, 0, 0 };
+		garageSell[] = { 235000, 0, 0, 0 };
         insurance = 2500;
-        chopShop = 5000;
+        chopShop = 235000;
         textures[] = { };
     };
 
@@ -240,7 +239,7 @@ class CfgVehicles {
         storageFee[] = { 35000, 0, 0, 0 };
 		garageSell[] = { 150000, 0, 0, 0 };
         insurance = 2500;
-        chopShop = 5000;
+        chopShop = 150000;
         textures[] = { };
     };
 
@@ -281,9 +280,9 @@ class CfgVehicles {
 	class B_Truck_01_covered_F {									//HEMTT Covered
 		vItemSpace = 350;
 		storageFee[] = { 25000, 0, 0, 0 };
-		garageSell[] = { 65000, 0, 0, 0 };
+		garageSell[] = { 400000, 0, 0, 0 };
 		insurance = 2500;
-		chopShop = 25000;
+		chopShop = 400000;
 		textures[] = {};
 	};
 	
@@ -318,7 +317,7 @@ class CfgVehicles {
         storageFee[] = { 10000, 19500, 0, 0 };
 		garageSell[] = { 157000, 35000, 0, 0 };
         insurance = 2500;
-        chopShop = 5000;
+        chopShop = 100000;
         textures[] = {
 			{ "Civ Blue", "civ", {
 	                "\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_blue_co.paa"
@@ -361,10 +360,7 @@ class CfgVehicles {
             } },
 			{ "MSI", "civ", {
               "textures\vehicles\msi_humm.paa"
-            } },
-			{ "Wasp", "arc", {
-              "textures\vehicles\arc_hummingbird.paa"
-            } }			
+            } }
         };
     };
 
@@ -447,8 +443,9 @@ class CfgVehicles {
 	class O_Truck_03_transport_F {									//Tempest Transport
         vItemSpace = 285;
         storageFee[] = { 1000, 0, 0, 0 };
+		garageSell[] = { 115000, 0, 0, 0 };
         insurance = 2500;
-        chopShop = 5000;
+        chopShop = 115000;
         textures[] = { };
     };
 
@@ -457,7 +454,7 @@ class CfgVehicles {
         storageFee[] = { 12650, 0, 0, 0 };
 		garageSell[] = { 135000, 0, 0, 0 };
         insurance = 2500;
-        chopShop = 5000;
+        chopShop = 135000;
         textures[] = { };
     };
 
