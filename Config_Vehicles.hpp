@@ -20,15 +20,18 @@ class CarShops {
 	class arc_car {
 		side = "arc";
 		vehicles[] = { 
-			{ "C_Offroad_01_F", 7500, "driver" },
-			{ "C_SUV_01_F", 10000, "driver" }
+			{ "C_Offroad_01_F", 7500, "" },
+			{ "B_Truck_01_mover_F", 10000, "" },
+			{ "I_Truck_02_covered_F", 10000, "" },
+			{ "C_SUV_01_F", 10000, "" }			
 		};
 	};
 	
 	class arc_air {
 		side = "arc";
 		vehicles[] = {
-			{ "O_Heli_Light_02_unarmed_F", 500000, "", }
+			{ "O_Heli_Light_02_unarmed_F", 500000, "", },
+			{ "B_Heli_Light_01_F", 253000, "" }
 		};
 	};
 
@@ -207,6 +210,32 @@ class CfgVehicles {
         chopShop = 5000;
         textures[] = { };
     };
+	
+		class B_Truck_01_mover_F {									//HEMTT Mover
+        vItemSpace = 350;
+        storageFee[] = { 2500, 0, 0, 0 };
+		garageSell[] = { 235000, 0, 0, 0 };
+        insurance = 2500;
+        chopShop = 235000;
+        textures[] = 
+		{ "ARC Mover", "arc", {
+				"textures\vehicles\arc\archemt1.paa"
+			} }	
+		};	
+    };
+	
+	class B_Truck_01_Repair_F {										//HEMTT Repair
+        vItemSpace = 350;
+        storageFee[] = { 2500, 0, 0, 0 };
+		garageSell[] = { 235000, 0, 0, 0 };
+        insurance = 2500;
+        chopShop = 235000;
+        textures[] = 			
+		{ "ARC Repair", "arc", {
+				"textures\vehicles\arc\archemt1.paa"
+			} }
+		};	
+	};
 
 	class B_Truck_01_transport_F {									//HEMTT Transport
         vItemSpace = 350;
