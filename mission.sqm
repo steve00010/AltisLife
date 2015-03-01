@@ -2332,7 +2332,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=5466;
+		items=5468;
 		class Item0
 		{
 			position[]={8065.1616,35.674362,24985.314};
@@ -56171,7 +56171,7 @@ class Mission
 		};
 		class Item5459
 		{
-			position[]={12860.222,86.604568,16709.615};
+			position[]={12861.374,86.733986,16708.916};
 			azimut=113.914;
 			id=5560;
 			side="EMPTY";
@@ -56187,7 +56187,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_InfoStand_V2_F";
 			skill=0.60000002;
-			init="this allowDamage false;  this addAction[""ARC Clothing Shop"",life_fnc_clothingMenu,""arc""];  this addAction[""ARC Weapons"",life_fnc_weaponShopMenu,""arc"",0,false,false,"""",' license_arc_east && playerSide == east'];  ";
+			init="removeallWeapons this;  this enableSimulation false;  this allowDamage false;  this addAction[""ARC Clothing Shop"",life_fnc_clothingMenu,""arc"",0,false,false,"""",' license_east_arc && playerSide == east'];  this addAction[""ARC Weapons"",life_fnc_weaponShopMenu,""arc"",0,false,false,"""",' license_east_arc && playerSide == east'];";
 		};
 		class Item5461
 		{
@@ -56238,6 +56238,26 @@ class Mission
 			vehicle="Land_Billboard_F";
 			skill=0.60000002;
 			init="this allowDamage false; this enableSimulation false; this setObjectTexture [0, ""images\arc.jpg""]";
+		};
+		class Item5466
+		{
+			position[]={9163.4844,15.056704,21601.424};
+			azimut=89.999199;
+			id=5567;
+			side="EMPTY";
+			vehicle="Land_InfoStand_V2_F";
+			skill=0.60000002;
+			init="removeallWeapons this;  this enableSimulation false;  this allowDamage false; this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""rebel"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""rebel"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""rebel"",0,false,false,"""",' !license_civ_rebel && playerSide == civilian '];";
+		};
+		class Item5467
+		{
+			position[]={12815.662,86.557533,16710.6};
+			azimut=659.36499;
+			id=5568;
+			side="EMPTY";
+			vehicle="Land_InfoStand_V2_F";
+			skill=0.60000002;
+			init="this enableSimulation false; this allowDamage false; this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""arc"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""arc"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""arc"",0,false,false,"""",' !license_east_arc && playerSide == east '];";
 		};
 	};
 	class Markers
@@ -59683,10 +59703,10 @@ class Mission
 		};
 		class Item419
 		{
-			position[]={12858.465,86.327911,16713.801};
+			position[]={12851.136,86.224167,16715.719};
 			name="arc_car_2";
 			type="Empty";
-			angle=-459.51199;
+			angle=-483.01953;
 		};
 		class Item420
 		{
@@ -59704,10 +59724,10 @@ class Mission
 		};
 		class Item422
 		{
-			position[]={12856.046,86.426971,16711.008};
+			position[]={12849.482,86.272346,16715.059};
 			name="arc_car_1";
 			type="Empty";
-			angle=-469.29599;
+			angle=-487.11404;
 		};
 		class Item423
 		{
@@ -59727,7 +59747,7 @@ class Mission
 		};
 		class Item425
 		{
-			position[]={12859.25,86.723251,16708.77};
+			position[]={12860.402,86.852379,16708.07};
 			name="arc 11212_1";
 			text="A.R.C Vehicles";
 			type="group_0";
