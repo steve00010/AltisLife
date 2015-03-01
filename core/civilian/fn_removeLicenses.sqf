@@ -54,7 +54,7 @@ switch (_state) do {
 			license_civ_rebel = false;
 			if (_state == 4) then
 			{
-				hint "You forfeit your Rebel license by joining A.R.C.";
+				hint "You forfeit your Rebel license by joining ARC.";
 			}
 			else
 			{
@@ -72,11 +72,11 @@ switch (_state) do {
 			license_civ_arc = false;
 			if (_state == 6) then
 			{
-				hint "Your A.R.C license has been revoked for joining the Rebels.";
+				hint "Your ARC license has been revoked for joining the Rebels.";
 			}
 			else
 			{
-				hint "You have relinquished your A.R.C license.";
+				hint "You have relinquished your ARC license.";
 			};
 		};
 	};

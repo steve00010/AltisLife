@@ -59744,7 +59744,7 @@ class Mission
 		{
 			position[]={12803.465,87.500137,16641.889};
 			name="arc1111";
-			text="A.R.C H.Q";
+			text="ARC H.Q";
 			type="Select";
 			colorName="ColorYellow";
 		};
@@ -59752,7 +59752,7 @@ class Mission
 		{
 			position[]={12817.035,86.579147,16709.912};
 			name="arc 11212";
-			text="A.R.C Armoury";
+			text="ARC Armoury";
 			type="group_0";
 			colorName="ColorYellow";
 		};
@@ -59768,7 +59768,7 @@ class Mission
 		{
 			position[]={12854.682,85.506622,16741.773};
 			name="arc 11212_1_1";
-			text="A.R.C Air";
+			text="ARC Air";
 			type="group_0";
 			colorName="ColorYellow";
 		};
@@ -59776,7 +59776,7 @@ class Mission
 		{
 			position[]={12842.606,91.015633,16681.926};
 			name="arc 11212_2";
-			text="A.R.C Leader";
+			text="ARC Leader";
 			type="group_0";
 			colorName="ColorYellow";
 		};
