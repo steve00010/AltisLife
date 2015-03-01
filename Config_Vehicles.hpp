@@ -651,7 +651,10 @@ class CfgVehicles {
             } },
 			{ "Taxi", "civ", {
                 "textures\vehicles\suv_taxi.paa"
-            } }
+            } },
+			{ "ARC", "arc", {
+                "textures\vehicles\arc\suv_arc.paa"
+            } }			
 	    };
     };
 
