@@ -217,7 +217,7 @@ class CfgVehicles {
 		garageSell[] = { 235000, 0, 0, 0 };
         insurance = 2500;
         chopShop = 235000;
-        textures[] = 
+        textures[] = {
 		{ "ARC Mover", "arc", {
 				"textures\vehicles\arc\archemt1.paa"
 			} }	
@@ -230,7 +230,7 @@ class CfgVehicles {
 		garageSell[] = { 235000, 0, 0, 0 };
         insurance = 2500;
         chopShop = 235000;
-        textures[] = 			
+        textures[] = {			
 		{ "ARC Repair", "arc", {
 				"textures\vehicles\arc\archemt1.paa"
 			} }
