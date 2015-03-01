@@ -342,7 +342,7 @@ class Licenses {
 	LICENSEMACRO(liquor,"STR_License_Liquor","liquor",75000,false,"civ")
 	LICENSEMACRO(bottler,"STR_License_Bottler","bottler",75000,false,"civ")
 	LICENSEMACRO(channelseven,"STR_License_ChannelSeven","channelseven7",0,false,"civ")
-	LICENSEMACRO(arc,"STR_License_Arc","arc",100000,false,"arc")
+	LICENSEMACRO(arc,"STR_License_Arc","arc",100000,false,"east")
 	
 };
 
