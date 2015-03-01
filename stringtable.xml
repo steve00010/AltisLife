@@ -4604,6 +4604,13 @@
 			<Italian>Devi essere un poliziotto per utilizzare questo negozio!</Italian>
 			<Portuguese>Você tem que ser Policial para usar essa loja!</Portuguese>
 		</Key>
+		<Key ID="STR_Shop_NotaARC">
+			<Original>You need to be ARC to use this store!</Original>
+			<German>Du musst ein Zivilist sein, um diesen Shop nutzen zu können!</German>
+			<French>Vous devez être un civil pour utiliser ce magasin!</French>
+			<Italian>Devi essere un civile per utilizzare questo negozio!</Italian>
+			<Portuguese>Você tem que ser um cívil para user essa loja!</Portuguese>
+		</Key>
 		<Key ID="STR_Shop_NotaReb">
 			<Original>You don't have rebel training yet!</Original>
 			<German>Du besitzt keine Rebellen Lizenz!</German>
