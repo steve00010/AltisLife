@@ -192,7 +192,7 @@ class Clothing {
 	class arc {
 		title = "STR_Shops_C_ARC";
 		license = "";
-		side = "east";
+		side = "arc";
 
 		uniforms[] = {
 			{ "NONE", "Remove Uniform", 0, { "", "", -1 } },
