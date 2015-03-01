@@ -899,7 +899,10 @@ class CfgVehicles {
             } },
             { "Black", "fed", {
                 "#(argb,8,8,3)color(0.05,0.05,0.05,1)"
-            } }
+            } },
+			{ "ARC", "arc", {
+                "textures\vehicles\arc\arczam1.paa","textures\vehicles\arc\arczam2.paa"
+			} }
         };
     };
 
