@@ -192,7 +192,11 @@ class Clothing {
 	class arc {
 		title = "STR_Shops_C_ARC";
 		license = "";
+<<<<<<< HEAD
 		side = "arc";
+=======
+		side = "east";
+>>>>>>> parent of 52fdfc2... arc
 
 		uniforms[] = {
 			{ "NONE", "Remove Uniform", 0, { "", "", -1 } },
