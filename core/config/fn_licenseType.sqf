@@ -73,7 +73,7 @@ switch (_mode) do
 			case "license_civ_cement": {_var = "cement"};
 			case "license_med_air": {_var = "mair"};
 			case "license_civ_home": {_var = "home"};
-			case "license_civ_arc": {_var = "arc"};
+			case "license_east_arc": {_var = "arc"};
 			default {_var = ""};
 		};
 	};
