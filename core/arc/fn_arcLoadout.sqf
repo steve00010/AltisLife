@@ -26,4 +26,5 @@ player assignItem "ItemGPS";
 player addItem "ItemRadio";
 player assignItem "ItemRadio";
 
+[] spawn life_fnc_customUniforms;
 [] call life_fnc_saveGear;
