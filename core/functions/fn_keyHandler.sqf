@@ -160,7 +160,7 @@ switch (_code) do
 		};
 		
 		
-		if(_shift && playerSide == civilian && !isNull cursorTarget && cursorTarget isKindOf "Man" && (isPlayer cursorTarget) && (side cursorTarget in [civilian,independent,west]) && alive cursorTarget && cursorTarget distance player < 3.5 && !(cursorTarget getVariable "Escorting") && (cursorTarget getVariable "surrender") && !(cursorTarget getVariable "restrained") && !(player getVariable "restrained") && speed cursorTarget < 1) then
+		if(_shift && (playerSide == civilian OR playerside == east) && !isNull cursorTarget && cursorTarget isKindOf "Man" && (isPlayer cursorTarget) && (side cursorTarget in [civilian,independent,west,east]) && alive cursorTarget && cursorTarget distance player < 3.5 && !(cursorTarget getVariable "Escorting") && (cursorTarget getVariable "surrender") && !(cursorTarget getVariable "restrained") && !(player getVariable "restrained") && speed cursorTarget < 1) then
 		{
 			[] call life_fnc_restrainAction;
 		};
