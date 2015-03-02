@@ -109,7 +109,7 @@ class Life_cell_phone {
 		{
 			idc = 3023;
 			text = "$STR_CELL_ArcRequest";
-			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", 0.5};
+			colorBackground[] = { 1, 1, 1, 0.8 };
 			onButtonClick = "[] call TON_fnc_cell_arcrequest";
 			
 			x = 0.32;
