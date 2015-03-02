@@ -2332,7 +2332,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=5468;
+		items=5467;
 		class Item0
 		{
 			position[]={8065.1616,35.674362,24985.314};
@@ -34800,7 +34800,7 @@ class Mission
 		};
 		class Item3303
 		{
-			position[]={3648.6321,10.237011,13103.095};
+			position[]={3648.5972,10.239091,13102.257};
 			azimut=182.05901;
 			id=3404;
 			side="EMPTY";
@@ -34811,7 +34811,7 @@ class Mission
 		};
 		class Item3304
 		{
-			position[]={3662.4216,10.411068,13102.154};
+			position[]={3662.771,10.414978,13101.526};
 			azimut=130.40601;
 			id=3405;
 			side="EMPTY";
@@ -34822,7 +34822,7 @@ class Mission
 		};
 		class Item3305
 		{
-			position[]={3663.7139,10.388463,13114.579};
+			position[]={3664.5168,10.397818,13114.789};
 			azimut=90;
 			id=3406;
 			side="EMPTY";
@@ -35240,6 +35240,7 @@ class Mission
 			vehicle="Land_InfoStand_V2_F";
 			skill=0.60000002;
 			init="this allowDamage false; this enableSimulation false; this addAction[""Market"",life_fnc_virt_menu,""market""]; this addAction[""Clothing Store"",life_fnc_clothingMenu,""kart""];";
+			description="Market";
 		};
 		class Item3344
 		{
@@ -35251,6 +35252,7 @@ class Mission
 			vehicle="Land_InfoStand_V2_F";
 			skill=0.60000002;
 			init="this enableSimulation false; this allowDamage false; this addAction[""General Store"",life_fnc_weaponShopMenu,""genstore""];rob_action1 = this addAction[""Rob the shop"",life_fnc_robShops,""Pyrgos General Store""];";
+			description="General";
 		};
 		class Item3345
 		{
@@ -35394,6 +35396,7 @@ class Mission
 			vehicle="Land_InfoStand_V2_F";
 			skill=0.60000002;
 			init="removeallWeapons this;  this enableSimulation false;  this allowDamage false;   this addAction[""Rebel Market"",life_fnc_virt_menu,""rebel"",0,false,false,"""",'license_civ_rebel'];";
+			description="Market";
 		};
 		class Item3359
 		{
@@ -35404,6 +35407,7 @@ class Mission
 			vehicle="Land_InfoStand_V2_F";
 			skill=0.60000002;
 			init="removeallWeapons this;  this enableSimulation false; this allowDamage false; this addAction[""General Store"",life_fnc_weaponShopMenu,""genstore"",0,false,false,"""",'license_civ_rebel'];";
+			description="General";
 		};
 		class Item3360
 		{
@@ -35414,6 +35418,7 @@ class Mission
 			vehicle="Land_InfoStand_V2_F";
 			skill=0.60000002;
 			init="removeallWeapons this;  this enableSimulation false;  this allowDamage false;  this addAction[""Rebel Clothing Shop"",life_fnc_clothingMenu,""reb"",0,false,false,"""",' license_civ_rebel && playerSide == civilian'];  this addAction[""Rebel Weapon Shop"",life_fnc_weaponShopMenu,""rebel"",0,false,false,"""",' license_civ_rebel && playerSide == civilian'];";
+			description="Weapons";
 		};
 		class Item3361
 		{
@@ -35424,6 +35429,7 @@ class Mission
 			vehicle="Land_InfoStand_V2_F";
 			skill=0.60000002;
 			init="removeallWeapons this;  this enableSimulation false;  this allowDamage false; this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""rebel"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""rebel"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""rebel"",0,false,false,"""",' !license_civ_rebel && playerSide == civilian '];";
+			description="Leader";
 		};
 		class Item3362
 		{
@@ -35434,6 +35440,7 @@ class Mission
 			vehicle="Land_InfoStand_V2_F";
 			skill=0.60000002;
 			init="removeallWeapons this;  this enableSimulation false;  this allowDamage false; this addAction[""Truck Shop"",life_fnc_vehicleShopMenu,[""civ_truck"",civilian,""reb_v_2"",""civ"",""Bruce's New & Used Trucks""]]; this addAction[""Vehicle Shop"",life_fnc_vehicleShopMenu,[""reb_car"",civilian,""reb_v_2"",""reb"",""Rebel Motorpool - Western Side""],0,false,false,"""",'license_civ_rebel'];";
+			description="Vehicle";
 		};
 		class Item3363
 		{
@@ -35444,6 +35451,7 @@ class Mission
 			vehicle="Land_InfoStand_V2_F";
 			skill=0.60000002;
 			init="removeallWeapons this;  this enableSimulation false;  this allowDamage false; this addAction[""Vehicle Garage"",  {   [[getPlayerUID player,playerSide,""Car"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP; life_garage_type = ""Car"";   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""reb_v_2_1"";  },"""",0,false,false,"""",'license_civ_rebel'];  this addAction[""Store vehicle in Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store && license_civ_rebel'];";
+			description="Garage";
 		};
 		class Item3364
 		{
@@ -35453,6 +35461,7 @@ class Mission
 			vehicle="Land_InfoStand_V2_F";
 			skill=0.60000002;
 			init="removeallWeapons this; this enableSimulation false; this allowDamage false; this addAction[""Helicopter Garage"",  {   [[getPlayerUID player,playerSide,""Air"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP;  life_garage_type = ""Air""; createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""reb_air_1"",""reb_air_2"";  },"""",0,false,false,"""",'license_civ_rebel']; this addAction[""Store vehicle in Garage"",  {   private[""_nearVehicle""];   _nearVehicle = nearestObjects[(getPos (_this select 0)),[""Car"",""Ship"",""Air""],35] select 0;   if(isNil ""_nearVehicle"") exitWith {hint ""There isn't a vehicle near this NPC."";};   [[_nearVehicle,false,(_this select 1)],""TON_fnc_vehicleStore"",false,false] spawn life_fnc_MP;   hint ""The server is trying to store the vehicle please wait...."";   life_garage_store = true;  },"""",0,false,false,"""",'!life_garage_store && license_civ_rebel'];";
+			description="Garage";
 		};
 		class Item3365
 		{
@@ -35462,6 +35471,7 @@ class Mission
 			vehicle="Land_InfoStand_V2_F";
 			skill=0.60000002;
 			init="removeallWeapons this;  this enableSimulation false;  this allowDamage false;  this addAction[""Heli Shop"",life_fnc_vehicleShopMenu,[""reb_air"",civilian,""reb_air_1"",""reb_air_2"",""reb_air_3"",""reb"",""Rebel Motorpool - Western Side""],0,false,false,"""",'license_civ_rebel'];";
+			description="Air";
 		};
 		class Item3366
 		{
@@ -56168,16 +56178,18 @@ class Mission
 			vehicle="Land_InfoStand_V2_F";
 			skill=0.60000002;
 			init="this enableSimulation false;  this allowDamage false;  this addAction[""Helicopter Shop"",life_fnc_vehicleShopMenu,[""arc_air"",east,""arc_air_1"",""arc"",""ARC H.Q""]];  this addAction[""Vehicle Garage"",  {   [[getPlayerUID player,playerSide,""Air"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""arc_air_2""; life_garage_type = ""Air"";  },"""",0,false,false,"""",'playerSide == east'];  this addAction[""Store vehicle in Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
+			description="Air";
 		};
 		class Item5459
 		{
-			position[]={12861.374,86.733986,16708.916};
-			azimut=113.914;
+			position[]={12861.429,86.570427,16709.951};
+			azimut=130.968;
 			id=5560;
 			side="EMPTY";
 			vehicle="Land_InfoStand_V2_F";
 			skill=0.60000002;
 			init="this enableSimulation false;  this allowDamage false; this addAction[""Vehicle Shop"",life_fnc_vehicleShopMenu,[""arc_car"",east,""arc_car_1"",""arc"",""ARC H.Q""]];  this addAction[""Vehicle Garage"",  {   [[getPlayerUID player,playerSide,""Car"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""arc_car_2""; life_garage_type = ""Car"";  },"""",0,false,false,"""",'playerSide == east'];  this addAction[""Store vehicle in Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store']; this setVariable[""realname"",""ARC Vehicle Store""]; ";
+			description="Vehicles";
 		};
 		class Item5460
 		{
@@ -56187,7 +56199,8 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_InfoStand_V2_F";
 			skill=0.60000002;
-			init="removeallWeapons this;  this enableSimulation false;  this allowDamage false;  this addAction[""ARC Clothing Shop"",life_fnc_clothingMenu,""arc"",0,false,false,"""",' license_east_arc && playerSide == east'];  this addAction[""ARC Weapons"",life_fnc_weaponShopMenu,""arc"",0,false,false,"""",' license_east_arc && playerSide == east'];";
+			init="removeallWeapons this;  this enableSimulation false;  this allowDamage false;  this addAction[""ARC Clothing Shop"",life_fnc_clothingMenu,""arc"",0,false,false,"""",' license_east_arc && playerSide == east'];  this addAction[""ARC Weapons"",life_fnc_weaponShopMenu,""arc"",0,false,false,"""",' license_east_arc && playerSide == east']; this addAction[""Market"",life_fnc_virt_menu,""market""]; this addAction[""General Store"",life_fnc_weaponShopMenu,""genstore""];";
+			description="Armoury";
 		};
 		class Item5461
 		{
@@ -56241,23 +56254,14 @@ class Mission
 		};
 		class Item5466
 		{
-			position[]={9163.4844,15.056704,21601.424};
-			azimut=89.999199;
+			position[]={12815.537,86.521271,16718.127};
+			azimut=210.013;
 			id=5567;
 			side="EMPTY";
 			vehicle="Land_InfoStand_V2_F";
 			skill=0.60000002;
-			init="removeallWeapons this;  this enableSimulation false;  this allowDamage false; this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""rebel"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""rebel"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""rebel"",0,false,false,"""",' !license_civ_rebel && playerSide == civilian '];";
-		};
-		class Item5467
-		{
-			position[]={12815.662,86.557533,16710.6};
-			azimut=659.36499;
-			id=5568;
-			side="EMPTY";
-			vehicle="Land_InfoStand_V2_F";
-			skill=0.60000002;
 			init="this enableSimulation false; this allowDamage false; this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""arc"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""arc"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""arc"",0,false,false,"""",' !license_east_arc && playerSide == east '];";
+			description="Recruitment";
 		};
 	};
 	class Markers
@@ -59649,7 +59653,7 @@ class Mission
 		};
 		class Item414
 		{
-			position[]={3644.4778,10.171407,13113.052};
+			position[]={3656.7688,10.309843,13117.522};
 			name="asdasdasd";
 			text="Safe Zone";
 			type="mil_warning";
@@ -59703,7 +59707,7 @@ class Mission
 		};
 		class Item419
 		{
-			position[]={12851.136,86.224167,16715.719};
+			position[]={12852.95,86.077431,16718.893};
 			name="arc_car_2";
 			type="Empty";
 			angle=-483.01953;
@@ -59724,38 +59728,39 @@ class Mission
 		};
 		class Item422
 		{
-			position[]={12849.482,86.272346,16715.059};
+			position[]={12851.297,86.114899,16718.232};
 			name="arc_car_1";
 			type="Empty";
 			angle=-487.11404;
 		};
 		class Item423
 		{
-			position[]={12803.465,87.500137,16641.889};
+			position[]={12799.563,87.480652,16639.738};
 			name="arc1111";
 			text="ARC H.Q";
-			type="Select";
+			type="respawn_unknown";
 			colorName="ColorYellow";
 		};
 		class Item424
 		{
-			position[]={12817.035,86.579147,16709.912};
+			position[]={12815.395,86.571945,16710.156};
 			name="arc 11212";
-			text="ARC Armoury";
+			text="ARC Stores";
 			type="group_0";
 			colorName="ColorYellow";
 		};
 		class Item425
 		{
-			position[]={12860.402,86.852379,16708.07};
+			position[]={12860.248,86.631721,16709.445};
 			name="arc 11212_1";
 			text="A.R.C Vehicles";
 			type="group_0";
 			colorName="ColorYellow";
+			angle=17.053926;
 		};
 		class Item426
 		{
-			position[]={12854.682,85.506622,16741.773};
+			position[]={12854.716,85.564796,16738.143};
 			name="arc 11212_1_1";
 			text="ARC Air";
 			type="group_0";
