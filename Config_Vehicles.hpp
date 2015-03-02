@@ -389,7 +389,10 @@ class CfgVehicles {
             } },
 			{ "MSI", "civ", {
               "textures\vehicles\msi_humm.paa"
-            } }
+            } },
+			{ "ARC", "arc", {
+              "textures\vehicles\arc_humm.paa"
+            } }			
         };
     };
 
