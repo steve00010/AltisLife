@@ -208,7 +208,7 @@ class Life_Settings {
 	"scratchcard","bottledshine","bottledwhiskey","bottledbeer","moonshine","whiskey","beerp","cornmeal",
 	"mash","bottles","monster","hen_raw","rabbit_raw","salema_raw","ornate_raw","mackerel_raw",
 	"tuna_raw","mullet_raw","catshark_raw","turtle_raw","rooster_raw","sheep_raw","goat_raw","scratchcard",
-	"oil_processed","copper_refined","iron_refined","salt_refined","diamond_cut","cement","monster"};
+	"oil_processed","copper_refined","iron_refined","salt_refined","diamond_cut","cement","monster","silver_refined","crystal_refined"};
 };
 
 //Virtual Items
@@ -261,6 +261,10 @@ class VirtualItems {
 	VITEMMACRO(diamond_cut, "STR_Item_DiamondC", "diamondCut", 2, -1, 2000, false, -1, "icons\diamond.paa")
 	VITEMMACRO(rock, "STR_Item_Rock", "rock", 6, -1, -1, false, -1, "icons\rock.paa")
 	VITEMMACRO(cement, "STR_Item_CementBag", "cement", 5, -1, 1950, false, -1, "icons\cement.paa")
+	VITEMMACRO(silver_unrefined, "STR_Item_SilverOre", "silverUnrefined", 4, -1, -1, false, -1, "icons\silver_ore.paa")
+	VITEMMACRO(silver_refined, "STR_Item_SilverIngot", "silverRefined", 3, -1, 2500, false, -1, "icons\silver.paa")	
+	VITEMMACRO(crystal_unrefined, "STR_Item_CrystalOre", "crystalUnrefined", 4, -1, -1, false, -1, "icons\crystal_ore.paa")
+	VITEMMACRO(crystal_refined, "STR_Item_CrystalShard", "crystalRefined", 3, -1, 1500, false, -1, "icons\crystal.paa")	
 
 	//Drugs
 	VITEMMACRO(heroin_unprocessed, "STR_Item_HeroinU", "heroinUnprocessed", 6, -1, -1, true, -1, "icons\heroin_unprocessed.paa")
@@ -343,6 +347,8 @@ class Licenses {
 	LICENSEMACRO(bottler,"STR_License_Bottler","bottler",75000,false,"civ")
 	LICENSEMACRO(channelseven,"STR_License_ChannelSeven","channelseven7",0,false,"civ")
 	LICENSEMACRO(arc,"STR_License_Arc","arc",100000,false,"east")
+	LICENSEMACRO(silver,"STR_License_Silver","silver",10000,false,"arc")
+	LICENSEMACRO(crystal,"STR_License_Crystal","crystal",10000,false,"arc")	
 	
 };
 
@@ -398,6 +404,11 @@ class VirtualShops {
 	class iron  {
 		name = "STR_Shops_Minerals";
 		items[] = { "iron_refined", "copper_refined" };
+	};
+	
+	class crystal  {
+		name = "STR_Shops_Minerals";
+		items[] = { "crystal_refined", "silver_refined" };
 	};
 
 	class diamond {

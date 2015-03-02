@@ -79,5 +79,9 @@ switch (_var) do
 	case "life_inv_scratchcard": {("icons\scratchcard.paa")};
 	case "life_inv_cornmeal": {("icons\cornmeal.paa")};
 	case "life_inv_surgeryknife": {("icons\surgeryknife.paa")};
+	case "life_inv_crystalore": {("icons\crystal_ore.paa")};
+	case "life_inv_silverore": {("icons\silver_ore.paa")};
+	case "life_inv_silverr": {("icons\silver.paa")};
+	case "life_inv_crystalr": {("icons\crystal.paa")};	
 	
 };

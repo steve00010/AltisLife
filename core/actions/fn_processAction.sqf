@@ -32,6 +32,8 @@ _itemInfo = switch (_type) do
 	case "bottledshine": {["moonshine","bottledshine",500,"Bootle Moonshine",true,"bottles"]};//new
 	case "bottledbeer": {["beerp","bottledbeer",500,"Bottle Beer",true,"bottles"]};//new
 	case "bottledwhiskey": {["whiskey","bottledwhiskey",500,"Bottle Whiskey",true,"bottles"]};//new
+	case "crystal": {["crystal_unrefined","crystal_refined",750,"Processing Crystal"]};
+	case "silver": {["silver_unrefined","silver_refined",750,"Processing Silver"]};	
 	default {[]};
 };
 
