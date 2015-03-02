@@ -11,7 +11,7 @@ _handle = [] spawn life_fnc_stripDownPlayer;
 waitUntil {scriptDone _handle};
  
 //Load player with default arc gear.
-player forceAddUniform "U_Rangemaster";
+player forceAddUniform "U_B_CombatUniform_mcam_worn";
 player addBackpack "B_Carryall_mcamo";
  
 /* ITEMS */

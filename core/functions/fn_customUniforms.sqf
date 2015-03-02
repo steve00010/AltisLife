@@ -44,8 +44,8 @@ if (playerSide == independent) then
 
 if (playerSide == east) then
 {
-	if(uniform player == "U_Rangemaster") then {
-		player setObjectTextureGlobal [0,"textures\uniforms\arc_senior.paa"];
+	if(uniform player == "U_B_CombatUniform_mcam_worn") then {
+		player setObjectTextureGlobal [0,"textures\uniforms\arcsenior.paa"];
 	};	
 		
 	if((backpack player) == "B_Carryall_mcamo") then {
