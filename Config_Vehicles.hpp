@@ -526,6 +526,9 @@ class CfgVehicles {
             } },
 			{ "Police", "cop", {
                 "textures\vehicles\police_orca.paa"
+            } },
+			{ "ARC", "arc", {
+                "textures\vehicles\arc\arcorca.paa"
             } }
         };
     };
