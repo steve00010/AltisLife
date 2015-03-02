@@ -41766,8 +41766,7 @@ class Mission
 			id=3976;
 			side="EMPTY";
 			vehicle="Land_runway_edgelight_blue_F";
-			skill=0.60000002;
-			init="this allowDamage false; this enableSimulation false;";			
+			skill=0.60000002;			
 		};
 		class Item3876
 		{

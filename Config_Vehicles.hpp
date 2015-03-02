@@ -31,7 +31,7 @@ class CarShops {
 	class arc_air {
 		side = "arc";
 		vehicles[] = {
-			{ "O_Heli_Light_02_unarmed_F", 500000, "", { "life_donator", 2 } },
+			{ "O_Heli_Light_02_F", 500000, "", { "life_donator", 2 } },
 			{ "B_Heli_Light_01_F", 253000, "" }
 		};
 	};
@@ -110,7 +110,7 @@ class CarShops {
 		vehicles[] = {
 			{ "B_Heli_Light_01_F", 253000, "pilot" },
 			{ "C_Heli_Light_01_civil_F", 253000, "pilot" },
-			{ "O_Heli_Light_02_unarmed_F", 750000, "pilot" { "life_donator", 2 } }
+			{ "O_Heli_Light_02_unarmed_F", 500000, "pilot", { "life_donator", 2 } },
 		};
 	};
 	class reb_air {
