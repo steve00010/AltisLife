@@ -19790,6 +19790,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1658
 		{
@@ -19799,6 +19800,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1659
 		{
@@ -19808,6 +19810,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1660
 		{
@@ -19817,6 +19820,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1661
 		{
@@ -19826,6 +19830,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1662
 		{
@@ -19835,6 +19840,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1663
 		{
@@ -19844,6 +19850,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1664
 		{
@@ -19853,6 +19860,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1665
 		{
@@ -19862,6 +19870,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1666
 		{
@@ -19871,6 +19880,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1667
 		{
@@ -19880,6 +19890,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1668
 		{
@@ -19889,6 +19900,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1669
 		{
@@ -19898,6 +19910,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1670
 		{
@@ -19907,6 +19920,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1671
 		{
@@ -19916,6 +19930,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1672
 		{
@@ -19925,6 +19940,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1673
 		{
@@ -19934,6 +19950,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1674
 		{
@@ -19943,6 +19960,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1675
 		{
@@ -19952,6 +19970,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1676
 		{
@@ -19961,6 +19980,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1677
 		{
@@ -19970,6 +19990,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1678
 		{
@@ -19979,6 +20000,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1679
 		{
@@ -19988,6 +20010,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1680
 		{
@@ -19997,6 +20020,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1681
 		{
@@ -20006,6 +20030,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1682
 		{
@@ -20015,6 +20040,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1683
 		{
@@ -20024,6 +20050,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1684
 		{
@@ -20033,6 +20060,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1685
 		{
@@ -20042,6 +20070,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1686
 		{
@@ -20051,6 +20080,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1687
 		{
@@ -20060,6 +20090,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1688
 		{
@@ -20069,6 +20100,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1689
 		{
@@ -20078,6 +20110,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1690
 		{
@@ -20087,6 +20120,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1691
 		{
@@ -20096,6 +20130,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1692
 		{
@@ -20105,6 +20140,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1693
 		{
@@ -20114,6 +20150,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1694
 		{
@@ -20123,6 +20160,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1695
 		{
@@ -20132,6 +20170,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1696
 		{
@@ -20141,6 +20180,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1697
 		{
@@ -20150,6 +20190,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1698
 		{
@@ -20159,6 +20200,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1699
 		{
@@ -20168,6 +20210,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1700
 		{
@@ -20177,6 +20220,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1701
 		{
@@ -20187,6 +20231,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1702
 		{
@@ -20197,6 +20242,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1703
 		{
@@ -20206,6 +20252,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1704
 		{
@@ -20215,6 +20262,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1705
 		{
@@ -20224,6 +20272,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1706
 		{
@@ -20233,6 +20282,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1707
 		{
@@ -20242,6 +20292,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1708
 		{
@@ -20251,6 +20302,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1709
 		{
@@ -20260,6 +20312,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1710
 		{
@@ -20269,6 +20322,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1711
 		{
@@ -20278,6 +20332,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1712
 		{
@@ -20287,6 +20342,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1713
 		{
@@ -20296,6 +20352,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1714
 		{
@@ -20305,6 +20362,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1715
 		{
@@ -20314,6 +20372,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1716
 		{
@@ -20323,6 +20382,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1717
 		{
@@ -20332,6 +20392,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1718
 		{
@@ -20341,6 +20402,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1719
 		{
@@ -20350,6 +20412,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1720
 		{
@@ -20359,6 +20422,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Cargo_Tower_V1_No2_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1721
 		{
@@ -20369,6 +20433,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1722
 		{
@@ -20379,6 +20444,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1723
 		{
@@ -20389,6 +20455,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1724
 		{
@@ -20399,6 +20466,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1725
 		{
@@ -20409,6 +20477,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Cargo_Tower_V1_No7_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1726
 		{
@@ -20419,6 +20488,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1727
 		{
@@ -20429,6 +20499,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1728
 		{
@@ -20439,6 +20510,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1729
 		{
@@ -20449,6 +20521,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1730
 		{
@@ -20459,6 +20532,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1731
 		{
@@ -20469,6 +20543,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1732
 		{
@@ -20479,6 +20554,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1733
 		{
@@ -20489,6 +20565,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1734
 		{
@@ -20499,6 +20576,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1735
 		{
@@ -20509,6 +20587,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1736
 		{
@@ -20518,6 +20597,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1737
 		{
@@ -20528,6 +20608,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1738
 		{
@@ -20538,6 +20619,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1739
 		{
@@ -20548,6 +20630,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1740
 		{
@@ -20558,6 +20641,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1741
 		{
@@ -20568,6 +20652,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";
 		};
 		class Item1742
 		{
@@ -20578,6 +20663,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1743
 		{
@@ -20588,6 +20674,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1744
 		{
@@ -20598,6 +20685,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1745
 		{
@@ -20608,6 +20696,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1746
 		{
@@ -20618,6 +20707,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1747
 		{
@@ -20628,6 +20718,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1748
 		{
@@ -20638,6 +20729,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1749
 		{
@@ -20648,6 +20740,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1750
 		{
@@ -20658,6 +20751,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1751
 		{
@@ -20668,6 +20762,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1752
 		{
@@ -20678,6 +20773,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1753
 		{
@@ -20688,6 +20784,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1754
 		{
@@ -20698,6 +20795,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1755
 		{
@@ -20708,6 +20806,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1756
 		{
@@ -20718,6 +20817,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1757
 		{
@@ -20728,6 +20828,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1758
 		{
@@ -20738,6 +20839,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1759
 		{
@@ -20748,6 +20850,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1760
 		{
@@ -20758,6 +20861,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1761
 		{
@@ -20768,6 +20872,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1762
 		{
@@ -20778,6 +20883,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1763
 		{
@@ -20788,6 +20894,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1764
 		{
@@ -20798,6 +20905,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1765
 		{
@@ -20808,6 +20916,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1766
 		{
@@ -20818,6 +20927,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1767
 		{
@@ -20828,6 +20938,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1768
 		{
@@ -20838,6 +20949,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1769
 		{
@@ -20848,6 +20960,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1770
 		{
@@ -20858,6 +20971,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1771
 		{
@@ -20868,6 +20982,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1772
 		{
@@ -20878,6 +20993,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1773
 		{
@@ -20888,6 +21004,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1774
 		{
@@ -20898,6 +21015,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1775
 		{
@@ -20908,6 +21026,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1776
 		{
@@ -20918,6 +21037,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1777
 		{
@@ -20928,6 +21048,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1778
 		{
@@ -20938,6 +21059,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1779
 		{
@@ -20948,6 +21070,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1780
 		{
@@ -20958,6 +21081,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1781
 		{
@@ -20968,6 +21092,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1782
 		{
@@ -20978,6 +21103,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1783
 		{
@@ -20988,6 +21114,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1784
 		{
@@ -20998,6 +21125,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1785
 		{
@@ -21008,6 +21136,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1786
 		{
@@ -21018,6 +21147,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1787
 		{
@@ -21028,6 +21158,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1788
 		{
@@ -21038,6 +21169,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1789
 		{
@@ -21048,6 +21180,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1790
 		{
@@ -21058,6 +21191,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1791
 		{
@@ -21068,6 +21202,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1792
 		{
@@ -21078,6 +21213,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1793
 		{
@@ -21088,6 +21224,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1794
 		{
@@ -21098,6 +21235,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1795
 		{
@@ -21108,6 +21246,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1796
 		{
@@ -21117,6 +21256,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_BarGate_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1797
 		{
@@ -21127,6 +21267,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1798
 		{
@@ -21136,6 +21277,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_HelipadCivil_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1799
 		{
@@ -21145,6 +21287,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_HelipadCivil_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1800
 		{
@@ -21155,6 +21298,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Mil_WallBig_4m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1801
 		{
@@ -21167,6 +21311,7 @@ class Mission
 			vehicle="Land_ClutterCutter_large_F";
 			leader=1;
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1802
 		{
@@ -21179,6 +21324,7 @@ class Mission
 			vehicle="Land_ClutterCutter_large_F";
 			leader=1;
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1803
 		{
@@ -21191,6 +21337,7 @@ class Mission
 			vehicle="Land_ClutterCutter_large_F";
 			leader=1;
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1804
 		{
@@ -21203,6 +21350,7 @@ class Mission
 			vehicle="Land_ClutterCutter_large_F";
 			leader=1;
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1805
 		{
@@ -21215,6 +21363,7 @@ class Mission
 			vehicle="Land_ClutterCutter_large_F";
 			leader=1;
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1806
 		{
@@ -21227,6 +21376,7 @@ class Mission
 			vehicle="Land_ClutterCutter_large_F";
 			leader=1;
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1807
 		{
@@ -21239,6 +21389,7 @@ class Mission
 			vehicle="Land_ClutterCutter_large_F";
 			leader=1;
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1808
 		{
@@ -21251,6 +21402,7 @@ class Mission
 			vehicle="Land_ClutterCutter_large_F";
 			leader=1;
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1809
 		{
@@ -21263,6 +21415,7 @@ class Mission
 			vehicle="Land_ClutterCutter_large_F";
 			leader=1;
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1810
 		{
@@ -21275,6 +21428,7 @@ class Mission
 			vehicle="Land_ClutterCutter_large_F";
 			leader=1;
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1811
 		{
@@ -21287,6 +21441,7 @@ class Mission
 			vehicle="Land_ClutterCutter_large_F";
 			leader=1;
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1812
 		{
@@ -21299,6 +21454,7 @@ class Mission
 			vehicle="Land_ClutterCutter_large_F";
 			leader=1;
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1813
 		{
@@ -21311,6 +21467,7 @@ class Mission
 			vehicle="Land_ClutterCutter_large_F";
 			leader=1;
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1814
 		{
@@ -21323,6 +21480,7 @@ class Mission
 			vehicle="Land_ClutterCutter_large_F";
 			leader=1;
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1815
 		{
@@ -21335,6 +21493,7 @@ class Mission
 			vehicle="Land_ClutterCutter_large_F";
 			leader=1;
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1816
 		{
@@ -21347,6 +21506,7 @@ class Mission
 			vehicle="Land_ClutterCutter_large_F";
 			leader=1;
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1817
 		{
@@ -21359,6 +21519,7 @@ class Mission
 			vehicle="Land_ClutterCutter_large_F";
 			leader=1;
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1818
 		{
@@ -21370,6 +21531,7 @@ class Mission
 			vehicle="Land_HelipadCircle_F";
 			leader=1;
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1819
 		{
@@ -21380,7 +21542,7 @@ class Mission
 			side="EMPTY";
 			vehicle="CamoNet_OPFOR_open_F";
 			skill=0.60000002;
-			init="this enableSimulation false; ";
+			init="this allowDamage false; this enableSimulation false;";
 		};
 		class Item1820
 		{
@@ -21391,6 +21553,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_ClutterCutter_large_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item1821
 		{
@@ -36835,6 +36998,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Flag_White_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3397
 		{
@@ -36845,6 +37009,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Flag_White_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3398
 		{
@@ -36855,6 +37020,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Flag_White_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3399
 		{
@@ -36865,6 +37031,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Flag_White_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3400
 		{
@@ -36875,6 +37042,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Flag_White_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3401
 		{
@@ -36885,6 +37053,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Flag_White_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3402
 		{
@@ -36895,6 +37064,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Flag_White_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3403
 		{
@@ -36905,6 +37075,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Flag_White_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3404
 		{
@@ -37904,6 +38075,7 @@ class Mission
 			vehicle="Land_RampConcrete_F";
 			leader=1;
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3499
 		{
@@ -37915,6 +38087,7 @@ class Mission
 			vehicle="Land_RampConcrete_F";
 			leader=1;
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3500
 		{
@@ -37926,6 +38099,7 @@ class Mission
 			vehicle="Land_RampConcrete_F";
 			leader=1;
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3501
 		{
@@ -37981,6 +38155,7 @@ class Mission
 			vehicle="Land_RampConcrete_F";
 			leader=1;
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3506
 		{
@@ -37992,6 +38167,7 @@ class Mission
 			vehicle="Land_RampConcrete_F";
 			leader=1;
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3507
 		{
@@ -38003,6 +38179,7 @@ class Mission
 			vehicle="Land_RampConcrete_F";
 			leader=1;
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3508
 		{
@@ -38367,6 +38544,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_LuggageHeap_02_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3542
 		{
@@ -38685,6 +38863,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_ClutterCutter_large_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3571
 		{
@@ -38694,6 +38873,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_ClutterCutter_large_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3572
 		{
@@ -38704,6 +38884,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_ClutterCutter_large_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3573
 		{
@@ -38713,6 +38894,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_ClutterCutter_large_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3574
 		{
@@ -38723,6 +38905,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_ClutterCutter_large_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3575
 		{
@@ -38732,6 +38915,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_ClutterCutter_large_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3576
 		{
@@ -38741,6 +38925,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_ClutterCutter_large_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3577
 		{
@@ -38750,6 +38935,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_ClutterCutter_large_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3578
 		{
@@ -38760,6 +38946,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_ClutterCutter_large_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3579
 		{
@@ -38769,6 +38956,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_ClutterCutter_large_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3580
 		{
@@ -38779,6 +38967,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_ClutterCutter_large_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3581
 		{
@@ -38788,6 +38977,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_ClutterCutter_large_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3582
 		{
@@ -38797,6 +38987,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_ClutterCutter_large_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3583
 		{
@@ -38807,6 +38998,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_ClutterCutter_large_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3584
 		{
@@ -38816,6 +39008,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_ClutterCutter_large_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3585
 		{
@@ -38825,6 +39018,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_ClutterCutter_large_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3586
 		{
@@ -38834,6 +39028,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_ClutterCutter_large_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3587
 		{
@@ -38844,6 +39039,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_ClutterCutter_large_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3588
 		{
@@ -38854,6 +39050,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_ClutterCutter_large_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3589
 		{
@@ -38863,6 +39060,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_ClutterCutter_large_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3590
 		{
@@ -38872,6 +39070,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_ClutterCutter_large_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3591
 		{
@@ -38881,6 +39080,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_ClutterCutter_large_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3592
 		{
@@ -38890,6 +39090,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_ClutterCutter_large_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3593
 		{
@@ -38899,6 +39100,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_ClutterCutter_large_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3594
 		{
@@ -38908,6 +39110,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_ClutterCutter_large_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3595
 		{
@@ -38917,6 +39120,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_ClutterCutter_large_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3596
 		{
@@ -38926,6 +39130,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_ClutterCutter_large_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3597
 		{
@@ -38935,6 +39140,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_ClutterCutter_large_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3598
 		{
@@ -39307,7 +39513,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_runway_edgelight_blue_F";
 			skill=0.60000002;
-			init=" this allowDamage false; this setVectorUp [0,0,0.1];";
+			init="this allowDamage false; this enableSimulation false; this setVectorUp [0,0,0.1];";
 		};
 		class Item3632
 		{
@@ -39318,7 +39524,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_runway_edgelight_blue_F";
 			skill=0.60000002;
-			init=" this allowDamage false; this setVectorUp [0,0,0.1];";
+			init="this allowDamage false; this enableSimulation false; this setVectorUp [0,0,0.1];";
 		};
 		class Item3633
 		{
@@ -39862,6 +40068,7 @@ class Mission
 			side="EMPTY";
 			vehicle="UserTexture10m_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3683
 		{
@@ -39916,7 +40123,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_PortableLight_single_F";
 			skill=0.60000002;
-			init=" this allowDamage false;  this setVectorUp [0,0,0.1];";
+			init="this allowDamage false; this enableSimulation false; this setVectorUp [0,0,0.1];";
 		};
 		class Item3688
 		{
@@ -39927,7 +40134,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_PortableLight_single_F";
 			skill=0.60000002;
-			init=" this allowDamage false; this setVectorUp [0,0,0.1];";
+			init="this allowDamage false; this enableSimulation false; this setVectorUp [0,0,0.1];";
 		};
 		class Item3689
 		{
@@ -40036,6 +40243,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_ClutterCutter_large_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3699
 		{
@@ -40045,6 +40253,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_ClutterCutter_large_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3700
 		{
@@ -40055,6 +40264,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_ClutterCutter_large_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3701
 		{
@@ -40065,6 +40275,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_ClutterCutter_large_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3702
 		{
@@ -40074,6 +40285,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_ClutterCutter_large_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3703
 		{
@@ -40083,6 +40295,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_ClutterCutter_large_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3704
 		{
@@ -40092,6 +40305,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_ClutterCutter_large_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3705
 		{
@@ -40101,6 +40315,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_ClutterCutter_small_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3706
 		{
@@ -40110,6 +40325,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_ClutterCutter_small_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3707
 		{
@@ -40119,6 +40335,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_ClutterCutter_small_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3708
 		{
@@ -40128,6 +40345,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_ClutterCutter_small_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3709
 		{
@@ -40137,6 +40355,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_ClutterCutter_small_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3710
 		{
@@ -40146,6 +40365,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_ClutterCutter_small_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3711
 		{
@@ -40156,6 +40376,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_ClutterCutter_large_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3712
 		{
@@ -40166,6 +40387,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_ClutterCutter_large_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3713
 		{
@@ -40187,6 +40409,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_LampStreet_small_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3715
 		{
@@ -40197,6 +40420,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_LampStreet_small_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3716
 		{
@@ -40207,6 +40431,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_LampStreet_small_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3717
 		{
@@ -40217,6 +40442,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_LampStreet_small_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3718
 		{
@@ -40227,6 +40453,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_LampStreet_small_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3719
 		{
@@ -40237,6 +40464,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_LampStreet_small_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3720
 		{
@@ -40247,6 +40475,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_LampStreet_small_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3721
 		{
@@ -40268,6 +40497,7 @@ class Mission
 			vehicle="Land_CncWall4_F";
 			leader=1;
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3723
 		{
@@ -40289,6 +40519,7 @@ class Mission
 			vehicle="Land_CncWall4_F";
 			leader=1;
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3725
 		{
@@ -40299,6 +40530,7 @@ class Mission
 			vehicle="Land_HBarrierBig_F";
 			leader=1;
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3726
 		{
@@ -40309,6 +40541,7 @@ class Mission
 			vehicle="Land_HBarrierBig_F";
 			leader=1;
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3727
 		{
@@ -40319,6 +40552,7 @@ class Mission
 			vehicle="Land_HBarrierBig_F";
 			leader=1;
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3728
 		{
@@ -40329,6 +40563,7 @@ class Mission
 			vehicle="Land_HBarrierBig_F";
 			leader=1;
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3729
 		{
@@ -40339,6 +40574,7 @@ class Mission
 			vehicle="Land_HBarrierBig_F";
 			leader=1;
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3730
 		{
@@ -40349,6 +40585,7 @@ class Mission
 			vehicle="Land_HBarrierBig_F";
 			leader=1;
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3731
 		{
@@ -40359,6 +40596,7 @@ class Mission
 			vehicle="Land_HBarrierBig_F";
 			leader=1;
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3732
 		{
@@ -40369,6 +40607,7 @@ class Mission
 			vehicle="Land_HBarrierBig_F";
 			leader=1;
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3733
 		{
@@ -40379,6 +40618,7 @@ class Mission
 			vehicle="Land_HBarrierBig_F";
 			leader=1;
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3734
 		{
@@ -40389,6 +40629,7 @@ class Mission
 			vehicle="Land_HBarrierBig_F";
 			leader=1;
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3735
 		{
@@ -40399,6 +40640,7 @@ class Mission
 			vehicle="Land_HBarrierBig_F";
 			leader=1;
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3736
 		{
@@ -40409,6 +40651,7 @@ class Mission
 			vehicle="Land_HBarrierBig_F";
 			leader=1;
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3737
 		{
@@ -40419,6 +40662,7 @@ class Mission
 			vehicle="Land_HBarrierBig_F";
 			leader=1;
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3738
 		{
@@ -40429,6 +40673,7 @@ class Mission
 			vehicle="Land_HBarrierBig_F";
 			leader=1;
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3739
 		{
@@ -40439,6 +40684,7 @@ class Mission
 			vehicle="Land_HBarrierBig_F";
 			leader=1;
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3740
 		{
@@ -40449,6 +40695,7 @@ class Mission
 			vehicle="Land_HBarrierBig_F";
 			leader=1;
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3741
 		{
@@ -40459,6 +40706,7 @@ class Mission
 			vehicle="Land_HBarrierBig_F";
 			leader=1;
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3742
 		{
@@ -40469,6 +40717,7 @@ class Mission
 			vehicle="Land_HBarrierBig_F";
 			leader=1;
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3743
 		{
@@ -40479,6 +40728,7 @@ class Mission
 			vehicle="Land_HBarrierBig_F";
 			leader=1;
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3744
 		{
@@ -40489,6 +40739,7 @@ class Mission
 			vehicle="Land_HBarrierBig_F";
 			leader=1;
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3745
 		{
@@ -40499,6 +40750,7 @@ class Mission
 			vehicle="Land_HBarrierBig_F";
 			leader=1;
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3746
 		{
@@ -40509,6 +40761,7 @@ class Mission
 			vehicle="Land_HBarrierBig_F";
 			leader=1;
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3747
 		{
@@ -40519,6 +40772,7 @@ class Mission
 			vehicle="Land_HBarrierBig_F";
 			leader=1;
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3748
 		{
@@ -40529,6 +40783,7 @@ class Mission
 			vehicle="Land_HBarrierBig_F";
 			leader=1;
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3749
 		{
@@ -40539,6 +40794,7 @@ class Mission
 			vehicle="Land_HBarrierBig_F";
 			leader=1;
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3750
 		{
@@ -40549,7 +40805,7 @@ class Mission
 			vehicle="Land_Cargo40_sand_F";
 			leader=1;
 			skill=0.60000002;
-			init="this allowDamage false";
+			init="this allowDamage false; this enableSimulation false;";
 			description="Tower1";
 		};
 		class Item3751
@@ -40562,7 +40818,7 @@ class Mission
 			vehicle="Land_Cargo40_sand_F";
 			leader=1;
 			skill=0.60000002;
-			init="this allowDamage false";
+			init="this allowDamage false; this enableSimulation false;";
 			description="Tower1";
 		};
 		class Item3752
@@ -40574,6 +40830,7 @@ class Mission
 			vehicle="Land_CncWall4_F";
 			leader=1;
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3753
 		{
@@ -40584,6 +40841,7 @@ class Mission
 			vehicle="Land_CncWall4_F";
 			leader=1;
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3754
 		{
@@ -40594,6 +40852,7 @@ class Mission
 			vehicle="Land_CncWall4_F";
 			leader=1;
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3755
 		{
@@ -40604,6 +40863,7 @@ class Mission
 			vehicle="Land_CncWall4_F";
 			leader=1;
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3756
 		{
@@ -40614,6 +40874,7 @@ class Mission
 			vehicle="Land_CncWall4_F";
 			leader=1;
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3757
 		{
@@ -40624,6 +40885,7 @@ class Mission
 			vehicle="Land_CncWall4_F";
 			leader=1;
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3758
 		{
@@ -40634,6 +40896,7 @@ class Mission
 			vehicle="Land_CncWall4_F";
 			leader=1;
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3759
 		{
@@ -40644,6 +40907,7 @@ class Mission
 			vehicle="Land_CncWall4_F";
 			leader=1;
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3760
 		{
@@ -40654,6 +40918,7 @@ class Mission
 			vehicle="Land_CncWall4_F";
 			leader=1;
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3761
 		{
@@ -40664,6 +40929,7 @@ class Mission
 			vehicle="Land_CncWall4_F";
 			leader=1;
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3762
 		{
@@ -40674,6 +40940,7 @@ class Mission
 			vehicle="Land_CncWall4_F";
 			leader=1;
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3763
 		{
@@ -40684,6 +40951,7 @@ class Mission
 			vehicle="Land_CncWall4_F";
 			leader=1;
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3764
 		{
@@ -40694,6 +40962,7 @@ class Mission
 			vehicle="Land_CncWall4_F";
 			leader=1;
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3765
 		{
@@ -40704,6 +40973,7 @@ class Mission
 			vehicle="Land_CncWall4_F";
 			leader=1;
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3766
 		{
@@ -40714,6 +40984,7 @@ class Mission
 			vehicle="Land_CncWall4_F";
 			leader=1;
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3767
 		{
@@ -40724,6 +40995,7 @@ class Mission
 			vehicle="Land_CncWall4_F";
 			leader=1;
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3768
 		{
@@ -40734,6 +41006,7 @@ class Mission
 			vehicle="Land_CncWall4_F";
 			leader=1;
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3769
 		{
@@ -40744,6 +41017,7 @@ class Mission
 			vehicle="Land_CncWall4_F";
 			leader=1;
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3770
 		{
@@ -40754,6 +41028,7 @@ class Mission
 			vehicle="Land_CncWall4_F";
 			leader=1;
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3771
 		{
@@ -40764,6 +41039,7 @@ class Mission
 			vehicle="Land_CncWall4_F";
 			leader=1;
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3772
 		{
@@ -40774,6 +41050,7 @@ class Mission
 			vehicle="Land_CncWall4_F";
 			leader=1;
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3773
 		{
@@ -40784,6 +41061,7 @@ class Mission
 			vehicle="Land_CncWall4_F";
 			leader=1;
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3774
 		{
@@ -40794,6 +41072,7 @@ class Mission
 			vehicle="Land_CncWall4_F";
 			leader=1;
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3775
 		{
@@ -40804,6 +41083,7 @@ class Mission
 			vehicle="Land_CncWall4_F";
 			leader=1;
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3776
 		{
@@ -40814,6 +41094,7 @@ class Mission
 			vehicle="Land_CncWall4_F";
 			leader=1;
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3777
 		{
@@ -40824,6 +41105,7 @@ class Mission
 			vehicle="Land_CncWall4_F";
 			leader=1;
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3778
 		{
@@ -40834,6 +41116,7 @@ class Mission
 			vehicle="Land_CncWall4_F";
 			leader=1;
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3779
 		{
@@ -40844,6 +41127,7 @@ class Mission
 			vehicle="Land_CncWall4_F";
 			leader=1;
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3780
 		{
@@ -40854,6 +41138,7 @@ class Mission
 			vehicle="Land_CncWall4_F";
 			leader=1;
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3781
 		{
@@ -40864,6 +41149,7 @@ class Mission
 			vehicle="Land_CncWall4_F";
 			leader=1;
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3782
 		{
@@ -40873,6 +41159,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_HBarrierBig_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3783
 		{
@@ -40882,6 +41169,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_HBarrierBig_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3784
 		{
@@ -40891,6 +41179,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_HBarrierBig_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3785
 		{
@@ -40900,6 +41189,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_HBarrierBig_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3786
 		{
@@ -40909,6 +41199,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_HBarrierBig_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3787
 		{
@@ -40918,6 +41209,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_HBarrierBig_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3788
 		{
@@ -40927,6 +41219,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_HBarrierBig_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3789
 		{
@@ -40936,6 +41229,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_HBarrierBig_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3790
 		{
@@ -40945,6 +41239,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_HBarrierBig_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3791
 		{
@@ -40954,6 +41249,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_HBarrierBig_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3792
 		{
@@ -40963,6 +41259,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_HBarrierBig_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3793
 		{
@@ -40972,6 +41269,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_HBarrierBig_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3794
 		{
@@ -40981,6 +41279,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_HBarrierBig_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3795
 		{
@@ -40990,6 +41289,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_HBarrierBig_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3796
 		{
@@ -40999,6 +41299,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_HBarrierBig_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3797
 		{
@@ -41008,6 +41309,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_HBarrierBig_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3798
 		{
@@ -41017,6 +41319,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_HBarrierBig_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3799
 		{
@@ -41026,6 +41329,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_HBarrierBig_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3800
 		{
@@ -41036,6 +41340,7 @@ class Mission
 			vehicle="Land_BagBunker_Small_F";
 			leader=1;
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3801
 		{
@@ -41046,6 +41351,7 @@ class Mission
 			vehicle="Land_HBarrier_5_F";
 			leader=1;
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3802
 		{
@@ -41056,6 +41362,7 @@ class Mission
 			vehicle="Land_HBarrier_5_F";
 			leader=1;
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3803
 		{
@@ -41066,6 +41373,7 @@ class Mission
 			vehicle="Land_Cargo_HQ_V3_F";
 			leader=1;
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3804
 		{
@@ -41125,6 +41433,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_CampingTable_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3810
 		{
@@ -41134,6 +41443,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_CampingTable_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3811
 		{
@@ -41193,7 +41503,7 @@ class Mission
 			side="EMPTY";
 			vehicle="CamoNet_BLUFOR_open_F";
 			skill=0.60000002;
-			init="this allowDamage false";
+			init="this allowDamage false; this enableSimulation false;";
 		};
 		class Item3817
 		{
@@ -41223,6 +41533,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_CampingTable_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3820
 		{
@@ -41277,6 +41588,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_CampingTable_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3825
 		{
@@ -41331,6 +41643,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_CampingTable_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3830
 		{
@@ -41340,6 +41653,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_LampHalogen_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3831
 		{
@@ -41351,6 +41665,7 @@ class Mission
 			vehicle="MapBoard_altis_F";
 			leader=1;
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3832
 		{
@@ -41360,6 +41675,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Cargo_Patrol_V3_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3833
 		{
@@ -41370,6 +41686,7 @@ class Mission
 			vehicle="Land_HBarrier_5_F";
 			leader=1;
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3834
 		{
@@ -41380,6 +41697,7 @@ class Mission
 			vehicle="Land_HBarrier_5_F";
 			leader=1;
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3835
 		{
@@ -41389,6 +41707,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_LampHalogen_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3836
 		{
@@ -41398,6 +41717,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_LampHalogen_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3837
 		{
@@ -41407,6 +41727,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_LampHalogen_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3838
 		{
@@ -41416,6 +41737,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_LampHalogen_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3839
 		{
@@ -41425,6 +41747,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_LampHalogen_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3840
 		{
@@ -41434,6 +41757,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_LampHalogen_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3841
 		{
@@ -41443,6 +41767,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_LampHalogen_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3842
 		{
@@ -41452,6 +41777,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_LampHalogen_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3843
 		{
@@ -41461,6 +41787,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_LampHalogen_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3844
 		{
@@ -41470,6 +41797,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_LampHalogen_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3845
 		{
@@ -41479,6 +41807,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_LampHalogen_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3846
 		{
@@ -41488,6 +41817,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_LampHalogen_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3847
 		{
@@ -41497,6 +41827,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_LampHalogen_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3848
 		{
@@ -41506,6 +41837,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_LampHalogen_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3849
 		{
@@ -41515,6 +41847,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_LampHalogen_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3850
 		{
@@ -41524,6 +41857,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_LampHalogen_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3851
 		{
@@ -41533,6 +41867,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_LampHalogen_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3852
 		{
@@ -41542,6 +41877,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_LampHalogen_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3853
 		{
@@ -41552,6 +41888,7 @@ class Mission
 			vehicle="Land_CncWall4_F";
 			leader=1;
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3854
 		{
@@ -41562,6 +41899,7 @@ class Mission
 			vehicle="Land_CncWall4_F";
 			leader=1;
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3855
 		{
@@ -41572,6 +41910,7 @@ class Mission
 			vehicle="Land_CncWall4_F";
 			leader=1;
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3856
 		{
@@ -41582,6 +41921,7 @@ class Mission
 			vehicle="Land_CncWall4_F";
 			leader=1;
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3857
 		{
@@ -41592,6 +41932,7 @@ class Mission
 			vehicle="Land_CncWall4_F";
 			leader=1;
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3858
 		{
@@ -41602,6 +41943,7 @@ class Mission
 			vehicle="Land_CncWall4_F";
 			leader=1;
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3859
 		{
@@ -41612,6 +41954,7 @@ class Mission
 			vehicle="Land_CncWall4_F";
 			leader=1;
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3860
 		{
@@ -41622,6 +41965,7 @@ class Mission
 			vehicle="Land_CncWall4_F";
 			leader=1;
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3861
 		{
@@ -41631,6 +41975,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_LampHalogen_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3862
 		{
@@ -41640,6 +41985,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_LampHalogen_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3863
 		{
@@ -41649,6 +41995,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_LampHalogen_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3864
 		{
@@ -41659,6 +42006,7 @@ class Mission
 			vehicle="Land_Camping_Light_F";
 			leader=1;
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3865
 		{
@@ -41669,6 +42017,7 @@ class Mission
 			vehicle="Land_Camping_Light_F";
 			leader=1;
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3866
 		{
@@ -41679,6 +42028,7 @@ class Mission
 			vehicle="Land_Camping_Light_F";
 			leader=1;
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3867
 		{
@@ -41689,6 +42039,7 @@ class Mission
 			vehicle="Land_Camping_Light_F";
 			leader=1;
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3868
 		{
@@ -41699,6 +42050,7 @@ class Mission
 			vehicle="Land_Camping_Light_F";
 			leader=1;
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3869
 		{
@@ -41709,6 +42061,7 @@ class Mission
 			vehicle="Land_Camping_Light_F";
 			leader=1;
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3870
 		{
@@ -41719,6 +42072,7 @@ class Mission
 			vehicle="Land_Camping_Light_F";
 			leader=1;
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3871
 		{
@@ -41729,6 +42083,7 @@ class Mission
 			vehicle="Land_Camping_Light_F";
 			leader=1;
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3872
 		{
@@ -41739,6 +42094,7 @@ class Mission
 			vehicle="Land_Camping_Light_F";
 			leader=1;
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3873
 		{
@@ -41748,6 +42104,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_runway_edgelight_blue_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3874
 		{
@@ -41757,6 +42114,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_runway_edgelight_blue_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";			
 		};
 		class Item3875
 		{
