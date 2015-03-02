@@ -271,7 +271,8 @@ class Life_Client_Core
 	{
 		file = "core\arc";
 		class arcLoadout {};
-		class arcMarkers {};		
+		class arcMarkers {};
+		class arcInteractionMenu {};		
 	};
 	
 	class Vehicle
