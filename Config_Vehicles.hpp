@@ -698,10 +698,7 @@ class CfgVehicles {
             } },
 			{ "Panda", "cop", {
                 "textures\vehicles\HighwaySportscar.paa"
-            } },
-			{ "ARC", "arc", {
-                "textures\vehicles\arc\archatchback.paa"
-            } }			
+            } }		
         };
     };
 
@@ -744,7 +741,10 @@ class CfgVehicles {
 	        } },
 			{ "Dragon", "civ", {
 				 "textures\vehicles\dragon_sport.paa" 
-			} }	 
+			} },
+			{ "ARC", "arc", {
+                "textures\vehicles\arc\archatchback.paa"
+            } }				
 		};
     };
 
