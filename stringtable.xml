@@ -3568,7 +3568,7 @@
 			<Italian>Porto d'Armi</Italian>
 			<Portuguese>Licença de Porte de Armas</Portuguese>
 		</Key>
-		<Key ID="STR_License_Swat">
+		<Key ID="STR_License_SWAT">
 			<Original>SWAT License</Original>
 			<German>SWAT-Lizenz</German>
 			<French>License du SWAT</French>
@@ -3680,7 +3680,7 @@
 			<Italian>Licenza possesso Casa</Italian>
 			<Portuguese>Licença de Casas</Portuguese>
 		</Key>
-		<Key ID="STR_License_Dea">
+		<Key ID="STR_License_DEA">
 			<Original>DEA License</Original>
 			<German>DEA License</German>
 			<French>DEA License</French>
