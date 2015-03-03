@@ -392,7 +392,7 @@ class CfgVehicles {
               "textures\vehicles\msi_humm.paa"
             } },
 			{ "ARC", "arc", {
-              "textures\vehicles\arc_humm.paa"
+              "textures\vehicles\arc\arc_humm.paa"
             } }			
         };
     };
