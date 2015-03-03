@@ -797,6 +797,9 @@ class CfgVehicles {
 			{ "Drug", "civ", {
                 "textures\vehicles\offroad_drug.paa"
             } },
+			{ "ARC", "arc", {
+                "textures\vehicles\arc\arc_offroad.paa"
+            } },			
 			{ "DEA", "cop", {
                 "textures\vehicles\offroad_dea.paa"
             },{"life_coplevel",5}},
