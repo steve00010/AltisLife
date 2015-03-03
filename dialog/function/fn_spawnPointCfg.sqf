@@ -21,8 +21,7 @@ switch (_side) do
 			["cop_spawn_2","Pyrgos HQ","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
 			["cop_spawn_3","Athira HQ","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
 			["cop_spawn_4","Air HQ","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
-			["cop_spawn_5","Sofia HQ","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
-			["cop_spawn_1_1","Training Center","\a3\ui_f\data\map\MapControl\watertower_ca.paa"]
+			["cop_spawn_5","Sofia HQ","\a3\ui_f\data\map\MapControl\watertower_ca.paa"]
 		];
 	};
 	
