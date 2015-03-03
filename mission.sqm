@@ -42289,7 +42289,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_InfoStand_V2_F";
 			skill=0.60000002;
-			init="this allowDamage false; this enableSimulation false; this addAction[""Crystal"",life_fnc_virt_menu,""crystal""]; this addAction[""Silver Trader"",life_fnc_virt_menu,""silver""];";
+			init="this allowDamage false; this enableSimulation false; this addAction[""Crystal"",life_fnc_virt_menu,""crystal""];";
 		};
 	};
 	class Markers
