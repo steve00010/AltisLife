@@ -348,7 +348,7 @@ class Licenses {
 	LICENSEMACRO(channelseven,"STR_License_ChannelSeven","channelseven7",0,false,"civ")
 	LICENSEMACRO(dea,"STR_License_DEA","dea",0,false,"cop")
 	LICENSEMACRO(swat,"STR_License_SWAT","swat",0,false,"cop")	
-	LICENSEMACRO(arc,"STR_License_ARC","arc",100000,false,"arc")
+	LICENSEMACRO(arc,"STR_License_ARC","arc",100000,false,"east")
 	LICENSEMACRO(silver,"STR_License_Silver","silver",10000,false,"arc")
 	LICENSEMACRO(crystal,"STR_License_Crystal","crystal",10000,false,"arc")	
 	
