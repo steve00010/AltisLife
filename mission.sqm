@@ -45376,7 +45376,7 @@ class Mission
 		};
 		class Item378
 		{
-			position[]={10599.063,52.369217,8453.9707};
+			position[]={10878.646,99.236664,8280.8975};
 			name="hunting_zone";
 			markerType="ELLIPSE";
 			type="Empty";
@@ -45388,9 +45388,9 @@ class Mission
 		};
 		class Item379
 		{
-			position[]={10596.816,52.299137,8454.4102};
+			position[]={10876.398,98.4506,8281.3369};
 			name="hunting_marker";
-			text="Hunting Grounds";
+			text="ARC Wildlife Grounds";
 			type="loc_Tree";
 			colorName="ColorWhite";
 		};
@@ -45694,17 +45694,17 @@ class Mission
 		{
 			position[]={9706.0254,15.639613,8729.9072};
 			name="crystal_1";
-			text="Crystal Mine";
+			text="ARC Crystal Mine";
 			type="loc_Bunker";
-			colorName="ColorBlack";
+			colorName="ColorWhite";
 		};
 		class Item415
 		{
 			position[]={12151.814,28.625858,8467.5166};
 			name="silver_1";
-			text="Silver Mine";
+			text="ARC Silver Mine";
 			type="loc_Bunker";
-			colorName="ColorBlack";
+			colorName="ColorWhite";
 		};
 		class Item416
 		{
