@@ -42268,7 +42268,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_InfoStand_V2_F";
 			skill=0.60000002;
-			init="this enableSimulation false;  this allowDamage false;  this addAction[""Process Copper"",life_fnc_processAction,""silver"",0,false,false,"""",' life_inv_Unrefined > 0 && !life_is_processing'];  this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""silver"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""silver"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""silver"",0,false,false,"""",' !license_arc_silver && playerSide == east '];";
+			init="this enableSimulation false;  this allowDamage false;  this addAction[""Process Copper"",life_fnc_processAction,""silver"",0,false,false,"""",' life_inv_silverUnrefined > 0 && !life_is_processing'];  this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""silver"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""silver"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""silver"",0,false,false,"""",' !license_arc_silver && playerSide == east '];";
 		};
 		class Item3890
 		{
@@ -42278,7 +42278,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_InfoStand_V2_F";
 			skill=0.60000002;
-			init="this enableSimulation false;  this allowDamage false;  this addAction[""Process Crystal"",life_fnc_processAction,""crystal"",0,false,false,"""",' life_inv_Unrefined > 0 && !life_is_processing'];  this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""crystal"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""crystal"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""crystal"",0,false,false,"""",' !license_arc_crystal && playerSide == east '];";
+			init="this enableSimulation false;  this allowDamage false;  this addAction[""Process Crystal"",life_fnc_processAction,""crystal"",0,false,false,"""",' life_inv_crystalUnrefined > 0 && !life_is_processing'];  this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""crystal"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""crystal"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""crystal"",0,false,false,"""",' !license_arc_crystal && playerSide == east '];";
 		};
 		class Item3891
 		{
