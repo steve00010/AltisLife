@@ -24,6 +24,7 @@ class CarShops {
 			{ "B_Truck_01_mover_F", 10000, "" },
 			{ "I_Truck_02_covered_F", 10000, "" },
 			{ "C_SUV_01_F", 10000, "" },
+			{ "O_Truck_03_device_F", 1000000, "", { "life_donator", 5 }},			
 			{ "C_Hatchback_01_sport_F", 30000, "", { "life_donator", 3 }}		
 		};
 	};
@@ -31,8 +32,9 @@ class CarShops {
 	class arc_air {
 		side = "arc";
 		vehicles[] = {
-			{ "O_Heli_Light_02_F", 500000, "", { "life_donator", 2 }},
-			{ "B_Heli_Light_01_F", 253000, "" }
+			{ "B_Heli_Light_01_F", 253000, "" },
+			{ "B_Heli_Transport_03_unarmed_F", 1300000, "" },
+			{ "O_Heli_Light_02_F", 500000, "", { "life_donator", 2 }}			
 		};
 	};
 
@@ -628,8 +630,8 @@ class CfgVehicles {
 
 	class C_SUV_01_F {											//SUV
         vItemSpace = 50;
-        storageFee[] = { 1000, 0, 0, 0 };
-		garageSell[] = { 15000, 7500, 0, 0 };
+        storageFee[] = { 1000, 0, 0, 1000 };
+		garageSell[] = { 15000, 7500, 0, 15000 };
         insurance = 2500;
         chopShop = 5000;
         textures[] = {
@@ -708,8 +710,8 @@ class CfgVehicles {
 
 	class C_Hatchback_01_sport_F {								//Hatchback Sport
         vItemSpace = 45;
-        storageFee[] = { 2500, 1000, 0, 0 };
-		garageSell[] = { 15000, 7500, 0, 0 };
+        storageFee[] = { 2500, 1000, 0, 30000 };
+		garageSell[] = { 15000, 7500, 0, 15000 };
         insurance = 5500;
         chopShop = 4500;
         textures[] = {
@@ -755,7 +757,7 @@ class CfgVehicles {
 	class C_Offroad_01_F {										//Civ Off-Road
         vItemSpace = 65;
         storageFee[] = { 1000, 500, 650, 1000 };
-		garageSell[] = { 6500, 2500, 0, 0 };
+		garageSell[] = { 6500, 2500, 0, 6500 };
         insurance = 2500;
         chopShop = 2500;
         textures[] = {
