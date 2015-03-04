@@ -16,14 +16,14 @@ switch (_state) do {
 		SVAR_MNS [LICENSE_VARNAME("heroin","civ"),false];
 		SVAR_MNS [LICENSE_VARNAME("marijuana","civ"),false];
 		SVAR_MNS [LICENSE_VARNAME("coke","civ"),false];
-		SVAR_MNS [LICENSE_VARNAME("arc","civ"),false];
+		SVAR_MNS [LICENSE_VARNAME("arc","arc"),false];
 	};
 	
 	//Jail licenses
 	case 1: {
 		SVAR_MNS [LICENSE_VARNAME("gun","civ"),false];
 		SVAR_MNS [LICENSE_VARNAME("driver","civ"),false];
-		SVAR_MNS [LICENSE_VARNAME("arc","civ"),false];
+		SVAR_MNS [LICENSE_VARNAME("arc","arc"),false];
 	};
 	
 	//Remove motor vehicle licenses
