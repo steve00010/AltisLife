@@ -263,7 +263,7 @@ class CfgVehicles {
 		garageSell[] = { 3500, 0, 0, 3500 };
         insurance = 2500;
         chopShop = 5000;
-        textures[] = 			
+        textures[] = { 			
 			{ "ARC", "arc", {
 				"textures\vehicles\arc\arc_offroad.paa"
 			} }	
