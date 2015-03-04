@@ -20,7 +20,7 @@ class CarShops {
 	class arc_car {
 		side = "arc";
 		vehicles[] = { 
-			{ "C_Offroad_01_F", 7500, "" },
+			{ "B_G_Offroad_01_F", 7500, "" },
 			{ "B_Truck_01_mover_F", 10000, "" },
 			{ "I_Truck_02_covered_F", 10000, "" },
 			{ "C_SUV_01_F", 10000, "" },
@@ -31,7 +31,7 @@ class CarShops {
 	class arc_air {
 		side = "arc";
 		vehicles[] = {
-			{ "O_Heli_Light_02_F", 500000, "", { "life_donator", 2 } },
+			{ "O_Heli_Light_02_F", 500000, "", { "life_donator", 2 }},
 			{ "B_Heli_Light_01_F", 253000, "" }
 		};
 	};
@@ -205,8 +205,8 @@ class CfgVehicles {
 
 	class B_Boat_Transport_01_F {									//Assault Boat
         vItemSpace = 45;
-        storageFee[] = { 0, 450, 0, 0 };
-		garageSell[] = { 0, 850, 0, 0 };
+        storageFee[] = { 0, 450, 0, 450 };
+		garageSell[] = { 0, 850, 0, 850 };
         insurance = 2500;
         chopShop = 5000;
         textures[] = { };
@@ -214,10 +214,10 @@ class CfgVehicles {
 	
 		class B_Truck_01_mover_F {									//HEMTT Mover
         vItemSpace = 350;
-        storageFee[] = { 2500, 0, 0, 0 };
-		garageSell[] = { 235000, 0, 0, 0 };
+        storageFee[] = { 2500, 0, 0, 2500 };
+		garageSell[] = { 235000, 0, 0, 200000 };
         insurance = 2500;
-        chopShop = 235000;
+        chopShop = 200000;
         textures[] = {
 		{ "ARC Mover", "arc", {
 				"textures\vehicles\arc\archemt1.paa"
@@ -227,10 +227,10 @@ class CfgVehicles {
 	
 	class B_Truck_01_Repair_F {										//HEMTT Repair
         vItemSpace = 350;
-        storageFee[] = { 2500, 0, 0, 0 };
-		garageSell[] = { 235000, 0, 0, 0 };
+        storageFee[] = { 2500, 0, 0, 2500 };
+		garageSell[] = { 235000, 0, 0, 200000 };
         insurance = 2500;
-        chopShop = 235000;
+        chopShop = 200000;
         textures[] = {			
 		{ "ARC Repair", "arc", {
 				"textures\vehicles\arc\archemt1.paa"
@@ -257,11 +257,15 @@ class CfgVehicles {
 
 	class B_G_Offroad_01_F {										//Off-Road
         vItemSpace = 65;
-        storageFee[] = { 1000, 0, 0, 0 };
-		garageSell[] = { 3500, 0, 0, 0 };
+        storageFee[] = { 1000, 0, 0, 1000 };
+		garageSell[] = { 3500, 0, 0, 3500 };
         insurance = 2500;
         chopShop = 5000;
-        textures[] = { };
+        textures[] = 			
+			{ "ARC", "arc", {
+				"textures\vehicles\arc\arc_offroad.paa"
+			} }	
+        };
     };
 
 	class B_Truck_01_box_F {										//HEMTT Box
@@ -344,8 +348,8 @@ class CfgVehicles {
 
 	class B_Heli_Light_01_F {										//MH-9 Hummingbird
         vItemSpace = 90;
-        storageFee[] = { 10000, 19500, 0, 0 };
-		garageSell[] = { 157000, 35000, 0, 0 };
+        storageFee[] = { 10000, 19500, 0, 10000 };
+		garageSell[] = { 157000, 35000, 0, 157000 };
         insurance = 2500;
         chopShop = 100000;
         textures[] = {
@@ -796,9 +800,6 @@ class CfgVehicles {
             } },
 			{ "Drug", "civ", {
                 "textures\vehicles\offroad_drug.paa"
-            } },
-			{ "ARC", "arc", {
-                "textures\vehicles\arc\arc_offroad.paa"
             } },			
 			{ "DEA", "cop", {
                 "textures\vehicles\offroad_dea.paa"
