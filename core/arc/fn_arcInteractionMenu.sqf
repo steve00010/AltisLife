@@ -1,5 +1,5 @@
 /*
-	File: fn_civInteractionMenu.sqf
+	File: fn_arcInteractionMenu.sqf
 	Author: Bryan "Tonic" Boardwine
 	
 	Description:
