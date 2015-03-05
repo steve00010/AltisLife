@@ -10,6 +10,8 @@ private["_end"];
 player addRating 99999999;
 waitUntil {!(isNull (findDisplay 46))};
 
+_igiload = execVM "IgiLoad\IgiLoadInit.sqf";
+
 if((FETCH_CONST(life_arclevel) < 1)) then {
 	["NotWhitelisted",false,true] call BIS_fnc_endMission;
 	sleep 60;
