@@ -65,7 +65,7 @@ if(isPlayer _curTarget && _curTarget isKindOf "Man") then
 	};
 	if((_curTarget getVariable["restrained",false]) && !dialog && playerSide == east && _curTarget getVariable["ziptied",false]) then 
 	{
-		[_curTarget] call life_fnc_civInteractionMenu;
+		[_curTarget] call life_fnc_arcInteractionMenu;
 	};	
 } else {
 	//OK, it wasn't a player so what is it?
