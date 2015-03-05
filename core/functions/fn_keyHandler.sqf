@@ -310,8 +310,8 @@ switch (_code) do
         };
     };
 	
-	// Q Key options for Pickaxe
-	case 25: 
+	// H Key options for Pickaxe
+	case 35: 
 	{
 		if((!life_action_inUse) && (vehicle player == player) ) then
 		{
