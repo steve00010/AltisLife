@@ -25,7 +25,7 @@ if (side player == civilian OR side player == east ) then
 	}
 };
 
-if ((!_ziptied) && ((side player == civilian) (OR side player == east))) exitWith { hint "You have no zipties."; };
+if ((!_ziptied) && ((side player == civilian) OR (side player == east))) exitWith { hint "You have no zipties."; };
 if(!isPlayer _unit) exitWith {};
 //Broadcast!
 player say3D "cuff"; 
