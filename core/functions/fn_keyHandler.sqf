@@ -300,7 +300,6 @@ switch (_code) do
         if((!life_action_gather) && (vehicle player == player) ) then
         {
 			{
-<<<<<<< HEAD
                 _str = [_x] call life_fnc_varToStr;
                 _val = missionNameSpace getVariable _x;
                 if(_val > 0 ) then
@@ -314,20 +313,6 @@ switch (_code) do
 
 		};
     };
-=======
-				_str = [_x] call life_fnc_varToStr;
-				_val = missionNameSpace getVariable _x;
-				if(_val > 0 ) then
-				{
-					if( _str == "Pickaxe" || _str == "pickaxe" ) then
-					{
-						[] spawn life_fnc_pickAxeUse;
-					};
-				};
-			} foreach life_inv_items;
-		}
-	};
->>>>>>> origin/master
 	
 	// O, police gate opener
     case 24:
