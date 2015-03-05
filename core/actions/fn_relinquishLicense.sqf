@@ -11,7 +11,7 @@ _type = _this select 3;
 if( _type == "rebel") then
 {
 	_action = [
-		"Are you sure you want to relinquish your rebel license? <BR/>You will lose all Rebel related Licenses","Relinquish Rebel License","Relinquish","Cancel"
+		"Are you sure you want to relinquish your rebel license? <BR/>You will lose access to Rebel related resources","Relinquish Rebel License","Relinquish","Cancel"
 	] call BIS_fnc_guiMessage;
 	
 	if (_action) then
@@ -24,7 +24,7 @@ if( _type == "rebel") then
 if( _type == "arc") then
 {
 	_action = [
-		"Are you sure you want to relinquish your ARC license? <BR/>You will lose all Altis Rifle Club related Licenses","Relinquish ARC License","Relinquish","Cancel"
+		"Are you sure you want to relinquish your ARC license? <BR/>You will lose all Altis Response Command related License","Relinquish ARC License","Relinquish","Cancel"
 	] call BIS_fnc_guiMessage;
 	
 	if (_action) then
