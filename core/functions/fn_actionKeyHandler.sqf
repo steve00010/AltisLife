@@ -59,7 +59,7 @@ if(isPlayer _curTarget && _curTarget isKindOf "Man") then
 	{
 		[_curTarget] call life_fnc_copInteractionMenu;
 	};
-	if((_curTarget getVariable["restrained",false]) && !dialog && (playerSide == civilian || playerSide == east)  && _curTarget getVariable["ziptied",false]) then 
+	if((_curTarget getVariable["restrained",false]) && !dialog && (playerSide == civilian OR playerSide == east)  && _curTarget getVariable["ziptied",false]) then 
 	{
 		[_curTarget] call life_fnc_civInteractionMenu;
 	};
