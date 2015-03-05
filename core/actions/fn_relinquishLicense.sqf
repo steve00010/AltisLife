@@ -24,7 +24,7 @@ if( _type == "rebel") then
 if( _type == "arc") then
 {
 	_action = [
-		"Are you sure you want to relinquish your ARC license? <BR/>You will lose all Altis Rifle Club related Licenses","Relinquish ARC License","Relinquish","Cancel"
+		"Are you sure you want to relinquish your ARC license? <BR/>You will lose all Altis Rifle Command related Licenses","Relinquish ARC License","Relinquish","Cancel"
 	] call BIS_fnc_guiMessage;
 	
 	if (_action) then
