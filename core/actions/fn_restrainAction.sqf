@@ -10,7 +10,7 @@ _unit = cursorTarget;
 if(isNull _unit) exitWith {}; //Not valid
 if((_unit getVariable "restrained")) exitWith {};
 if(player == _unit) exitWith {};
-if (side player == civilian) then 
+if (side player == civilian OR side player == east ) then 
 {
 	if(life_inv_zipties < 1) then 
 	{
@@ -25,7 +25,7 @@ if (side player == civilian) then
 	}
 };
 
-if( (!_ziptied) && (side player == civilian) ) exitWith { hint "You have no zipties."; };
+if ((!_ziptied) && ((side player == civilian) (OR side player == east))) exitWith { hint "You have no zipties."; };
 if(!isPlayer _unit) exitWith {};
 //Broadcast!
 player say3D "cuff"; 
