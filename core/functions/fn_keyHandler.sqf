@@ -299,13 +299,9 @@ switch (_code) do
     {
         if((!life_action_gather) && (vehicle player == player) ) then
         {
-			{
-				if(ITEM_VALUE(configName _x) > 0) then {
-					if((localize (getText(_x >> "displayName"))) == "pickaxe") then {
-						[] spawn life_fnc_pickAxeUse;
-					}
-				};
-			} foreach ("true" configClasses (missionConfigFile >> "VirtualItems"));
+			if(life_inv_pickaxe > 0) then {
+				[] spawn life_fnc_pickAxeUse;
+			};
 		};
     };
 	
