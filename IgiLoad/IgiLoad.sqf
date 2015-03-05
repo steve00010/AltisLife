@@ -119,7 +119,7 @@ if (isnil "IL_Variables") then
 	// Supported vehicles
 	IL_Supported_Vehicles_OFFROAD = ["C_Offroad_01_F", "B_G_Offroad_01_F", "B_mas_mar_Offroad_01_F"];
 	IL_Supported_Vehicles_VAN = ["C_Van_01_box_F", "B_G_Van_01_transport_F", "C_Van_01_transport_F"];
-	IL_Supported_Vehicles_HEMTT = ["B_Truck_01_covered_F", "B_Truck_01_transport_F", "B_Truck_01_box_F", "Marinir_Truck_01_box_FG", "Marinir_Truck_01_transport_FG", "Marinir_Truck_01_covered_FG", "B_mas_mar_Truck_01_covered_F", "B_mas_mar_Truck_01_transport_F"];
+	IL_Supported_Vehicles_HEMTT = ["B_Truck_01_covered_F", "B_Truck_01_transport_F", "B_Truck_01_mover_F", "B_Truck_01_box_F", "Marinir_Truck_01_box_FG", "Marinir_Truck_01_transport_FG", "Marinir_Truck_01_covered_FG", "B_mas_mar_Truck_01_covered_F", "B_mas_mar_Truck_01_transport_F"];
 	IL_Supported_Vehicles_KAMAZ = ["I_Truck_02_transport_F", "O_Truck_02_transport_F", "I_Truck_02_covered_F", "O_Truck_02_covered_F", "caf_HLVW_open_AR", "caf_HLVW_open", "caf_HLVW_covered_ar", "caf_HLVW_covered"];
 	IL_Supported_Vehicles_TEMPEST = ["O_Truck_03_transport_F", "O_Truck_03_covered_F"];
 	IL_Supported_Vehicles_MOHAWK = ["I_Heli_Transport_02_F", "CH49_Mohawk_FG", "Marinir_CH49_Mohawk_FG"];
@@ -134,7 +134,7 @@ if (isnil "IL_Variables") then
 	IL_Para_Drop_Vehicles = IL_Supported_Vehicles_MH9 + IL_Supported_Vehicles_MOHAWK + IL_Supported_Vehicles_C130J + IL_Supported_Vehicles_C17 + IL_Supported_Vehicles_CHINOOK;
 
 	//Supported cargo
-	IL_Supported_HEMTT = ["B_Truck_01_covered_F", "B_Truck_01_transport_F", "B_Truck_01_box_F", "Marinir_Truck_01_box_FG", "Marinir_Truck_01_transport_FG", "Marinir_Truck_01_covered_FG", "B_mas_mar_Truck_01_covered_F", "B_mas_mar_Truck_01_transport_F", "B_Truck_01_mover_F", "B_Truck_01_ammo_F", "B_Truck_01_fuel_F", "B_Truck_01_medical_F", "B_Truck_01_Repair_F"];
+	IL_Supported_HEMTT = ["B_Truck_01_covered_F", "B_Truck_01_transport_F", "B_Truck_01_mover_F", "B_Truck_01_box_F", "Marinir_Truck_01_box_FG", "Marinir_Truck_01_transport_FG", "Marinir_Truck_01_covered_FG", "B_mas_mar_Truck_01_covered_F", "B_mas_mar_Truck_01_transport_F", "B_Truck_01_mover_F", "B_Truck_01_ammo_F", "B_Truck_01_fuel_F", "B_Truck_01_medical_F", "B_Truck_01_Repair_F"];
 	IL_Supported_KAMAZ = ["I_Truck_02_transport_F", "O_Truck_02_transport_F", "I_Truck_02_covered_F", "O_Truck_02_covered_F", "caf_HLVW_open_AR", "caf_HLVW_open", "caf_HLVW_covered_ar", "caf_HLVW_covered"];
 	IL_Supported_TEMPEST = ["O_Truck_03_transport_F", "O_Truck_03_covered_F"];
 	IL_Supported_Strider = ["I_MRAP_03_F", "I_MRAP_03_gmg_F", "I_MRAP_03_hmg_F", "CAF_TAPV_ar", "caf_tapv_gl_ar", "caf_tapv_50_ar", "CAF_TAPV_tw", "caf_tapv_gl_tw", "caf_tapv_50_tw", "Night_B_MRAP_03_F", "Night_B_MRAP_03_gmg_F", "Night_B_MRAP_03_hmg_F"];
