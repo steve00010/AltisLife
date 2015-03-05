@@ -322,7 +322,7 @@ switch (_code) do
 				{
 					if( _str == "Pickaxe" || _str == "pickaxe" ) then
 					{
-						[] spawn life_fnc_pickAxeUse;
+						[] spawn life_fnc_pickaxeUse;
 					};
 				};
 			} foreach life_inv_items;
