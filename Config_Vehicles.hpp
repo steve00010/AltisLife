@@ -129,11 +129,9 @@ class CarShops {
 		side = "cop";
 		vehicles[] = {
 			{ "B_Heli_Light_01_F", 75000, "cAir",{ "life_coplevel", 2 } },
-			{ "B_Heli_Transport_03_unarmed_F", 2500000, "cAir", { "life_coplevel", 2 } },
 			{ "O_Heli_Light_02_unarmed_F", 600000, "cAir", { "life_donator", 2 } },
 			{ "B_Heli_Transport_01_F", 2000000, "cAir", { "life_donator", 5 } },
-			{ "I_Heli_light_03_F", 1000000, "cAir", { "life_coplevel", 5 } },
-			{ "B_Heli_Transport_03_unarmed_F", 1500000, "cAir", { "life_coplevel", 2 } }
+			{ "I_Heli_light_03_F", 1000000, "cAir", { "life_coplevel", 5 } }
 		};
 	};
 
@@ -141,11 +139,9 @@ class CarShops {
 		side = "civ";
 		vehicles[] = {
 			{ "B_Heli_Light_01_F", 75000, "cAir",{ "life_coplevel", 2 } },
-			{ "B_Heli_Transport_03_unarmed_F", 2500000, "cAir", { "life_coplevel", 2 } },
 			{ "O_Heli_Light_02_unarmed_F", 600000, "cAir", { "life_donator", 2 } },
 			{ "B_Heli_Transport_01_F", 2000000, "cAir", { "life_donator", 5 } },
-			{ "I_Heli_light_03_F", 1000000, "cAir", { "life_coplevel", 5 } },
-			{ "B_Heli_Transport_03_unarmed_F", 1500000, "cAir", { "life_coplevel", 2 } }
+			{ "I_Heli_light_03_F", 1000000, "cAir", { "life_coplevel", 5 } }
 		};
 	};
 
