@@ -297,7 +297,7 @@ switch (_code) do
 	//Q Key
     case 16:
     {
-        if((!life_action_gather) && (vehicle player == player) ) then
+        if((!life_action_gathering) && (vehicle player == player) ) then
         {
 			if(life_inv_pickaxe > 0) then {
 				[] spawn life_fnc_pickAxeUse;
