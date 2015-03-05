@@ -300,17 +300,12 @@ switch (_code) do
         if((!life_action_gather) && (vehicle player == player) ) then
         {
 			{
-                _str = [_x] call life_fnc_varToStr;
-                _val = missionNameSpace getVariable _x;
-                if(_val > 0 ) then
-                {
-                    if( _str == "Spitzhacke" || _str == "pickaxe" ) then
-                    {
-                        [] spawn life_fnc_pickAxeUse;
-                    };
-                };
-            } foreach life_inv_items;
-
+				if(ITEM_VALUE(configName _x) > 0) then {
+					if((localize (getText(_x >> "displayName"))) == "pickaxe") then {
+						[] spawn life_fnc_pickAxeUse;
+					}
+				};
+			} foreach ("true" configClasses (missionConfigFile >> "VirtualItems"));
 		};
     };
 	
