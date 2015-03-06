@@ -261,10 +261,10 @@ class VirtualItems {
 	VITEMMACRO(diamond_cut, "STR_Item_DiamondC", "diamondCut", 2, -1, 2000, false, -1, "icons\diamond.paa")
 	VITEMMACRO(rock, "STR_Item_Rock", "rock", 6, -1, -1, false, -1, "icons\rock.paa")
 	VITEMMACRO(cement, "STR_Item_CementBag", "cement", 5, -1, 1950, false, -1, "icons\cement.paa")
-	VITEMMACRO(silver_unrefined, "STR_Item_SilverOre", "silverUnrefined", 4, -1, -1, false, -1, "icons\silver_ore.paa")
-	VITEMMACRO(silver_refined, "STR_Item_SilverIngot", "silverRefined", 3, -1, 2500, false, -1, "icons\silver.paa")	
-	VITEMMACRO(crystal_unrefined, "STR_Item_CrystalOre", "crystalUnrefined", 4, -1, -1, false, -1, "icons\crystal_ore.paa")
-	VITEMMACRO(crystal_refined, "STR_Item_CrystalShard", "crystalRefined", 3, -1, 1500, false, -1, "icons\crystal.paa")	
+	VITEMMACRO(silver_unrefined, "STR_Item_SilverOre", "silverUnrefined", 4, -1, -1, true, -1, "icons\silver_ore.paa")
+	VITEMMACRO(silver_refined, "STR_Item_SilverIngot", "silverRefined", 3, -1, 2500, true, -1, "icons\silver.paa")	
+	VITEMMACRO(crystal_unrefined, "STR_Item_CrystalOre", "crystalUnrefined", 4, -1, -1, true, -1, "icons\crystal_ore.paa")
+	VITEMMACRO(crystal_refined, "STR_Item_CrystalShard", "crystalRefined", 3, -1, 1500, true, -1, "icons\crystal.paa")	
 
 	//Drugs
 	VITEMMACRO(heroin_unprocessed, "STR_Item_HeroinU", "heroinUnprocessed", 6, -1, -1, true, -1, "icons\heroin_unprocessed.paa")
