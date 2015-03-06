@@ -419,12 +419,16 @@ class CfgVehicles {
 	
 	class B_Heli_Transport_03_unarmed_F {								//HURRON
 		vItemSpace = 150;
-		storageFee[] = { 50000, 0, 0, 0 };
-		garageSell[] = { 150000, 0, 0, 0 };
+		storageFee[] = { 50000, 0, 0, 50000 };
+		garageSell[] = { 150000, 0, 0, 150000 };
 		insurance = 16000;
 		chopShop = 450000;
-        textures[] = {};
-    };
+        textures[] = {
+			{ "ARC", "arc", {
+                "textures\vehicles\arc\huron1.paa","textures\vehicles\arc\huron2.paa"
+			} }
+		};
+	};			
 
 	class B_G_Offroad_01_armed_F : B_G_Offroad_01_F {};	
 
@@ -513,8 +517,8 @@ class CfgVehicles {
 
 	class O_Heli_Light_02_unarmed_F {								//PO-30 Orca Black
         vItemSpace = 210;
-        storageFee[] = { 25000, 0, 22000, 0 };
-		garageSell[] = { 500000, 0, 35000, 0 };
+        storageFee[] = { 25000, 0, 22000, 22000 };
+		garageSell[] = { 500000, 0, 35000, 35000 };
         insurance = 2500;
         chopShop = 5000;
         textures[] = {
@@ -541,8 +545,8 @@ class CfgVehicles {
 
 	class O_Heli_Light_02_F {										//PO-30 Orca
 		vItemSpace = 120;
-        storageFee[] = { 15000, 0, 0, 0 };
-		garageSell[] = { 25000, 0, 0, 0 };
+        storageFee[] = { 15000, 0, 0, 15000 };
+		garageSell[] = { 25000, 0, 0, 25000 };
         insurance = 2500;
         chopShop = 150000;
         textures[] = {};
@@ -550,8 +554,8 @@ class CfgVehicles {
 
 	class O_Truck_03_device_F {										//Tempest (Device)
         vItemSpace = 350;
-        storageFee[] = { 15000, 0, 0, 0 };
-		garageSell[] = { 185000, 0, 0, 0 };
+        storageFee[] = { 15000, 0, 0, 15000 };
+		garageSell[] = { 185000, 0, 0, 185000 };
         insurance = 25000;
         chopShop = 125000;
         textures[] = { };
