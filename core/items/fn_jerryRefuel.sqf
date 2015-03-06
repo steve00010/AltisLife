@@ -29,9 +29,10 @@ _cP = 0.01;
 
 while{true} do
 {
-	_previous = animationState player;
-	if(animationState player == _previous) then {
-		player playMoveNow "AinvPknlMstpSnonWnonDr_medic0";
+	if(animationState player != "AinvPknlMstpSnonWnonDnon_medic_1") then {
+		[[player,"AinvPknlMstpSnonWnonDnon_medic_1",true],"life_fnc_animSync",true,false] call life_fnc_MP;
+		player switchMove "AinvPknlMstpSnonWnonDnon_medic_1";
+		player playMoveNow "AinvPknlMstpSnonWnonDnon_medic_1";
 	};
 	sleep 0.2;
 	if(isNull _ui) then {
