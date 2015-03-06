@@ -74,6 +74,8 @@ CASH = 0;
 
 life_istazed = false;
 life_vehicles = [];
+life_nlrtimer_stop = false;
+life_nlrtimer_running = false;
 
 //CUSTOM
 
