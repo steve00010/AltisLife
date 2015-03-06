@@ -33,9 +33,9 @@ _cP = 0.01;
 
 //Lets reuse the same thing!
 while {true} do {
-	if(animationState player != "AinvPknlMstpSnonWnonDnon_medic_1") then {
-		[[player,"AinvPknlMstpSnonWnonDnon_medic_1"],"life_fnc_animSync",true,false] call life_fnc_MP;
-		player playMoveNow "AinvPknlMstpSnonWnonDnon_medic_1";
+	if(animationState player != "AinvPknlMstpSnonWnonDr_medic0") then {
+		[[player,"AinvPknlMstpSnonWnonDr_medic0"],"life_fnc_animSync",true,false] call life_fnc_MP;
+		player playMoveNow "AinvPknlMstpSnonWnonDr_medic0";
 	};
 	
 	sleep .15;
