@@ -230,6 +230,7 @@ class Life_Client_Core
 		class prisonbreak {};
 		class progressBar {};
 		class fatigueReset {};
+		class handleFlashbang {};		
 	};
 	
 	class Network
