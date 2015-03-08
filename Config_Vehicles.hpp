@@ -34,7 +34,7 @@ class CarShops {
 		vehicles[] = {
 			{ "B_Heli_Light_01_F", 253000, "" },
 			{ "B_Heli_Transport_03_unarmed_F", 1300000, "" },
-			{ "O_Heli_Light_02_F", 500000, "", { "life_donator", 2 }}			
+			{ "O_Heli_Light_02_unarmed_F", 500000, "", { "life_donator", 2 }}			
 		};
 	};
 
