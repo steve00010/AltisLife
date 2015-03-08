@@ -101,7 +101,7 @@ class Life_cell_phone {
 			onButtonClick = "[] call TON_fnc_cell_emsrequest";
 			
 			x = 0.6125;
-			y = 0.72;
+			y = 0.92;
 			w = 0.15;
 			h = 0.05;
 		};
@@ -109,13 +109,13 @@ class Life_cell_phone {
 		{
 			idc = 3023;
 			text = "$STR_CELL_ArcRequest";
-			colorBackground[] = { 1, 1, 1, 0.8 };
+			colorBackground[] = {0,0.6,0.2,0.7};
 			onButtonClick = "[] call TON_fnc_cell_arcrequest";
 			
-			x = 0.32;
-			y = 0.45;
-			w = 0.2;
-			h = (1 / 25);
+			x = 0.605607;
+			y = 0.210809;
+			w = 0.2725;
+			h = 0.04;
 		};		
 		class AdminMsgButton : life_RscButtonMenu 
 		{

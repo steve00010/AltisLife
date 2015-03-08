@@ -2324,7 +2324,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=3819;
+		items=3820;
 		class Item0
 		{
 			position[]={8065.1616,35.674362,24985.314};
@@ -41806,10 +41806,20 @@ class Mission
 			skill=0.60000002;
 			init=" this allowDamage false; this enableSimulation false; this setVectorUp [0,0,0.1]; this addAction[""<t color='#ADFF2F'>Cashpoint</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",""vehicle player == player && player distance _target < 4""];";
 		};
+		class Item3819
+		{
+			position[]={12808.548,86.534584,16710.686};
+			azimut=568.77649;
+			id=3920;
+			side="EMPTY";
+			vehicle="Land_Atm_02_F";
+			skill=0.60000002;
+			init="this enableSimulation false; this allowDamage false; this addAction[""<t color='#ADFF2F'>Cashpoint</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 '];";
+		};
 	};
 	class Markers
 	{
-		items=420;
+		items=421;
 		class Item0
 		{
 			position[]={8316.7881,80.619583,25059.641};
@@ -45175,9 +45185,9 @@ class Mission
 		};
 		class Item410
 		{
-			position[]={12815.395,86.571945,16710.156};
+			position[]={12813.684,86.454506,16714.834};
 			name="arc 11212";
-			text="ARC Stores";
+			text="ARC Stores / License";
 			type="group_0";
 			colorName="ColorYellow";
 		};
@@ -45251,6 +45261,14 @@ class Mission
 			text="Pink Ladies Territory ";
 			type="o_mech_inf";
 			colorName="ColorBlack";
+		};
+		class Item420
+		{
+			position[]={12808.56,86.532516,16710.748};
+			name="atm_marker_4_3_1";
+			type="loc_Tourism";
+			colorName="ColorGreen";
+			angle=389.55649;
 		};
 	};
 	class Sensors
