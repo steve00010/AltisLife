@@ -558,12 +558,7 @@ class CfgVehicles {
 		garageSell[] = { 185000, 0, 0, 185000 };
         insurance = 25000;
         chopShop = 125000;
-        textures[] = { 
-			{ "ARC", "arc", {
-                "textures\vehicles\arc\arcdevice1.paa","textures\vehicles\arc\arcdevice2.paa"
-			} }
-		};
-    };
+        textures[] = {};
 
 	class O_Heli_Transport_04_bench_F {								//Taru Bench
         vItemSpace = 140;
