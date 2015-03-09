@@ -472,8 +472,8 @@ class CfgVehicles {
 
 	class O_Boat_Armed_01_hmg_F {									//Speedboat HMG
         vItemSpace = 175;
-        storageFee[] = { 1000, 0, 0, 1000 };
-		garageSell[] = { 21000, 21000, 0, 21000 };
+        storageFee[] = { 1000, 1000, 1000, 1000 };
+		garageSell[] = { 21000, 21000, 21000, 21000 };
         insurance = 2500;
         chopShop = 5000;
         textures[] = { };
@@ -481,8 +481,8 @@ class CfgVehicles {
 
 	class O_Truck_03_transport_F {									//Tempest Transport
         vItemSpace = 285;
-        storageFee[] = { 1000, 0, 0, 1000 };
-		garageSell[] = { 115000, 0, 0, 115000 };
+        storageFee[] = { 1000, 1000, 1000, 1000 };
+		garageSell[] = { 115000, 1000, 1000, 115000 };
         insurance = 2500;
         chopShop = 115000;
         textures[] = { };
@@ -490,8 +490,8 @@ class CfgVehicles {
 
 	class O_Truck_03_ammo_F {										//Tempest Ammo
         vItemSpace = 400;
-        storageFee[] = { 12650, 0, 0, 12650 };
-		garageSell[] = { 135000, 0, 0, 135000 };
+        storageFee[] = { 12650, 12650, 12650, 12650 };
+		garageSell[] = { 135000, 135000, 135000, 135000 };
         insurance = 2500;
         chopShop = 135000;
         textures[] = { };
