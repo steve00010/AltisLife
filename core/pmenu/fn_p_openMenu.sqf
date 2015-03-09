@@ -22,6 +22,7 @@ switch(playerSide) do {
 		ctrlShow[2012,false];
 	};
     case east: {
+		ctrlShow[2011,false];
 		ctrlShow[2012,false]; //GANG MENU
 	};	
 };
