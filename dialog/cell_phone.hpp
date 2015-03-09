@@ -113,9 +113,9 @@ class Life_cell_phone {
 			onButtonClick = "[] call TON_fnc_cell_arcrequest";
 			
 			x = 0.605607;
-			y = 0.210809;
-			w = 0.2725;
-			h = 0.04;
+			y = 0.19;
+			w = 0.15;
+			h = 0.05;
 		};		
 		class AdminMsgButton : life_RscButtonMenu 
 		{
