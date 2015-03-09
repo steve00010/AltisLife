@@ -35624,7 +35624,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_InfoStand_V2_F";
 			skill=0.60000002;
-			init="this allowDamage false; this enableSimulation false; this addAction[""Crystal"",life_fnc_virt_menu,""crystal""];";
+			init="this allowDamage false; this enableSimulation false; this addAction[""Crystal / Silver"",life_fnc_virt_menu,""crystal""];";
 		};
 		class Item3256
 		{
