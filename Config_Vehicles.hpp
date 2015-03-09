@@ -559,6 +559,7 @@ class CfgVehicles {
         insurance = 25000;
         chopShop = 125000;
         textures[] = {};
+	};	
 
 	class O_Heli_Transport_04_bench_F {								//Taru Bench
         vItemSpace = 140;
