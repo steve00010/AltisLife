@@ -553,7 +553,7 @@ class CfgVehicles {
 	};
 
 	class O_Truck_03_device_F {										//Tempest (Device)
-        vItemSpace = 350;
+        vItemSpace = 550;
         storageFee[] = { 15000, 0, 0, 15000 };
 		garageSell[] = { 185000, 0, 0, 185000 };
         insurance = 25000;
