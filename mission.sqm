@@ -260,7 +260,7 @@ class Mission
 	};
 	class Groups
 	{
-		items=76;
+		items=65;
 		class Item0
 		{
 			side="WEST";
@@ -2062,7 +2062,7 @@ class Mission
 			side="EAST";
 			class Vehicles
 			{
-				items=1;
+				items=12;
 				class Item0
 				{
 					position[]={8475.1836,86.122215,25226.939};
@@ -2077,15 +2077,7 @@ class Mission
 					text="arc_1";
 					description="WhiteListed - Arc 1";
 				};
-			};
-		};
-		class Item65
-		{
-			side="EAST";
-			class Vehicles
-			{
-				items=1;
-				class Item0
+				class Item1
 				{
 					position[]={8477.791,86.407951,25225.73};
 					azimut=33.286499;
@@ -2094,20 +2086,11 @@ class Mission
 					side="EAST";
 					vehicle="O_medic_F";
 					player="PLAY CDG";
-					leader=1;
 					skill=0.60000002;
 					text="arc_2";
 					description="WhiteListed - Arc 2";
 				};
-			};
-		};
-		class Item66
-		{
-			side="EAST";
-			class Vehicles
-			{
-				items=1;
-				class Item0
+				class Item2
 				{
 					position[]={8479.8271,86.630127,25224.775};
 					azimut=33.286499;
@@ -2116,20 +2099,11 @@ class Mission
 					side="EAST";
 					vehicle="O_medic_F";
 					player="PLAY CDG";
-					leader=1;
 					skill=0.60000002;
 					text="arc_3";
 					description="WhiteListed - Arc 3";
 				};
-			};
-		};
-		class Item67
-		{
-			side="EAST";
-			class Vehicles
-			{
-				items=1;
-				class Item0
+				class Item3
 				{
 					position[]={8481.6074,86.772873,25223.631};
 					azimut=33.286499;
@@ -2138,20 +2112,11 @@ class Mission
 					side="EAST";
 					vehicle="O_medic_F";
 					player="PLAY CDG";
-					leader=1;
 					skill=0.60000002;
 					text="arc_4";
 					description="WhiteListed - Arc 4";
 				};
-			};
-		};
-		class Item68
-		{
-			side="EAST";
-			class Vehicles
-			{
-				items=1;
-				class Item0
+				class Item4
 				{
 					position[]={8473.3389,85.865738,25224.457};
 					azimut=33.286499;
@@ -2160,20 +2125,11 @@ class Mission
 					side="EAST";
 					vehicle="O_medic_F";
 					player="PLAY CDG";
-					leader=1;
 					skill=0.60000002;
 					text="arc_5";
 					description="WhiteListed - Arc 5";
 				};
-			};
-		};
-		class Item69
-		{
-			side="EAST";
-			class Vehicles
-			{
-				items=1;
-				class Item0
+				class Item5
 				{
 					position[]={8475.8828,85.954979,25223.566};
 					azimut=33.286499;
@@ -2182,20 +2138,11 @@ class Mission
 					side="EAST";
 					vehicle="O_medic_F";
 					player="PLAY CDG";
-					leader=1;
 					skill=0.60000002;
 					text="arc_6";
 					description="WhiteListed - Arc 6";
 				};
-			};
-		};
-		class Item70
-		{
-			side="EAST";
-			class Vehicles
-			{
-				items=1;
-				class Item0
+				class Item6
 				{
 					position[]={8478.4277,86.246681,25222.549};
 					azimut=33.286499;
@@ -2204,20 +2151,11 @@ class Mission
 					side="EAST";
 					vehicle="O_medic_F";
 					player="PLAY CDG";
-					leader=1;
 					skill=0.60000002;
 					text="arc_7";
 					description="WhiteListed - Arc 7";
 				};
-			};
-		};
-		class Item71
-		{
-			side="EAST";
-			class Vehicles
-			{
-				items=1;
-				class Item0
+				class Item7
 				{
 					position[]={8480.3994,86.878166,25221.213};
 					azimut=33.286499;
@@ -2226,20 +2164,11 @@ class Mission
 					side="EAST";
 					vehicle="O_medic_F";
 					player="PLAY CDG";
-					leader=1;
 					skill=0.60000002;
 					text="arc_8";
 					description="WhiteListed - Arc 8";
 				};
-			};
-		};
-		class Item72
-		{
-			side="EAST";
-			class Vehicles
-			{
-				items=1;
-				class Item0
+				class Item8
 				{
 					position[]={8472.0029,85.383186,25222.486};
 					azimut=33.286499;
@@ -2248,20 +2177,11 @@ class Mission
 					side="EAST";
 					vehicle="O_medic_F";
 					player="PLAY CDG";
-					leader=1;
 					skill=0.60000002;
 					text="arc_9";
 					description="WhiteListed - Arc 9";
 				};
-			};
-		};
-		class Item73
-		{
-			side="EAST";
-			class Vehicles
-			{
-				items=1;
-				class Item0
+				class Item9
 				{
 					position[]={8474.4844,85.955795,25221.213};
 					azimut=33.286499;
@@ -2270,20 +2190,11 @@ class Mission
 					side="EAST";
 					vehicle="O_medic_F";
 					player="PLAY CDG";
-					leader=1;
 					skill=0.60000002;
 					text="arc_10";
 					description="WhiteListed - Arc 10";
 				};
-			};
-		};
-		class Item74
-		{
-			side="EAST";
-			class Vehicles
-			{
-				items=1;
-				class Item0
+				class Item10
 				{
 					position[]={8476.4561,86.542313,25220.133};
 					azimut=33.286499;
@@ -2292,20 +2203,11 @@ class Mission
 					side="EAST";
 					vehicle="O_medic_F";
 					player="PLAY CDG";
-					leader=1;
 					skill=0.60000002;
 					text="arc_11";
 					description="WhiteListed - Arc 11";
 				};
-			};
-		};
-		class Item75
-		{
-			side="EAST";
-			class Vehicles
-			{
-				items=1;
-				class Item0
+				class Item11
 				{
 					position[]={8478.999,87.25515,25219.051};
 					azimut=33.286499;
@@ -2314,7 +2216,6 @@ class Mission
 					side="EAST";
 					vehicle="O_medic_F";
 					player="PLAY CDG";
-					leader=1;
 					skill=0.60000002;
 					text="arc_12";
 					description="WhiteListed - Arc 12";
