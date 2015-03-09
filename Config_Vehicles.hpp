@@ -560,7 +560,7 @@ class CfgVehicles {
         chopShop = 125000;
         textures[] = { 
 			{ "ARC", "arc", {
-                "textures\vehicles\arc\temparc.paa","textures\vehicles\arc\tempback.paa"
+                "textures\vehicles\arc\arcdevice1.paa","textures\vehicles\arc\arcdevice2.paa"
 			} }
 		};
     };
