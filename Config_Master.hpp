@@ -382,7 +382,7 @@ class VirtualShops {
 	
 	class drugdealer {
 		name = "STR_Shops_DrugDealer";
-		items[] = { "cocaine_processed", "heroin_processed", "marijuana" };
+		items[] = { "cocaine_processed", "heroin_processed", "marijuana","cocaine_unprocessed", "heroin_unprocessed", "cannabis" };
 	};
 	class bar {
 		name="STR_Shops_Bar";
@@ -405,12 +405,12 @@ class VirtualShops {
 
 	class iron  {
 		name = "STR_Shops_Minerals";
-		items[] = { "iron_refined", "copper_refined" };
+		items[] = { "iron_refined", "copper_refined", "copper_unrefined", "iron_unrefined" };
 	};
 	
 	class crystal  {
 		name = "STR_Shops_Minerals";
-		items[] = { "crystal_refined", "silver_refined" };
+		items[] = { "crystal_refined", "silver_refined", "crystal_unrefined", "silver_unrefined" };
 	};
 
 	class diamond {
@@ -420,7 +420,7 @@ class VirtualShops {
 
 	class salt {
 		name = "STR_Shops_Salt";
-		items[] = { "salt_refined" };
+		items[] = { "salt_refined", "salt_unrefined" };
 	};
 
 	class cop {
