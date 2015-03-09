@@ -35535,7 +35535,7 @@ class Mission
 		};
 		class Item3247
 		{
-			position[]={12815.311,86.57489,16709.18};
+			position[]={12815.45,86.511742,16712.463};
 			azimut=639.83301;
 			id=3348;
 			side="EMPTY";
@@ -35624,7 +35624,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_InfoStand_V2_F";
 			skill=0.60000002;
-			init="this allowDamage false; this enableSimulation false; this addAction[""Crystal"",life_fnc_virt_menu,""crystal""]; this addAction[""Silver Trader"",life_fnc_virt_menu,""silver""];";
+			init="this allowDamage false; this enableSimulation false; this addAction[""Crystal"",life_fnc_virt_menu,""crystal""];";
 		};
 		class Item3256
 		{
@@ -45185,7 +45185,7 @@ class Mission
 		};
 		class Item410
 		{
-			position[]={12813.684,86.454506,16714.834};
+			position[]={12815.674,86.540741,16715.428};
 			name="arc 11212";
 			text="ARC Stores / License";
 			type="group_0";
