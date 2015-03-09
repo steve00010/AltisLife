@@ -27,5 +27,4 @@ _msg = format["%1 spectated %2 (%3)",profileName,_unit getVariable["realname", _
 
 _unit switchCamera "INTERNAL";
 hint format["You are now spectating %1 \n\n Press F10 to stop Spectating.",_unit getVariable["realname",name _unit]];
-AM_Exit = (findDisplay 46) displayAddEventHandler ["KeyDown","if((_this select 1) == 68) then {(findDisplay 46) displayRemoveEventHandler ['KeyDown',AM_Exit];player switchCamera 'INTERNAL';hint 'You have stopped spectating';};_msg = format['%1  stopped spectating %2 (%3)',profileName,_unit getVariable['realname', _unit], getPlayerUID _unit];
-[[_msg],'life_fnc_logMSG',false,false] spawn life_fnc_MP;false"];
+AM_Exit = (findDisplay 46) displayAddEventHandler ["KeyDown","if((_this select 1) == 68) then {(findDisplay 46) displayRemoveEventHandler ['KeyDown',AM_Exit];player switchCamera 'INTERNAL';hint 'You have stopped spectating';};"];
