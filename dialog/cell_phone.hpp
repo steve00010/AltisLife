@@ -108,12 +108,12 @@ class Life_cell_phone {
 		class ArcRequest : life_RscButtonMenu
 		{
 			idc = 3023;
-			text = "$STR_CELL_ArcRequest";
+			text = "ARC";
 			colorBackground[] = {0,0.6,0.2,0.7};
 			onButtonClick = "[] call TON_fnc_cell_arcrequest";
 			
 			x = 0.605607;
-			y = 0.19;
+			y = 0.15;
 			w = 0.15;
 			h = 0.05;
 		};		
