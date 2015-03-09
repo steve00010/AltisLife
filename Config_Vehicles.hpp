@@ -211,7 +211,7 @@ class CfgVehicles {
     };
 	
 		class B_Truck_01_mover_F {									//HEMTT Mover
-        vItemSpace = 350;
+        vItemSpace = 120;
         storageFee[] = { 2500, 0, 0, 2500 };
 		garageSell[] = { 235000, 0, 0, 200000 };
         insurance = 2500;
@@ -224,7 +224,7 @@ class CfgVehicles {
     };
 	
 	class B_Truck_01_Repair_F {										//HEMTT Repair
-        vItemSpace = 350;
+        vItemSpace = 50;
         storageFee[] = { 2500, 0, 0, 2500 };
 		garageSell[] = { 235000, 0, 0, 200000 };
         insurance = 2500;
