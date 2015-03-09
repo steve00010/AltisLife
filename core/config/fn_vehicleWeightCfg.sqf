@@ -64,5 +64,6 @@ switch (_className) do
 	case "Box_IND_Grenades_F": {350}; // Small Supply Crate
 	case "B_supplyCrate_F": {700}; // Large Supply Crate
 	case "O_G_Boat_Transport_01_F": {100}; //Reb Boat
+	case "B_Truck_01_mover_F": {100}; //Hemmt Mover
 	default {-1};
 };

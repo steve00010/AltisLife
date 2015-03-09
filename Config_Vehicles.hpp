@@ -212,8 +212,8 @@ class CfgVehicles {
 	
 		class B_Truck_01_mover_F {									//HEMTT Mover
         vItemSpace = 120;
-        storageFee[] = { 2500, 0, 0, 2500 };
-		garageSell[] = { 235000, 0, 0, 200000 };
+        storageFee[] = { 2500, 2500, 2500, 2500 };
+		garageSell[] = { 235000, 235000, 235000, 200000 };
         insurance = 2500;
         chopShop = 200000;
         textures[] = {
