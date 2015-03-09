@@ -400,7 +400,7 @@ class VirtualShops {
 
 	class glass {
 		name = "STR_Shops_Glass";
-		items[] = { "glass" };
+		items[] = { "glass", "sand" };
 	};
 
 	class iron  {
@@ -430,7 +430,7 @@ class VirtualShops {
 
 	class cement {
 		name = "STR_Shops_Cement";
-		items[] = { "cement" };
+		items[] = { "cement", "rock" };
 	};
 
 	class gold {
