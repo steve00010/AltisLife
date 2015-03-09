@@ -34,7 +34,7 @@ _bail = false;
 [_time] spawn
 {
 	life_canpay_bail = false;
-	sleep (((_this select 0)-time)/2);
+	sleep ((_this select 0)-time)/2;
 	life_canpay_bail = nil;
 };
 
