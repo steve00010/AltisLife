@@ -558,7 +558,11 @@ class CfgVehicles {
 		garageSell[] = { 185000, 0, 0, 185000 };
         insurance = 25000;
         chopShop = 125000;
-        textures[] = { };
+        textures[] = { 
+			{ "ARC", "arc", {
+                "textures\vehicles\arc\temparc.paa"
+			} }
+		};
     };
 
 	class O_Heli_Transport_04_bench_F {								//Taru Bench
