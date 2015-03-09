@@ -21,8 +21,8 @@ class CarShops {
 		side = "arc";
 		vehicles[] = { 
 			{ "B_G_Offroad_01_F", 7500, "" },
-			{ "B_Truck_01_mover_F", 10000, "" },
-			{ "I_Truck_02_covered_F", 10000, "" },
+			{ "B_Truck_01_mover_F", 200000, "" },
+			{ "I_Truck_02_covered_F", 150000, "" },
 			{ "C_SUV_01_F", 10000, "" },
 			{ "O_Truck_03_device_F", 1000000, "", { "life_donator", 5 }},			
 			{ "C_Hatchback_01_sport_F", 30000, "", { "life_donator", 3 }}		
