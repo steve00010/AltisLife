@@ -42,8 +42,8 @@ _item = switch(true) do {
 	case (_zone in ["rye_1"]): {"rye"};
 	case (_zone in ["yeast_1"]): {"yeast"};
 	case (_zone in ["hops_1"]): {"hops"};
-	case (_zone in ["silver_1"]): {"silverore"};
-	case (_zone in ["crystal_1"]): {"crystalore"};		
+	case (_zone in ["silver_1"]): {"silver_unrefined"};
+	case (_zone in ["crystal_1"]): {"crystal_unrefined"};		
 	default {""};
 };
 
