@@ -48,7 +48,7 @@ class Life_cell_phone {
 		class TextMsgButton : life_RscButtonMenu 
 		{
 			idc = 3015;
-			text = "Message";
+			text = "Player";
 			colorBackground[] = {0,0.6,0.2,0.7};
 			onButtonClick = "[] call TON_fnc_cell_textmsg";
 			colorActive[] = {0,0,0,0};
