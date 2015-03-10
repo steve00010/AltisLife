@@ -395,7 +395,7 @@ class CfgVehicles {
             } },
 			{ "MSI", "civ", {
               "textures\vehicles\msi_humm.paa"
-            } },
+            },{"life_donatorlevel",1} },
 			{ "ARC", "arc", {
               "textures\vehicles\arc\arc_humm.paa"
             } }			
@@ -649,7 +649,7 @@ class CfgVehicles {
             } },
             { "Poly", "civ", {
                 "textures\vehicles\poly_suv.paa"
-            } },
+            },{"life_donatorlevel",3} },
 			{ "Police", "cop", {
                 "textures\vehicles\suv_police.paa"
             } },
@@ -658,16 +658,16 @@ class CfgVehicles {
             } },
 			{ "Ferrari", "civ", {
                 "textures\vehicles\suv_ferrari.paa"
-            } },
+            },{"life_donatorlevel",3} },
 			{ "Flames", "civ", {
                 "textures\vehicles\suv_flames.paa"
-            } },
+            },{"life_donatorlevel",3} },
 			{ "Flames", "civ", {
                 "textures\vehicles\suv_camo.paa"
-            } },
+            },{"life_donatorlevel",3} },
 			{ "Taxi", "civ", {
                 "textures\vehicles\suv_taxi.paa"
-            } },
+            },{"life_donatorlevel",3} },
 			{ "ARC", "arc", {
                 "textures\vehicles\arc\suv_arc.paa"
             } }			
@@ -741,16 +741,16 @@ class CfgVehicles {
 			} },
 			{ "WRC", "civ", {
 				 "textures\vehicles\civ_hatchback_wrc.paa"
-			} },
+            },{"life_donatorlevel",4} },
 			{ "Redgull", "civ", {
 				 "textures\vehicles\redgull_hatchbacks.paa" 
-			} }, 
+            },{"life_donatorlevel",4} },
 			{ "Dayz", "civ", {
 				 "textures\vehicles\dayz_hatchbacks.paa"
-	        } },
+            },{"life_donatorlevel",4} },
 			{ "Dragon", "civ", {
 				 "textures\vehicles\dragon_sport.paa" 
-			} },
+            },{"life_donatorlevel",4} },
 			{ "ARC", "arc", {
                 "textures\vehicles\arc\archatchback.paa"
             } }				
@@ -799,13 +799,13 @@ class CfgVehicles {
             } },
 			{ "Monster", "civ", {
                 "textures\vehicles\offroad_monster.paa"
-            } },
+            },{"life_donatorlevel",4} },
 			{ "Captain", "civ", {
                 "textures\vehicles\offroad_captain.paa"
-            } },
+            },{"life_donatorlevel",4} },
 			{ "Drug", "civ", {
                 "textures\vehicles\offroad_drug.paa"
-            } },			
+            },{"life_donatorlevel",2} },		
 			{ "DEA", "cop", {
                 "textures\vehicles\offroad_dea.paa"
             },{"life_coplevel",5}},
@@ -967,7 +967,7 @@ class CfgVehicles {
                 "textures\vehicles\MohawkDoors.paa",
                 "textures\vehicles\Mohawkmiddle.paa",
                 "textures\vehicles\Mohawksides.paa"				
-			} }
+            },{"life_donatorlevel",5} },
         };
     };
 };
