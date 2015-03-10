@@ -542,7 +542,10 @@ class CfgVehicles {
             } },
 			{ "ARC", "arc", {
                 "textures\vehicles\arc\arcorca.paa"
-            } }
+            } },
+			{ "Camo", "reb", {
+                "textures\vehicles\arc\orca_rebel.paa"
+            },{"life_donatorlevel",2} },		
         };
     };
 
