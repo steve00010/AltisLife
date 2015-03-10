@@ -248,8 +248,8 @@ class Clothing {
 			{ "U_O_PilotCoveralls", "", 15610, { "", "", -1 } },
 			{ "U_IG_leader", "Guerilla Leader", 15340, { "", "", -1 } },
 			{ "U_O_GhillieSuit", "", 50000, { "", "", -1 } },
-			{"U_O_OfficerUniform_ocamo","Officer",10000,{"","",-1}},
-			{"U_O_CombatUniform_oucamo","Combat",10000,{"","",-1}}
+			{ "U_O_OfficerUniform_ocamo","Officer",10000,{"","",-1}},
+			{ "U_O_CombatUniform_oucamo","Combat",10000,{"","",-1}}
 		};
 
 		headgear[] = {
