@@ -7,7 +7,7 @@
 */
 
 with missionNamespace do {
-
+	[player],""TON_fnc_cleanupRequest"",false,false] call life_fnc_MP;
 	//--- Give the player immunity
 	player allowDamage false;
 

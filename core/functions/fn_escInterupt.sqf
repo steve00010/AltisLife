@@ -54,7 +54,7 @@ while {true} do
 {
 	waitUntil{!isNull (findDisplay 49)};
 	_abortButton = CONTROL(49,104);
-	_abortButton buttonSetAction "[[player],""TON_fnc_cleanupRequest"",false,false] call life_fnc_MP;[] spawn life_fnc_abort; ( uiNamespace getVariable ""GTA_interruptDisplay"" ) closeDisplay 2; true";
+	_abortButton buttonSetAction "[] spawn life_fnc_abort; ( uiNamespace getVariable ""GTA_interruptDisplay"" ) closeDisplay 2; true";
 	_respawnButton = CONTROL(49,1010);
 	_fieldManual = CONTROL(49,122);
 	
