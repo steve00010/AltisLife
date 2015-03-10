@@ -798,7 +798,7 @@ class CfgVehicles {
 	                "#(argb,8,8,3)color(0.6,0.3,0.01,1)"
             } },
 			{ "Med", "med", {
-                "textures\vehicles\offroad_paramedic.paa"
+                "textures\vehicles\med\offroad_paramedic.paa"
             } },
 			{ "Monster", "civ", {
                 "textures\vehicles\offroad_monster.paa"
