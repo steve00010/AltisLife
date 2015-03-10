@@ -329,20 +329,20 @@ class CfgVehicles {
         chopShop = 150000;
         textures[] = {
         	{ "Police", "cop", {
-                "textures\vehicles\cop_hunter_body.paa",
-				"textures\vehicles\cop_hunter_back.jpg"
+                "textures\vehicles\cop\cop_hunter_body.paa",
+				"textures\vehicles\cop\cop_hunter_back.jpg"
             } },
             { "Rebel", "civ", {
                 "\a3\soft_f\MRAP_01\data\mrap_01_base_co.paa",
 				"\a3\soft_f\MRAP_01\data\mrap_01_adds_co.paa"
             } },
 			{ "DEA", "cop", {
-                "textures\vehicles\deahunterbody.paa",
-				"textures\vehicles\cop_hunter_back.jpg"				
+                "textures\vehicles\cop\deahunterbody.paa",
+				"textures\vehicles\cop\cop_hunter_back.jpg"				
             },{"life_coplevel",4} },
 			{ "SWAT", "cop", {
-                "textures\vehicles\swathunterbody.paa",
-				"textures\vehicles\cop_hunter_back.jpg"
+                "textures\vehicles\cop\swathunterbody.paa",
+				"textures\vehicles\cop\cop_hunter_back.jpg"
             },{"life_swatlevel",1} }
         };
     };
@@ -391,7 +391,7 @@ class CfgVehicles {
 	                "\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_digital_co.paa"
             } },
 			{ "Police", "cop", {
-              "textures\vehicles\heli_police.paa"
+              "textures\vehicles\cop\heli_police.paa"
             } },
 			{ "MSI", "civ", {
               "textures\vehicles\msi_humm.paa"
@@ -534,11 +534,11 @@ class CfgVehicles {
 			{ "Desert Digi", "reb", {
 	                "\a3\air_f\Heli_Light_02\Data\heli_light_02_ext_opfor_co.paa" 
             } },
-            { "EMS White", "med", {
-                "#(argb,8,8,3)color(1,1,1,0.8)"
+            { "EMS", "med", {
+                "textures\vehicles\med\medic_orca.paa"
             } },
 			{ "Police", "cop", {
-                "textures\vehicles\police_orca.paa"
+                "textures\vehicles\cop\police_orca.paa"
             } },
 			{ "ARC", "arc", {
                 "textures\vehicles\arc\arcorca.paa"
@@ -609,8 +609,8 @@ class CfgVehicles {
                 "\a3\soft_f_gamma\Van_01\Data\van_01_ext_red_co.paa"
             } },
 			{ "Ambulance", "med", {
-				"textures\vehicles\ambulanceF.paa",
-				"textures\vehicles\ambulanceB.paa"
+				"textures\vehicles\med\ambulanceF.paa",
+				"textures\vehicles\med\ambulanceB.paa"
             } }
         };
     };
@@ -651,10 +651,10 @@ class CfgVehicles {
                 "textures\vehicles\poly_suv.paa"
             },{"life_donatorlevel",3} },
 			{ "Police", "cop", {
-                "textures\vehicles\suv_police.paa"
+                "textures\vehicles\cop\suv_police.paa"
             } },
 			{ "Med", "med", {
-                "textures\vehicles\suv_paramedic.paa"
+                "textures\vehicles\med\suv_paramedic.paa"
             } },
 			{ "Ferrari", "civ", {
                 "textures\vehicles\suv_ferrari.paa"
@@ -706,7 +706,7 @@ class CfgVehicles {
                 "\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_base09_co.paa"
             } },
 			{ "Panda", "cop", {
-                "textures\vehicles\HighwaySportscar.paa"
+                "textures\vehicles\cop\HighwaySportscar.paa"
             } }		
         };
     };
@@ -737,7 +737,7 @@ class CfgVehicles {
 	           "\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_sport06_co.paa"
             } },
 			{ "Police", "cop", { 
-				 "textures\vehicles\HighwaySportscar.paa"
+				 "textures\vehicles\cop\HighwaySportscar.paa"
 			} },
 			{ "WRC", "civ", {
 				 "textures\vehicles\civ_hatchback_wrc.paa"
@@ -789,7 +789,7 @@ class CfgVehicles {
 	                "\A3\soft_F\Offroad_01\Data\offroad_01_ext_BASE05_CO.paa"
             } },
             { "Police", "cop", {
-                "textures\vehicles\offroad_police.paa"
+                "textures\vehicles\cop\offroad_police.paa"
             } },
             { "Taxi", "civ", {
 	                "#(argb,8,8,3)color(0.6,0.3,0.01,1)"
@@ -807,10 +807,10 @@ class CfgVehicles {
                 "textures\vehicles\offroad_drug.paa"
             },{"life_donatorlevel",2} },		
 			{ "DEA", "cop", {
-                "textures\vehicles\offroad_dea.paa"
+                "textures\vehicles\cop\offroad_dea.paa"
             },{"life_coplevel",5}},
 			{ "SWAT", "cop", {
-                "textures\vehicles\offroad_swat.paa"
+                "textures\vehicles\cop\offroad_swat.paa"
             },{"life_swatlevel",1} }
 	    };
     };
@@ -823,7 +823,7 @@ class CfgVehicles {
         chopShop = 5000;
         textures[] = {
             { "Police", "cop", {
-                "textures\vehicles\boat_police.paa"
+                "textures\vehicles\cop\boat_police.paa"
 			}}
 		};
     };
@@ -942,7 +942,7 @@ class CfgVehicles {
         chopShop = 100000;
         textures[] = {
         	{ "Police", "cop", {
-               "textures\vehicles\cop_hellcat.paa"
+               "textures\vehicles\cop\cop_hellcat.paa"
             } }
 		};	
 	};
