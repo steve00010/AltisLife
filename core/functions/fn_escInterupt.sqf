@@ -7,7 +7,7 @@
 	Monitors when the ESC menu is pulled up and blocks off
 	certain controls when conditions meet.
 */
-private["_abortButton","_respawnButton","_fieldManual","_escSync","_canUseControls"];
+private["_abortButton","_respawnButton","_fieldManual","_escSync","_canUseControls","_display"];
 disableSerialization;
 
 _display = _this select 0;

@@ -32,8 +32,10 @@ with missionNamespace do {
 	sleep 1;
 
 	//--- Show sync screen
+	_effectID = 1 + floor random 3;
 	_videoFile = "A3\Missions_F_Bootcamp\video\VR_GenericTransition_" + str _effectID + ".ogv";
 	_video = [ _videoFile ] spawn BIS_fnc_playVideo;
+	playSound ( "Transition" + str _effectID );
 	sleep 1;
 	0 = [ format [ "<br/><t color='#8e44ad'>%3</t><br/><br/><t size='0.7'>%1 %2.</t>", "We hope to see you again soon", profileName, "SYNCING DATA WITH SERVER" ], 0, 0.2, 2, 0.5, 0, 1000 ] spawn BIS_fnc_dynamicText;
 
