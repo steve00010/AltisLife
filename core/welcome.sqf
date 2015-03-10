@@ -13,8 +13,8 @@ sleep 35; //Wait in seconds before the credits start after player is in-game
  
 _role1 = "Welcome to the Altis Life servers:";
 _role1names = ["ProphecyGaming"];
-_role2 = "Server admins!";
-_role2names = ["Bruce","Steve","Shafty","Mikey","Boogieman","Ash"];
+_role2 = "Senior Admins!";
+_role2names = ["Bruce","Steve","Jock","Shafty","Mikey","Boogieman","Ash"];
 _role3 = "Website:";
 _role3names = ["prophecygaming.co.uk"];
 _role4 = "Teamspeak:";
