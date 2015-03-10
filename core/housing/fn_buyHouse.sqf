@@ -14,13 +14,13 @@ if(!(_house isKindOf "House_F")) exitWith {};
 if((_house GVAR ["house_owned",false])) exitWith {hint "This house is already owned even though you shouldn't be seeing this hint..."};
 if(!isNil {(_house GVAR "house_sold")}) exitWith {hint localize "STR_House_Sell_Process"};
 if(!license_civ_home) exitWith {hint localize "STR_House_License"};
-if(FETCH_COST(life_donator) < 3) then {
+if(FETCH_CONST(life_donator) < 3) then {
 	if(count life_houses >= (LIFE_SETTINGS(getNumber,"house_limit"))) exitWith {hint format[localize "STR_House_Max_House",LIFE_SETTINGS(getNumber,"house_limit")]};
 };
-if(FETCH_COST(life_donator) >= 3 && FETCH_COST(life_donator) < 5) then {
+if(FETCH_CONST(life_donator) >= 3 && FETCH_CONST(life_donator) < 5) then {
 	if(count life_houses >= (LIFE_SETTINGS(getNumber,"house_limit"))+1) exitWith {hint format[localize "STR_House_Max_House",LIFE_SETTINGS(getNumber,"house_limit")]};
 }
-if(FETCH_COST(life_donator) == 5) then {
+if(FETCH_CONST(life_donator) == 5) then {
 	if(count life_houses >= (LIFE_SETTINGS(getNumber,"house_limit"))+2) exitWith {hint format[localize "STR_House_Max_House",LIFE_SETTINGS(getNumber,"house_limit")]};
 }
 closeDialog 0;
