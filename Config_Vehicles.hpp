@@ -661,20 +661,29 @@ class CfgVehicles {
             } },
 			{ "Ferrari", "civ", {
                 "textures\vehicles\suv_ferrari.paa"
-            },{"life_donator",3} },
+            },{"life_donator",2} },
 			{ "Flames", "civ", {
                 "textures\vehicles\suv_flames.paa"
-            },{"life_donator",3} },
-			{ "Flames", "civ", {
-                "textures\vehicles\suv_camo.paa"
-            },{"life_donator",3} },
+            },{"life_donator",2} },
 			{ "Taxi", "civ", {
                 "textures\vehicles\suv_taxi.paa"
-            },{"life_donator",3} },
+            },{"life_donator",2} },
 			{ "ARC", "arc", {
                 "textures\vehicles\arc\suv_arc.paa"
-            } }			
-	    };
+            } },
+			{ "Tron", "civ", {
+                "textures\vehicles\suv_tron.paa"
+            },{"life_donator",3} },	
+			{ "Cola", "civ", {
+                "textures\vehicles\suv_coca.paa"
+            },{"life_donator",3} },
+			{ "2-Pac", "civ", {
+                "textures\vehicles\suv_2pac.paa"
+            },{"life_donator",3} },
+			{ "Graffiti", "civ", {
+                "textures\vehicles\suv_graf.paa"
+            },{"life_donator",3} }			
+		};
     };
 
 	class C_Hatchback_01_F {									//Civ Hatchback
@@ -744,16 +753,22 @@ class CfgVehicles {
 			} },
 			{ "WRC", "civ", {
 				 "textures\vehicles\civ_hatchback_wrc.paa"
-            },{"life_donator",4} },
+            },{"life_donator",2} },
 			{ "Redgull", "civ", {
 				 "textures\vehicles\redgull_hatchbacks.paa" 
-            },{"life_donator",4} },
+            },{"life_donator",2} },
 			{ "Dayz", "civ", {
 				 "textures\vehicles\dayz_hatchbacks.paa"
-            },{"life_donator",4} },
+            },{"life_donator",3} },
+			{ "RockStar", "civ", {
+				 "textures\vehicles\rockhatch.paa"
+            },{"life_donator",4} },	
+			{ "MonsterWRC", "civ", {
+				 "textures\vehicles\monsterwrchatch.paa"
+            },{"life_donator",4} },			
 			{ "Dragon", "civ", {
 				 "textures\vehicles\dragon_sport.paa" 
-            },{"life_donator",4} },
+            },{"life_donator",3} },
 			{ "ARC", "arc", {
                 "textures\vehicles\arc\archatchback.paa"
             } }				
@@ -802,13 +817,16 @@ class CfgVehicles {
             } },
 			{ "Monster", "civ", {
                 "textures\vehicles\offroad_monster.paa"
-            },{"life_donator",4} },
+            },{"life_donator",1} },
 			{ "Captain", "civ", {
                 "textures\vehicles\offroad_captain.paa"
-            },{"life_donator",4} },
+            },{"life_donator",1} },
 			{ "Drug", "civ", {
                 "textures\vehicles\offroad_drug.paa"
-            },{"life_donator",2} },		
+            },{"life_donator",2} },
+			{ "Monster2", "civ", {
+                "textures\vehicles\monsteroffroad2.paa"
+            },{"life_donator",2} },				
 			{ "DEA", "cop", {
                 "textures\vehicles\cop\offroad_dea.paa"
             },{"life_coplevel",5}},
