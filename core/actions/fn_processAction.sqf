@@ -15,23 +15,23 @@ if(isNull _vendor OR _type == "" OR (player distance _vendor > 10)) exitWith {};
 //unprocessed item,processed item, cost if no license,Text to display (I.e Processing  (percent) ..."
 _itemInfo = switch (_type) do
 {
-	case "oil": {["oil_unprocessed","oil_processed",1200,"Processing Oil"];};
-	case "diamond": {["diamond_uncut","diamond_cut",1350,"Processing Diamond"]};
+	case "oil": {["oil_unprocessed","oil_processed",200,"Processing Oil"];};
+	case "diamond": {["diamond_uncut","diamond_cut",350,"Processing Diamond"]};
 	case "copper": {["copper_unrefined","copper_refined",750,"Processing Copper"]};
-	case "iron": {["iron_unrefined","iron_refined",1120,"Processing Iron"]};
-	case "sand": {["sand","glass",650,"Processing Sand"]};
-	case "salt": {["salt_unrefined","salt_refined",450,"Processing Salt"]};
-	case "cocaine": {["cocaine_unprocessed","cocaine_processed",1500,"Making Cocaine"]};
-	case "marijuana": {["cannabis","marijuana",500,"Drying and Bagging Marijuana"]};
-	case "heroin": {["heroin_unprocessed","heroin_processed",1720,"Processing Heroin"]};
+	case "iron": {["iron_unrefined","iron_refined",120,"Processing Iron"]};
+	case "sand": {["sand","glass",250,"Processing Sand"]};
+	case "salt": {["salt_unrefined","salt_refined",250,"Processing Salt"]};
+	case "cocaine": {["cocaine_unprocessed","cocaine_processed",1200,"Making Cocaine"]};
+	case "marijuana": {["cannabis","marijuana",700,"Drying and Bagging Marijuana"]};
+	case "heroin": {["heroin_unprocessed","heroin_processed",1500,"Processing Heroin"]};
 	case "cement": {["rock","cement",350,"Mixing Cement"]};
-	case "crystal": {["crystal_unrefined","crystal_refined",1750,"Processing Crystal"]};
-	case "silver": {["silver_unrefined","silver_refined",1750,"Processing Silver"]};	
+	case "crystal": {["crystal_unrefined","crystal_refined",100,"Processing Crystal"]};
+	case "silver": {["silver_unrefined","silver_refined",100,"Processing Silver"]};	
 	case "mash": {["water","mash",100,"Mixing Grain Mash",true,"cornmeal"]};//new
 	case "whiskey": {["yeast","whiskey",300,"Fermenting Whiskey",true,"rye"]};//new
 	case "beer": {["yeast","beerp",250,"Brewing Beer",true,"hops"]};//new
-	case "moonshine": {["yeast","moonshine",250,"Moonshining",true,"mash"]};//new
-	case "bottledshine": {["moonshine","bottledshine",500,"Bootle Moonshine",true,"bottles"]};//new
+	case "moonshine": {["yeast","moonshine",550,"Moonshining",true,"mash"]};//new
+	case "bottledshine": {["moonshine","bottledshine",700,"Bootle Moonshine",true,"bottles"]};//new
 	case "bottledbeer": {["beerp","bottledbeer",500,"Bottle Beer",true,"bottles"]};//new
 	case "bottledwhiskey": {["whiskey","bottledwhiskey",500,"Bottle Whiskey",true,"bottles"]};//new
 
