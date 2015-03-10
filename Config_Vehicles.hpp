@@ -661,7 +661,7 @@ class CfgVehicles {
             } },
 			{ "Ferrari", "civ", {
                 "textures\vehicles\suv_ferrari.paa"
-            },{"life_donatorlevel",3} },
+            },{"life_donator",3} },
 			{ "Flames", "civ", {
                 "textures\vehicles\suv_flames.paa"
             },{"life_donator",3} },
@@ -744,7 +744,7 @@ class CfgVehicles {
 			} },
 			{ "WRC", "civ", {
 				 "textures\vehicles\civ_hatchback_wrc.paa"
-            },{"life_donatorlevel",4} },
+            },{"life_donator",4} },
 			{ "Redgull", "civ", {
 				 "textures\vehicles\redgull_hatchbacks.paa" 
             },{"life_donator",4} },
@@ -802,10 +802,10 @@ class CfgVehicles {
             } },
 			{ "Monster", "civ", {
                 "textures\vehicles\offroad_monster.paa"
-            },{"life_donatorlevel",4} },
+            },{"life_donator",4} },
 			{ "Captain", "civ", {
                 "textures\vehicles\offroad_captain.paa"
-            },{"life_donatorlevel",4} },
+            },{"life_donator",4} },
 			{ "Drug", "civ", {
                 "textures\vehicles\offroad_drug.paa"
             },{"life_donator",2} },		
