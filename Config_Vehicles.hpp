@@ -452,7 +452,7 @@ class CfgVehicles {
 		chopShop = 45000;
 		textures[] = {
 			{ "Police", "cop", {
-                "textures\vehicles\ghosthawk_01.paa","textures\vehicles\ghosthawk_02.paa"
+                "textures\vehicles\cop\ghosthawk_01.paa","textures\vehicles\cop\ghosthawk_02.paa"
 			} }
 		};
 	};
