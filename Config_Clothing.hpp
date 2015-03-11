@@ -338,7 +338,7 @@ class Clothing {
 		headgear[] = {
 			{ "NONE", "Remove Hat", 0, { "", "", -1 } },
 			{ "H_RacingHelmet_1_black_F", "", 1000, { "life_donator", "SCALAR", 4 } },
-			{ "H_RacingHelmet_1_red_F", "", 1000, {{ "life_donator", "SCALAR", 4 } },
+			{ "H_RacingHelmet_1_red_F", "", 1000, { "life_donator", "SCALAR", 4 } },
 			{ "H_RacingHelmet_1_white_F", "", 1000, { "life_donator", "SCALAR", 2 } },
 			{ "H_RacingHelmet_1_blue_F", "", 1000, { "life_donator", "SCALAR", 4 } },
 			{ "H_RacingHelmet_1_yellow_F", "", 1000, { "life_donator", "SCALAR", 2 } },
