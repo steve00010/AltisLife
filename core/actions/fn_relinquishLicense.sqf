@@ -21,15 +21,3 @@ if( _type == "rebel") then
 	//[[5],"life_fnc_removeLicenses",_source,false] spawn life_fnc_MP;
 };
 
-if( _type == "arc") then
-{
-	_action = [
-		"Are you sure you want to relinquish your ARC license? <BR/>You will lose all Altis Response Command related License","Relinquish ARC License","Relinquish","Cancel"
-	] call BIS_fnc_guiMessage;
-	
-	if (_action) then
-	{
-		[7] call life_fnc_removeLicenses;
-	};
-	//[[4],"life_fnc_removeLicenses",_source,false] spawn life_fnc_MP;
-};
