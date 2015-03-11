@@ -29,7 +29,10 @@ class Clothing {
 			{ "U_C_HunterBody_grn", "The Hunters Look", 1500, { "", "", -1 } },
 			{ "U_C_WorkerCoveralls", "Mechanic Coveralls", 2500, { "", "", -1 } },
 			{ "U_OrestesBody", "Surfing On Land", 1100, { "", "", -1 } },
-			{ "U_NikosBody", "Casual Wears", 5000, { "", "", -1 } }
+			{ "U_NikosBody", "Casual Wears", 5000, { "", "", -1 } },
+			{ "U_I_Protagonist_VR", "Green VR Suit", 20000, { "life_donator", "SCALAR", 3 } },
+			{ "U_O_Protagonist_VR", "Red VR Suit", 20000, { "life_donator", "SCALAR", 4 } },
+			{ "U_B_Protagonist_VR", "Blue VR Suit", 20000, { "life_donator", "SCALAR", 5 } }
 		};
 
 		headgear[] = {
@@ -245,8 +248,8 @@ class Clothing {
 			{ "U_O_PilotCoveralls", "", 15610, { "", "", -1 } },
 			{ "U_IG_leader", "Guerilla Leader", 15340, { "", "", -1 } },
 			{ "U_O_GhillieSuit", "", 50000, { "", "", -1 } },
-			{"U_O_OfficerUniform_ocamo","Officer",10000,{"","",-1}},
-			{"U_O_CombatUniform_oucamo","Combat",10000,{"","",-1}}
+			{ "U_O_OfficerUniform_ocamo","Officer",10000,{"","",-1}},
+			{ "U_O_CombatUniform_oucamo","Combat",10000,{"","",-1}}
 		};
 
 		headgear[] = {
@@ -319,23 +322,33 @@ class Clothing {
 
 		uniforms[] = {
 			{ "NONE", "Remove Uniform", 0, { "", "", -1 } },
-			{ "U_C_Driver_1_red", "", 1500, { "", "", -1 } },
-			{ "U_C_Driver_1_orange", "", 1500, { "", "", -1 } },
-			{ "U_C_Driver_1_green", "", 1500, { "", "", -1 } },
-			{ "U_C_Driver_2", "", 3500, { "", "", -1 } },
-			{ "U_C_Driver_1", "", 3600, { "", "", -1 } },
-			{ "U_C_Driver_3", "", 3700, { "", "", -1 } },
-			{ "U_C_Driver_4", "", 3700, { "", "", -1 } }
+			{ "U_C_Driver_1_black", "", 1500, { "life_donator", "SCALAR", 4 } },
+			{ "U_C_Driver_1_blue", "", 1500, { "life_donator", "SCALAR", 4 } },
+			{ "U_C_Driver_1_red", "", 1500, { "life_donator", "SCALAR", 4 } },
+			{ "U_C_Driver_1_orange", "", 1500, { "life_donator", "SCALAR", 3 } },
+			{ "U_C_Driver_1_green", "", 1500, { "life_donator", "SCALAR", 3 } },
+			{ "U_C_Driver_1_white", "", 1500, { "life_donator", "SCALAR", 2 } },
+			{ "U_C_Driver_1_yellow", "", 1500, { "life_donator", "SCALAR", 1 } },
+			{ "U_C_Driver_2", "Blueking", 3500, { "life_donator", "SCALAR", 5 } },
+			{ "U_C_Driver_1", "Fuel", 3600, { "life_donator", "SCALAR", 5 } },
+			{ "U_C_Driver_3", "Redstone", 3700, { "life_donator", "SCALAR", 5 } },
+			{ "U_C_Driver_4", "Vrana", 3700, { "life_donator", "SCALAR", 5 } }
 		};
 
 		headgear[] = {
 			{ "NONE", "Remove Hat", 0, { "", "", -1 } },
-			{ "H_RacingHelmet_1_red_F", "", 1000, { "", "", -1 } },
-			{ "H_RacingHelmet_1_green_F", "", 1000, { "", "", -1 } },
-			{ "H_RacingHelmet_1_F", "", 2500, { "", "", -1 } },
-			{ "H_RacingHelmet_2_F", "", 2500, { "", "", -1 } },
-			{ "H_RacingHelmet_3_F", "", 2500, { "", "", -1 } },
-			{ "H_RacingHelmet_4_F", "", 2500, { "", "", -1 } }
+			{ "H_RacingHelmet_1_black_F", "", 1000, { "life_donator", "SCALAR", 4 } },
+			{ "H_RacingHelmet_1_red_F", "", 1000, {{ "life_donator", "SCALAR", 4 } },
+			{ "H_RacingHelmet_1_white_F", "", 1000, { "life_donator", "SCALAR", 2 } },
+			{ "H_RacingHelmet_1_blue_F", "", 1000, { "life_donator", "SCALAR", 4 } },
+			{ "H_RacingHelmet_1_orange_F", "", 1000, { "life_donator", "SCALAR", 3 } },
+			{ "H_RacingHelmet_1_yellow_F", "", 1000, { "life_donator", "SCALAR", 2 } },
+			{ "H_RacingHelmet_1_green_F", "", 1000, { "life_donator", "SCALAR", 3 } },
+			{"H_RacingHelmet_1_white_F", "", 100, { "life_donator", "SCALAR", 2 } },
+			{ "H_RacingHelmet_1_F", "Fuel", 2500, { "life_donator", "SCALAR", 5 } },
+			{ "H_RacingHelmet_2_F", "Blueking", 2500, { "life_donator", "SCALAR", 5 } },
+			{ "H_RacingHelmet_3_F", "Redstone", 2500, { "life_donator", "SCALAR", 5 } },
+			{ "H_RacingHelmet_4_F", "Vrana", 2500, { "life_donator", "SCALAR", 5 } }
 		};
 
 		goggles[] = {
