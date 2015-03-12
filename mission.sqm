@@ -15549,7 +15549,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_InfoStand_V2_F";
 			skill=0.60000002;
-			init="removeallWeapons this;  this enableSimulation false;  this allowDamage false;  this addAction[""Heli Shop"",life_fnc_vehicleShopMenu,[""reb_air"",civilian,""reb_air_1"",""reb_air_2"",""reb_air_3"",""reb"",""Rebel Motorpool - Western Side""],0,false,false,"""",'license_civ_rebel'];";
+			init="removeallWeapons this;  this enableSimulation false;  this allowDamage false;  this addAction[""Heli Shop"",life_fnc_vehicleShopMenu,[""reb_air"",civilian,""reb_air_1"",""reb"",""Rebel Motorpool - Western Side""],0,false,false,"""",'license_civ_rebel'];";
 			description="Air";
 		};
 		class Item1256
