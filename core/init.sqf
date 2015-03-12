@@ -126,16 +126,7 @@ player setVariable["hasOrgan",false,true];
 		hint "Data saved to ProphecyServer, next save in 10 to 20 minutes.";
 	};	
 };
-switch (FETCH_CONST(life_donator)) do
-{
-	case 0: { life_houseLimit=3; };
-	case 1: { life_houseLimit=3; };
-	case 2: { life_houseLimit=3; };
-	case 3: { life_houseLimit=4; };
-	case 4: { life_houseLimit=4; };
-	case 5: { life_houseLimit=5; };
-};
-CONSTVAR(life_houseLimit,life_houseLimit);
+
 [] spawn life_fnc_survival;
 [] execVM "core\welcome.sqf";
 [] execVM "scripts\earplug\earplugInit.sqf";
