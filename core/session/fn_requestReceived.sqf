@@ -43,14 +43,7 @@ if(count (SEL(_this,6)) > 0) then {
 
 life_gear = SEL(_this,8);
 [true] call life_fnc_loadGear;
-switch(FETCH_CONST(life_donator)) do
-{
-	case 1: {life_paycheck = life_paycheck + 200;};
-	case 2: {life_paycheck = life_paycheck + 300;};
-	case 3: {life_paycheck = life_paycheck + 400;};
-	case 4: {life_paycheck = life_paycheck + 500;};
-	case 5: {life_paycheck = life_paycheck + 750;};
-};
+
 //Parse side specific information.
 switch(playerSide) do {
 	case west: {
