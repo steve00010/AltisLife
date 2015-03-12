@@ -1,3 +1,4 @@
+#include <macro.h>
 /*
 	File: fn_chopShopMenu.sqf
 	Author: Bryan "Tonic" Boardwine
@@ -6,6 +7,7 @@
 	Opens & initializes the Spray shop menu.
 */
 if(life_action_inUse) exitWith {hint "An action is already being processed..."};
+if(FETCH_CONST(life_donator) < 3) exitWith {hint "Tier 3 donator is required to use the SprayShop!"};
 disableSerialization;
 private["_nearVehicles","_nearVehicles1","_control"];
 _nearVehicles1 = [];
