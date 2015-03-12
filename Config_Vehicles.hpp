@@ -300,7 +300,7 @@ class CfgVehicles {
 			{ "White", "civ", {
 	                "\A3\Soft_F_beta\Quadbike_01\Data\quadbike_01_civ_white_co.paa"
 	        } },
-			{ "Digi Green", "civ", {
+			{ "Digi Green", "reb", {
 	                "\A3\Soft_F_beta\Quadbike_01\Data\quadbike_01_indp_co.paa"
 	        } },
 			{ "Hunter Camo", "civ", {
@@ -360,7 +360,7 @@ class CfgVehicles {
 			{ "Civ Red", "civ", {
 	                "\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_co.paa"
             } },
-			{ "Digi Green", "donate", {
+			{ "Digi Green", "reb", {
 	                "\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_indp_co.paa"
             } },
 			{ "Blueline", "civ", {
