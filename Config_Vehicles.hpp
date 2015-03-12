@@ -100,7 +100,7 @@ class CarShops {
 	};
 
 	class reb_car {
-		side = "civ";
+		side = "reb";
 		vehicles[] = {
 			{ "B_Quadbike_01_F", 2500, "" },
 			{ "B_G_Offroad_01_F", 7500, "" },
@@ -108,7 +108,7 @@ class CarShops {
 		};
 	};
 	class reb_boat {
-		side = "civ";
+		side = "reb";
 		vehicles[] = {
 			{ "I_SDV_01_F", 25000, "" },
 			{ "O_G_Boat_Transport_01_F", 17500, "" }
@@ -116,7 +116,7 @@ class CarShops {
 	};
 	
 	class reb_air {
-		side = "civ";
+		side = "reb";
 		vehicles[] = {
 			{ "B_Heli_Light_01_F", 253000, "" },
 			{ "B_Heli_Light_01_armed_F", 253000, "" },
