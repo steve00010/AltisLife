@@ -94,17 +94,17 @@ sell_array=[];
 switch (playerSide) do {
 	case west: {
 		BANK = 500000; //Starting Bank Money
-		life_paycheck = 400; //Paycheck Amount
+		life_paycheck = 800; //Paycheck Amount
 	};
 	
 	case civilian: {
 		BANK = 500000; //Starting Bank Money
-		life_paycheck = 500; //Paycheck Amount
+		life_paycheck = 1000; //Paycheck Amount
 	};
 	
 	case independent: {
 		BANK = 500000;
-		life_paycheck = 600;
+		life_paycheck = 800;
 	};	
 	
     case east: {
