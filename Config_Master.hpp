@@ -261,18 +261,18 @@ class VirtualItems {
 	VITEMMACRO(diamond_cut, "STR_Item_DiamondC", "diamondCut", 2, -1, 2000, false, -1, "icons\diamond.paa")
 	VITEMMACRO(rock, "STR_Item_Rock", "rock", 6, -1, -1, false, -1, "icons\rock.paa")
 	VITEMMACRO(cement, "STR_Item_CementBag", "cement", 5, -1, 1950, false, -1, "icons\cement.paa")
-	VITEMMACRO(silver_unrefined, "STR_Item_SilverOre", "silverUnrefined", 4, -1, -1, true, -1, "icons\silver_ore.paa")
-	VITEMMACRO(silver_refined, "STR_Item_SilverIngot", "silverRefined", 3, -1, 2500, true, -1, "icons\silver.paa")	
-	VITEMMACRO(crystal_unrefined, "STR_Item_CrystalOre", "crystalUnrefined", 4, -1, -1, true, -1, "icons\crystal_ore.paa")
-	VITEMMACRO(crystal_refined, "STR_Item_CrystalShard", "crystalRefined", 3, -1, 1500, true, -1, "icons\crystal.paa")	
+	VITEMMACRO(silver_unrefined, "STR_Item_SilverOre", "silverUnrefined", 4, -1, 500, true, -1, "icons\silver_ore.paa")
+	VITEMMACRO(silver_refined, "STR_Item_SilverIngot", "silverRefined", 3, -1, 1500, true, -1, "icons\silver.paa")	
+	VITEMMACRO(crystal_unrefined, "STR_Item_CrystalOre", "crystalUnrefined", 4, -1, 500, true, -1, "icons\crystal_ore.paa")
+	VITEMMACRO(crystal_refined, "STR_Item_CrystalShard", "crystalRefined", 3, -1, 2500, true, -1, "icons\crystal.paa")	
 
 	//Drugs
-	VITEMMACRO(heroin_unprocessed, "STR_Item_HeroinU", "heroinUnprocessed", 6, -1, -1, true, -1, "icons\heroin_unprocessed.paa")
-	VITEMMACRO(heroin_processed, "STR_Item_HeroinP", "heroinProcessed", 4, -1, 2560, true, -1, "icons\heroin.paa")
-	VITEMMACRO(cannabis, "STR_Item_Cannabis", "cannabis", 4, -1, -1, true, -1, "icons\cannabis.paa")
-	VITEMMACRO(marijuana, "STR_Item_Marijuana", "marijuana", 3, 2800, 2350, true, -1, "icons\marijuana.paa")
-	VITEMMACRO(cocaine_unprocessed, "STR_Item_CocaineU", "cocaineUnprocessed", 6, -1, 3000, true, -1, "icons\cocaine_unprocessed.paa")
-	VITEMMACRO(cocaine_processed, "STR_Item_CocaineP", "cocaineProcessed", 4, -1, 5000, true, -1, "icons\cocaine.paa")
+	VITEMMACRO(heroin_unprocessed, "STR_Item_HeroinU", "heroinUnprocessed", 6, -1, 2000, true, -1, "icons\heroin_unprocessed.paa")
+	VITEMMACRO(heroin_processed, "STR_Item_HeroinP", "heroinProcessed", 4, -1, 4500, true, -1, "icons\heroin.paa")
+	VITEMMACRO(cannabis, "STR_Item_Cannabis", "cannabis", 4, -1, 700, true, -1, "icons\cannabis.paa")
+	VITEMMACRO(marijuana, "STR_Item_Marijuana", "marijuana", 3, -1, 1550, true, -1, "icons\marijuana.paa")
+	VITEMMACRO(cocaine_unprocessed, "STR_Item_CocaineU", "cocaineUnprocessed", 6, -1, 2000, true, -1, "icons\cocaine_unprocessed.paa")
+	VITEMMACRO(cocaine_processed, "STR_Item_CocaineP", "cocaineProcessed", 4, -1, 3500, true, -1, "icons\cocaine.paa")
 
 	//Drink
 	VITEMMACRO(redgull, "STR_Item_RedGull", "redgull", 1, 1500, 200, false, 100, "icons\redgull.paa")

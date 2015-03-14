@@ -22,7 +22,8 @@ class CarShops {
 		vehicles[] = {
 			{ "B_Heli_Light_01_F", 253000, "pilot" },
 			{ "C_Heli_Light_01_civil_F", 253000, "pilot" },
-			{ "O_Heli_Light_02_unarmed_F", 700000, "pilot", }
+			{ "O_Heli_Light_02_unarmed_F", 700000, "pilot", },
+		    {"I_Heli_Transport_02_F", 2500000, "", }			
 		};
 	};
 
@@ -104,7 +105,7 @@ class CarShops {
 		vehicles[] = {
 			{ "B_Quadbike_01_F", 2500, "" },
 			{ "B_G_Offroad_01_F", 7500, "" },
-			{ "B_G_Offroad_01_armed_F", 600000, "rebel" }
+			{ "B_G_Offroad_01_armed_F", 600000, "Rebel" }
 		};
 	};
 	class reb_boat {
@@ -119,10 +120,10 @@ class CarShops {
 		side = "reb";
 		vehicles[] = {
 			{ "B_Heli_Light_01_F", 253000, "" },
-			{ "B_Heli_Light_01_armed_F", 253000, "" },
 			{ "O_Heli_Transport_04_bench_F", 2750000, "" },
 			{ "O_Heli_Light_02_unarmed_F", 700000, "", },
-			{ "B_Heli_Transport_01_camo_F", 1800000, "", }
+			{ "B_Heli_Transport_01_camo_F", 1800000, "", },
+		    { "I_Heli_Transport_02_F", 2500000, "", }
 		};
 	};	
 	
@@ -519,11 +520,11 @@ class CfgVehicles {
 	};
 
 	class O_Heli_Light_02_unarmed_F {								//PO-30 Orca Black
-        vItemSpace = 200;
+        vItemSpace = 80;
         storageFee[] = { 8000, 8000, 8000, 8000 };
-		garageSell[] = { 300000, 0, 300000, 300000 };
+		garageSell[] = { 300000, 300000, 300000, 300000 };
         insurance = 2500;
-        chopShop = 5000;
+        chopShop = 50000;
         textures[] = {
 			{ "White / Blue", "civ", {
 	                "\a3\air_f\Heli_Light_02\Data\heli_light_02_ext_civilian_co.paa"   
@@ -970,7 +971,7 @@ class CfgVehicles {
 	class I_Heli_Transport_02_F {								//CH-49 Mohawk
         vItemSpace = 200;
         storageFee[] = { 15000, 15000, 15000, 15000 };
-		garageSell[] = { 155000, 155000, 155000, 155000 };
+		garageSell[] = { 1500000, 1500000, 1500000, 1500000 };
         insurance = 2500;
         chopShop = 150000;
         textures[] = {
@@ -978,16 +979,16 @@ class CfgVehicles {
                 "\a3\air_f_beta\Heli_Transport_02\Data\Skins\heli_transport_02_1_ion_co.paa",
                 "\a3\air_f_beta\Heli_Transport_02\Data\Skins\heli_transport_02_2_ion_co.paa",
                 "\a3\air_f_beta\Heli_Transport_02\Data\Skins\heli_transport_02_3_ion_co.paa"
-            } },
+            },{"life_donator",5} },			
             { "Dahoman", "civ", {
                 "\a3\air_f_beta\Heli_Transport_02\Data\Skins\heli_transport_02_1_dahoman_co.paa",
                 "\a3\air_f_beta\Heli_Transport_02\Data\Skins\heli_transport_02_2_dahoman_co.paa",
                 "\a3\air_f_beta\Heli_Transport_02\Data\Skins\heli_transport_02_3_dahoman_co.paa"
             } },
-			{ "Proph", "civ", {
-                "textures\vehicles\MohawkDoors.paa",
-                "textures\vehicles\Mohawkmiddle.paa",
-                "textures\vehicles\Mohawksides.paa"				
+			{ "Proph Camo", "reb", {
+                "textures\vehicles\mohawkdoor.paa",
+                "textures\vehicles\mohawkfuselage.paa",
+                "textures\vehicles\mohawkhull.paa"				
             },{"life_donator",5} },
         };
     };

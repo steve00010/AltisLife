@@ -28,7 +28,7 @@ corpseRemovalMaxTime = 9999;
 
 //SpyGlass configuration
 SPY_Enable = true;
-onPauseScript[] = { "life_fnc_escInterupt" };
+
 #include "Config_Spyglass.hpp"
 
 #include "dialog\MasterHandler.h"
