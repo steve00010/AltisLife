@@ -545,7 +545,7 @@ class CfgVehicles {
                 "textures\vehicles\arc\arcorca.paa"
             } },
 			{ "Camo", "reb", {
-                "textures\vehicles\arc\orca_rebel.paa"
+                "textures\vehicles\orca_rebel.paa"
             },{"life_donator",2} },		
         };
     };
