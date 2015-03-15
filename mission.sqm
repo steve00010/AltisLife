@@ -5693,7 +5693,7 @@ class Mission
 		};
 		class Item323
 		{
-			position[]={9234.0645,16.775499,21573.117};
+			position[]={9237.7529,16.756783,21576.842};
 			azimut=317.41882;
 			offsetY=1;
 			id=424;
@@ -6086,7 +6086,7 @@ class Mission
 		};
 		class Item359
 		{
-			position[]={9234.4541,16.820076,21553.611};
+			position[]={9238.6396,16.857878,21554.672};
 			azimut=90;
 			offsetY=-0.1;
 			id=460;
@@ -15534,7 +15534,7 @@ class Mission
 		};
 		class Item1254
 		{
-			position[]={9232.3467,16.781597,21570.813};
+			position[]={9236.0352,16.778358,21574.537};
 			id=1355;
 			side="EMPTY";
 			vehicle="Land_InfoStand_V2_F";
@@ -15544,12 +15544,12 @@ class Mission
 		};
 		class Item1255
 		{
-			position[]={9236.2578,16.79076,21573.676};
+			position[]={9239.9463,16.761036,21577.4};
 			id=1356;
 			side="EMPTY";
 			vehicle="Land_InfoStand_V2_F";
 			skill=0.60000002;
-			init="removeallWeapons this;  this enableSimulation false;  this allowDamage false;  this addAction[""Heli Shop"",life_fnc_vehicleShopMenu,[""reb_air"",civilian,""reb_air1"",""reb"",""Rebel Motorpool - Western Side""],0,false,false,"""",'license_civ_rebel'];";
+			init="removeallWeapons this;  this enableSimulation false;  this allowDamage false;  this addAction[""Heli Shop"",life_fnc_vehicleShopMenu,[""reb_air"",civilian,""reb_air_1"",""reb"",""Rebel Motorpool - Western Side""],0,false,false,"""",'license_civ_rebel'];";
 			description="Air";
 		};
 		class Item1256
@@ -43199,7 +43199,7 @@ class Mission
 		};
 		class Item209
 		{
-			position[]={9234.8545,16.82271,21553.607};
+			position[]={9239.04,16.86051,21554.668};
 			name="reb_air_2";
 			type="Empty";
 			angle=-142.30196;
@@ -43214,7 +43214,7 @@ class Mission
 		};
 		class Item211
 		{
-			position[]={9231.7813,16.783928,21570.238};
+			position[]={9235.4697,16.78072,21573.963};
 			name="civ_gar_1_1_1_2";
 			text="Air Garage";
 			type="o_service";
@@ -43223,7 +43223,7 @@ class Mission
 		};
 		class Item212
 		{
-			position[]={9237.1934,16.802162,21573.215};
+			position[]={9240.8818,16.778063,21576.939};
 			name="airshop_2_5";
 			text="Air Shop";
 			type="mil_dot";
