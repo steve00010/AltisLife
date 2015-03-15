@@ -14923,7 +14923,7 @@ class Mission
 		};
 		class Item1197
 		{
-			position[]={3677.989,10.224076,13149.396};
+			position[]={3677.5349,10.219219,13149.396};
 			offsetY=0.60000002;
 			id=1298;
 			side="EMPTY";
@@ -15096,7 +15096,7 @@ class Mission
 		};
 		class Item1213
 		{
-			position[]={3675.8123,10.201328,13149.363};
+			position[]={3679.0588,10.235957,13149.363};
 			offsetY=0.60000002;
 			id=1314;
 			side="EMPTY";
@@ -44364,7 +44364,7 @@ class Mission
 		};
 		class Item350
 		{
-			position[]={3676.0388,10.1595,13152.38};
+			position[]={3676.7373,10.183331,13151.263};
 			name="Spray_shop_1";
 			text="Spray Shop";
 			type="respawn_motor";
