@@ -9,7 +9,7 @@
 if(life_action_inUse) exitWith {hint localize "STR_NOTF_ActionInProc"};
 disableSerialization;
 private["_nearVehicles","_control"];
-_nearVehicles = nearestObjects [getMarkerPos (_this select 3),["Car","Truck"],25];
+_nearVehicles = nearestObjects[getPos (_this select 0),["Car","Air","Truck"],25];
 if (playerSide != civilian) exitWith {hint "I got nothing to say to you. Leave me alone."};
 life_chopShop = SEL(_this,3);
 //Error check

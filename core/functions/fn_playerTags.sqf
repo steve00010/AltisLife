@@ -73,7 +73,7 @@ SUB(_units,[player]);
 				case (_x in (units grpPlayer) && playerSide == civilian): {format["<t color='#00FF00'>%1</t>",(_x GVAR ["realname",name _x])];};
 								//Dead Players
 				case (!alive _x): {
-					_text = format["<t color='#000000'>%1</t>", _name];
+					_text = format["<t color='#000000'>%1</t>", _x GVAR ["realname",name _x]];
 				};
 				case (!isNil {(_x GVAR "rank")}): {
 					format["<img image='%1' size='1'></img> <t color='#2980b9'>%2</t>",
