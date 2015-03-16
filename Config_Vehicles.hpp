@@ -990,6 +990,11 @@ class CfgVehicles {
                 "textures\vehicles\mohawkfuselage.paa",
                 "textures\vehicles\mohawkhull.paa"				
             },{"life_donator",5} },
+			{ "Proph Skull", "reb", {
+                "textures\vehicles\mohawkskulldoor.paa",
+                "textures\vehicles\mohawkskullfuse.paa",
+                "textures\vehicles\mohawkskullhull.paa"				
+            },{"life_donator",5} },			
         };
     };
 };
