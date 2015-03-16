@@ -48,7 +48,7 @@ if((_veh isKindOf "Car") OR (_veh isKindOf "Ship") OR (_veh isKindOf "Air")) the
 		player playActionNow "stop";
 		if(life_interrupted) exitWith {life_interrupted = false; titleText[localize "STR_NOTF_ActionCancel","PLAIN"]; life_action_inUse = false;};
 		if(player != vehicle player) exitWith {titleText[localize "STR_NOTF_RepairingInVehicle","PLAIN"];};
-		if(FETCH_CONST(life_arclevel)<1) then {
+		if(FETCH_CONST(life_arclevel)<1)or(FETCH_CONST(life_donator)<3) then {
 			player removeItem "ToolKit";
 		};
 		
