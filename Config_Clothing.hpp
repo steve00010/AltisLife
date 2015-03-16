@@ -111,7 +111,7 @@ class Clothing {
 			{ "U_B_HeliPilotCoveralls", "Pilot Uniform", 550, { "life_coplevel", "SCALAR", 2 } },
 			{ "U_B_CTRG_1", "Swat Uniform", 550, { "life_swatlevel", "SCALAR", 1 } },
 			{ "U_B_GhillieSuit", "Ghillie Swat", 550, { "life_swatLevel", "SCALAR", 2 } },
-			{ "U_B_CTRG_3", "DEA Uniform", 550, { "life_coplevel", "SCALAR", 1 } }
+			{ "U_B_CTRG_3", "DEA Uniform", 550, { "life_coplevel", "SCALAR", 3 } }
 		};
 
 		headgear[] = {
@@ -147,7 +147,7 @@ class Clothing {
 			{ "NONE", "Remove Vest", 0, { "", "", -1 } },
 			{ "V_RebreatherB", "Re-breather", 800, { "", "", -1 } },
 			{ "V_TacVest_blk_POLICE", "Tac Vest Police", 800, { "", "", -1 } },
-			{ "V_PlateCarrier1_blk", "PlateCarrier", 1500, { "", "", -1 } }
+			{ "V_PlateCarrier1_blk", "PlateCarrier", 1500, { "life_coplevel", "SCALAR", 2 } }
 		};
 
 		backpacks[] = {

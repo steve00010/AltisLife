@@ -26,14 +26,18 @@ if(life_markers) then {
 				_pSee setMarkerTextLocal format['%1',_x getVariable["realname",name _x]];
 				_pSee setMarkerColorLocal ("ColorRed");
 				PlayerMarkers = PlayerMarkers + [_x];
-		};
-	} forEach allUnits;
+			};
+		} forEach allUnits;
 	sleep 0.2;
-};
+	};
+	_msg = format["%1 has turned on markers",profileName];
+	[[_msg],"life_fnc_logMSG",false,false] spawn life_fnc_MP;
 FinishedLoop = true;
 } else {
 	if(isNil "FinishedLoop") exitWith {};
 	hint localize "STR_ANOTF_MDisabled";
+	_msg = format["%1 has turned off markers",profileName];
+	[[_msg],"life_fnc_logMSG",false,false] spawn life_fnc_MP;
 	waitUntil{FinishedLoop};
 	{
 		deleteMarkerLocal str _x;

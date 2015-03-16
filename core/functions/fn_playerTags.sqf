@@ -73,7 +73,7 @@ SUB(_units,[player]);
 				case (_x in (units grpPlayer) && playerSide == civilian): {format["<t color='#00FF00'>%1</t>",(_x GVAR ["realname",name _x])];};
 								//Dead Players
 				case (!alive _x): {
-					_text = format["<t color='#000000'>%1</t>", _x GVAR ["realname",name _x]];
+					_text = format["<t color='#000000'>Unconscious - %1</t>", name _x];
 				};
 				case (!isNil {(_x GVAR "rank")}): {
 					format["<img image='%1' size='1'></img> <t color='#2980b9'>%2</t>",
@@ -97,6 +97,7 @@ SUB(_units,[player]);
 						default {format["Cadet %1", _x GVAR ["realname",name _x]]};
 					}]};
 				case ((!isNil {_x GVAR "name"} && playerSide == independent)): {format["<t color='#FF0000'><img image='a3\ui_f\data\map\MapControl\hospital_ca.paa' size='1.5'></img></t> %1",_x GVAR ["name","Unknown Player"]]};
+				case ((!isNil {_x GVAR "name"} && playerSide == east)): {format["<t color='#f1c40f'>ARC:</t>  %1",_x GVAR ["realname",name _x]]};
 				default {
 					if(!isNil {(group _x) GVAR "gang_name"}) then {
 						if(((headgear _x) in _hiddenheadgear) or ((goggles _x) in _hiddengoggles)) then {
@@ -113,7 +114,7 @@ SUB(_units,[player]);
 					};
 				};
 			};
-			if(_x getVariable ["speaking",false]) then {_text = "[Talking...] " + _text};
+			if(_x getVariable ["Talking",false]) then {_text = "[Talking] " + _text};
 			_idc ctrlSetStructuredText parseText _text;
 			_idc ctrlSetPosition [_sPos select 0, _sPos select 1, 0.4, 0.65];
 			_idc ctrlSetScale scale;

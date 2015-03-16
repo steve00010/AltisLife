@@ -230,7 +230,7 @@ class VirtualItems {
 	VITEMMACRO(bottledwhiskey, "STR_Item_BottledWhiskey", "bottledwhiskey", 5, 3500, 4500, true, 5, "icons\bottledwhiskey.paa") 
 	VITEMMACRO(moonshine, "STR_Item_Moonshine", "moonshine", 3, 4000, 5000, true, 3, "icons\moonshine.paa")
 	VITEMMACRO(mash, "STR_Item_Mash", "mash", 2, 10, 10, false, 1, "icons\mash.paa")
-	VITEMMACRO(goldbarp, "STR_Item_GoldBarp", "goldBarp", 12, -1, 85000, false, -1, "icons\goldbarp.paa")
+	VITEMMACRO(goldbarp, "STR_Item_GoldBarp", "goldBarp", 12, -1, 85000, true, -1, "icons\goldbarp.paa")
 	VITEMMACRO(underwatercharge, "STR_Item_BChargewater", "underwatercharge", 15, 35000, -1, true, -1, "icons\underwatercharge.paa")
 	
 	//Misc
@@ -239,7 +239,7 @@ class VirtualItems {
 	VITEMMACRO(fuelFull, "STR_Item_FuelF", "fuelFull", 5, 850, 500, false, -1, "icons\ico_fuel.paa")
 	VITEMMACRO(spikeStrip, "STR_Item_SpikeStrip", "spikeStrip", 15, 2500, 1200, false, -1, "icons\spikestrip.paa")
 	VITEMMACRO(lockpick, "STR_Item_Lockpick", "lockpick", 1, 150, 75, false, -1, "icons\lockpick.paa")
-	VITEMMACRO(goldbar, "STR_Item_GoldBar", "goldBar", 12, -1, 95000, false, -1, "icons\goldbar.paa")
+	VITEMMACRO(goldbar, "STR_Item_GoldBar", "goldBar", 12, -1, 75000, true, -1, "icons\goldbar.paa")
 	VITEMMACRO(blastingcharge, "STR_Item_BCharge", "blastingCharge", 15, 35000, -1, true, -1, "icons\blastingcharge.paa")
 	VITEMMACRO(boltcutter, "STR_Item_BCutter", "boltCutter", 5, 7500, -1, true, -1, "icons\boltcutter.paa")
 	VITEMMACRO(defusekit, "STR_Item_DefuseKit", "defuseKit", 2, 2500, -1, false, -1, "icons\defusekit.paa")
