@@ -171,7 +171,7 @@ if (!(isDedicated)) then
 		[] execVM "scripts\earplug\earpluginit.sqf";
 		[] execVM "scripts\welcome.sqf";
 		[] execVM "scripts\zlt_fastrope.sqf";
-		[] execVM "scripts\fn_statusBar.sqf";
+		[] execVM "scripts\UI\fn_statusBar.sqf";
 		if (isMultiplayer) then 
 		{
 			player addEventHandler ["Respawn", 
