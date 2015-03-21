@@ -20,6 +20,6 @@ systemChat format["[ProphecyServer] Loading game server info...", _rscLayer];
 	{
 		sleep 3;
 		_counter = (240-(round(serverTime/60)));
-		((uiNamespace getVariable "osefStatusBar")displayCtrl 1000)ctrlSetText format["Minutes until restart: %1 | FPS: %2 | Players: %3 | GRIDREF: %4",_counter,round diag_fps, west countSide playableUnits, mapGridPosition player];
+		((uiNamespace getVariable "osefStatusBar")displayCtrl 1000)ctrlSetText format["Minutes until restart: %1 | FPS: %2 | Players: %3 | GRIDREF: %4 | ProphecyGaming.co.uk",_counter,round diag_fps, west countSide playableUnits, mapGridPosition player];
 	}; 
 };
