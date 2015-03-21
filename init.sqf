@@ -2,7 +2,7 @@
 #include "Settings\MissionSettings.hpp"
 
 #include "Settings\AddonsConfigurator.hpp"
-
+[]execVM "eos\OpenMe.sqf";
 [] execVM "ca\Modules\MP\data\scripts\MPFramework.sqf";
 
 if (isMultiplayer) then 
@@ -75,7 +75,7 @@ if ((isServer)or(isDedicated)) then
 	
 	[]execVM "Scripts\SP\Insurgents\Caches\CachesSetup.sqf";
 	[]execVM "Scripts\SP\RallyPointsManager.sqf";
-	[]execVM "eos\OpenMe.sqf";
+
 	[]execVM "Scripts\Support\UAV\UAVDelay.sqf";
 };
 
@@ -171,7 +171,7 @@ if (!(isDedicated)) then
 		[] execVM "scripts\earplug\earpluginit.sqf";
 		[] execVM "scripts\welcome.sqf";
 		[] execVM "scripts\zlt_fastrope.sqf";
-		[] execVM "scripts\UI\fn_statusBar.sqf";
+		[] execVM "scripts\UI\statusBar.sqf";
 		if (isMultiplayer) then 
 		{
 			player addEventHandler ["Respawn", 
