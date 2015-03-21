@@ -168,7 +168,7 @@ if ((_fSize select 0) > 0) then {
 		0=[(_fGroup select 0),_fSize,_cargoGrp,_faction,9] call eos_fnc_setcargo;
 			0=[_cargoGrp,"INFskill"] call eos_fnc_grouphandlers;
 		_fGroup set [count _fGroup,_cargoGrp];
-			null = [_mkr,_fGroup,_counter] execvm "eos\functions\TransportUnload_fnc.sqf";
+			null = [_mkr,_fGroup,_counter] execvm "scripts\eos\functions\TransportUnload_fnc.sqf";
 				}else{
 					_wp1 = (_fGroup select 2) addWaypoint [(markerpos _mkr), 0];  
 					_wp1 setWaypointSpeed "FULL";  
@@ -288,6 +288,6 @@ _eosAct=false;
 deletevehicle _clear;deletevehicle _taken;	
 	
 if (!(getmarkercolor _mkr == "colorblack")) then {	
-	null = [_mkr,[_aGrps,_aSize],[_bGrps,_bSize],[_cGrps,_cSize],[_dGrps,_eGrps,_fGrps,_fSize],_settings,true] execVM "eos\core\eos_core.sqf";
+	null = [_mkr,[_aGrps,_aSize],[_bGrps,_bSize],[_cGrps,_cSize],[_dGrps,_eGrps,_fGrps,_fSize],_settings,true] execVM "scripts\eos\core\eos_core.sqf";
 	}else{_Mkr setmarkeralpha 0;};
 	};

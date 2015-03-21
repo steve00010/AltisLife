@@ -5,17 +5,17 @@ _tempArray=[];
 
 // EAST CSAT FACTION
 	if (_faction==0) then {
-	_InfPool=	["O_SoldierU_SL_F","O_soldierU_repair_F","O_soldierU_medic_F","O_sniper_F","O_Soldier_A_F","O_Soldier_AA_F","O_Soldier_AAA_F","O_Soldier_AAR_F","O_Soldier_AAT_F","O_Soldier_AR_F","O_Soldier_AT_F","O_soldier_exp_F","O_Soldier_F","O_engineer_F","O_engineer_U_F","O_medic_F","O_recon_exp_F","O_recon_F","O_recon_JTAC_F","O_recon_LAT_F","O_recon_M_F","O_recon_medic_F","O_recon_TL_F"];	
-	_ArmPool=	["O_APC_Tracked_02_AA_F","O_APC_Tracked_02_cannon_F","O_APC_Wheeled_02_rcws_F","O_MBT_02_arty_F","O_MBT_02_cannon_F"];
-	_MotPool=	["O_Truck_02_covered_F","O_Truck_02_transport_F","O_MRAP_02_F","O_MRAP_02_gmg_F","O_MRAP_02_hmg_F","O_Truck_02_medical_F"];
-	_ACHPool=	["O_Heli_Attack_02_black_F","O_Heli_Attack_02_F"];
-	_CHPool=	["O_Heli_Light_02_F","O_Heli_Light_02_unarmed_F"];
+	_InfPool=	["O_Soldier_AR_F","O_Soldier_AA_F","O_Soldier_LAT_F","O_Soldier_F","O_Soldier_lite_F","O_soldier_M_F","O_medic_F","O_soldier_PG_F"];		
+	_ArmPool=	["O_APC_Wheeled_02_rcws_F","O_APC_Tracked_02_cannon_F"];
+	_MotPool=	["O_MRAP_02_hmg_F","O_MRAP_02_F"];
+	_ACHPool=	["O_Heli_Attack_02_F","I_Heli_light_03_F"];
+	_CHPool=	["O_Heli_Light_02_F","I_Heli_light_03_F"];
 	_uavPool=	["O_UAV_01_F","O_UAV_02_CAS_F","O_UGV_01_rcws_F"];
 	_stPool=	["O_Mortar_01_F","O_static_AT_F","O_static_AA_F"];
 	_shipPool=	["O_Boat_Armed_01_hmg_F","O_Boat_Transport_01_F"];
-	_diverPool=	["O_diver_exp_F","O_diver_F","O_diver_TL_F"];
-	_crewPool=	["O_crew_F"];
-	_heliCrew=	["O_helicrew_F","O_helipilot_F"];
+	_diverPool=	[];
+	_crewPool=	["O_crew_F","O_engineer_F"];
+	_heliCrew=	["O_helipilot_F"];
 };
 // WEST NATO FACTION	
 	if (_faction==1) then {
@@ -47,7 +47,7 @@ _tempArray=[];
 };
 // CIVILIAN	
 	if (_faction==3) then {
-	_InfPool=	["C_man_1","C_man_1_1_F","C_man_1_2_F","C_man_1_3_F","C_man_hunter_1_F","C_man_p_beggar_F","C_man_p_beggar_F_afro","C_man_p_fugitive_F","C_man_p_shorts_1_F","C_man_pilot_F","C_man_polo_1_F","C_man_polo_2_F","C_man_polo_3_F","C_man_polo_4_F","C_man_polo_5_F","C_man_polo_6_F","C_man_shorts_1_F","C_man_shorts_2_F","C_man_shorts_3_F","C_man_shorts_4_F","C_man_w_worker_F"];	
+	_InfPool=	["C_man_1","C_man_1_1_F","C_man_1_2_F","C_man_1_3_F","C_man_hunter_1_F","C_man_p_beggar_F","C_man_p_beggar_F_afro","C_man_p_shorts_1_F","C_man_polo_1_F","C_man_polo_2_F","C_man_polo_3_F","C_man_polo_4_F","C_man_polo_5_F","C_man_polo_6_F","C_man_shorts_1_F","C_man_shorts_2_F","C_man_shorts_3_F","C_man_shorts_4_F","C_man_w_worker_F"];	
 	_ArmPool=	["C_Hatchback_01_F","C_Hatchback_01_sport_F","C_Quadbike_01_F","C_SUV_01_F","C_Van_01_transport_F","C_Van_01_box_F"];
 	_MotPool=	["C_Hatchback_01_F","C_Hatchback_01_sport_F","C_Quadbike_01_F","C_SUV_01_F","C_Van_01_transport_F","C_Van_01_box_F"];
 	_ACHPool=	[];
@@ -56,8 +56,8 @@ _tempArray=[];
 	_stPool=	[];
 	_shipPool=	["C_Boat_Civil_01_F","C_Boat_Civil_01_rescue_F","C_Boat_Civil_04_F","C_Rubberboat"];
 	_diverPool=	[];
-	_crewPool=	["C_man_1"];
-	_heliCrew=	["C_man_1","C_man_1"];
+	_crewPool=	[];
+	_heliCrew=	[];
 };
 // WEST FIA FACTION
 	if (_faction==4) then {
@@ -73,9 +73,9 @@ _tempArray=[];
 	_crewPool=	[];
 	_heliCrew=	[];
 };
-// ADD CLASSNAMES 
+// EAST CSAT URBAN
 	if (_faction==5) then {
-	_InfPool=	[];	
+	_InfPool=	["O_soldierU_AR_F","O_soldierU_F","O_soldierU_AA_F","O_soldierU_AT_F","O_SoldierU_GL_F","O_soldierU_M_F","O_soldierU_exp_F","O_soldierU_medic_F","O_recon_F"];
 	_ArmPool=	[];
 	_MotPool=	[];
 	_ACHPool=	[];
@@ -86,8 +86,7 @@ _tempArray=[];
 	_diverPool=	[];
 	_crewPool=	[];
 	_heliCrew=	[];
-	};
-	
+};
 // ADD CLASSNAMES 	
 	if (_faction==6) then {
 	_InfPool=	[];	

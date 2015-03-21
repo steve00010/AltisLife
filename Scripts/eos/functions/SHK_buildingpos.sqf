@@ -147,9 +147,12 @@ if isserver then {
         _x setpos _pos;
         _x setformdir _dir;
         if _disableMove then { doStop _x; };
-        if _stance then { _x setunitpos "UP" };
+        if _stance then { _x setunitpos "UP"; _x allowFleeing 0; };
       };
     };
+	if ((random 1) >= 0.49) then {
+		_x enableAttack FALSE;
+	};
   } foreach _men;
 
 }; //isserver

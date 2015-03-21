@@ -17,7 +17,7 @@ _eosZone=_basSettings select 3;
 _hints=_basSettings select 4;
 _initialLaunch= if (count _this > 7) then {_this select 7} else {false};
 
-_Placement=(_mkrX + 500);
+_Placement=(_mkrX + 150);
 
 	if (_mA==0) then {_mAH = 1;_mAN = 0.5;};
 	if (_mA==1) then {_mAH = 0;_mAN = 0;};
@@ -125,44 +125,64 @@ if (_debug) then {player sidechat format ["Armoured:%1 - r%2",_counter,_AVehGrou
 			0=[_cargoGrp,"INFskill"] call eos_fnc_grouphandlers;
 			
 				_fGroup set [count _fGroup,_cargoGrp];
-				null = [_mkr,_fGroup,_counter] execvm "eos\functions\TransportUnload_fnc.sqf";
+				null = [_mkr,_fGroup,_counter] execvm "scripts\eos\functions\TransportUnload_fnc.sqf";
 												
-												}else{
+					} else {
+					
+						[(_fGroup select 2),(markerPos _mkr)] call QS_fnc_taskAttack;
+						/*
 						_wp1 = (_fGroup select 2) addWaypoint [(markerpos _mkr), 0];  
 						_wp1 setWaypointSpeed "FULL";  
-						_wp1 setWaypointType "SAD";};
+						_wp1 setWaypointType "SAD";
+						*/
+					};
 							if (_debug) then {player sidechat format ["Chopper:%1",_counter];0= [_mkr,_counter,"Chopper",(getpos leader (_fGroup select 2))] call EOS_debug};
 			};	
 
 // ADD WAYPOINTS
+	
+	{
+		[_x,_mPos] call QS_fnc_taskAttack;
+	} count _aGroup;
+	/*
 	{
 		_getToMarker = _x addWaypoint [_mPos, 0];
 		_getToMarker setWaypointType "SAD";
-		_getToMarker setWaypointSpeed "NORMAL";
+		_getToMarker setWaypointSpeed "FULL";
 		_getToMarker setWaypointBehaviour "AWARE"; 
 		_getToMarker setWaypointFormation "NO CHANGE";
 	}foreach _aGroup;
+	*/
 	
+	{
+		[(_x select 2),_mPos] call QS_fnc_taskAttack;
+	} forEach _cGrp;
+	
+	/*
 	{
 		_getToMarker = (_x select 2) addWaypoint [_mPos, 0];
 		_getToMarker setWaypointType "SAD";
-		_getToMarker setWaypointSpeed "NORMAL";
+		_getToMarker setWaypointSpeed "FULL";
 		_getToMarker setWaypointBehaviour "AWARE"; 
 		_getToMarker setWaypointFormation "NO CHANGE";
 	}foreach _cGrp;
+	*/
 	
 	{
 		_pos = [_mPos, (_mkrX + 50), random 360] call BIS_fnc_relPos;
 		_getToMarker = (_x select 2) addWaypoint [_pos, 0];
 		_getToMarker setWaypointType "UNLOAD";
-		_getToMarker setWaypointSpeed "NORMAL";
+		_getToMarker setWaypointSpeed "FULL";
 		_getToMarker setWaypointBehaviour "AWARE"; 
 		_getToMarker setWaypointFormation "NO CHANGE";
 			_wp = (_x select 2) addWaypoint [_mPos, 1];
 					_wp setWaypointType "SAD";
-					_wp setWaypointSpeed "NORMAL";
-					_wp setWaypointBehaviour "AWARE"; 
+					_wp setWaypointSpeed "FULL";
+					_wp setWaypointBehaviour "COMBAT";
 					_wp setWaypointFormation "NO CHANGE";
+		_x enableAttack TRUE;
+		_x allowFleeing 0;
+		_x setSpeedMode "FULL";
 	}foreach _bGrp;	
 	
 	
@@ -179,7 +199,7 @@ waituntil {triggeractivated _bastActive};
 					_mkr setmarkeralpha _mAN;
 					
 						if (_eosZone) then {
-null = [_mkr,[_PApatrols,_PAgroupSize],[_PApatrols,_PAgroupSize],[_LVehGroups,_LVgroupSize],[_AVehGroups,0,0,0],[_faction,_mA,350,_CHside]] execVM "eos\core\EOS_Core.sqf";
+null = [_mkr,[_PApatrols,_PAgroupSize],[_PApatrols,_PAgroupSize],[_LVehGroups,_LVgroupSize],[_AVehGroups,0,0,0],[_faction,_mA,350,_CHside]] execVM "scripts\eos\core\EOS_Core.sqf";
 
 										};
 							_waves=0;
@@ -197,7 +217,7 @@ null = [_mkr,[_PApatrols,_PAgroupSize],[_PApatrols,_PAgroupSize],[_LVehGroups,_L
 					}else{
 					if (_waves >= 1) then {
 						if (_hints) then  {hint "Reinforcements inbound";};
-null = [_mkr,[_PApatrols,_PAgroupSize],[_LVehGroups,_LVgroupSize],[_AVehGroups],[_CHGroups,_fSize],_settings,[_pause,_waves,_timeout,_eosZone,_hints],true] execVM "eos\core\b_core.sqf";
+null = [_mkr,[_PApatrols,_PAgroupSize],[_LVehGroups,_LVgroupSize],[_AVehGroups],[_CHGroups,_fSize],_settings,[_pause,_waves,_timeout,_eosZone,_hints],true] execVM "scripts\eos\core\b_core.sqf";
 						};};
 	
 waituntil {getmarkercolor _mkr == "colorblack" OR getmarkercolor _mkr == VictoryColor OR getmarkercolor _mkr == hostileColor or !triggeractivated  _bastActive};
