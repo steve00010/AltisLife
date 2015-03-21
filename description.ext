@@ -55,6 +55,7 @@ corpseRemovalMaxTime = 120;								// Max time before removal
 #include "scripts\vehicle\crew\common.hpp"  			// vehicle crew hud
 #include "scripts\=BTC=_revive\=BTC=_respawn.h"			// BTC medic revive system 
 #include "dialogs.hpp"									// Adds Dialogs at join
+#include "scripts\statusbar.hpp"						// Statusbar
 
 class CfgFunctions
 	{

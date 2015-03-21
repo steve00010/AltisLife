@@ -17,4 +17,7 @@ ______________________________________________________*/
 
 call compile preprocessFile "scripts\=BTC=_revive\=BTC=_revive_init.sqf";		// revive
 DAC_Basic_Value = 0;execVM "DAC\DAC_Config_Creator.sqf";
-[]execVM "scripts\eos\OpenMe.sqf";
+[] execVM "scripts\eos\OpenMe.sqf";
+[] execVM "scripts\welcome.sqf";
+[] execVM "scripts\earplug\earplugInit.sqf";
+[] execVM "scripts\fn_statusBar.sqf";
