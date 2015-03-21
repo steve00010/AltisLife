@@ -2,7 +2,7 @@
 #include "Settings\MissionSettings.hpp"
 
 #include "Settings\AddonsConfigurator.hpp"
-[]execVM "eos\OpenMe.sqf";
+[] execVM "scripts\eos\OpenMe.sqf";
 [] execVM "ca\Modules\MP\data\scripts\MPFramework.sqf";
 
 if (isMultiplayer) then 
@@ -171,7 +171,7 @@ if (!(isDedicated)) then
 		[] execVM "scripts\earplug\earpluginit.sqf";
 		[] execVM "scripts\welcome.sqf";
 		[] execVM "scripts\zlt_fastrope.sqf";
-		[] execVM "scripts\UI\statusBar.sqf";
+		[] execVM "scripts\fn_statusBar.sqf";
 		if (isMultiplayer) then 
 		{
 			player addEventHandler ["Respawn", 
