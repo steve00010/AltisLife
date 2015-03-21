@@ -75,7 +75,7 @@ if ((isServer)or(isDedicated)) then
 	
 	[]execVM "Scripts\SP\Insurgents\Caches\CachesSetup.sqf";
 	[]execVM "Scripts\SP\RallyPointsManager.sqf";
-	
+	[]execVM "eos\OpenMe.sqf";
 	[]execVM "Scripts\Support\UAV\UAVDelay.sqf";
 };
 
