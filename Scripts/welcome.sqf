@@ -11,16 +11,16 @@ _onScreenTime = 8;
 
 sleep 35; //Wait in seconds before the credits start after player is in-game
  
-_role1 = "Welcome to the Insurgency:";
-_role1names = ["ProphecyGaming"];
-_role2 = "Senior Admins!";
-_role2names = ["Bruce","Steve","Jock","Shafty","Mikey","Boogieman","Ash"];
+_role1 = "Welcome to Prophecy Insurgency:";
+_role1names = ["Getting Started:"];
+_role2 = "How to play!";
+_role2names = ["Clear the red squares in towns","Capture weapons caches"];
 _role3 = "Website:";
 _role3names = ["prophecygaming.co.uk"];
 _role4 = "Teamspeak:";
 _role4names = ["Prophecy Gaming Official / 85.236.101.5:11377"];
-_role5 = "Guide:";
-_role5names = ["Clear red squares on the map from AI and capture caches"];
+_role5 = "Use VAS";
+_role5names = ["Use VAS to access ammo boxes for weapons and clothing"];
 _role6 = "Need Help?";
 _role6names = ["Join our help room on TS or Speak To An Admin in game"];
 {
