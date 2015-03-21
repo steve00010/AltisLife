@@ -13,7 +13,7 @@ class RscTitles
 	#include "RscTitles.hpp"
 	#include "DAPMAN\RscTitles.hpp"
 	#include "Scripts\ui\hc\hcam.hpp"
-	#include "Scripts\UI\statusBar.hpp"  
+	#include "Scripts\ui\statusBar.hpp"  
 };
 
 class CfgSounds
