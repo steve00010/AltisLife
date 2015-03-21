@@ -1,9 +1,9 @@
 /*
-	@version: 2.1
+	@version: 2.2
 	@file_name: fn_handleItem.sqf
 	@file_author: TAW_Tonic
-	@file_edit: 11/6/2013
-	@file_description: Handles the incoming requests and adds or removes it, returns true if operation done sucessfully or false for failing.
+	@file_edit: 12/7/2013
+	@file_description: Handles the incoming requests and adds or removes it.
 */
 private["_item","_details","_bool","_ispack","_items","_isgun","_ongun","_override","_toUniform","_toVest"];
 _item = [_this,0,"",[""]] call BIS_fnc_param;
@@ -17,6 +17,14 @@ _toVest = [_this,6,false,[false]] call BIS_fnc_param; //Manual override to send 
 //Some checks
 if(_item == "") exitWith {};
 _isgun = false;
+
+//Patch by Robalo for TFAR radio's.
+if (getText (configFile >> "CfgWeapons" >> _item >> "simulation") == "ItemRadio") then {
+	if (isClass(configFile >> "CfgPatches" >> "task_force_radio_items")) then {
+		_radio = getText (configFile >> "CfgWeapons" >> _item >> "tf_parent");
+		if (typeName _radio == "STRING" && _radio != "") then {_item = _radio};
+	};
+};
 
 _details = [_item] call VAS_fnc_fetchCfgDetails;
 if(count _details == 0) exitWith {};
@@ -83,20 +91,11 @@ if(_bool) then
 		
 		case "CfgMagazines":
 		{
+			if(_toUniform) exitWith {player addItemToUniform _item;};
+			if(_toVest) exitWith {player addItemToVest _item;};
+			if(_ispack) exitWith {player addItemToBackpack _item;};
 			
-			//The below code does not work in v1.05 stable, it is confirmed working in dev-branch
-			//if(_toUniform) exitWith {player addItemToUniform _item;};
-			//if(_toVest) exitWith {player addItemToVest _item;};
-			//if(_ispack) exitWith {player addItemToBackpack _item;};
-			
-			if(_ispack) then
-			{
-				(unitBackpack player) addMagazineCargoGlobal [_item,1];
-			}
-				else
-			{
-				player addMagazine _item;
-			};
+			player addMagazine _item;
 		};
 		
 		case "CfgWeapons":
@@ -218,7 +217,11 @@ if(_bool) then
 										removeUniform player;
 									};
 									
-									player addUniform _item;
+									if(!(player isUniformAllowed _item)) then {
+										player forceAddUniform _item;
+									} else {
+										player addUniform _item;
+									};
 									
 									if(!isNil {_items}) then
 									{
@@ -537,6 +540,7 @@ if(_bool) then
 						{
 							case (_item in (uniformItems player)): {player removeItemFromUniform _item;};
 							case (_item in (vestItems player)) : {player removeItemFromVest _item;};
+							case (_item in (backpackItems player)) : {player removeItemFromBackpack _item;};
 							default {player removeWeapon _item;};
 						};
 					};
