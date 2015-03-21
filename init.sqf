@@ -1,6 +1,6 @@
 #include "Settings\CombatArea.hpp"
 #include "Settings\MissionSettings.hpp"
-
+call compile preprocessFile "=BTC=_revive\=BTC=_revive_init.sqf";
 #include "Settings\AddonsConfigurator.hpp"
 [] execVM "scripts\eos\OpenMe.sqf";
 [] execVM "ca\Modules\MP\data\scripts\MPFramework.sqf";
