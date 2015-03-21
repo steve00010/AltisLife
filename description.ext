@@ -53,7 +53,7 @@ loadScreen =  "Pictures\Intro.paa";
 OnLoadName = "$STR_MISSION_TITLE";
 onLoadMission = "$STR_TEXT_BRIEFINGTEXT_COOP";
 OnLoadMissionTime = 1;
-
+enableDebugConsole = 1;
 OverviewText = "$STR_TEXT_BRIEFINGTEXT_COOP";
 OverviewPicture = "Pictures\Overview.paa";
 
