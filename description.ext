@@ -1,318 +1,189 @@
-author = "Tonic, Prophecy";
-onLoadName = "Altis Life RPG v4.1";
-onLoadMission = "An RPG game mode developed by Tonic and expanded by Prophecy Gaming";
-joinUnassigned = 1;
-respawn = BASE;
-respawndelay = 5;
-disabledAI = true;
-disableChannels[]={0,1,2};
-enableDebugConsole = 1;
-LoadScreen = "images\prologo.jpg";
-respawnDialog = 0;
+#include "RscClass.hpp"
+#include "Dialog.hpp"
 
-
-
-class Header
-{
-	gameType = RPG;
-	minPlayers = 1;
-	maxPlayers = 100;
-};
-
-wreckLimit = 3;
-wreckRemovalMinTime = 60;
-wreckRemovalMaxTime = 320;
-corpseLimit = 150;
-corpseRemovalMinTime = 500;
-corpseRemovalMaxTime = 9999;
-
-//SpyGlass configuration
-SPY_Enable = true;
-
-#include "Config_Spyglass.hpp"
-
-#include "dialog\MasterHandler.h"
-#include "Config_Master.hpp"
-
-class RscTitles
-{
-	#include "dialog\ui.hpp"
-	#include "dialog\progress.hpp"
-	#include "dialog\hud_nameTags.h"
-	#include "dialog\statusBar.hpp"  
-};
+#include "VAS\menu.hpp"
 
 class CfgFunctions
 {
-	#include "Functions.h"
+	#include "VAS\cfgfunctions.hpp"
+};
+
+class RscTitles
+{
+	#include "RscTitles.hpp"
+	#include "DAPMAN\RscTitles.hpp"
+	#include "Scripts\ui\hc\hcam.hpp"
+	#include "Scripts\UI\statusBar.hpp"  
 };
 
 class CfgSounds
 {
-	sounds[] = {};
-	class SirenLong
+	#include "DAPMAN\CfgSounds.hpp"
+	
+	class DAP_SHOT_WHISTLE
 	{
-		name = "SirenLong";
-		sound[] = {"\sounds\Siren_Long.ogg", 1.0, 1};
-		titles[] = {};
+		name = "Whistle"; 
+		sound[] = {\Sounds\Effects\WHISTLE.ogg, 0.5, 1.0};
+		titles[] = {}; 
 	};
-  
-	class EMS_Siren
+	class TAKBIR
 	{
-		name = "EMS_Siren";
-		sound[] = {"\sounds\ems_siren.ogg", 1.0, 1};
-		titles[] = {};
+		name = "Takbir"; 
+		sound[] = {\Sounds\Screams\TAKBIR.ogg, db-10.5, 1.0};
+		titles[] = {}; 
 	};
 	
-	class Yelp
+	class counter
 	{
-		name = "Yelp";
-		sound[] = {"\sounds\Yelp.ogg", 1.0, 1};
-		titles[] = {};
-	};
-  
-	class tazersound
-	{
-		name = "Tazersound";
-		sound[] = {"\sounds\tazer.ogg", 0.25, 1};
-		titles[] = {};
-	};
-  
-	class vehicle_lock
-	{
-		name = "vehicle_lock";
-		sound[] = {"\sounds\vehicle_lock.ogg", 1.0, 1};
-		titles[] = {};
-	};
-  
-	class bank_alarm
-	{
-		name = "bank_alarm";
-		sound[] = {"\sounds\bank.ogg", 1.0, 1};
-		titles[] = {};
-	};
-  
-	class vehicle_alarm
-	{
-		name = "vehicle_alarm";
-		sound[] = {"\sounds\vehicle_alarm.ogg", 1, 1};
-		titles[] = {};
-	};
-  
-	class Cuff 
-	{
-		name = "cuff";
-		sound[] = {"\sounds\cuff.ogg", 0.95, 0.95};
-		titles[] = {};
-	};
-	
-	class slot_spin
-	{
-		name = "slot_spin";
-		sound[] = {"\sounds\slot_spin.ogg", 1, 1};
-		titles[] = {1, ""};
-	};
-	
-	class slot_payoff
-	{
-		name = "slot_payoff";
-		sound[] = {"\sounds\slot_payoff.ogg", 1, 1};
-		titles[] = {1, ""};
-	};
-	
-	class Caching {
-		name = "caching";
-		sound[] = {"\sounds\caching.ogg", 1, 1};
-		titles[] = {};
-	};
-	
-	class slotspinsound
-	{
-		name = "slotspinSound";
-		sound[] = {"\sounds\slot_spin.ogg", 1.0, 1};
-		titles[] = {};
-	};
-	
-	class jackpotsound
-	{
-		name = "jackpotSound";
-		sound[] = {"\sounds\slot_payoff.ogg", 1.0, 1};
-		titles[] = {};
-	};
-	
-	class bag
-	{
-		name = "bag";
-		sound[] = {"\sounds\bag.ogg", 1.0, 1};
-		titles[] = {};
-	};
-	
-	class Patdown 
-	{
-		name = "Patdown";
-		sound[] = {"\sounds\patdown.ogg", .90, 1};
-		titles[] = {};
-    }; 
-	
-	class flashbang
-	{
-		name = "flashbang";
-		sound[] = {"\sounds\flashbang.ogg", 1.0, 1};
-		titles[] = {};
-	};
-	
-	class pitchWhine
-	{
-		name = "pitchWhine";
-		sound[] = {"\sounds\pitchWhine.ogg", 1.0, 1};
-		titles[] = {};
-	};
-	
-	class omnomnom
-	{
-		name = "omnomnom";
-		sound[] = {"\sounds\omnomnom.ogg", 1.0, 1};
-		titles[] = {};
-	};
-	
-	class drink
-	{
-		name = "drink";
-		sound[] = {"\sounds\drink.ogg", 1.0, 1};
-		titles[] = {};
-	};
-	class introsong
-	{
-		name = introsong";
-		sound[] = {"\sounds\introsong.ogg", 1.0, 1};
-		titles[] = {};
-	};
-	 class sms
-	{
-		name = "sms";
-		sound[] = {"\sounds\sms.ogg", 1.0, 1};
-		titles[] = {};
-	};
-  	class bagopen
-	{
-		name = "bagopen";
-		sound[] = {"\sounds\bagopen.ogg", 1.0, 1};
-		titles[] = {};		
-	};
-};
-class CfgDebriefing
-{
-	class NotWhitelisted
-	{
-		title = "Mission Failed";
-		subtitle = "You are not white-listed to use this slot";
-		description = "You are not allowed to use this slot because you do not have the appropriate permissions, try another slot.";
-		pictureBackground = "";
-		picture = "";
-		pictureColor[] = {0,0.3,0.6,1};
-	};
-	
-	class Blacklisted
-	{
-		title = "Mission Failed";
-		subtitle = "You are blacklisted from cops";
-		description = "You are not allowed to be a cop due to previous actions and the admins have removed you from being a cop.";
-		pictureBackground = "";
-		picture = "";
-		pictureColor[] = {0,0.3,0.6,1};
-	};
-	
-	class SpyGlass
-	{
-		title = "The SpyGlass sees you";
-		subTitle = "You were detected by the SpyGlass";
-		description = "You were detected for cheating and have been reported to the server. Enjoy your day.";
-		pictureBackground = "";
-		picture = "";
-		pictureColor[] = {0,0.3,0.6,1};
+		name = "Counter"; 
+		sound[] = {\Sounds\counter.wss, 1, 1.0};
+		titles[] = {0, ""}; 
 	};
 };
 
-class CfgNotifications
+class Header
 {
-	class MedicalRequestEmerg
+gameType = Coop;       
+minplayers=1;
+maxplayers=32;       
+};
+
+Author = "DAP";
+loadScreen =  "Pictures\Intro.paa";
+OnLoadName = "$STR_MISSION_TITLE";
+onLoadMission = "$STR_TEXT_BRIEFINGTEXT_COOP";
+OnLoadMissionTime = 1;
+
+OverviewText = "$STR_TEXT_BRIEFINGTEXT_COOP";
+OverviewPicture = "Pictures\Overview.paa";
+
+respawn = "BASE";
+respawnDelay = 15;
+respawnDialog = 0;
+debriefing = 0;
+showGPS=1;
+showRadio=0;
+briefing=0;
+aiKills = 0;
+disabledAI=True;
+disableChannels[]={0,2,5,6};
+
+class Params 
+{ 
+	#include "Settings\ServerSettings.hpp"
+};
+
+class CfgMusic
+{
+	tracks[] = {DEFEAT_EAST, DEFEAT_WEST, VICTORY_EAST, VICTORY_WEST};
+
+	class DEFEAT_EAST
 	{
-		title = "EMS Requested";
-		iconPicture = "\A3\ui_f\data\map\mapcontrol\taskIcon_ca.paa";
-		description = "%1";
-		duration = 5;
-		priority = 7;
+		name = "DEFEAT_EAST";
+		sound[] = {\Music\DEFEAT_EAST.ogg, db + 0, 1.0};
+		titles[] = {0, ""};
 	};
-	
-	class DeliveryAssigned
+	class DEFEAT_WEST
 	{
-		title = "Delivery Job Accepted";
-		iconPicture = "\A3\ui_f\data\map\mapcontrol\taskIcon_ca.paa";
-		description = "%1";
-		duration = 10;
-		priority = 7;
+		name = "DEFEAT_WEST";
+		sound[] = {\Music\DEFEAT_WEST.ogg, db + 0, 1.0};
+		titles[] = {0, ""};
 	};
-	
-	class DeliveryFailed
+	class VICTORY_EAST
 	{
-		title = "Delivery Job Failed";
-		iconPicture = "\A3\ui_f\data\map\mapcontrol\taskiconfailed_ca.paa";
-		description = "%1";
-		duration = 7;
-		priority = 7;
+		name = "VICTORY_EAST";
+		sound[] = {\Music\VICTORY_EAST.ogg, db + 0, 1.0};
+		titles[] = {0, ""};
 	};
-	
-	class DeliverySucceeded
+	class VICTORY_WEST
 	{
-		title = "Delivery Job Completed";
-		iconPicture = "\A3\ui_f\data\map\mapcontrol\taskIcondone_ca.paa";
-		description = "%1";
-		duration = 6;
-		priority = 6;
-	};
-	
-	class TextMessage
-	{
-		title = "Received A Text Message";
-		iconPicture = "icons\messagenew.paa";
-		description = "%1";
-		duration = 10;
-		priority = 6;
-	};
-	
-	class PoliceDispatch
-	{
-		title = "911 Dispatch Center";
-		iconPicture = "icons\messagepolice.paa";
-		description = "%1";
-		duration = 10;
-		priority = 6;
-	};
-	
-	class ArcMessage
-	{
-		title = "ARC Message";
-		iconPicture = "icons\messagenew.paa";
-		description = "%1";
-		duration = 10;
-		priority = 5;
-	};
-	
-	class AdminDispatch
-	{
-		title = "Admin Dispatch Center";
-		iconPicture = "icons\messageadmin.paa";
-		description = "%1";
-		duration = 10;
-		priority = 6;
-	};
-	
-	class AdminMessage
-	{
-		title = "Admin Message";
-		iconPicture = "icons\messageadmin.paa";
-		description = "%1";
-		duration = 10;
-		priority = 5;
+		name = "VICTORY_WEST";
+		sound[] = {\Music\VICTORY_WEST.ogg, db + 0, 1.0};
+		titles[] = {0, ""};
 	};
 };
+
+class CfgRadio
+{
+	sounds[] = {};
+	
+	class TRANSPORTREQUEST_EAST
+	{
+		name = "TRANSPORTREQUEST_EAST"; 
+		sound[] = {\Sounds\Radio\TRANSPORTREQUEST_EAST.ogg, db + 0, 1.0};
+		title = $STR_TRANSPORTREQUEST; 
+	};
+	class TRANSPORTREQUEST_WEST
+	{
+		name = "TRANSPORTREQUEST_WEST";
+		sound[] = {\Sounds\Radio\TRANSPORTREQUEST_WEST.ogg, db + 0, 1.0};
+		title = $STR_TRANSPORTREQUEST; 
+	};
+	class TRANSPORT_EAST
+	{
+		name = "TRANSPORT_EAST"; 
+		sound[] = {\Sounds\Radio\TRANSPORT_EAST.ogg, db + 0, 1.0};
+		title = $STR_TRANSPORT_START; 
+	};
+	class TRANSPORT_WEST
+	{
+		name = "TRANSPORT_WEST";
+		sound[] = {\Sounds\Radio\TRANSPORT_WEST.ogg, db + 0, 1.0};
+		title = $STR_TRANSPORT_START;
+	};
+	class TRANSPORTDENIED_EAST
+	{
+		name = "TRANSPORTDENIED_EAST"; 
+		sound[] = {\Sounds\Radio\TRANSPORTDENIED_EAST.ogg, db + 0, 1.0};
+		title = $STR_TRANSPORTDENIED; 
+	};
+	class TRANSPORTDENIED_WEST
+	{
+		name = "TRANSPORTDENIED_WEST";
+		sound[] = {\Sounds\Radio\TRANSPORTDENIED_WEST.ogg, db + 0, 1.0};
+		title = $STR_TRANSPORTDENIED; 
+	};
+	class UAVREADY_WEST
+	{
+		name = "UAVREADY_WEST";
+		sound[] = {\Sounds\Radio\UAVREADY_WEST.ogg, db + 0, 1.0};
+		title = $STR_UAVREADY; 
+	};
+	class UAVREQUEST_WEST
+	{
+		name = "UAVREQUEST_WEST";
+		sound[] = {\Sounds\Radio\UAVREQUEST_WEST.ogg, db + 0, 1.0};
+		title = $STR_UAVREQUEST; 
+	};
+	class UAVSTART_WEST
+	{
+		name = "UAVSTART_WEST";
+		sound[] = {\Sounds\Radio\UAVSTART_WEST.ogg, db + 0, 1.0};
+		title = $STR_UAVSTART; 
+	};
+	class UAV_WEST
+	{
+		name = "UAV_WEST"; 
+		sound[] = {\Sounds\Radio\UAV_WEST.ogg, db + 0, 1.0};
+		title = $STR_UAV; 
+	};
+	class UAVEND_WEST
+	{
+		name = "UAVEND_WEST";
+		sound[] = {\Sounds\Radio\UAVEND_WEST.ogg, db + 0, 1.0};
+		title = $STR_UAVEND;
+	};
+	class UAVDENIED_WEST
+	{
+		name = "UAVDENIED_WEST";
+		sound[] = {\Sounds\Radio\UAVDENIED_WEST.ogg, db + 0, 1.0};
+		title = $STR_UAVDENIED; 
+	};
+	class UAVDENIED_ALT_WEST
+	{
+		name = "UAVDENIED_ALT_WEST"; 
+		sound[] = {\Sounds\Radio\UAVDENIED_ALT_WEST.ogg, db + 0, 1.0};
+		title = $STR_UAVDENIED_ALT; 
+	};
+};
+
