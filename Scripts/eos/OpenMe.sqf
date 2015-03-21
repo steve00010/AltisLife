@@ -44,11 +44,46 @@ null = [["EOS_7","EOS_10"],[2,1,90],[2,1,90],[0],[0],[0],[0],[0,0,500,EAST,FALSE
 // heavy square: 3x House (2,4)
 null = [["EOS_8","EOS_9"],[3,1,90],[2,1,90],[0],[0],[0],[0],[0,0,500,EAST,FALSE]] call EOS_Spawn;
 // light square: 2x House (2,4)
-null = [["EOS_11","EOS_12","EOS_Athira_13"],[2,1,90],[2,1,90],[0],[0],[0],[0],[0,0,500,EAST,FALSE]] call EOS_Spawn;
+null = [["EOS_11","EOS_12","EOS_13"],[2,1,90],[2,1,90],[0],[0],[0],[0],[0,0,500,EAST,FALSE]] call EOS_Spawn;
 // factory light square: 1x Patrol + 1x Lt. Vehicle
 null = [["EOS_13"],[0],[3,2,90],[1,1,90],[0],[0],[0],[0,0,500,EAST,FALSE]] call EOS_Spawn;
 // factory heavy square: 1x large Patrol 
 null = [["EOS_14"],[0],[3,5,90],[0],[0],[0],[0],[0,0,500,EAST,FALSE]] call EOS_Spawn;
+// light square: 2x House (2,4)
+null = [["EOS_15","EOS_16"],[2,1,90],[2,1,90],[0],[0],[0],[0],[0,0,500,EAST,FALSE]] call EOS_Spawn;
+// light square: 2x House (2,4)
+null = [["EOS_17","EOS_18"],[2,1,90],[2,1,90],[0],[0],[0],[0],[0,0,500,EAST,FALSE]] call EOS_Spawn;
+// heavy square: 3x House (2,4)
+null = [["EOS_19","EOS_20"],[3,1,90],[2,1,90],[0],[0],[0],[0],[0,0,500,EAST,FALSE]] call EOS_Spawn;
+// light square: 2x House (2,4)
+null = [["EOS_21","EOS_22"],[2,1,90],[2,1,90],[0],[0],[0],[0],[0,0,500,EAST,FALSE]] call EOS_Spawn;
+// heavy square: 3x House (2,4)
+null = [["EOS_23","EOS_24"],[3,1,90],[2,1,90],[0],[0],[0],[0],[0,0,500,EAST,FALSE]] call EOS_Spawn;
+// light square: 2x House (2,4)
+null = [["EOS_25","EOS_26","EOS_27"],[2,1,90],[2,1,90],[0],[0],[0],[0],[0,0,500,EAST,FALSE]] call EOS_Spawn;
+// factory light square: 1x Patrol + 1x Lt. Vehicle
+null = [["EOS_28"],[0],[3,2,90],[1,1,90],[0],[0],[0],[0,0,500,EAST,FALSE]] call EOS_Spawn;
+// factory heavy square: 1x large Patrol 
+null = [["EOS_29"],[0],[3,5,90],[0],[0],[0],[0],[0,0,500,EAST,FALSE]] call EOS_Spawn;
+// light square: 2x House (2,4)
+null = [["EOS_30","EOS_31"],[2,1,90],[2,1,90],[0],[0],[0],[0],[0,0,500,EAST,FALSE]] call EOS_Spawn;
+// light square: 2x House (2,4)
+null = [["EOS_32","EOS_33"],[2,1,90],[2,1,90],[0],[0],[0],[0],[0,0,500,EAST,FALSE]] call EOS_Spawn;
+// heavy square: 3x House (2,4)
+null = [["EOS_34","EOS_35"],[3,1,90],[2,1,90],[0],[0],[0],[0],[0,0,500,EAST,FALSE]] call EOS_Spawn;
+// light square: 2x House (2,4)
+null = [["EOS_36","EOS_37"],[2,1,90],[2,1,90],[0],[0],[0],[0],[0,0,500,EAST,FALSE]] call EOS_Spawn;
+// heavy square: 3x House (2,4)
+null = [["EOS_38","EOS_39"],[3,1,90],[2,1,90],[0],[0],[0],[0],[0,0,500,EAST,FALSE]] call EOS_Spawn;
+// light square: 2x House (2,4)
+null = [["EOS_40","EOS_41","EOS_42"],[2,1,90],[2,1,90],[0],[0],[0],[0],[0,0,500,EAST,FALSE]] call EOS_Spawn;
+// factory light square: 1x Patrol + 1x Lt. Vehicle
+null = [["EOS_43"],[0],[3,2,90],[1,1,90],[0],[0],[0],[0,0,500,EAST,FALSE]] call EOS_Spawn;
+// factory heavy square: 1x large Patrol 
+null = [["EOS_44"],[0],[3,5,90],[0],[0],[0],[0],[0,0,500,EAST,FALSE]] call EOS_Spawn;
+// light square: 2x House (2,4)
+null = [["EOS_45"],[2,1,90],[2,1,90],[0],[0],[0],[0],[0,0,500,EAST,FALSE]] call EOS_Spawn;
+
 
 //
 // null=[["M1","M2","M3"],[HOUSE GROUPS,SIZE OF GROUPS,PROBABILITY],[PATROL GROUPS,SIZE OF GROUPS,PROBABILITY],[LIGHT VEHICLES,SIZE OF CARGO,PROBABILITY],[ARMOURED VEHICLES,PROBABILITY], [STATIC VEHICLES,PROBABILITY],[HELICOPTERS,SIZE OF HELICOPTER CARGO,PROBABILITY],[FACTION,MARKERTYPE,DISTANCE,SIDE,HEIGHTLIMIT,DEBUG]] call EOS_Spawn;

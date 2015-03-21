@@ -15787,7 +15787,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=67;
+		items=112;
 		class Item0
 		{
 			position[]={-8152.1758,-0.0072405934,-1352.8911};
@@ -16176,7 +16176,7 @@ class Mission
 		};
 		class Item48
 		{
-			position[]={4347.7339,230.58041,3847.9746};
+			position[]={4354.2158,233.74918,3863.2939};
 			name="Air Station Mike-26";
 			type="Empty";
 		};
@@ -16328,6 +16328,411 @@ class Mission
 			text="Pilots should be on TeamSpeak";
 			type="mil_triangle";
 			colorName="ColorRed";
+		};
+		class Item67
+		{
+			position[]={4950.375,192.15942,5949.73};
+			name="EOS_1";
+			markerType="RECTANGLE";
+			type="Empty";
+			a=50;
+			b=50;
+		};
+		class Item68
+		{
+			position[]={5050.1787,202.52281,5950.0176};
+			name="EOS_2";
+			markerType="RECTANGLE";
+			type="Empty";
+			a=50;
+			b=50;
+		};
+		class Item69
+		{
+			position[]={4950.3755,196.18306,5850.2144};
+			name="EOS_3";
+			markerType="RECTANGLE";
+			type="Empty";
+			a=50;
+			b=50;
+		};
+		class Item70
+		{
+			position[]={5050.1787,205.74739,5850.2144};
+			name="EOS_4";
+			markerType="RECTANGLE";
+			type="Empty";
+			a=50;
+			b=50;
+		};
+		class Item71
+		{
+			position[]={4504.8828,105.45183,6800.7007};
+			name="EOS_5";
+			markerType="RECTANGLE";
+			type="Empty";
+			a=50;
+			b=50;
+		};
+		class Item72
+		{
+			position[]={2850.6033,15.809013,6149.6069};
+			name="EOS_6";
+			markerType="RECTANGLE";
+			type="Empty";
+			a=50;
+			b=50;
+		};
+		class Item73
+		{
+			position[]={2950.0808,19.84738,6150.0171};
+			name="EOS_7";
+			markerType="RECTANGLE";
+			type="Empty";
+			a=50;
+			b=50;
+		};
+		class Item74
+		{
+			position[]={3049.9692,23.178185,6150.4287};
+			name="EOS_8";
+			markerType="RECTANGLE";
+			type="Empty";
+			a=50;
+			b=50;
+		};
+		class Item75
+		{
+			position[]={2850.1924,0.24612302,6049.7188};
+			name="EOS_9";
+			markerType="RECTANGLE";
+			type="Empty";
+			a=50;
+			b=50;
+		};
+		class Item76
+		{
+			position[]={2950.4922,3.3499999,6050.1289};
+			name="EOS_10";
+			markerType="RECTANGLE";
+			type="Empty";
+			a=50;
+			b=50;
+		};
+		class Item77
+		{
+			position[]={3049.9692,4.8356996,6050.1299};
+			name="EOS_11";
+			markerType="RECTANGLE";
+			type="Empty";
+			a=50;
+			b=50;
+		};
+		class Item78
+		{
+			position[]={3150.2686,6.723628,6050.1289};
+			name="EOS_12";
+			markerType="RECTANGLE";
+			type="Empty";
+			a=50;
+			b=50;
+		};
+		class Item79
+		{
+			position[]={2850.6033,2.5237634,5949.4185};
+			name="EOS_13";
+			markerType="RECTANGLE";
+			type="Empty";
+			a=50;
+			b=50;
+		};
+		class Item80
+		{
+			position[]={2950.0806,3.49,5949.4194};
+			name="EOS_14";
+			markerType="RECTANGLE";
+			type="Empty";
+			a=50;
+			b=50;
+		};
+		class Item81
+		{
+			position[]={3049.9692,2.6849608,5949.4185};
+			name="EOS_15";
+			markerType="RECTANGLE";
+			type="Empty";
+			a=50;
+			b=50;
+		};
+		class Item82
+		{
+			position[]={3254.2776,5.2406063,5797.5029};
+			name="EOS_16";
+			markerType="RECTANGLE";
+			type="Empty";
+			a=50;
+			b=50;
+		};
+		class Item83
+		{
+			position[]={4601.063,129.61183,5290.1714};
+			name="EOS_17";
+			markerType="RECTANGLE";
+			type="Empty";
+			a=50;
+			b=50;
+		};
+		class Item84
+		{
+			position[]={5198.0815,222.98,4993.0337};
+			name="EOS_18";
+			markerType="RECTANGLE";
+			type="Empty";
+			a=50;
+			b=50;
+		};
+		class Item85
+		{
+			position[]={3451.2405,187.57507,4948.8735};
+			name="EOS_19";
+			markerType="RECTANGLE";
+			type="Empty";
+			a=50;
+			b=50;
+		};
+		class Item86
+		{
+			position[]={3550.2222,194.71565,4949.5376};
+			name="EOS_20";
+			markerType="RECTANGLE";
+			type="Empty";
+			a=50;
+			b=50;
+		};
+		class Item87
+		{
+			position[]={3449.9116,175.04236,4849.8911};
+			name="EOS_21";
+			markerType="RECTANGLE";
+			type="Empty";
+			a=50;
+			b=50;
+		};
+		class Item88
+		{
+			position[]={3550.2227,190.16217,4849.2271};
+			name="EOS_22";
+			markerType="RECTANGLE";
+			type="Empty";
+			a=50;
+			b=50;
+		};
+		class Item89
+		{
+			position[]={2833.0281,37.746559,3738.8345};
+			name="EOS_23";
+			markerType="RECTANGLE";
+			type="Empty";
+			a=50;
+			b=50;
+		};
+		class Item90
+		{
+			position[]={1949.8448,2.8613665,3550.6992};
+			name="EOS_24";
+			markerType="RECTANGLE";
+			type="Empty";
+			a=50;
+			b=50;
+		};
+		class Item91
+		{
+			position[]={2050.5557,3.1047547,3549.8765};
+			name="EOS_25";
+			markerType="RECTANGLE";
+			type="Empty";
+			a=50;
+			b=50;
+		};
+		class Item92
+		{
+			position[]={1949.9197,5.616189,2749.8662};
+			name="EOS_26";
+			markerType="RECTANGLE";
+			type="Empty";
+			a=50;
+			b=50;
+		};
+		class Item93
+		{
+			position[]={2050.0303,2.7517896,2750.3301};
+			name="EOS_27";
+			markerType="RECTANGLE";
+			type="Empty";
+			a=50;
+			b=50;
+		};
+		class Item94
+		{
+			position[]={1951.7734,4.5011944e-005,2650.2197};
+			name="EOS_28";
+			markerType="RECTANGLE";
+			type="Empty";
+			a=50;
+			b=50;
+		};
+		class Item95
+		{
+			position[]={2050.4932,10.381601,2650.2197};
+			name="EOS_29";
+			markerType="RECTANGLE";
+			type="Empty";
+			a=50;
+			b=50;
+		};
+		class Item96
+		{
+			position[]={2449.929,2.9206226,1150.0176};
+			name="EOS_30";
+			markerType="RECTANGLE";
+			type="Empty";
+			a=50;
+			b=50;
+		};
+		class Item97
+		{
+			position[]={2550.0388,3.9075644,1150.0171};
+			name="EOS_31";
+			markerType="RECTANGLE";
+			type="Empty";
+			a=50;
+			b=50;
+		};
+		class Item98
+		{
+			position[]={2712.6318,83.04052,950.521};
+			name="EOS_32";
+			markerType="RECTANGLE";
+			type="Empty";
+			a=50;
+			b=50;
+		};
+		class Item99
+		{
+			position[]={2950.5281,173.03352,1850.5952};
+			name="EOS_33";
+			markerType="RECTANGLE";
+			type="Empty";
+			a=50;
+			b=50;
+		};
+		class Item100
+		{
+			position[]={3050.6382,158.40123,1850.1323};
+			name="EOS_34";
+			markerType="RECTANGLE";
+			type="Empty";
+			a=50;
+			b=50;
+		};
+		class Item101
+		{
+			position[]={3251.1709,228.53784,2949.6064};
+			name="EOS_35";
+			markerType="RECTANGLE";
+			type="Empty";
+			a=50;
+			b=50;
+		};
+		class Item102
+		{
+			position[]={3349.9355,230.35831,2950.1294};
+			name="EOS_36";
+			markerType="RECTANGLE";
+			type="Empty";
+			a=50;
+			b=50;
+		};
+		class Item103
+		{
+			position[]={3251.1711,213.2496,2849.7964};
+			name="EOS_37";
+			markerType="RECTANGLE";
+			type="Empty";
+			a=50;
+			b=50;
+		};
+		class Item104
+		{
+			position[]={3350.4583,220.29964,2849.7969};
+			name="EOS_38";
+			markerType="RECTANGLE";
+			type="Empty";
+			a=50;
+			b=50;
+		};
+		class Item105
+		{
+			position[]={4250.085,215.91125,3950.4136};
+			name="EOS_39";
+			markerType="RECTANGLE";
+			type="Empty";
+			a=50;
+			b=50;
+		};
+		class Item106
+		{
+			position[]={4349.0693,225.92609,3949.8247};
+			name="EOS_40";
+			markerType="RECTANGLE";
+			type="Empty";
+			a=50;
+			b=50;
+		};
+		class Item107
+		{
+			position[]={4249.4961,207.17162,3850.8403};
+			name="EOS_41";
+			markerType="RECTANGLE";
+			type="Empty";
+			a=50;
+			b=50;
+		};
+		class Item108
+		{
+			position[]={4349.0684,231.67561,3850.8394};
+			name="EOS_42";
+			markerType="RECTANGLE";
+			type="Empty";
+			a=50;
+			b=50;
+		};
+		class Item109
+		{
+			position[]={4350.2476,223.94649,3751.8564};
+			name="EOS_43";
+			markerType="RECTANGLE";
+			type="Empty";
+			a=50;
+			b=50;
+		};
+		class Item110
+		{
+			position[]={4250.3882,16.951479,2750.2148};
+			name="EOS_44";
+			markerType="RECTANGLE";
+			type="Empty";
+			a=50;
+			b=50;
+		};
+		class Item111
+		{
+			position[]={6549.6738,47.479118,5050.603};
+			name="EOS_45";
+			markerType="RECTANGLE";
+			type="Empty";
+			a=50;
+			b=50;
 		};
 	};
 	class Sensors
